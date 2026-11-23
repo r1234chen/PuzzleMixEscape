@@ -65,7 +65,7 @@
  "runtime/legacy_metrics/milestone_filter268.py": "696679745a47af6c1b57f8295884b1ce0e5869ff2124be1160a4c4c463f378d0",
  "runtime/model_clients/legacy_worker_verified.py": "82c25fa11a0a997268542c8b1aa742c8a29f2b1708acc29ae94f6dcd0d5a9266",
  "runtime/native_runtime/action_feedback.py": "a6a0f39baedbc7deef627791bff864ce2c55d454dbb5e6c5d77c07b873f65f07",
- "runtime/native_runtime/batch_native.py": "319ba3648308d8ba759d8825f5bc99788dfda1784f4b9eb855c6f812736cc4c8",
+ "runtime/native_runtime/batch_native.py": "773057b455ebe1e2c2da3dd9e37013e3f9e286657e763e345d647fdcf9ef0ee2",
  "runtime/native_runtime/easy88_clues.py": "ac0318471d149dee6761acb36c0e13d1bca25195278abbd680d054403ae45ecb",
  "runtime/native_runtime/easy88_core.py": "15b47c0ab8ff184971fbd7edeb49c9c6857a14f94629c42dbb5e46fdac56f291",
  "runtime/native_runtime/easy88_native_devices.py": "0dd9dc50256720d14907967da7d6ff3b1460d00975c4cfd04a87039147ab4ffe",

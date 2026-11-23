@@ -204,6 +204,82 @@ class NativeDriver:
                 pass
         return self.labels.get(key, str(key).replace('_', ' '))
 
+    def _read_native_rgbd(self, array, warm):
+        import numpy as np
+        startup = self.step == 0 and not self.capture_rows
+        capture = len(self.capture_rows)
+        diagnostic = 'FIRST_FRAME_DIAGNOSTICS.json' if startup else f'capture_diagnostics/{capture:05d}-step-{self.step}.json'
+        attempts = []
+        refreshes = 0
+
+        def record(status):
+            self.save(diagnostic, {
+                'status': status, 'step': self.step, 'capture': capture, 'startup': startup, 'refreshes_after_initial_warmup': refreshes,
+                'expected_size': [RENDER_WIDTH, RENDER_HEIGHT], 'attempts': attempts,
+            })
+
+        for generation in range(2):
+            if generation:
+                record('refreshing_camera')
+                previous = self.camera._render_product
+                if int(self.camera.image_height) != RENDER_HEIGHT:
+                    self.camera.image_height = RENDER_HEIGHT
+                self.camera.image_width = RENDER_WIDTH
+                if self.camera._render_product is previous:
+                    record('refresh_failed')
+                    raise NativeCaptureError(f'Camera refresh failed at step {self.step}; see {diagnostic}')
+                refreshes += 1
+                for _ in range(max(4, int(warm))):
+                    self.og.sim.render()
+            for index in range(15):
+                obs = self.camera.get_obs()
+                if isinstance(obs, tuple):
+                    obs = obs[0] if obs else None
+                obs = obs if isinstance(obs, dict) else {}
+                rgb = array(obs['rgb']) if obs.get('rgb') is not None else None
+                dep = array(obs['depth_linear']).astype(np.float32).squeeze() if obs.get('depth_linear') is not None else None
+                issue = []
+                row = {'generation': generation, 'sample': index + 1,
+                       'rgb_shape': list(rgb.shape) if rgb is not None else None,
+                       'depth_shape': list(dep.shape) if dep is not None else None,
+                       'rgb_dtype': str(rgb.dtype) if rgb is not None else None}
+                if rgb is None:
+                    issue.append('missing_rgb')
+                elif rgb.ndim != 3 or rgb.shape[:2] != (RENDER_HEIGHT, RENDER_WIDTH) or rgb.shape[2] not in (3, 4):
+                    issue.append('rgb_shape')
+                else:
+                    mean = float(rgb[:, :, :3].mean())
+                    row['rgb_mean'] = mean if np.isfinite(mean) else None
+                    if not np.isfinite(mean) or mean <= 1 or not (rgb.mean() > 1):
+                        issue.append('rgb_invalid_or_dark')
+                if dep is None:
+                    issue.append('missing_depth')
+                elif dep.shape != (RENDER_HEIGHT, RENDER_WIDTH):
+                    issue.append('depth_shape')
+                else:
+                    row['depth_nan_count'] = int(np.isnan(dep).sum())
+                    row['depth_positive_finite_count'] = int(np.count_nonzero(np.isfinite(dep) & (dep > 0)))
+                    if row['depth_nan_count']:
+                        issue.append('depth_nan')
+                    if not row['depth_positive_finite_count']:
+                        issue.append('no_positive_finite_depth')
+                row['failed_checks'] = issue
+                attempts.append(row)
+                if not issue:
+                    if startup or len(attempts) > 1:
+                        record('ready')
+                    return rgb, dep, len(attempts) - 1
+                if index == 14:
+                    break
+                if not generation:
+                    self.og.sim.step()
+                for _ in range(8):
+                    self.og.sim.render()
+                time.sleep(0.1)
+        record('exhausted')
+        message = ', '.join(attempts[-1]['failed_checks'])
+        raise NativeCaptureError(f'No valid RGB/depth at step {self.step} after 30 samples and one refresh ({message}); see {diagnostic}')
+
     def raw(self, eye, look=None, q=None, warm=12):
         import numpy as np
         from scipy.spatial.transform import Rotation
@@ -230,20 +306,7 @@ class NativeDriver:
 
         def array(value):
             return (value.detach().cpu().numpy() if hasattr(value, 'detach') else np.asarray(value)).copy()
-        for retry in range(15):
-            obs = self.camera.get_obs()
-            obs = obs[0] if isinstance(obs, tuple) else obs
-            rgb = array(obs['rgb'])
-            dep = array(obs['depth_linear']).astype(np.float32).squeeze()
-            valid = rgb.shape[:2] == (RENDER_HEIGHT, RENDER_WIDTH) and rgb.size and (rgb.mean() > 1) and (dep.shape == (RENDER_HEIGHT, RENDER_WIDTH)) and np.any(dep > 0) and (not np.isnan(dep).any())
-            if valid:
-                break
-            self.og.sim.step()
-            for _ in range(8):
-                self.og.sim.render()
-            time.sleep(0.1)
-        else:
-            raise NativeCaptureError('No complete1280x720 native RGB/depth after15 retries')
+        rgb, dep, retry = self._read_native_rgbd(array, warm)
         if rgb.dtype != np.uint8:
             rgb = np.clip(rgb * 255 if rgb.max() <= 1 else rgb, 0, 255).astype(np.uint8)
         self.clean, self.depth = prepare_observation(rgb, dep)
