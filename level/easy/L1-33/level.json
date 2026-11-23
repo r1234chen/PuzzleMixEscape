@@ -1,0 +1,1224 @@
+{
+  "scene": "Beechwood_0_garden",
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "scene_add": [
+    {
+      "name": "office_water_bucket",
+      "category": "bucket",
+      "model": "bdhvnt",
+      "position": [
+        4.05,
+        16.5,
+        0.849
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "display": "water bucket"
+    },
+    {
+      "name": "office_plant",
+      "category": "pot_plant",
+      "model": "azfbnd",
+      "position": [
+        5.3938,
+        16.7456,
+        0.8858
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_ice_bucket",
+      "category": "ice_bucket",
+      "model": "vlurir",
+      "position": [
+        5.3803,
+        17.4999,
+        0.9716
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "tray_a",
+      "box": [
+        0.22,
+        0.22,
+        0.008
+      ],
+      "category": "tray",
+      "display": "tray",
+      "position": [
+        5.38,
+        18.32,
+        0.782
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.55,
+        0.4,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "name": "tray_b",
+      "box": [
+        0.22,
+        0.22,
+        0.008
+      ],
+      "category": "tray",
+      "display": "tray",
+      "position": [
+        5.38,
+        17.98,
+        0.782
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.55,
+        0.4,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "name": "garden_sign",
+      "box": [
+        0.02,
+        0.28,
+        0.16
+      ],
+      "category": "sign",
+      "position": [
+        7.76,
+        17.069999999999997,
+        1.35
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.93,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_0a",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.105999999999998,
+        1.365
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_0b",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.098,
+        1.3575
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_0g",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.105999999999998,
+        1.35
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_0e",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.113999999999997,
+        1.3425
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_0d",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.105999999999998,
+        1.335
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_1a",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.081999999999997,
+        1.365
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_1f",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.089999999999996,
+        1.3575
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_1g",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.081999999999997,
+        1.35
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_1e",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.089999999999996,
+        1.3425
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_1d",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.081999999999997,
+        1.335
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_1c",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.073999999999998,
+        1.3425
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_2a",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.057999999999996,
+        1.365
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_2b",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.049999999999997,
+        1.3575
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_2c",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.049999999999997,
+        1.3425
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_2d",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.057999999999996,
+        1.335
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_2f",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.066,
+        1.3575
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_2g",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.057999999999996,
+        1.35
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_3f",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.041999999999998,
+        1.3575
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_3g",
+      "plane": [
+        0.016,
+        0.0045
+      ],
+      "position": [
+        7.746,
+        17.034,
+        1.35
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_3b",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.025999999999996,
+        1.3575
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_sign_code_3c",
+      "plane": [
+        0.0045,
+        0.015
+      ],
+      "position": [
+        7.746,
+        17.025999999999996,
+        1.3425
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "office_camera_kit",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "toolbox",
+      "scale": [
+        1.0,
+        1.0,
+        0.6
+      ]
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "jug_fill",
+      "name": "office_water_bucket"
+    },
+    {
+      "type": "jug_empty",
+      "name": "office_plant"
+    },
+    {
+      "type": "jug_goal",
+      "name": "office_ice_bucket",
+      "need": 4,
+      "unlocks": [
+        [
+          "office_camera_kit",
+          1
+        ]
+      ]
+    },
+    {
+      "type": "slot",
+      "name": "tray_a",
+      "group": "trays"
+    },
+    {
+      "type": "slot",
+      "name": "tray_b",
+      "group": "trays"
+    }
+  ],
+  "slot_groups": {
+    "trays": {
+      "kind": "rest",
+      "items": [
+        "jug5",
+        "jug3"
+      ]
+    }
+  },
+  "jugs": {
+    "cap": {
+      "jug5": 5,
+      "jug3": 3
+    }
+  },
+  "name": "L3-04_office_story_captain",
+  "seed": 970021,
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "budget_policy": null,
+  "difficulty_version": "latest_document_applied_with_names157",
+  "difficulty_reason": "5L/3L壶量出4L开启相机隔间，相机读取远处货签以取得电池，电池恢复出口供电；水量、观察工具和设备状态依次关联。",
+  "native_all_code_door_keypads": true,
+  "native_keypad_wall_mount": true,
+  "items": [
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "I am Captain Iona. Our emergency kit is sealed until a four-litre reserve has been measured. Pour exactly four litres into the ice bucket to release the sealed camera case by the left wall. The tall jug holds five litres; the short jug holds three. Fill from the water bucket, pour between jugs, or empty into the plant pot. The trays hold a jug while you handle the other. My camera and the next part of my log are in that case.",
+      "display": "captain letter"
+    },
+    {
+      "id": "jug5",
+      "name": "office_jug5",
+      "category": "jug",
+      "model": "quzmfw",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.35,
+          18.95,
+          0.9172
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      },
+      "display": "tall jug"
+    },
+    {
+      "id": "jug3",
+      "name": "office_jug3",
+      "category": "jug",
+      "model": "llexze",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.6197,
+          18.9356,
+          0.8857
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      },
+      "display": "short jug"
+    },
+    {
+      "id": "camera",
+      "name": "office_camera",
+      "category": "digital_camera",
+      "model": "tymxet",
+      "kind": "tool",
+      "zoom": 6,
+      "display": "camera",
+      "inside": "office_camera_kit",
+      "part": 1,
+      "at": [
+        2.57,
+        17.47,
+        0.074
+      ],
+      "yaw_deg": 90,
+      "scale": 1.0
+    },
+    {
+      "id": "page",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "display": "cargo page",
+      "kind": "clue",
+      "inside": "office_camera_kit",
+      "part": 1,
+      "at": [
+        2.57,
+        17.22,
+        0.03
+      ],
+      "yaw_deg": 90,
+      "text": "The sealed departure supply is in the second drawer. Its four-digit consignment number is on the small sign beyond the window, too far away to read unaided. Use the camera to examine the sign. The second drawer contains the power cell and my last entry."
+    },
+    {
+      "id": "battery",
+      "name": "escape_battery",
+      "category": "battery",
+      "model": "dcjyzg",
+      "kind": "tool",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.95,
+        0.498
+      ],
+      "yaw_deg": 90,
+      "scale": 1.5
+    },
+    {
+      "id": "log",
+      "name": "office_postcard",
+      "category": "postcard",
+      "model": "aujfqp",
+      "kind": "clue",
+      "display": "voyage log",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.7,
+        0.4845
+      ],
+      "yaw_deg": 90,
+      "text": "The departure screen has no power. Install the power cell in the screen beside the exit. Our return date was 22 September: enter its day followed by its two-digit month, 2209, on the keypad. You have measured our reserve, identified the consignment, and restored the departure power."
+    }
+  ],
+  "part_locks": [
+    {
+      "id": "camera_compartment",
+      "container": "office_camera_kit",
+      "part": 1,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "take": "office_jug5",
+          "note": "拿高的壶（5 升，北墙书桌上）"
+        },
+        {
+          "at": [
+            4.05,
+            17.15
+          ],
+          "aim": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "走到柜子 A 的水桶前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "5 升壶装满"
+        },
+        {
+          "take": "office_jug3",
+          "note": "拿矮的壶（3 升，北墙书桌上）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "到东墙书桌的托盘前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tray",
+            "item": "short jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "3 升壶放到托盘 B 上"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "short jug",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "5 升倒进 3 升（5 升剩 2）"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tray",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            18.32,
+            0.786
+          ],
+          "note": "5 升壶放到托盘 A 上"
+        },
+        {
+          "take": "office_jug3",
+          "note": "拿起托盘 B 上的 3 升壶"
+        },
+        {
+          "at": [
+            5.0,
+            17.25
+          ],
+          "aim": [
+            5.4,
+            16.75,
+            0.8912192596435546
+          ],
+          "note": "走到柜子 B 上的花盆前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "pot plant",
+            "item": "short jug"
+          },
+          "point_world": [
+            5.4,
+            16.75,
+            0.8912192596435546
+          ],
+          "note": "3 升壶的水倒进花盆（倒空）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "回托盘前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tray",
+            "item": "short jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "3 升壶放回托盘 B"
+        },
+        {
+          "take": "office_jug5",
+          "note": "拿起托盘 A 上的 5 升壶（里面 2 升）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "对着托盘 B 上的 3 升壶"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "short jug",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "2 升倒进 3 升壶（3 升壶里 2 升）"
+        },
+        {
+          "at": [
+            4.05,
+            17.15
+          ],
+          "aim": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "回水桶"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "5 升壶装满"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "回托盘前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "short jug",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "倒满 3 升壶（倒过去 1 升，5 升壶剩 4 升）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "到冰桶前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ice bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "4L倒入计量冰桶，只解锁相机抽屉，不解锁出口"
+        }
+      ]
+    },
+    {
+      "id": "departure_supplies",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "lock": "2694",
+      "code_from": "look",
+      "pre_steps": [
+        {
+          "take": "office_diary_page",
+          "note": "取得实际相机隔间内的后续记录，递归完成量水阶段"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "cargo page"
+          },
+          "note": "读货签与电池位置的记录"
+        }
+      ],
+      "look": [
+        {
+          "take": "office_camera",
+          "note": "从柜子 B 抽屉里拿相机"
+        },
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            7.76,
+            17.069999999999997,
+            1.35
+          ],
+          "note": "站在屋子中间看窗外的牌子（太小看不清）"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "sign",
+            "item": "camera"
+          },
+          "point_world": [
+            7.76,
+            17.069999999999997,
+            1.35
+          ],
+          "note": "拿着相机对准牌子放大"
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "2209",
+      "power": {
+        "item": "battery"
+      },
+      "clue_source": "log",
+      "pre_steps": [
+        {
+          "take": "office_postcard",
+          "note": "取得电池抽屉里的航海日志，不能绕过相机货签阶段"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "voyage log"
+          },
+          "note": "日志给出回航日期及电池用途"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "story_definition": {
+    "title": "船长的应急物资",
+    "version": 97,
+    "form": "native physical props, no wall text puzzle",
+    "causal_chain": [
+      "measure4L -> locked drawer1 camera",
+      "camera zoom outdoor sign2694 -> drawer2 battery/log",
+      "battery powers native exit screen -> date2209 entered with keys"
+    ],
+    "native_acceptance": "complete104 standard112 actions passed; focused105 sign visibility correction pending, no full replay",
+    "user_design_acceptance": "pending"
+  },
+  "native_door_keypad_mounts": {
+    "door_lvgliq_1": {
+      "center": [
+        3.32,
+        19.275,
+        1.15
+      ],
+      "right": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "native_power_screen_oracle": true,
+  "benchmark_id": "L3-04",
+  "legacy_name": "R4-21_office_story_captain",
+  "legacy_id": "R4-21",
+  "naming_policy": "difficulty_names157",
+  "difficulty_assessment": {
+    "current_deployed_max_steps": 180,
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "classification_origin157": "用户本次要求·新增故事关",
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "1c3c33b764c0da7fd58f57cea50ce7f6b69fbcf43ce9a4ef1c96c970478f8834"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-33",
+  "legacy_benchmark_id": "L3-04",
+  "recall_budget": 10,
+  "tip_window": 25
+}

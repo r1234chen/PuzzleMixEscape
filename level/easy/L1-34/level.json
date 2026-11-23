@@ -1,0 +1,1376 @@
+{
+  "name": "L3-05_office_story_restorer",
+  "scene": "Beechwood_0_garden",
+  "seed": 980022,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      4.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_reason": "砸罐取得工具箱钥匙，开箱取得紫外灯，照出暗记以取得镜子，选择与传感器对应的支架反射光束，解除取最终钥匙的机关。",
+  "story_definition": {
+    "title": "修复师抢救藏品",
+    "version": 98,
+    "form": "real native props, no wall-table story",
+    "causal_chain": [
+      "hammer breaks sealed jar; no fragments",
+      "jar key opens physical toolbox containing UV",
+      "UV reveals wardrobe mark3852 to retrieve mirror",
+      "mirror redirects rendered laser -> final-key drawer"
+    ],
+    "native_acceptance": "pending104; known native storage poses reused, shallow-drawer items moved to proper physical hosts",
+    "user_design_acceptance": "pending"
+  },
+  "items": [
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "I am Elin, the restorer. I sealed the inspection-kit key inside the small jar before the exhibition. The hammer can break the jar. Open the locked toolbox with what it contains, then follow the inspection page; the gallery exit will remain locked until the optical safety check is complete.",
+      "display": "letter"
+    },
+    {
+      "id": "hammer",
+      "name": "escape_hammer",
+      "category": "hammer",
+      "model": "bbzlel",
+      "kind": "tool",
+      "yaw_deg": 90,
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "spot_near": [
+        4.15,
+        18.92
+      ],
+      "spot_yaw0": true
+    },
+    {
+      "id": "jar",
+      "name": "escape_jar",
+      "category": "hingeless_jar",
+      "model": "qzwijs",
+      "display": "sealed jar",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "take_text": "Something rattles inside.",
+      "break_text": "The jar breaks.",
+      "melts": false,
+      "spot_near": [
+        4.67,
+        18.92
+      ],
+      "spot_yaw0": true,
+      "take_return_text": "You picked up the sealed jar. Something rattles inside.you put it back"
+    },
+    {
+      "id": "boxkey",
+      "name": "escape_boxkey",
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "inside_item": "jar",
+      "scale": 0.6
+    },
+    {
+      "id": "flashlight",
+      "name": "office_flashlight",
+      "category": "flashlight",
+      "model": "jtrbkc",
+      "kind": "tool",
+      "uv": true,
+      "display": "UV flashlight",
+      "inside": "office_toolbox",
+      "part": 1,
+      "at": [
+        2.57,
+        17.44,
+        0.075
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "page",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "office_toolbox",
+      "part": 1,
+      "text": "This ultraviolet lamp reveals my invisible inspection mark on the back of the wardrobe. That mark opens the second lower-cabinet drawer. Inside are the optical mirror and my light-routing instructions.",
+      "at": [
+        2.57,
+        17.22,
+        0.03
+      ],
+      "yaw_deg": 90,
+      "display": "inspection page"
+    },
+    {
+      "id": "mirror",
+      "name": "office_mirror",
+      "category": "mirror",
+      "model": "rgbvxy",
+      "kind": "tool",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.92,
+        0.49
+      ],
+      "yaw_deg": 90,
+      "scale": 0.6,
+      "inside_rpy_deg": [
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "id": "optics",
+      "name": "office_postcard",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "text": "The beam must reach the red sensor on the left wall. Set the mirror on the stand aligned with that sensor; the sensor turns green and releases the final key in the first drawer of the other lower cabinet. A misplaced mirror may be taken back.",
+      "at": [
+        5.335,
+        16.68,
+        0.4845
+      ],
+      "yaw_deg": 90,
+      "display": "optics note"
+    },
+    {
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "id": "exitkey",
+      "name": "escape_key",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_wardrobe",
+      "category": "wardrobe",
+      "model": "brimns",
+      "center": [
+        2.95,
+        16.506
+      ],
+      "yaw_deg": 90,
+      "scale": [
+        0.79,
+        0.79,
+        0.79
+      ]
+    },
+    {
+      "name": "decor_flash_code_0a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        3.07,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_0b",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.045,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_0g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        3.07,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_0c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.045,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_0d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        3.07,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.99,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1b",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.965,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.965,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.99,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1e",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.015,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1f",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.015,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_1g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.99,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_2a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.91,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_2f",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.935,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_2g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.91,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_2c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.885,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_2d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.91,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_3a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.83,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_3b",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.805,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_3g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.83,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_3e",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.855,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_flash_code_3d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.83,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "office_stand_1",
+      "category": "plant_pot_stand",
+      "model": "dylpyb",
+      "center": [
+        3.3,
+        18.4
+      ],
+      "yaw_deg": 90,
+      "display": "stand"
+    },
+    {
+      "name": "office_stand_2",
+      "category": "plant_pot_stand",
+      "model": "dylpyb",
+      "center": [
+        3.3,
+        17.8
+      ],
+      "yaw_deg": 90,
+      "display": "stand"
+    },
+    {
+      "name": "office_stand_3",
+      "category": "plant_pot_stand",
+      "model": "dylpyb",
+      "center": [
+        3.3,
+        17.25
+      ],
+      "yaw_deg": 90,
+      "display": "stand"
+    },
+    {
+      "name": "decor_laser_emitter",
+      "box": [
+        0.08,
+        0.1,
+        0.07
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        19.24,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.12,
+        0.12,
+        0.13,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_laser_seg0",
+      "box": [
+        0.79,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        18.795,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 0
+    },
+    {
+      "name": "decor_laser_seg1",
+      "box": [
+        0.6,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        18.1,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 1
+    },
+    {
+      "name": "decor_laser_seg2",
+      "box": [
+        0.55,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        17.525,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 2
+    },
+    {
+      "name": "decor_laser_seg3",
+      "box": [
+        0.962,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        16.769,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 3
+    },
+    {
+      "name": "decor_laser_dot_s",
+      "disk": [
+        0.03,
+        0.03
+      ],
+      "position": [
+        3.3,
+        16.289,
+        1.08
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "laser_seg": 3
+    },
+    {
+      "name": "decor_laser_ref0",
+      "box": [
+        1.33,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        2.635,
+        18.4,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_ref": 0,
+      "hidden": true
+    },
+    {
+      "name": "decor_laser_ref1",
+      "box": [
+        0.935,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        2.8325,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_ref": 1,
+      "hidden": true
+    },
+    {
+      "name": "decor_laser_ref2",
+      "box": [
+        1.01,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        2.795,
+        17.25,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_ref": 2,
+      "hidden": true
+    },
+    {
+      "name": "decor_laser_sensor",
+      "box": [
+        0.12,
+        0.14,
+        0.14
+      ],
+      "category": "board",
+      "position": [
+        2.3,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.12,
+        0.12,
+        0.13,
+        1.0
+      ],
+      "visual_only": true
+    },
+    {
+      "name": "decor_laser_sensor_red",
+      "disk": [
+        0.06,
+        0.06
+      ],
+      "position": [
+        2.363,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "sensor_off": true
+    },
+    {
+      "name": "decor_laser_sensor_green",
+      "disk": [
+        0.06,
+        0.06
+      ],
+      "position": [
+        2.364,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.85,
+        0.2,
+        1.0
+      ],
+      "sensor_on": true,
+      "hidden": true
+    },
+    {
+      "name": "office_toolbox",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "toolbox",
+      "scale": [
+        1.0,
+        1.0,
+        0.6
+      ]
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "slot",
+      "name": "office_stand_1",
+      "group": "laser"
+    },
+    {
+      "type": "slot",
+      "name": "office_stand_2",
+      "group": "laser"
+    },
+    {
+      "type": "slot",
+      "name": "office_stand_3",
+      "group": "laser"
+    }
+  ],
+  "slot_groups": {
+    "laser": {
+      "kind": "laser",
+      "items": [
+        "mirror"
+      ],
+      "order": [
+        "office_stand_1",
+        "office_stand_2",
+        "office_stand_3"
+      ],
+      "segments": 4,
+      "correct": 1,
+      "unlocks": [
+        [
+          "bottom_cabinet_immwzb_0",
+          1
+        ]
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        135
+      ]
+    }
+  },
+  "part_locks": [
+    {
+      "id": "inspection_kit",
+      "container": "office_toolbox",
+      "part": 1,
+      "key": "boxkey"
+    },
+    {
+      "id": "mirror_drawer",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "lock": "3852",
+      "code_from": "look",
+      "pre_steps": [
+        {
+          "take": "office_diary_page"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "inspection page"
+          }
+        }
+      ],
+      "look": [
+        {
+          "take": "office_flashlight",
+          "note": "从已解锁的工具箱拿紫外手电"
+        },
+        {
+          "at": [
+            3.85,
+            17.05
+          ],
+          "aim": [
+            3.105,
+            16.7,
+            0.9
+          ],
+          "note": "站到衣柜东南侧，避开第三激光花架碰撞体"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "wardrobe",
+            "part": 1
+          },
+          "point_world": [
+            3.105,
+            16.7,
+            0.9
+          ],
+          "note": "开左边柜门"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "wardrobe",
+            "part": 2
+          },
+          "point_world": [
+            2.795,
+            16.7,
+            0.9
+          ],
+          "note": "开右边柜门"
+        },
+        {
+          "aim": [
+            2.95,
+            16.335,
+            1.05
+          ],
+          "note": "两扇衣柜门打开后，移到已记录可达的正面网格照后板；避开柜侧板，不改碰撞或UV遮挡判定",
+          "at": [
+            2.75,
+            18.05
+          ]
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "wardrobe",
+            "item": "flashlight"
+          },
+          "point_world": [
+            2.95,
+            16.335,
+            1.05
+          ],
+          "note": "拿紫外手电照衣柜后板"
+        }
+      ]
+    },
+    {
+      "id": "sensor_key_drawer",
+      "container": "bottom_cabinet_immwzb_0",
+      "part": 1,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "take": "office_postcard"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "optics note"
+          }
+        },
+        {
+          "at": [
+            4.45,
+            17.8
+          ],
+          "aim": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "站到花架东边"
+        },
+        {
+          "take": "office_mirror",
+          "note": "从柜 B 第 2 层拿平放的镜子"
+        },
+        {
+          "at": [
+            3.85,
+            18.4
+          ],
+          "aim": [
+            3.3,
+            18.4,
+            0.65
+          ],
+          "note": "到 1 号花架（最北）边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "stand",
+            "item": "mirror"
+          },
+          "point_world": [
+            3.3,
+            18.4,
+            0.65
+          ],
+          "note": "镜子放到 1 号花架上：光折向门，传感器还是红的"
+        },
+        {
+          "aim": [
+            2.4,
+            18.4,
+            1.08
+          ],
+          "note": "看折过去的光打到哪"
+        },
+        {
+          "aim": [
+            3.3,
+            18.4,
+            1.08
+          ],
+          "note": "对准花架上的镜子"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "mirror"
+          },
+          "point_world": [
+            3.3,
+            18.4,
+            1.08
+          ],
+          "note": "把镜子拿回来：光束复原"
+        },
+        {
+          "at": [
+            4.0,
+            17.3
+          ],
+          "aim": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "到 2 号花架东南边（从这儿看传感器，镜子挡不住）"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "stand",
+            "item": "mirror"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "镜子放到 2 号花架上：光打到传感器，咔哒一声"
+        },
+        {
+          "aim": [
+            2.36,
+            17.8,
+            1.08
+          ],
+          "note": "看传感器变绿"
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "benchmark_id": "L3-05",
+  "legacy_name": "R4-22_office_story_restorer",
+  "legacy_id": "R4-22",
+  "naming_policy": "difficulty_names157",
+  "difficulty_assessment": {
+    "current_deployed_max_steps": 180,
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "classification_origin157": "用户本次要求·新增故事关",
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "d50f69cc3f8a8056710d4336242431a3ff6e9227b96072d2c684e47f5d5da1c3"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-34",
+  "legacy_benchmark_id": "L3-05",
+  "recall_budget": 10,
+  "tip_window": 25
+}

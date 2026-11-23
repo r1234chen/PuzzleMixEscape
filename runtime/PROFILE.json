@@ -1,0 +1,32 @@
+{
+  "namespace": "benchmark_v2",
+  "counts": {
+    "L1": 39,
+    "L2": 22,
+    "H1": 11,
+    "H2": 22
+  },
+  "budgets": {
+    "L1": {
+      "actions": 150,
+      "recalls": 10,
+      "tip_window": 25
+    },
+    "H1": {
+      "actions": 200,
+      "recalls": 20,
+      "tip_window": 50
+    },
+    "L2": {
+      "actions": 200,
+      "recalls": 15,
+      "tip_window": 40
+    },
+    "H2": {
+      "actions": 250,
+      "recalls": 25,
+      "tip_window": 60
+    }
+  },
+  "model_execution_ready": true
+}

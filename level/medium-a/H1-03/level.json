@@ -1,0 +1,168 @@
+{
+  "name": "H1-03_hub_switch",
+  "scene": "Beechwood_0_garden",
+  "seed": 236,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "prompt_intro": "You are a robot locked inside a house. You start in one room; your goal is to get out of the house.\nDoors may be locked. What opens them is not told in this message; you have to find out by searching.\nThings can be hidden inside furniture that opens, and some things are locked themselves (with a code lock or a keyhole).",
+  "doors_default": "unlocked",
+  "items": [
+    {
+      "id": "note",
+      "name": "escape_note",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "Diary: {diary}",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1
+    },
+    {
+      "id": "diary",
+      "name": "escape_diary",
+      "category": "notebook",
+      "model": "qwhiqc",
+      "text": "Office door: {office}. The front door has no keyhole. The switch on the laundry room wall opens it.",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1,
+      "lock": "random:3"
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 3,
+      "kind": "decoy"
+    }
+  ],
+  "doors": [
+    {
+      "id": "office",
+      "name": "door_lvgliq_1",
+      "lock": "random:4",
+      "pass_checkpoint": true
+    },
+    {
+      "name": "door_lvgliq_3",
+      "lock": null
+    },
+    {
+      "id": "exit",
+      "name": "hall_door",
+      "switch": "sw",
+      "clue": "diary",
+      "exit": true
+    },
+    {
+      "name": "door_lvgliq_4",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "hall_door",
+      "category": "door",
+      "model": "lvgliq",
+      "center": [
+        0.625,
+        16.25
+      ],
+      "yaw_deg": 90,
+      "scale": [
+        0.617,
+        1.0,
+        1.192
+      ]
+    },
+    {
+      "name": "hall_header",
+      "wall": [
+        0.2,
+        16.19,
+        1.05,
+        16.31
+      ],
+      "z": [
+        2.18,
+        2.4
+      ]
+    },
+    {
+      "name": "hall_wall_a",
+      "wall": [
+        0.06,
+        18.6,
+        0.18,
+        20.45
+      ],
+      "z": [
+        0.0,
+        2.4
+      ]
+    },
+    {
+      "name": "hall_wall_b",
+      "wall": [
+        -0.12,
+        18.6,
+        0.18,
+        18.72
+      ],
+      "z": [
+        0.0,
+        2.4
+      ]
+    }
+  ],
+  "max_steps": 200,
+  "switches": [
+    {
+      "id": "sw",
+      "in_room": "utility_room_0",
+      "opens": "exit"
+    }
+  ],
+  "room_mode": "multi",
+  "difficulty": null,
+  "difficulty_reason": "多房间不分难度，统一200动作；保留原布局和谜题链。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "confirmed multi-room200 rule",
+    "current_deployed_max_steps": 200,
+    "new_proposed_max_steps": 200,
+    "proposal_not_silently_applied": true,
+    "example_status": "多房间统一规则（已确认）",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "H1-03",
+  "legacy_name": "H1-03_hub_switch",
+  "legacy_id": "H1-03",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "多房间统一规则（已确认）",
+  "budget_revision260": {
+    "actions": 200,
+    "recalls": 20,
+    "hint_window": 50,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "18808f1303c3a21b28df46eb6e795a37f6d01f1ab31b236acf22a06f9eedc6cd"
+  },
+  "protocol": "unified_v2",
+  "public_id": "H1-03",
+  "legacy_benchmark_id": "H1-03",
+  "recall_budget": 20,
+  "tip_window": 50
+}

@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "purpose": "semantic inventory category and alias data only; live permissions are not derived from standard progress",
+  "levels": {
+    "R23": {
+      "source_sha256": "8be80d9dd4b45c25d41cd1ef67cefa70f60d29793f9a1b854ca462665f932452",
+      "original_inventory_items": [
+        "cutters",
+        "jumper",
+        "wrench"
+      ],
+      "retrieval_targets": {
+        "gap2": "jumper"
+      },
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R24": {
+      "source_sha256": "0484293c78b744407ffe724281e68b3418ad5ac1b01313fe711d80ec5a781150",
+      "original_inventory_items": [
+        "belt",
+        "cone",
+        "crank",
+        "cube",
+        "cylinder",
+        "pyramid"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R25": {
+      "source_sha256": "68a5526ea31c9b8e85780a874527d0911ee65159f8759d9a4614aa8a77f6c488",
+      "original_inventory_items": [
+        "handle",
+        "lid",
+        "square",
+        "store_key",
+        "tall"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R26": {
+      "source_sha256": "51d93dfe465db0c7619008dc72c6da585e82284d202037e9c7062c4091078147",
+      "original_inventory_items": [
+        "frag_a",
+        "frag_b",
+        "frag_c",
+        "frag_d"
+      ],
+      "retrieval_targets": {
+        "slot1": "frag_d",
+        "slot0": "frag_a",
+        "slot2": "frag_c"
+      },
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R27": {
+      "source_sha256": "3f01eb14e459e011e31d367f37f71e7ea8f870bbc4f0b66d73c8d6cd117116c1",
+      "original_inventory_items": [
+        "pump",
+        "stopper"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R28": {
+      "source_sha256": "c91c04062886900b38782c13c53d2a9436231f656d7b55a4def357782439cc9c",
+      "original_inventory_items": [
+        "panel_p",
+        "panel_q",
+        "panel_r",
+        "sig_a",
+        "sig_b",
+        "sig_c",
+        "sig_d"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [
+        "panel_q",
+        "panel_r"
+      ],
+      "classification_only_not_eligibility": true
+    },
+    "R29": {
+      "source_sha256": "68cc8577e6b344d9eed08cbf3284e93fafc76653507bdfbc21039370aa3eb3ea",
+      "original_inventory_items": [
+        "key"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R30": {
+      "source_sha256": "9b4c98cb3e79a7b3f5b790ece41b9eaa843f7187616af37e76a23a759dfe3b3b",
+      "original_inventory_items": [
+        "film",
+        "w1",
+        "w2",
+        "w4"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R31": {
+      "source_sha256": "ff463cfa860f60041a181196f16fc47bd84893d928b9d64af642f95c10fd3048",
+      "original_inventory_items": [
+        "film_a",
+        "film_b",
+        "gear_l",
+        "gear_m",
+        "gear_s"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R32": {
+      "source_sha256": "a343459e57dc4cd5ad06ce6fa61674e0a432be10695f913d7309bf91873871cd",
+      "original_inventory_items": [
+        "parcel_p",
+        "parcel_q",
+        "parcel_r",
+        "parcel_s",
+        "token"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R33": {
+      "source_sha256": "6cdecd47e64181b55e6b7e431a79de8ce5c1702a66e4bd56802f0b86c81bfb37",
+      "original_inventory_items": [
+        "bottle_circle",
+        "bottle_leaf",
+        "bottle_square",
+        "bottle_star",
+        "collar",
+        "hose"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R34": {
+      "source_sha256": "7736189e7a3f9eed46bf588225d4ee4f242059fe1e29d3d5d5c5b93ce1112c60",
+      "original_inventory_items": [
+        "bar",
+        "blockP",
+        "blockQ"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R35": {
+      "source_sha256": "d53b5d8a72e43ca4acd6e9245aa3cef2d48768a5ea220bbeb9c2aef8cd3d0f7b",
+      "original_inventory_items": [
+        "driver",
+        "pliers",
+        "sample",
+        "wedge1",
+        "wedge2"
+      ],
+      "retrieval_targets": {
+        "wl": "wedge1"
+      },
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R36": {
+      "source_sha256": "23036339d4911801bad1ea5e8e585467736c67de8c7bfd260667b2d69a02fbc2",
+      "original_inventory_items": [
+        "bar",
+        "sup1",
+        "sup2"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R37": {
+      "source_sha256": "272f8c08fbd32059e69bb9121109a9c95ea2cc9f8cdc46e3e24a70924e35d329",
+      "original_inventory_items": [
+        "fig_circle",
+        "fig_leaf",
+        "fig_square",
+        "fig_star",
+        "guide",
+        "hook1",
+        "hook2"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R38": {
+      "source_sha256": "4f9f758641a95939b853d89adab2db0413f112d2e3195c465660d2ad5396341f",
+      "original_inventory_items": [
+        "bridge1",
+        "bridge2",
+        "stopper",
+        "toy_circle",
+        "toy_leaf",
+        "toy_square",
+        "toy_star"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R39": {
+      "source_sha256": "3d4bbd5357e12e3747afd28c9c66a59ecae8084fd0334b9a8e2b78db08d62c56",
+      "original_inventory_items": [
+        "card1",
+        "card2",
+        "card3",
+        "card4",
+        "card5",
+        "card6",
+        "filter"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R40": {
+      "source_sha256": "b1f9b996c9e978a6f387375ae3711f42d1b926a659c2b065eacf56e290703323",
+      "original_inventory_items": [
+        "bar1",
+        "cord",
+        "pa",
+        "pb",
+        "pc",
+        "pd"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [
+        "pb"
+      ],
+      "classification_only_not_eligibility": true
+    },
+    "R41": {
+      "source_sha256": "dc7d6927abc4c73c58b254c382a62630648f290c923ed3cf592f9765d2d70d4c",
+      "original_inventory_items": [
+        "item_cup",
+        "item_hat",
+        "item_ruler",
+        "item_triplate",
+        "sball",
+        "sp",
+        "sq",
+        "sr",
+        "ss"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R42": {
+      "source_sha256": "7de0596e777369ea6f8bfa3ce6eb38f53e3956b69cc8c60d0c1e1c8809ee0b5e",
+      "original_inventory_items": [
+        "ev_app",
+        "ev_pick",
+        "ev_ret",
+        "ev_sub",
+        "frag1",
+        "frag2",
+        "handle"
+      ],
+      "retrieval_targets": {
+        "v1": "frag1",
+        "v2": "frag2"
+      },
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    },
+    "R43": {
+      "source_sha256": "54489da038ccdd2531d48754abe20f19fa8564f3d633335e13e9713501ea9004",
+      "original_inventory_items": [
+        "bar",
+        "ta",
+        "tb",
+        "tc",
+        "td",
+        "wedge_hi",
+        "wedge_lo"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [
+        "ta",
+        "tc",
+        "td"
+      ],
+      "classification_only_not_eligibility": true
+    },
+    "R44": {
+      "source_sha256": "6821c2b3b9c2d12b63eb86051a0cd52e5508212ee757619ed4da917ac28c98f5",
+      "original_inventory_items": [
+        "r1a",
+        "r1b",
+        "r2a",
+        "r2b",
+        "r2c",
+        "r2d",
+        "sock_in",
+        "sock_out",
+        "sp",
+        "sq",
+        "sr",
+        "ss",
+        "std_circle",
+        "std_leaf",
+        "std_square",
+        "std_star"
+      ],
+      "retrieval_targets": {},
+      "pressable_inventory_items": [],
+      "classification_only_not_eligibility": true
+    }
+  },
+  "model_calls": 0,
+  "native_render_checked": false
+}

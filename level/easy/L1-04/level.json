@@ -1,0 +1,1023 @@
+{
+  "name": "L2-04_office_diff",
+  "scene": "Beechwood_0_garden",
+  "seed": 620,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The door code is how many things differ between the two bookcases: on top, then each shelf from the top down.",
+      "overlay": {
+        "texture": "hint_b9205eb57a.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "1302",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            3.5,
+            18.3
+          ],
+          "aim": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "站到右边书架顶上的绿盒子前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "box"
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：read 右边书架顶上的绿盒子"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "box"
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：take 右边书架顶上的绿盒子"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "box",
+            "part": 1
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：open 右边书架顶上的绿盒子"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "box",
+            "part": 1
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：close 右边书架顶上的绿盒子"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "box"
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：press 右边书架顶上的绿盒子"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "box",
+            "code": "1234"
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：unlock 右边书架顶上的绿盒子"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "box",
+            "item": "post it"
+          },
+          "point_world": [
+            3.8,
+            19.08,
+            1.1
+          ],
+          "note": "乱试：use 右边书架顶上的绿盒子"
+        },
+        {
+          "at": [
+            3.5,
+            18.3
+          ],
+          "aim": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "站到左边书架中层的绿方块前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "box"
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：read 左边书架中层的绿方块"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "box"
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：take 左边书架中层的绿方块"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "box",
+            "part": 1
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：open 左边书架中层的绿方块"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "box",
+            "part": 1
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：close 左边书架中层的绿方块"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "box"
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：press 左边书架中层的绿方块"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "box",
+            "code": "1234"
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：unlock 左边书架中层的绿方块"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "box",
+            "item": "post it"
+          },
+          "point_world": [
+            3.0,
+            19.08,
+            0.41
+          ],
+          "note": "乱试：use 左边书架中层的绿方块"
+        },
+        {
+          "at": [
+            3.5,
+            18.0
+          ],
+          "aim": [
+            3.5,
+            19.11,
+            0.55
+          ],
+          "note": "比较两个书架"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_shelf_0",
+      "category": "bookcase",
+      "model": "gsksby",
+      "position": [
+        3.15,
+        19.11,
+        0.505
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90
+      ]
+    },
+    {
+      "name": "office_shelf_1",
+      "category": "bookcase",
+      "model": "gsksby",
+      "position": [
+        3.8,
+        19.11,
+        0.505
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90
+      ]
+    },
+    {
+      "name": "decor_shL_0",
+      "box": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "category": "box",
+      "position": [
+        2.98,
+        19.08,
+        1.058
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.75,
+        0.1,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_1",
+      "box": [
+        0.06,
+        0.06,
+        0.16
+      ],
+      "category": "box",
+      "position": [
+        3.15,
+        19.08,
+        1.098
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.3,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_2",
+      "box": [
+        0.12,
+        0.08,
+        0.05
+      ],
+      "category": "box",
+      "position": [
+        3.32,
+        19.08,
+        1.043
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.92,
+        0.78,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_3",
+      "box": [
+        0.03,
+        0.18,
+        0.22
+      ],
+      "category": "box",
+      "position": [
+        2.96,
+        19.08,
+        0.785
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.45,
+        0.28,
+        0.15,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_4",
+      "box": [
+        0.03,
+        0.18,
+        0.2
+      ],
+      "category": "box",
+      "position": [
+        3.0,
+        19.08,
+        0.775
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.55,
+        0.2,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_5",
+      "box": [
+        0.03,
+        0.18,
+        0.24
+      ],
+      "category": "box",
+      "position": [
+        3.04,
+        19.08,
+        0.795
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.75,
+        0.1,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_6",
+      "box": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "category": "box",
+      "position": [
+        3.23,
+        19.08,
+        0.71
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.94,
+        0.94,
+        0.92,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_7",
+      "box": [
+        0.05,
+        0.05,
+        0.12
+      ],
+      "category": "box",
+      "position": [
+        3.34,
+        19.08,
+        0.735
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.5,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_8",
+      "box": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "category": "box",
+      "position": [
+        3.0,
+        19.08,
+        0.411
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.55,
+        0.2,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_9",
+      "box": [
+        0.06,
+        0.06,
+        0.18
+      ],
+      "category": "box",
+      "position": [
+        3.2,
+        19.08,
+        0.451
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.5,
+        0.2,
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_10",
+      "box": [
+        0.08,
+        0.12,
+        0.05
+      ],
+      "category": "box",
+      "position": [
+        3.33,
+        19.08,
+        0.386
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.3,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_11",
+      "box": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "category": "box",
+      "position": [
+        2.99,
+        19.08,
+        0.142
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.45,
+        0.28,
+        0.15,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_12",
+      "box": [
+        0.05,
+        0.05,
+        0.2
+      ],
+      "category": "box",
+      "position": [
+        3.17,
+        19.08,
+        0.182
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.92,
+        0.78,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shL_13",
+      "box": [
+        0.09,
+        0.09,
+        0.09
+      ],
+      "category": "box",
+      "position": [
+        3.32,
+        19.08,
+        0.127
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.75,
+        0.1,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_0",
+      "box": [
+        0.08,
+        0.08,
+        0.08
+      ],
+      "category": "box",
+      "position": [
+        3.63,
+        19.08,
+        1.058
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.75,
+        0.1,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_1",
+      "box": [
+        0.06,
+        0.06,
+        0.16
+      ],
+      "category": "box",
+      "position": [
+        3.8,
+        19.08,
+        1.098
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.55,
+        0.2,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_2",
+      "box": [
+        0.12,
+        0.08,
+        0.05
+      ],
+      "category": "box",
+      "position": [
+        3.97,
+        19.08,
+        1.043
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.92,
+        0.78,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_3",
+      "box": [
+        0.03,
+        0.18,
+        0.22
+      ],
+      "category": "box",
+      "position": [
+        3.61,
+        19.08,
+        0.785
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.45,
+        0.28,
+        0.15,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_5",
+      "box": [
+        0.03,
+        0.18,
+        0.24
+      ],
+      "category": "box",
+      "position": [
+        3.69,
+        19.08,
+        0.795
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.75,
+        0.1,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_6",
+      "box": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "category": "box",
+      "position": [
+        3.88,
+        19.08,
+        0.71
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.08,
+        0.08,
+        0.09,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_7",
+      "box": [
+        0.05,
+        0.05,
+        0.12
+      ],
+      "category": "box",
+      "position": [
+        3.99,
+        19.08,
+        0.735
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.5,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_8",
+      "box": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "category": "box",
+      "position": [
+        3.65,
+        19.08,
+        0.411
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.55,
+        0.2,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_9",
+      "box": [
+        0.06,
+        0.06,
+        0.18
+      ],
+      "category": "box",
+      "position": [
+        3.85,
+        19.08,
+        0.451
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.5,
+        0.2,
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_10",
+      "box": [
+        0.08,
+        0.12,
+        0.05
+      ],
+      "category": "box",
+      "position": [
+        3.98,
+        19.08,
+        0.386
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.3,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_11",
+      "box": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "category": "box",
+      "position": [
+        3.64,
+        19.08,
+        0.142
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.45,
+        0.28,
+        0.15,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_12",
+      "box": [
+        0.05,
+        0.05,
+        0.2
+      ],
+      "category": "box",
+      "position": [
+        3.82,
+        19.08,
+        0.182
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.15,
+        0.3,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_shR_x0",
+      "box": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "category": "box",
+      "position": [
+        3.78,
+        19.08,
+        0.7
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.92,
+        0.78,
+        0.1,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "比较的是两座真实书架上的顶层和多层物体，而不是两张集中平面图；需逐层细看、确认遮挡并比对，建议中等100步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-04",
+  "legacy_name": "R2-16_office_diff",
+  "legacy_id": "R2-16",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "b6e45428e6271422b58c423909f77a265214d1574c0ae82d169ae641e48ed3b8"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-04",
+  "legacy_benchmark_id": "L2-04",
+  "recall_budget": 10,
+  "tip_window": 25
+}

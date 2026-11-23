@@ -1,0 +1,974 @@
+{
+  "name": "L3-02_office_inspector",
+  "scene": "Beechwood_0_garden",
+  "seed": 8001,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "To whoever finds this room: I am Inspector Hale. I had to leave in a hurry and could not take my case notes, so I locked them away the way my father taught me. His old wall clock stopped one afternoon, and I never wound it again. The time it stopped at opens the drawer where I keep my pencil.",
+      "overlay": {
+        "texture": "hint_fbd23cfa6d.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      },
+      "display": "letter"
+    },
+    {
+      "id": "page",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "text": "I wrote the code of my toolbox on the top page of my notepad, then tore the page off and burned it. But I always press too hard when I write.",
+      "display": "diary page",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.7,
+        0.4845
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "pencil",
+      "name": "office_pencil",
+      "category": "pencil",
+      "model": "almpve",
+      "kind": "clue",
+      "text": "",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "scale": 1.6,
+      "at": [
+        5.335,
+        16.88,
+        0.4905
+      ]
+    },
+    {
+      "id": "card",
+      "name": "office_postcard",
+      "category": "postcard",
+      "model": "aujfqp",
+      "kind": "clue",
+      "text": "The door code I never wrote where an eye could see it. My special ink only shows under this light. I hid it inside the white wardrobe.",
+      "display": "postcard",
+      "inside": "office_toolbox",
+      "part": 1,
+      "at": [
+        2.57,
+        17.22,
+        0.03
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "flashlight",
+      "name": "office_flashlight",
+      "category": "flashlight",
+      "model": "jtrbkc",
+      "kind": "tool",
+      "uv": true,
+      "display": "UV flashlight",
+      "inside": "office_toolbox",
+      "part": 1,
+      "at": [
+        2.57,
+        17.48,
+        0.052
+      ],
+      "yaw_deg": 90
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "5864",
+      "code_from": "look",
+      "look": [
+        {
+          "take": "office_postcard",
+          "note": "工具箱里的明信片"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "postcard"
+          },
+          "note": "读明信片：门码用隐形墨水写在白衣柜里"
+        },
+        {
+          "take": "office_flashlight",
+          "note": "工具箱里的紫外手电"
+        },
+        {
+          "at": [
+            2.95,
+            17.45
+          ],
+          "aim": [
+            3.105,
+            16.7,
+            0.9
+          ],
+          "note": "站到衣柜前"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "wardrobe",
+            "part": 1
+          },
+          "point_world": [
+            3.105,
+            16.7,
+            0.9
+          ],
+          "note": "开左边柜门"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "wardrobe",
+            "part": 2
+          },
+          "point_world": [
+            2.795,
+            16.7,
+            0.9
+          ],
+          "note": "开右边柜门"
+        },
+        {
+          "aim": [
+            2.95,
+            16.335,
+            1.05
+          ],
+          "note": "对着衣柜后板"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "wardrobe",
+            "item": "flashlight"
+          },
+          "point_world": [
+            2.95,
+            16.335,
+            1.05
+          ],
+          "note": "拿紫外手电照衣柜后板：显出门码 5864"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "part_locks": [
+    {
+      "id": "drawer_b2",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "lock": "1350",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.0,
+            18.2
+          ],
+          "aim": [
+            4.0,
+            19.25,
+            1.75
+          ],
+          "note": "信里说：父亲的钟停在一个下午 → 看钟：1:50 → 下午 13:50 → 1350"
+        }
+      ]
+    },
+    {
+      "id": "toolbox_lock",
+      "container": "office_toolbox",
+      "part": 1,
+      "lock": "2917",
+      "code_from": "look",
+      "look": [
+        {
+          "take": "office_diary_page",
+          "note": "柜子 B 第 2 层的日记页"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "diary page"
+          },
+          "note": "读日记页：工具箱的密码写在记事本最上面那页，撕了，但写得很用力"
+        },
+        {
+          "take": "office_pencil",
+          "note": "同一层的铅笔"
+        },
+        {
+          "at": [
+            4.8,
+            17.65
+          ],
+          "aim": [
+            5.4,
+            18.3,
+            0.79
+          ],
+          "note": "站到窗前书桌的记事本前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "notepad",
+            "item": "pencil"
+          },
+          "point_world": [
+            5.4,
+            18.3,
+            0.79
+          ],
+          "note": "拿铅笔在记事本上涂：压痕显出 2917"
+        },
+        {
+          "at": [
+            4.8,
+            17.65
+          ],
+          "aim": [
+            5.4,
+            18.3,
+            0.79
+          ],
+          "note": "看记事本上显出来的数"
+        }
+      ]
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "reveal",
+      "name": "office_notepad",
+      "tool": "pencil",
+      "flag": "rub",
+      "text": "You rubbed {it} over {tg}. Some marks show up on it."
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_clock",
+      "category": "wall_clock",
+      "model": "fqvgny",
+      "position": [
+        4.0,
+        19.252,
+        1.75
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90
+      ],
+      "hide_links": [
+        "glass"
+      ]
+    },
+    {
+      "name": "office_toolbox",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "toolbox",
+      "scale": [
+        1.0,
+        1.0,
+        0.6
+      ]
+    },
+    {
+      "name": "office_wardrobe",
+      "category": "wardrobe",
+      "model": "brimns",
+      "center": [
+        2.95,
+        16.506
+      ],
+      "yaw_deg": 90,
+      "scale": [
+        0.79,
+        0.79,
+        0.79
+      ]
+    },
+    {
+      "name": "office_notepad",
+      "category": "notepad",
+      "model": "njeocp",
+      "position": [
+        5.4,
+        18.3,
+        0.7823
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "scale": [
+        1.35,
+        1.35,
+        1.35
+      ],
+      "display": "notepad"
+    },
+    {
+      "name": "decor_s1uv_0a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        3.07,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_0f",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.095,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_0g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        3.07,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_0c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.045,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_0d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        3.07,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.99,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1b",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.965,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.965,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.99,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1e",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.015,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1f",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        3.015,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_1g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.99,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_2a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.91,
+        16.335,
+        1.1
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_2f",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.935,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_2g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.91,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_2e",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.935,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_2d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.91,
+        16.335,
+        1.0
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_2c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.885,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_3f",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.855,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_3g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.83,
+        16.335,
+        1.05
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_3b",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.805,
+        16.335,
+        1.075
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1uv_3c",
+      "plane": [
+        0.012,
+        0.05
+      ],
+      "position": [
+        2.805,
+        16.335,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.55,
+        0.3,
+        1.0,
+        1.0
+      ],
+      "uv_ink": true
+    },
+    {
+      "name": "decor_s1pad_rub",
+      "plane": [
+        0.2025,
+        0.2565
+      ],
+      "position": [
+        5.4,
+        18.3,
+        0.7865
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "s1_rub.png",
+      "cutout": true,
+      "hidden": true,
+      "rub": true,
+      "texture_scale": [
+        0.94,
+        0.4
+      ],
+      "texture_translate": [
+        0.03,
+        0.3
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_reason": "真实钟读时→抽屉取得铅笔→纸本拓印→工具箱取得紫外灯→衣柜显字；真实道具链，用户明确150步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "explicit partial example",
+    "current_deployed_max_steps": 180,
+    "new_proposed_max_steps": 180,
+    "proposal_not_silently_applied": true,
+    "example_status": "用户明确示例",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L3-02",
+  "legacy_name": "R4-19_office_inspector",
+  "legacy_id": "R4-19",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "用户明确示例",
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "5dfaaddb35c56e7237b2bef1391ed3e7333351e099388f806f777b85b8094fd3"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-31",
+  "legacy_benchmark_id": "L3-02",
+  "recall_budget": 10,
+  "tip_window": 25
+}

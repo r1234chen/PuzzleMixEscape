@@ -1,0 +1,568 @@
+{
+  "name": "L2-22_office_measure",
+  "scene": "Beechwood_0_garden",
+  "seed": 8107,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The shape taped on the floor is drawn on the card next to the sea picture, but turned around, with letters on four of its sides. Measure the sides with the ruler. The door code is the lengths in decimetres of the sides marked W, I, S and E, in that order.",
+      "overlay": {
+        "texture": "hint_6b77f900a3.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "ruler",
+      "name": "office_ruler",
+      "category": "ruler",
+      "model": "ckywbx",
+      "kind": "tool",
+      "text": "",
+      "place": {
+        "position": [
+          5.4002,
+          16.7502,
+          0.6949
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          45.0
+        ],
+        "container": "bottom_cabinet_nddvba_0"
+      },
+      "display": "ruler",
+      "scale": [
+        3.5,
+        5.0,
+        4.0
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "6257",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "站到地上的胶带线前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "line"
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：read 地上的胶带线"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "line"
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：take 地上的胶带线"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "line",
+            "part": 1
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：open 地上的胶带线"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "line",
+            "part": 1
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：close 地上的胶带线"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "line"
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：press 地上的胶带线"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "line",
+            "code": "1234"
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：unlock 地上的胶带线"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "post it"
+          },
+          "point_world": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "乱试：use 地上的胶带线"
+        },
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.05,
+            19.29,
+            1.4
+          ],
+          "note": "看北墙的卡片：转过的 L 形，四条边标 W I S E"
+        },
+        {
+          "take": "office_ruler",
+          "note": "柜子 B 顶上的尺子"
+        },
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            3.8499999999999996,
+            17.75,
+            0.0
+          ],
+          "note": "对着地上 W 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            3.8499999999999996,
+            17.75,
+            0.002
+          ],
+          "note": "量 W：6 分米"
+        },
+        {
+          "at": [
+            3.55,
+            17.4
+          ],
+          "aim": [
+            4.45,
+            17.150000000000002,
+            0.0
+          ],
+          "note": "对着地上 I 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            4.45,
+            17.150000000000002,
+            0.002
+          ],
+          "note": "量 I：2 分米"
+        },
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            4.1499999999999995,
+            17.5,
+            0.0
+          ],
+          "note": "对着地上 S 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            4.1499999999999995,
+            17.5,
+            0.002
+          ],
+          "note": "量 S：5 分米"
+        },
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            3.55,
+            17.400000000000002,
+            0.0
+          ],
+          "note": "对着地上 E 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            3.55,
+            17.400000000000002,
+            0.002
+          ],
+          "note": "量 E：7 分米"
+        }
+      ],
+      "wrong_reading": "2567"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "u7_edge_0",
+      "box": [
+        0.93,
+        0.03,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.0,
+        17.05,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_1",
+      "box": [
+        0.03,
+        0.23,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.45,
+        17.15,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_2",
+      "box": [
+        0.33,
+        0.03,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.3,
+        17.25,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_3",
+      "box": [
+        0.03,
+        0.53,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.15,
+        17.5,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_4",
+      "box": [
+        0.63,
+        0.03,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        3.85,
+        17.75,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_5",
+      "box": [
+        0.03,
+        0.73,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        3.55,
+        17.4,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "decor_u7_card",
+      "plane": [
+        0.5,
+        0.42
+      ],
+      "position": [
+        4.05,
+        19.286,
+        1.4
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u7_card.png"
+    }
+  ],
+  "max_steps": 150,
+  "gadgets": [
+    {
+      "type": "measure",
+      "name": "u7_edge_0",
+      "tool": "ruler",
+      "length": 9
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_1",
+      "tool": "ruler",
+      "length": 2
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_2",
+      "tool": "ruler",
+      "length": 3
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_3",
+      "tool": "ruler",
+      "length": 5
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_4",
+      "tool": "ruler",
+      "length": 6
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_5",
+      "tool": "ruler",
+      "length": 7
+    }
+  ],
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "关键是保留旋转前后的边身份，测量次数本身不是升档理由。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-22",
+  "legacy_name": "R3-30_office_measure",
+  "legacy_id": "R3-30",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "0eba8b2ff5337c1c3bb97c78a90b4698f758e213a12abc415ac50aab3ff18714"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-22",
+  "legacy_benchmark_id": "L2-22",
+  "recall_budget": 10,
+  "tip_window": 25
+}

@@ -1,0 +1,145 @@
+{
+  "name": "H1-05_dining_fireplace",
+  "scene": "Beechwood_0_garden",
+  "seed": 228,
+  "start": {
+    "room": "dining_room_0",
+    "xy": [
+      -5.1,
+      18.15
+    ],
+    "yaw_deg": -90
+  },
+  "prompt_intro": "You are a robot locked inside a house. You start in one room; your goal is to get out of the house.\nDoors may be locked. What opens them is not told in this message; you have to find out by searching.\nThings can be hidden inside furniture that opens, and some things are locked themselves (with a code lock or a keyhole).",
+  "doors_default": "unlocked",
+  "items": [
+    {
+      "id": "card",
+      "name": "escape_card",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "Dining room door: the number of chairs in this room, then the number of floor lamps, then the number of pictures, then the number of tables. The key to the garden door is in the cabinet on the right of the fireplace, as you face the fireplace. That cabinet's code is {cab}.",
+      "on": {
+        "category": "coffee_table",
+        "room": "dining_room_0"
+      }
+    },
+    {
+      "id": "key",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "gqbwfv",
+      "kind": "key",
+      "inside": "bottom_cabinet_qacthv_0",
+      "part": 1
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "inside": "bottom_cabinet_immwzb_1",
+      "part": 1,
+      "kind": "decoy"
+    }
+  ],
+  "doors": [
+    {
+      "id": "dining",
+      "name": "door_ohagsq_0",
+      "lock": {
+        "count": [
+          [
+            "straight_chair",
+            "dining_room_0"
+          ],
+          [
+            "floor_lamp",
+            "dining_room_0"
+          ],
+          [
+            "picture",
+            "dining_room_0"
+          ],
+          [
+            "coffee_table",
+            "dining_room_0"
+          ]
+        ],
+        "clue": "card"
+      },
+      "pass_checkpoint": true
+    },
+    {
+      "id": "exit",
+      "name": "door_lvncak_0",
+      "key": "key",
+      "exit": true
+    },
+    {
+      "name": "door_xdcuws_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_1",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_2",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_3",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_4",
+      "lock": null
+    }
+  ],
+  "max_steps": 200,
+  "part_locks": [
+    {
+      "id": "cab",
+      "container": "bottom_cabinet_qacthv_0",
+      "part": 1,
+      "lock": "random:3"
+    }
+  ],
+  "room_mode": "multi",
+  "difficulty": null,
+  "difficulty_reason": "多房间不分难度，统一200动作；保留原布局和谜题链。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "confirmed multi-room200 rule",
+    "current_deployed_max_steps": 200,
+    "new_proposed_max_steps": 200,
+    "proposal_not_silently_applied": true,
+    "example_status": "多房间统一规则（已确认）",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "H1-05",
+  "legacy_name": "H2-02_dining_fireplace",
+  "legacy_id": "H2-02",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "多房间统一规则（已确认）",
+  "budget_revision260": {
+    "actions": 200,
+    "recalls": 20,
+    "hint_window": 50,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "fdb4846f55dea2b4fe086872a4deaa9435d2d8f2a1961cfc78df99e639fc97ef"
+  },
+  "protocol": "unified_v2",
+  "public_id": "H1-05",
+  "legacy_benchmark_id": "H1-05",
+  "recall_budget": 20,
+  "tip_window": 50
+}

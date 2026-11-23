@@ -1,0 +1,686 @@
+{
+  "name": "L3-08_office_story_gardener",
+  "scene": "Beechwood_0_garden",
+  "seed": 1000025,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_reason": "将旋转示意图的W/I/S/E边与真实地面边对应并测量，取铲子挖出钥匙，开柜取玻璃瓶，在同房间水槽注水浮起末钥匙。",
+  "story_definition": {
+    "title": "园丁的温室记录",
+    "version": 100,
+    "form": "real native props, not a whiteboard table",
+    "causal_chain": [
+      "ruler aligned with measured native edges WISE6257 -> trowel drawer",
+      "trowel exposes bright key in real pot; manual take",
+      "manually taken pot key opens right storage-cabinet door; bottle on real middle shelf, page on real upper shelf",
+      "fill bottle at same-room real sink -> water level and floating key -> exit"
+    ],
+    "native_acceptance": "pending worker-C native/640x360 visual acceptance; CPU source geometry is not rendered acceptance",
+    "user_design_acceptance": "pending",
+    "worker_C_revision": "C6; actual110 east-side camera saw solid side panel; wardrobe and shelf props rigidly rotated -90deg to face east; real shelf heights/locks/text unchanged"
+  },
+  "items": [
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "I am the gardener. The greenhouse bed outline is marked on the floor, with a turned plan beside the sea picture. Measure the edges marked W, I, S and E, in that order, in decimetres, to open the second drawer. The ruler is on the desk. Follow the remaining pages to recover the bottle key without smashing the glass.",
+      "display": "letter"
+    },
+    {
+      "id": "ruler",
+      "name": "office_ruler",
+      "category": "ruler",
+      "model": "ckywbx",
+      "kind": "tool",
+      "text": "",
+      "display": "ruler",
+      "scale": [
+        3.5,
+        8.0,
+        4.0
+      ],
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "spot_near": [
+        4.15,
+        18.78
+      ]
+    },
+    {
+      "id": "trowel",
+      "name": "escape_trowel",
+      "category": "trowel",
+      "model": "ematag",
+      "kind": "tool",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.92,
+        0.491
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "boxkey",
+      "name": "escape_boxkey",
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "buried_in": "office_pot",
+      "dig_text": "You hear soil shifting.",
+      "manual_retrieval": true
+    },
+    {
+      "id": "page",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "text": "The storage cabinet key is buried in the plant pot. Uncover it with the trowel and take it yourself; it will not jump into your hand. The storage cabinet contains the glass bottle and the final page of this record.",
+      "at": [
+        5.335,
+        16.7,
+        0.4845
+      ],
+      "yaw_deg": 90,
+      "display": "gardener page"
+    },
+    {
+      "id": "bottle",
+      "name": "escape_bottle",
+      "category": "decanter",
+      "model": "ofasfw",
+      "scale": 0.75,
+      "display": "bottle",
+      "inner_at": "bottom",
+      "melts": false,
+      "breaks": false,
+      "fill_text": "You fill the bottle with water. The key floats up.",
+      "inner_take_text": "The key is at the bottom of the bottle. The neck is too narrow.",
+      "inside": "office_toolbox",
+      "part": 2,
+      "at": [
+        2.585,
+        17.505,
+        0.6709033081577042
+      ],
+      "yaw_deg": 0,
+      "shelf": 3
+    },
+    {
+      "id": "exitkey",
+      "name": "escape_key",
+      "category": "key",
+      "model": "ftdfir",
+      "kind": "key",
+      "inside_item": "bottle",
+      "scale": 2.0,
+      "yaw_deg": 30,
+      "native_gold_key": true
+    },
+    {
+      "id": "log",
+      "name": "office_postcard",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "office_toolbox",
+      "part": 2,
+      "text": "My key fell through the narrow bottle neck. It cannot be taken from the bottom, but it floats in water. Take the bottle to the supply sink in this room and fill it. The floating key releases the greenhouse exit.",
+      "at": [
+        2.585,
+        17.505,
+        0.357
+      ],
+      "yaw_deg": 270,
+      "display": "water record",
+      "shelf": 2
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "u7_edge_0",
+      "box": [
+        0.93,
+        0.03,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.0,
+        17.05,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_1",
+      "box": [
+        0.03,
+        0.23,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.45,
+        17.15,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_2",
+      "box": [
+        0.33,
+        0.03,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.3,
+        17.25,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_3",
+      "box": [
+        0.03,
+        0.53,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        4.15,
+        17.5,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_4",
+      "box": [
+        0.63,
+        0.03,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        3.85,
+        17.75,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "u7_edge_5",
+      "box": [
+        0.03,
+        0.73,
+        0.004
+      ],
+      "category": "tape",
+      "position": [
+        3.55,
+        17.4,
+        0.002
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.95,
+        0.8,
+        0.1,
+        1.0
+      ],
+      "display": "tape line"
+    },
+    {
+      "name": "decor_u7_card",
+      "plane": [
+        0.5,
+        0.42
+      ],
+      "position": [
+        4.05,
+        19.286,
+        1.4
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u7_card.png"
+    },
+    {
+      "name": "office_toolbox",
+      "category": "wardrobe",
+      "model": "brimns",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "storage cabinet",
+      "scale": [
+        0.79,
+        0.79,
+        0.79
+      ]
+    },
+    {
+      "name": "office_pot",
+      "category": "pot_plant",
+      "model": "mfnact",
+      "center": [
+        2.45,
+        16.62
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_supply_sink",
+      "category": "furniture_sink",
+      "model": "zexzrc",
+      "center": [
+        3.55,
+        18.68
+      ],
+      "yaw_deg": 0,
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ]
+    },
+    {
+      "name": "decor_water_record_folder_backing",
+      "box": [
+        0.32,
+        0.24,
+        0.002
+      ],
+      "position": [
+        2.585,
+        17.505,
+        0.3552
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.82,
+        0.67,
+        0.4,
+        1.0
+      ],
+      "visual_only": true,
+      "display": "water record backing"
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "measure",
+      "name": "u7_edge_0",
+      "tool": "ruler",
+      "length": 9
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_1",
+      "tool": "ruler",
+      "length": 2
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_2",
+      "tool": "ruler",
+      "length": 3
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_3",
+      "tool": "ruler",
+      "length": 5
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_4",
+      "tool": "ruler",
+      "length": 6
+    },
+    {
+      "type": "measure",
+      "name": "u7_edge_5",
+      "tool": "ruler",
+      "length": 7
+    }
+  ],
+  "part_locks": [
+    {
+      "id": "trowel_drawer",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "lock": "6257",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            4.0,
+            17.05,
+            0.002
+          ],
+          "note": "站到地上的胶带线前：下面对它把七个动作各试一次"
+        },
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.05,
+            19.29,
+            1.4
+          ],
+          "note": "看北墙的卡片：转过的 L 形，四条边标 W I S E"
+        },
+        {
+          "take": "office_ruler",
+          "note": "拿桌面的实际 0.92 m 尺子；沿边平行量，不用文字报数"
+        },
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            3.8499999999999996,
+            17.75,
+            0.0
+          ],
+          "note": "对着地上 W 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            3.8499999999999996,
+            17.75,
+            0.002
+          ],
+          "note": "量 W：6 分米"
+        },
+        {
+          "at": [
+            3.55,
+            17.4
+          ],
+          "aim": [
+            4.45,
+            17.150000000000002,
+            0.0
+          ],
+          "note": "对着地上 I 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            4.45,
+            17.150000000000002,
+            0.002
+          ],
+          "note": "量 I：2 分米"
+        },
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            4.1499999999999995,
+            17.5,
+            0.0
+          ],
+          "note": "对着地上 S 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            4.1499999999999995,
+            17.5,
+            0.002
+          ],
+          "note": "量 S：5 分米"
+        },
+        {
+          "at": [
+            3.25,
+            17.4
+          ],
+          "aim": [
+            3.55,
+            17.400000000000002,
+            0.0
+          ],
+          "note": "对着地上 E 那条边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "line",
+            "item": "ruler"
+          },
+          "point_world": [
+            3.55,
+            17.400000000000002,
+            0.002
+          ],
+          "note": "量 E：7 分米"
+        }
+      ]
+    },
+    {
+      "id": "water_toolbox",
+      "container": "office_toolbox",
+      "part": 2,
+      "key": "boxkey",
+      "pre_steps": [
+        {
+          "take": "office_diary_page"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "gardener page"
+          }
+        },
+        {
+          "take": "escape_trowel"
+        },
+        {
+          "at": [
+            3.05,
+            17.2
+          ],
+          "aim": [
+            2.45,
+            16.62,
+            0.2
+          ]
+        },
+        {
+          "claw": {
+            "action": "use",
+            "item": "trowel",
+            "target": "pot plant"
+          },
+          "point_sim": "office_pot"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "key chain"
+          },
+          "point_sim": "escape_boxkey",
+          "note": "只手动取走已露出的钥匙，不自动拿取"
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey",
+      "pre_steps": [
+        {
+          "take": "office_postcard"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "water record"
+          }
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "_instrument_dimensions_applied": true,
+  "water_key_observation": "floated_only",
+  "benchmark_id": "L3-08",
+  "legacy_name": "R4-25_office_story_gardener",
+  "legacy_id": "R4-25",
+  "naming_policy": "difficulty_names157",
+  "difficulty_assessment": {
+    "current_deployed_max_steps": 180,
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "classification_origin157": "用户本次要求·新增故事关",
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "8cd967123ebd436971d1e0bb1c880d130323df0c3d38557138181ebe401dff97"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-37",
+  "legacy_benchmark_id": "L3-08",
+  "recall_budget": 10,
+  "tip_window": 25
+}

@@ -1,0 +1,332 @@
+{
+  "name": "L2-20_office_bill",
+  "scene": "Beechwood_0_garden",
+  "seed": 7013,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Use the menu to add up the prices of all the food in this room. The door code is the total, without the dot.",
+      "overlay": {
+        "texture": "hint_507f82c157.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "menu",
+      "name": "office_menu",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "kind": "hint",
+      "text": "MENU. Pizza 6.40. Burger 3.80. Hot dog 2.50. Sandwich 4.20. Soda 1.30. Coffee 1.90. Fries 2.10. Salad 3.60.",
+      "on": "bottom_cabinet_nddvba_0",
+      "on_mode": "surface"
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "1340",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.0,
+            17.5
+          ],
+          "aim": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "站到柜子 A 上的汉堡前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "burger"
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：read 柜子 A 上的汉堡"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "burger"
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：take 柜子 A 上的汉堡"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "burger",
+            "part": 1
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：open 柜子 A 上的汉堡"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "burger",
+            "part": 1
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：close 柜子 A 上的汉堡"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "burger"
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：press 柜子 A 上的汉堡"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "burger",
+            "code": "1234"
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：unlock 柜子 A 上的汉堡"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "burger",
+            "item": "post it"
+          },
+          "point_world": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "乱试：use 柜子 A 上的汉堡"
+        },
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.9,
+            18.95,
+            0.8
+          ],
+          "note": "北墙书桌上的披萨和咖啡"
+        },
+        {
+          "at": [
+            4.0,
+            17.5
+          ],
+          "aim": [
+            3.85,
+            16.55,
+            0.75
+          ],
+          "note": "柜子 A 上的汉堡"
+        },
+        {
+          "at": [
+            4.55,
+            17.55
+          ],
+          "aim": [
+            5.3,
+            17.5,
+            0.85
+          ],
+          "note": "东墙书桌上的汽水"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_pizza",
+      "category": "pizza",
+      "model": "vyfhkm",
+      "position": [
+        5.2003,
+        18.9801,
+        0.7865
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "name": "office_burger",
+      "category": "hamburger",
+      "model": "fyswch",
+      "position": [
+        3.85,
+        16.55,
+        0.7347
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_soda",
+      "category": "can_of_soda",
+      "model": "bfrzvk",
+      "position": [
+        5.3001,
+        17.4999,
+        0.8472
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_coffee",
+      "category": "coffee_cup",
+      "model": "ckkwmj",
+      "position": [
+        4.5941,
+        18.9,
+        0.8159
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "真实食物分布在不同桌面和柜面，需探索、辨认、避免重复计数，再结合菜单结算；不只是看一張静态账单。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-20",
+  "legacy_name": "R3-27_office_bill",
+  "legacy_id": "R3-27",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "65068c1c42dd1f6d0014a4e2d2549490454e5eb0cffb64473e2c34842b15a7da"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-20",
+  "legacy_benchmark_id": "L2-20",
+  "recall_budget": 10,
+  "tip_window": 25
+}

@@ -1,0 +1,198 @@
+{
+  "name": "L2-24_office_walls",
+  "scene": "Beechwood_0_garden",
+  "seed": 553,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The window faces east.",
+      "overlay": {
+        "texture": "hint_d3e5a084d8.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "rule",
+      "name": "escape_rule",
+      "category": "post_it",
+      "model": "ooetjh",
+      "kind": "hint",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1,
+      "text": "The door code is the number of pictures on the north wall, the east wall, the south wall and the west wall."
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "2130",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            3.8,
+            17.8
+          ],
+          "aim": [
+            3.95,
+            19.29,
+            1.55
+          ],
+          "note": "看北墙的画"
+        },
+        {
+          "aim": [
+            5.67,
+            18.9,
+            1.5
+          ],
+          "note": "看东墙"
+        },
+        {
+          "aim": [
+            4.0,
+            16.29,
+            1.45
+          ],
+          "note": "看南墙"
+        },
+        {
+          "aim": [
+            2.05,
+            17.6,
+            1.4
+          ],
+          "note": "看西墙"
+        }
+      ],
+      "wrong_reading": "1302"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_picture_n2",
+      "category": "picture",
+      "model": "etixod",
+      "position": [
+        4.6,
+        19.282,
+        1.55
+      ],
+      "rpy_deg": [
+        90.0,
+        90.0,
+        0.0
+      ]
+    },
+    {
+      "name": "office_picture_s3",
+      "category": "picture",
+      "model": "cltbty",
+      "position": [
+        5.02,
+        16.298,
+        1.5
+      ],
+      "rpy_deg": [
+        -90.0,
+        90.0,
+        0.0
+      ]
+    },
+    {
+      "name": "office_picture_e1",
+      "category": "picture",
+      "model": "gwricv",
+      "position": [
+        5.666,
+        18.92,
+        1.5
+      ],
+      "rpy_deg": [
+        -180.0,
+        90.0,
+        0.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "要观察四面不同墙上的画并绑定方位、计数，属于多视角调查；建议100步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-24",
+  "legacy_name": "R4-08_office_walls",
+  "legacy_id": "R4-08",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "673228363475c93618a2560f3b919f80d3988fc3252e3649c73bbc27a3e59dc3"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-24",
+  "legacy_benchmark_id": "L2-24",
+  "recall_budget": 10,
+  "tip_window": 25
+}

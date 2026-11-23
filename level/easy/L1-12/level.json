@@ -1,0 +1,334 @@
+{
+  "name": "L2-12_office_rules",
+  "scene": "Beechwood_0_garden",
+  "seed": 7012,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "OFFICE RULES. 1. No food on the desks. 2. Keep the window closed. 3. Keep all drawers shut. 4. No plants on the floor. 5. No cups on the bookcase. 6. Chairs stay at the desks. 7. Nothing on top of the cabinets. 8. No shoes in the office. 9. The bin stays under the desk. The door code is the numbers of the rules that are broken in this room, from the smallest to the largest.",
+      "overlay": {
+        "texture": "hint_0e9ebaeab6.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "1459",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "站到桌上的披萨前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "pizza"
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：read 桌上的披萨"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "pizza"
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：take 桌上的披萨"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "pizza",
+            "part": 1
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：open 桌上的披萨"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "pizza",
+            "part": 1
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：close 桌上的披萨"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "pizza"
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：press 桌上的披萨"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "pizza",
+            "code": "1234"
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：unlock 桌上的披萨"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "pizza",
+            "item": "post it"
+          },
+          "point_world": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "乱试：use 桌上的披萨"
+        },
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            5.2,
+            18.98,
+            0.8
+          ],
+          "note": "北墙书桌上有吃的（第 1 条）"
+        },
+        {
+          "at": [
+            4.6,
+            17.45
+          ],
+          "aim": [
+            4.72,
+            16.75,
+            0.2
+          ],
+          "note": "两个柜子之间地上的花（第 4 条）"
+        },
+        {
+          "at": [
+            2.9,
+            16.95
+          ],
+          "aim": [
+            2.18,
+            17.2,
+            1.33
+          ],
+          "note": "书架上的杯子（第 5 条）"
+        },
+        {
+          "at": [
+            3.3,
+            17.9
+          ],
+          "aim": [
+            3.3,
+            18.55,
+            0.2
+          ],
+          "note": "屋子里的垃圾桶（第 9 条）"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_pizza",
+      "category": "pizza",
+      "model": "vyfhkm",
+      "position": [
+        5.2003,
+        18.9801,
+        0.7865
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "name": "office_floor_plant",
+      "category": "pot_plant",
+      "model": "aantth",
+      "position": [
+        4.7152,
+        16.7601,
+        0.1993
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_mug",
+      "category": "mug",
+      "model": "dhnxww",
+      "position": [
+        2.18,
+        17.1999,
+        1.3175
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_bin",
+      "category": "trash_can",
+      "model": "cdzyew",
+      "position": [
+        3.2916,
+        18.55,
+        0.1608
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "需要巡视房间并核对多个真实物体之间是否违反规定，不能从单一题板直接取码；建议100步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-12",
+  "legacy_name": "R3-10_office_rules",
+  "legacy_id": "R3-10",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "4a0fb48921e745b6622a4c87cdcf562d8fab19e354f6fe648b0e1a01d44437a1"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-12",
+  "legacy_benchmark_id": "L2-12",
+  "recall_budget": 10,
+  "tip_window": 25
+}

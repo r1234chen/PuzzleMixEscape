@@ -1,0 +1,203 @@
+{
+  "name": "H1-06_twin_offices",
+  "scene": "office_cubicles_left",
+  "seed": 261,
+  "start": {
+    "room": "shared_office_0",
+    "xy": [
+      -13.5,
+      13.3
+    ],
+    "yaw_deg": 180
+  },
+  "prompt_intro": "You are a robot locked inside an office building. You start in one room; your goal is to get out of the building.\nDoors may be locked. What opens them is not told in this message; you have to find out by searching.\nThings can be hidden inside furniture that opens, and some things are locked themselves (with a code lock or a keyhole).",
+  "doors_default": "unlocked",
+  "items": [
+    {
+      "id": "card",
+      "name": "escape_card",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "The exit door code is in the cabinet of the office with the plant.",
+      "on": {
+        "category": "coffee_table",
+        "room": "shared_office_0"
+      },
+      "fixed": true,
+      "on_mode": "surface"
+    },
+    {
+      "id": "real",
+      "name": "escape_real",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "Exit door code: {exit}",
+      "inside": "bottom_cabinet_slgzfc_2",
+      "part": 1
+    },
+    {
+      "id": "fake",
+      "name": "escape_fake",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "Exit door code: 5821",
+      "inside": "bottom_cabinet_slgzfc_3",
+      "part": 1,
+      "kind": "decoy"
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_pwoerr_6",
+      "lock": "random:4",
+      "exit": true
+    },
+    {
+      "id": "twin_plant",
+      "name": "door_ggcyib_2",
+      "unlocked": true,
+      "pass_checkpoint": true
+    },
+    {
+      "id": "twin_other",
+      "name": "door_ggcyib_4",
+      "unlocked": true,
+      "pass_checkpoint": true
+    },
+    {
+      "name": "door_ggcyib_6",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_9",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_0",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_4",
+      "lock": null
+    },
+    {
+      "name": "door_lztyfn_0",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_2",
+      "lock": null
+    },
+    {
+      "name": "door_xqxiyb_0",
+      "lock": null
+    },
+    {
+      "name": "door_ggcyib_0",
+      "lock": null
+    },
+    {
+      "name": "door_ggcyib_1",
+      "lock": null
+    },
+    {
+      "name": "door_ggcyib_3",
+      "lock": null
+    },
+    {
+      "name": "door_ggcyib_5",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_1",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_3",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_5",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_7",
+      "lock": null
+    },
+    {
+      "name": "door_pwoerr_8",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "add_plant",
+      "category": "pot_plant",
+      "model": "iblutb",
+      "center": [
+        -9.45,
+        -4.4
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "seal_south",
+      "wall": [
+        -12.66,
+        -13.56,
+        -12.54,
+        -11.15
+      ],
+      "z": [
+        0.0,
+        3.1
+      ]
+    },
+    {
+      "name": "seal_north",
+      "wall": [
+        -12.66,
+        8.1,
+        -12.54,
+        10.1
+      ],
+      "z": [
+        0.0,
+        3.1
+      ]
+    }
+  ],
+  "max_steps": 200,
+  "room_mode": "multi",
+  "difficulty": null,
+  "difficulty_reason": "多房间不分难度，统一200动作；保留原布局和谜题链。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "confirmed multi-room200 rule",
+    "current_deployed_max_steps": 200,
+    "new_proposed_max_steps": 200,
+    "proposal_not_silently_applied": true,
+    "example_status": "多房间统一规则（已确认）",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "H1-06",
+  "legacy_name": "H2-03_twin_offices",
+  "legacy_id": "H2-03",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "多房间统一规则（已确认）",
+  "budget_revision260": {
+    "actions": 200,
+    "recalls": 20,
+    "hint_window": 50,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "6aae0ed64a49edb8da452422ebb1685f3aed5e17be8d322f02ee21299d971ccd"
+  },
+  "protocol": "unified_v2",
+  "public_id": "H1-06",
+  "legacy_benchmark_id": "H1-06",
+  "recall_budget": 20,
+  "tip_window": 50
+}

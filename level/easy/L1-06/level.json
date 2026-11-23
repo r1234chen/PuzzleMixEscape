@@ -1,0 +1,531 @@
+{
+  "name": "L2-06_office_turn",
+  "scene": "Beechwood_0_garden",
+  "seed": 7002,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Turn the toys on the desk by the window until they look exactly like the photo on the wall. Pressing a toy turns it a quarter turn.",
+      "overlay": {
+        "texture": "hint_88f8c21ce7.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "at": [
+            4.72,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "站到中间的乌龟前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "乱试：read 中间的乌龟"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "乱试：take 中间的乌龟"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "toy figure",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "乱试：open 中间的乌龟"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "toy figure",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "乱试：close 中间的乌龟"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "toy figure",
+            "code": "1234"
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "乱试：unlock 中间的乌龟"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "toy figure",
+            "item": "post it"
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "乱试：use 中间的乌龟"
+        },
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.95,
+            19.29,
+            1.55
+          ],
+          "note": "看北墙上的照片"
+        },
+        {
+          "at": [
+            4.72,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.94,
+            0.82
+          ],
+          "note": "回到五个玩偶前"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.4,
+            0.844
+          ],
+          "note": "转鱼（1/3）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.4,
+            0.844
+          ],
+          "note": "转鱼（2/3）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.4,
+            0.844
+          ],
+          "note": "转鱼（3/3）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.67,
+            0.811
+          ],
+          "note": "转恐龙（1/2）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.67,
+            0.811
+          ],
+          "note": "转恐龙（2/2）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            17.94,
+            0.835
+          ],
+          "note": "转乌龟（1/1）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            18.21,
+            0.821
+          ],
+          "note": "转马（1/3）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            18.21,
+            0.821
+          ],
+          "note": "转马（2/3）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            18.21,
+            0.821
+          ],
+          "note": "转马（3/3）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            18.48,
+            0.826
+          ],
+          "note": "转鲨鱼（1/2）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            18.48,
+            0.826
+          ],
+          "note": "转鲨鱼（2/2）：五个都和照片一样，咔哒一声，门锁解开"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_fig_fish",
+      "category": "toy_figure",
+      "model": "gqspnb",
+      "position": [
+        5.3734,
+        17.399,
+        0.846
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "display": "toy fish"
+    },
+    {
+      "name": "office_fig_dino",
+      "category": "toy_figure",
+      "model": "orunry",
+      "position": [
+        5.3825,
+        17.6853,
+        0.81
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "display": "toy dinosaur"
+    },
+    {
+      "name": "office_fig_turtle",
+      "category": "toy_figure",
+      "model": "gyrsew",
+      "position": [
+        5.3897,
+        17.9401,
+        0.8358
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "display": "toy turtle"
+    },
+    {
+      "name": "office_fig_horse",
+      "category": "toy_figure",
+      "model": "vcmcoi",
+      "position": [
+        5.3855,
+        18.2058,
+        0.8121
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        270.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "display": "toy horse"
+    },
+    {
+      "name": "office_fig_shark",
+      "category": "toy_figure",
+      "model": "lfxygp",
+      "position": [
+        5.3849,
+        18.4732,
+        0.8082
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "display": "toy shark"
+    },
+    {
+      "name": "decor_t2_photo",
+      "plane": [
+        0.96,
+        0.25
+      ],
+      "position": [
+        4.95,
+        19.284,
+        1.55
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T2_ref.png"
+    }
+  ],
+  "max_steps": 150,
+  "gadgets": [
+    {
+      "type": "rotator",
+      "name": "office_fig_fish",
+      "group": "figures",
+      "turns": 0,
+      "target": 3,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "office_fig_dino",
+      "group": "figures",
+      "turns": 0,
+      "target": 2,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "office_fig_turtle",
+      "group": "figures",
+      "turns": 0,
+      "target": 1,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "office_fig_horse",
+      "group": "figures",
+      "turns": 0,
+      "target": 3,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "office_fig_shark",
+      "group": "figures",
+      "turns": 0,
+      "target": 2,
+      "period": 4,
+      "step": 90.0
+    }
+  ],
+  "slot_groups": {
+    "figures": {
+      "kind": "rotate",
+      "door": "door_lvgliq_1"
+    }
+  },
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "需要跨图片和立体玩偶保持姿态对应，不能只当作重复按按钮。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-06",
+  "legacy_name": "R2-21_office_turn",
+  "legacy_id": "R2-21",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "0528a9abeff881b290a9f886a62da908fba9e4806ac74388badeccdb4e48ad11"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-06",
+  "legacy_benchmark_id": "L2-06",
+  "recall_budget": 10,
+  "tip_window": 25
+}

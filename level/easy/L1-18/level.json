@@ -1,0 +1,116 @@
+{
+  "name": "L2-18_office_colors",
+  "scene": "Beechwood_0_garden",
+  "seed": 220,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "card",
+      "name": "escape_card",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "Door code: blue, white, yellow, pink.",
+      "on": "desk_rzyfxk_0",
+      "fixed": true
+    },
+    {
+      "id": "c_yellow",
+      "name": "escape_c_yellow",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "{c_yellow}",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1,
+      "digit": true
+    },
+    {
+      "id": "c_blue",
+      "name": "escape_c_blue",
+      "category": "post_it",
+      "model": "xakxes",
+      "text": "{c_blue}",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1,
+      "digit": true
+    },
+    {
+      "id": "c_pink",
+      "name": "escape_c_pink",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "{c_pink}",
+      "on": "bottom_cabinet_nddvba_0",
+      "fixed": true,
+      "digit": true
+    },
+    {
+      "id": "c_white",
+      "name": "escape_c_white",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "{c_white}",
+      "on": "desk_rzyfxk_1",
+      "fixed": true,
+      "digit": true
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": {
+        "concat": [
+          "c_blue",
+          "c_white",
+          "c_yellow",
+          "c_pink"
+        ]
+      },
+      "clue": "card"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "四种颜色数字分布在两柜与不同桌面，要跨地点取信息；归探索量中等，而不是颜色推理复杂。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-18",
+  "legacy_name": "R3-21_office_colors",
+  "legacy_id": "R3-21",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "6b04f2d9234f03fdadf60b6b7ddc7a509bff5c7aa7c9a9fae72215cc3e7c4422"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-18",
+  "legacy_benchmark_id": "L2-18",
+  "recall_budget": 10,
+  "tip_window": 25
+}

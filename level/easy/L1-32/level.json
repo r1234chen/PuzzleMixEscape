@@ -1,0 +1,412 @@
+{
+  "name": "L3-03_office_story_archive",
+  "scene": "Beechwood_0_garden",
+  "seed": 930020,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_reason": "读真实钟开启铲子抽屉，挖土后手动取钥匙，开箱取得铅笔，拓印恢复出口码；前阶段道具实际启用后阶段。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "items": [
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "I am Mara, the archivist. Before leaving, I stopped the wall clock during the afternoon. Read its time in 24-hour HHMM form to open the lower cabinet, second drawer. My gardening tool and the next page of my letter are inside. Please recover my departure record without tearing any more pages from my notepad.",
+      "display": "letter"
+    },
+    {
+      "id": "page",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "text": "During the move I hid the toolbox key under the soil in the plant pot, not inside another drawer. Use the small gardening tool to uncover it, then take the key yourself. The toolbox holds my pencil and the rest of my letter.",
+      "display": "diary page",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.7,
+        0.4845
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "trowel",
+      "name": "escape_trowel",
+      "category": "trowel",
+      "model": "ematag",
+      "kind": "tool",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.92,
+        0.491
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "boxkey",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "buried_in": "office_pot",
+      "dig_text": "You hear soil shifting.",
+      "manual_retrieval": true
+    },
+    {
+      "id": "pencil",
+      "name": "office_pencil",
+      "category": "pencil",
+      "model": "almpve",
+      "kind": "clue",
+      "text": "",
+      "inside": "office_toolbox",
+      "part": 1,
+      "scale": 1.6,
+      "at": [
+        2.57,
+        17.48,
+        0.05
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "card",
+      "name": "office_postcard",
+      "category": "postcard",
+      "model": "aujfqp",
+      "kind": "clue",
+      "text": "My departure record was on the top sheet of the notepad. I tore that sheet away, but the writing left indentations in the sheet underneath. The pencil can recover the marks. The recovered four digits release the exit; this is the last part of my letter.",
+      "display": "postcard",
+      "inside": "office_toolbox",
+      "part": 1,
+      "at": [
+        2.57,
+        17.22,
+        0.03
+      ],
+      "yaw_deg": 90
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_clock",
+      "category": "wall_clock",
+      "model": "fqvgny",
+      "position": [
+        4.0,
+        19.252,
+        1.75
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90
+      ],
+      "hide_links": [
+        "glass"
+      ],
+      "scale": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    {
+      "name": "office_toolbox",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "toolbox",
+      "scale": [
+        1.0,
+        1.0,
+        0.6
+      ]
+    },
+    {
+      "name": "office_pot",
+      "category": "pot_plant",
+      "model": "mfnact",
+      "center": [
+        2.45,
+        16.62
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_notepad",
+      "category": "notepad",
+      "model": "njeocp",
+      "position": [
+        5.4,
+        18.3,
+        0.7837
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "scale": [
+        1.9,
+        1.9,
+        1.9
+      ],
+      "display": "notepad"
+    },
+    {
+      "name": "decor_pad_rub",
+      "plane": [
+        0.285,
+        0.361
+      ],
+      "position": [
+        5.4,
+        18.3,
+        0.789
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T37_rub.png",
+      "cutout": true,
+      "hidden": true,
+      "rub": true,
+      "texture_scale": [
+        1,
+        1
+      ],
+      "texture_translate": [
+        0,
+        0
+      ]
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "reveal",
+      "name": "office_notepad",
+      "tool": "pencil",
+      "flag": "rub",
+      "text": "You rubbed {it} over {tg}. Some marks show up on it."
+    }
+  ],
+  "part_locks": [
+    {
+      "id": "drawer_b2",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "lock": "1350",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.0,
+            18.2
+          ],
+          "aim": [
+            4.0,
+            19.25,
+            1.75
+          ],
+          "note": "档案员的钟停止于下午；按24小时读时1350"
+        }
+      ]
+    },
+    {
+      "id": "archive_toolbox",
+      "container": "office_toolbox",
+      "part": 1,
+      "key": "boxkey",
+      "pre_steps": [
+        {
+          "take": "office_diary_page",
+          "note": "读抽屉内的信，不能提前拿后续道具"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "diary page"
+          },
+          "note": "信说明为什么要挖花盆寻找工具箱钥匙"
+        },
+        {
+          "take": "escape_trowel",
+          "note": "取前阶段抽屉里的真实铲子"
+        },
+        {
+          "at": [
+            3.05,
+            17.2
+          ],
+          "aim": [
+            2.45,
+            16.62,
+            0.2
+          ],
+          "note": "走近花盆并向下看土面，不能自动转镜头"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "item": "trowel",
+            "target": "pot plant"
+          },
+          "point_sim": "office_pot",
+          "note": "挖土后钥匙留在真实洞口，不自动加入手持列表"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "key chain"
+          },
+          "point_sim": "escape_key",
+          "note": "手动拿取土面上露出的钥匙"
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "6142",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.8,
+            18.2
+          ],
+          "aim": [
+            5.4,
+            18.3,
+            0.8
+          ],
+          "note": "看记事本上显出来的数"
+        }
+      ],
+      "pre_steps": [
+        {
+          "take": "office_postcard",
+          "note": "取得工具箱内的后半封信；这会递归解锁真实前置链"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "postcard"
+          },
+          "note": "读最后的信：恢复纸上压痕"
+        },
+        {
+          "take": "office_pencil",
+          "note": "拿柜子 A 第一层抽屉里的铅笔"
+        },
+        {
+          "at": [
+            4.8,
+            18.2
+          ],
+          "aim": [
+            5.4,
+            18.3,
+            0.79
+          ],
+          "note": "站到东墙书桌的记事本前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "notepad",
+            "item": "pencil"
+          },
+          "point_world": [
+            5.4,
+            18.3,
+            0.79
+          ],
+          "note": "拿铅笔在记事本上涂：压痕的地方显出数来"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "story_definition": {
+    "title": "档案员的归还凭据",
+    "version": 95,
+    "form": "actual rendered physical props; NO text wall boards",
+    "causal_chain": [
+      "real clock HHMM1350 unlocks drawer containing trowel",
+      "trowel digs soil exposing a visible key; manual take",
+      "that key unlocks toolbox containing pencil",
+      "pencil rubs real notepad, rendering graphite marks6142",
+      "read recovered native image and unlock exit"
+    ],
+    "native_acceptance": "pending corrected manual pickup and full-texture graphite clarity",
+    "user_design_acceptance": "pending",
+    "scope": "first corrected physical prototype, not eight completed new levels"
+  },
+  "benchmark_id": "L3-03",
+  "legacy_name": "R4-20_office_story_archive",
+  "legacy_id": "R4-20",
+  "naming_policy": "difficulty_names157",
+  "difficulty_assessment": {
+    "current_deployed_max_steps": 180,
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "classification_origin157": "用户本次要求·新增故事关",
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "3bb34d025e3af5452d174797beb9fb6249640db2c32dce88324e94e1d1043b8c"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-32",
+  "legacy_benchmark_id": "L3-03",
+  "recall_budget": 10,
+  "tip_window": 25
+}

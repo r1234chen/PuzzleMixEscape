@@ -1,0 +1,104 @@
+{
+  "name": "L2-16_laundry_five",
+  "scene": "Beechwood_0_garden",
+  "seed": 223,
+  "start": {
+    "room": "utility_room_0",
+    "xy": [
+      3.88,
+      20.48
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "note",
+      "name": "escape_note",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "Diary: {diary}",
+      "on": "bottom_cabinet_slgzfc_0"
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "inside": "bottom_cabinet_slgzfc_0",
+      "part": 1,
+      "kind": "decoy"
+    },
+    {
+      "id": "diary",
+      "name": "escape_diary",
+      "category": "notebook",
+      "model": "qwhiqc",
+      "text": "Bottom drawer: {drawer}",
+      "inside": "bottom_cabinet_slgzfc_0",
+      "part": 2,
+      "lock": "random:3"
+    },
+    {
+      "id": "key",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "gqbwfv",
+      "kind": "key",
+      "inside": "bottom_cabinet_slgzfc_0",
+      "part": 4
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_2",
+      "exit": true,
+      "key": "key"
+    },
+    {
+      "name": "door_lvgliq_5",
+      "lock": null
+    }
+  ],
+  "max_steps": 150,
+  "part_locks": [
+    {
+      "id": "drawer",
+      "container": "bottom_cabinet_slgzfc_0",
+      "part": 4,
+      "lock": "random:4"
+    }
+  ],
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "纸条、上锁日记、带锁抽屉和钥匙构成串行访问流程；虽然答案明示，仍有多阶段实体操作，不按故事困难处理。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-16",
+  "legacy_name": "R3-18_laundry_five",
+  "legacy_id": "R3-18",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "611cc5ff050d53bcac44eca5a6c4574caef7a4e1c18aeae10ae1a128a64ed827"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-16",
+  "legacy_benchmark_id": "L2-16",
+  "recall_budget": 10,
+  "tip_window": 25
+}

@@ -1,0 +1,695 @@
+{
+  "name": "L2-27_office_jugs",
+  "scene": "Beechwood_0_garden",
+  "seed": 7016,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Pour exactly four litres of water into the ice bucket. The tall jug holds five litres and the short jug holds three litres. You can fill a jug from the water bucket, pour one jug into the other, and empty a jug into the pot plant. The two trays are for putting a jug down.",
+      "overlay": {
+        "texture": "hint_e68a8b0533.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "jug5",
+      "name": "office_jug5",
+      "category": "jug",
+      "model": "quzmfw",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.35,
+          18.95,
+          0.9172
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      },
+      "display": "tall jug"
+    },
+    {
+      "id": "jug3",
+      "name": "office_jug3",
+      "category": "jug",
+      "model": "llexze",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.6197,
+          18.9356,
+          0.8857
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      },
+      "display": "short jug"
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "站到冰桶前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "ice bucket"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：read 冰桶"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "ice bucket"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：take 冰桶"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "ice bucket",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：open 冰桶"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "ice bucket",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：close 冰桶"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "ice bucket"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：press 冰桶"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "ice bucket",
+            "code": "1234"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：unlock 冰桶"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ice bucket",
+            "item": "post it"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "乱试：use 冰桶"
+        },
+        {
+          "take": "office_jug5",
+          "note": "拿高的壶（5 升，北墙书桌上）"
+        },
+        {
+          "at": [
+            4.05,
+            17.15
+          ],
+          "aim": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "走到柜子 A 的水桶前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "5 升壶装满"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "到冰桶前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ice bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "先倒错：5 升整壶倒进冰桶（不对，水流走了）"
+        },
+        {
+          "at": [
+            4.05,
+            17.15
+          ],
+          "aim": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "回水桶"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "5 升壶再装满"
+        },
+        {
+          "take": "office_jug3",
+          "note": "拿矮的壶（3 升，北墙书桌上）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "到东墙书桌的托盘前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tray",
+            "item": "short jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "3 升壶放到托盘 B 上"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "short jug",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "5 升倒进 3 升（5 升剩 2）"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tray",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            18.32,
+            0.786
+          ],
+          "note": "5 升壶放到托盘 A 上"
+        },
+        {
+          "take": "office_jug3",
+          "note": "拿起托盘 B 上的 3 升壶"
+        },
+        {
+          "at": [
+            5.0,
+            17.25
+          ],
+          "aim": [
+            5.4,
+            16.75,
+            0.8912192596435546
+          ],
+          "note": "走到柜子 B 上的花盆前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "pot plant",
+            "item": "short jug"
+          },
+          "point_world": [
+            5.4,
+            16.75,
+            0.8912192596435546
+          ],
+          "note": "3 升壶的水倒进花盆（倒空）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "回托盘前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tray",
+            "item": "short jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.786
+          ],
+          "note": "3 升壶放回托盘 B"
+        },
+        {
+          "take": "office_jug5",
+          "note": "拿起托盘 A 上的 5 升壶（里面 2 升）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "对着托盘 B 上的 3 升壶"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "short jug",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "2 升倒进 3 升壶（3 升壶里 2 升）"
+        },
+        {
+          "at": [
+            4.05,
+            17.15
+          ],
+          "aim": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "回水桶"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            4.05,
+            16.5,
+            0.9330085946798324
+          ],
+          "note": "5 升壶装满"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "回托盘前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "short jug",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.98,
+            0.8853017959594727
+          ],
+          "note": "倒满 3 升壶（倒过去 1 升，5 升壶剩 4 升）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "到冰桶前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ice bucket",
+            "item": "tall jug"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            1.0921325073242187
+          ],
+          "note": "4 升倒进冰桶：咔哒一声，门锁解开"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_water_bucket",
+      "category": "bucket",
+      "model": "bdhvnt",
+      "position": [
+        4.05,
+        16.5,
+        0.849
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "display": "water bucket"
+    },
+    {
+      "name": "office_plant",
+      "category": "pot_plant",
+      "model": "azfbnd",
+      "position": [
+        5.3938,
+        16.7456,
+        0.8858
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "office_ice_bucket",
+      "category": "ice_bucket",
+      "model": "vlurir",
+      "position": [
+        5.3803,
+        17.4999,
+        0.9716
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "tray_a",
+      "box": [
+        0.22,
+        0.22,
+        0.008
+      ],
+      "category": "tray",
+      "display": "tray",
+      "position": [
+        5.38,
+        18.32,
+        0.782
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.55,
+        0.4,
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "name": "tray_b",
+      "box": [
+        0.22,
+        0.22,
+        0.008
+      ],
+      "category": "tray",
+      "display": "tray",
+      "position": [
+        5.38,
+        17.98,
+        0.782
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.55,
+        0.4,
+        0.25,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "gadgets": [
+    {
+      "type": "jug_fill",
+      "name": "office_water_bucket"
+    },
+    {
+      "type": "jug_empty",
+      "name": "office_plant"
+    },
+    {
+      "type": "jug_goal",
+      "name": "office_ice_bucket",
+      "need": 4,
+      "door": "door_lvgliq_1"
+    },
+    {
+      "type": "slot",
+      "name": "tray_a",
+      "group": "trays"
+    },
+    {
+      "type": "slot",
+      "name": "tray_b",
+      "group": "trays"
+    }
+  ],
+  "slot_groups": {
+    "trays": {
+      "kind": "rest",
+      "items": [
+        "jug5",
+        "jug3"
+      ]
+    }
+  },
+  "jugs": {
+    "cap": {
+      "jug5": 5,
+      "jug3": 3
+    }
+  },
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "5L与3L壶需要装满、倒空和互倒，最后给冰桶倒入4L；按你明确的多步操作示例100步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "explicit partial example",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "用户明确示例",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-27",
+  "legacy_name": "R4-11_office_jugs",
+  "legacy_id": "R4-11",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "用户明确示例",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "59797e2c649d1731354d1cafa671d0072b0ccd9f282ad862ac3089132d5d8b23"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-27",
+  "legacy_benchmark_id": "L2-27",
+  "recall_budget": 10,
+  "tip_window": 25
+}

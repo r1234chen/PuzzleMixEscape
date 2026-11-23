@@ -1,0 +1,13 @@
+{
+  "public_id": "H2-14",
+  "source_id": "R36",
+  "paper_group": "hard",
+  "entry": "level_R36.py",
+  "max_steps": 250,
+  "recall_budget": 25,
+  "tip_window": 60,
+  "image_size": [
+    640,
+    360
+  ]
+}

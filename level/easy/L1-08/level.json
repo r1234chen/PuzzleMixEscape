@@ -1,0 +1,666 @@
+{
+  "name": "L2-08_office_pacing",
+  "scene": "Beechwood_0_garden",
+  "seed": 8105,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Stand on the floor tile with the red star, facing the window. Move three tiles forward, then turn right and move one tile. The door key is under the tile you end on.",
+      "overlay": {
+        "texture": "hint_6ade8aa2d9.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "exitkey",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "text": "",
+      "buried_in": "u5_tile_3_1",
+      "dig_text": "You pry up the floor tile with the scraper and find something under it."
+    },
+    {
+      "id": "scraper",
+      "name": "office_scraper",
+      "category": "scraper",
+      "model": "icqmje",
+      "kind": "tool",
+      "text": "",
+      "dig_tool": true,
+      "display": "scraper",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey",
+      "pre_steps": [
+        {
+          "at": [
+            3.1,
+            17.48
+          ],
+          "aim": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "站到红星地砖前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "tile"
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：read 红星地砖"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "tile"
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：take 红星地砖"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "tile",
+            "part": 1
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：open 红星地砖"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "tile",
+            "part": 1
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：close 红星地砖"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：press 红星地砖"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "tile",
+            "code": "1234"
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：unlock 红星地砖"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tile",
+            "item": "post it"
+          },
+          "point_world": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "乱试：use 红星地砖"
+        },
+        {
+          "at": [
+            3.1,
+            17.48
+          ],
+          "aim": [
+            3.56,
+            17.8,
+            0.0
+          ],
+          "note": "看红星地砖（西北角）"
+        },
+        {
+          "at": [
+            3.6,
+            17.2
+          ],
+          "aim": [
+            4.52,
+            17.48,
+            0.0
+          ],
+          "note": "面朝窗户往前三块、右转一块：第 4 列、中间那一行"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "u5_tile_0_0",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        3.56,
+        17.16,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_0_1",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        3.56,
+        17.48,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_0_2",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        3.56,
+        17.8,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_1_0",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        3.88,
+        17.16,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_1_1",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        3.88,
+        17.48,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_1_2",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        3.88,
+        17.8,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_2_0",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.2,
+        17.16,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_2_1",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.2,
+        17.48,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_2_2",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.2,
+        17.8,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_3_0",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.52,
+        17.16,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_3_1",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.52,
+        17.48,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_3_2",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.52,
+        17.8,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_4_0",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.84,
+        17.16,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_4_1",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.84,
+        17.48,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.62,
+        0.52,
+        0.4,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "u5_tile_4_2",
+      "box": [
+        0.31,
+        0.31,
+        0.006
+      ],
+      "category": "floor_tile",
+      "position": [
+        4.84,
+        17.8,
+        0.003
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ],
+      "display": "floor tile"
+    },
+    {
+      "name": "decor_u5_star",
+      "plane": [
+        0.2,
+        0.2
+      ],
+      "position": [
+        3.56,
+        17.8,
+        0.0068
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u5_star.png",
+      "cutout": true
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "必须在3D房间实际按路线推进并定位唯一可挖地砖，再使用铲子取物；不是纸面迷宫，保留你的100步示例。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "explicit partial example",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "用户明确示例",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-08",
+  "legacy_name": "R2-29_office_pacing",
+  "legacy_id": "R2-29",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "用户明确示例",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "3853ad53afd61f8758e7e765cbc8ea6b36d2caba662ba0faba14f669ab5e28c2"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-08",
+  "legacy_benchmark_id": "L2-08",
+  "recall_budget": 10,
+  "tip_window": 25
+}

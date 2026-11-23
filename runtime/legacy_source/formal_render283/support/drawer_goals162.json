@@ -1,0 +1,3796 @@
+{
+  "version": 162,
+  "stage_selection_version": 159,
+  "base773hint_policy": "Keep original reviewed cue in private evidence; deployment and monitor unchanged.",
+  "bank_relative_path": "stage_bank159.json",
+  "source_helper_sha256": "ca7fc6b468e0f10ff68e66f7819e106a896af5e9ebb420c5132995241e892103",
+  "source_bank_sha256": "278024e050d2a502efce331e32f5799160a46ca8b8cb6f8c65e718e47e05aa09",
+  "query_policy": {
+    "camera": "esc.pos[:2] + esc.cam_z",
+    "target": "live sim(View.name(id)); get_position_orientation and aabb",
+    "drawer_link": "so.links[joint[2:]].prim_path",
+    "ray": "only_closest=True; hit and exact rigidBody only",
+    "decision": "all >=3 distinct samples for each occluded pending target; errors veto entire merge",
+    "visible": "current record result photos else current input photos; never historical union",
+    "budget": "existing monitor only; module has no action/budget/state writes",
+    "pending_identity": "stage matches live cfg benchmark/legacy identity; goal id/name/inside and resolved cfg part match live item id/name/container/part/joint/kind; no configured-only fallback"
+  },
+  "templates": {
+    "close_en": "Close drawer {part} of the {cabinet} to uncover the lower drawer contents.",
+    "close_zh": "关上{cabinet}第{part}层抽屉，露出下层物品。",
+    "read_en": "Read the {item} in drawer {part} of the {cabinet}.",
+    "read_zh": "阅读{cabinet}第{part}层抽屉里的{item}。",
+    "take_en": "Take the {item} from drawer {part} of the {cabinet}.",
+    "take_zh": "拿取{cabinet}第{part}层抽屉里的{item}。"
+  },
+  "stages": {
+    "L1-01.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-01.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-01.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-01.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-02.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-02.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-02.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-02.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-03.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-03.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-03.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-03.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-03.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-04.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-04.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-04.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-04.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-04.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-05.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-05.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-05.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-05.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-05.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-06.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-06.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-06.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-06.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-07.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-07.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-07.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-08.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-08.S02": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L1-08_laundry_nested.json",
+      "config_sha256": "b5b67f8dac4dc312d04a3014820357dd19bf3b0fbb30905aa9f80f603f37c455",
+      "legacy_id": "R1-14",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "L1-08.S03": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L1-08_laundry_nested.json",
+      "config_sha256": "b5b67f8dac4dc312d04a3014820357dd19bf3b0fbb30905aa9f80f603f37c455",
+      "legacy_id": "R1-14",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "L1-08.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-08.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-09.S01": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L1-09_laundry_stacked.json",
+      "config_sha256": "81cf1d49550843ee606bac1f0a52e4708a6b4d4758bde9e6756234899cb6025d",
+      "legacy_id": "R1-15",
+      "drawer_goals": [
+        {
+          "id": "note",
+          "name": "escape_note",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            3
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "yellow sticky note",
+          "item_zh": "黄色便签",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ]
+    },
+    "L1-09.S02": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L1-09_laundry_stacked.json",
+      "config_sha256": "81cf1d49550843ee606bac1f0a52e4708a6b4d4758bde9e6756234899cb6025d",
+      "legacy_id": "R1-15",
+      "drawer_goals": [
+        {
+          "id": "note",
+          "name": "escape_note",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            3
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "yellow sticky note",
+          "item_zh": "黄色便签",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ]
+    },
+    "L1-09.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-09.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-10.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-10.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-10.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-10.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-10.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-11.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-11.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-11.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-11.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-12.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-12.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-12.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-12.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-13.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-13.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-13.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-13.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-14.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-14.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-14.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-14.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-15.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-15.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-15.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-15.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-15.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-16.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-16.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-16.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-16.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-16.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-17.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-17.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-17.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-17.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-18.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-18.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-18.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-18.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-18.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-19.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-19.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-19.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-19.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-19.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-20.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-20.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-20.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-20.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-20.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-21.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-21.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-21.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-21.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-21.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-22.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-22.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-22.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-22.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-22.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-23.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-23.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-23.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-23.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-23.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-24.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-24.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-24.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-24.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-25.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-25.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-25.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-25.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-25.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-26.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-26.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-26.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-26.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-26.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-27.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-27.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-27.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-27.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-27.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-28.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-28.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-28.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-28.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-28.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-29.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-29.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-29.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-29.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-29.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-30.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-30.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-30.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-30.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-31.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-31.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-31.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-31.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-31.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-32.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-32.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-32.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-32.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-32.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-33.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-33.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-33.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-33.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-33.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-34.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-34.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-34.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-34.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-34.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-35.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-35.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-35.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-35.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-35.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-36.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-36.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-36.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-36.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-36.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-37.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-37.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-37.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-37.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-37.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-38.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-38.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-38.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-39.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-39.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-39.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-39.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-40.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-40.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-40.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-41.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-41.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-41.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-41.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-42.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-42.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-42.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-42.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-43.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-43.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-43.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-43.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-43.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-43.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-44.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-44.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-44.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-44.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-45.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-45.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-45.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-45.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-45.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-45.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-46.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-46.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-46.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-46.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-46.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-47.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-47.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-47.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-47.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-47.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-48.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-48.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-48.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-48.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-48.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-49.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-49.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-49.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-49.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-49.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-50.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-50.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-50.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-50.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-50.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-51.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-51.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-51.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-51.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-51.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-52.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-52.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-52.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-52.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-52.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-53.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-53.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-53.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-53.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-53.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-54.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-54.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-54.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-54.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-54.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-55.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-55.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-55.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-55.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-55.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-56.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-56.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-56.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-56.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-56.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-57.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-57.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-57.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-57.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-57.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-58.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-58.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-58.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-58.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-58.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-59.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-59.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-59.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-59.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-59.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-60.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-60.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-60.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-60.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-60.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-61.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-61.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-61.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-61.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-61.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-62.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-62.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-62.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-62.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-62.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-63.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-63.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-63.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-63.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-63.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-64.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-64.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-64.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-64.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-64.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-65.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-65.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-65.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-65.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-65.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-66.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-66.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-66.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-66.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-66.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-67.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-67.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-67.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-67.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-67.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-68.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-68.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-68.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-68.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-68.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-69.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-69.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-69.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-69.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-70.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-70.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-70.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-70.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-71.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-71.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-71.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-71.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-72.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-72.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-72.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-72.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-72.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-73.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-73.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-73.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-73.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-73.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-73.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-74.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-74.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-74.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-74.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-74.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-75.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-75.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-75.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-75.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-75.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-76.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-76.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-76.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-76.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-77.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-77.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-77.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-77.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-77.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-78.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-78.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-78.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-79.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-79.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-79.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-79.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-79.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-80.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-80.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-80.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-81.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-81.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-81.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-81.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-82.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-82.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-82.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-82.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-82.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-83.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-83.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-83.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-83.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-83.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-84.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-84.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-84.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-84.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-84.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-85.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-85.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-85.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-85.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-85.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-86.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-86.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-86.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-86.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-87.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-87.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-87.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-87.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-88.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-88.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-88.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-88.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-89.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-89.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-89.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-89.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-90.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-90.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-90.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-90.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-91.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-91.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-91.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-91.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-92.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-92.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-92.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-92.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-93.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-93.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-93.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-93.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-93.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-94.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-94.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-94.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-94.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-95.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-95.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-95.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L1-95.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-01.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-01.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-01.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-01.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-01.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-02.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-02.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-02.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-02.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-02.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-03.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-03.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-03.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-03.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-04.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-04.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-04.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-04.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-04.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-05.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-05.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-05.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-05.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-05.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-06.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-06.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-06.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-07.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-07.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-07.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-07.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-07.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-08.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-08.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-08.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-08.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-08.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-09.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-09.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-09.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-09.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-09.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-09.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-10.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-10.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-10.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-10.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-11.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-11.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-11.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-11.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-12.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-12.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-12.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-12.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-12.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-13.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-13.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-13.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-13.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-14.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-14.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-14.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-14.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-15.S01": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L2-15_office_count_halves.json",
+      "config_sha256": "24125be086470c1d783386c96abfc6a9b1ef641044c5866e3007f8424116cb1a",
+      "legacy_id": "R3-17",
+      "drawer_goals": [
+        {
+          "id": "note",
+          "name": "escape_note",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "yellow sticky note",
+          "item_zh": "黄色便签",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L2-15.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-15.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-15.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-15.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-15.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-16.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-16.S02": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L2-16_laundry_five.json",
+      "config_sha256": "611cc5ff050d53bcac44eca5a6c4574caef7a4e1c18aeae10ae1a128a64ed827",
+      "legacy_id": "R3-18",
+      "drawer_goals": [
+        {
+          "id": "diary",
+          "name": "escape_diary",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "dark-covered book",
+          "item_zh": "深色封面的书",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜",
+          "unlock_item_en": "Unlock the dark-covered book using the white sheet on top of the laundry-room cabinet.",
+          "unlock_item_zh": "用洗衣房抽屉柜顶的白色纸张上的信息解锁深色封面的书。"
+        }
+      ]
+    },
+    "L2-16.S03": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L2-16_laundry_five.json",
+      "config_sha256": "611cc5ff050d53bcac44eca5a6c4574caef7a4e1c18aeae10ae1a128a64ed827",
+      "legacy_id": "R3-18",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "L2-16.S04": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L2-16_laundry_five.json",
+      "config_sha256": "611cc5ff050d53bcac44eca5a6c4574caef7a4e1c18aeae10ae1a128a64ed827",
+      "legacy_id": "R3-18",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "L2-16.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-17.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-17.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-17.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-17.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-18.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-18.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-18.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-18.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-19.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-19.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-19.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-19.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-19.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-20.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-20.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-20.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-20.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-20.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-21.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-21.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-21.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-21.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-21.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-22.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-22.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-22.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-22.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-22.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-23.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-23.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-23.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-23.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-23.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-24.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-24.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-24.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-24.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-24.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-25.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-25.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-25.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-25.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-25.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-26.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-26.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-26.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-26.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-27.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-28.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-28.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-28.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-28.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-28.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-29.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-29.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-29.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L2-29.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S03": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-01_office_attic.json",
+      "config_sha256": "1bc195df4063de9095c5c7e3f483be89821cee6126327225edc894d82a32b0a7",
+      "legacy_id": "R4-14",
+      "drawer_goals": [
+        {
+          "id": "mom_note",
+          "name": "office_mom_note",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "small card",
+          "item_zh": "小卡片",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "blank_paper",
+          "name": "office_blank_paper",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "blank white sheet",
+          "item_zh": "空白纸",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-01.S04": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-01_office_attic.json",
+      "config_sha256": "1bc195df4063de9095c5c7e3f483be89821cee6126327225edc894d82a32b0a7",
+      "legacy_id": "R4-14",
+      "drawer_goals": [
+        {
+          "id": "mom_note",
+          "name": "office_mom_note",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "small card",
+          "item_zh": "小卡片",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "blank_paper",
+          "name": "office_blank_paper",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "blank white sheet",
+          "item_zh": "空白纸",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-01.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-01.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S03": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-02_office_inspector.json",
+      "config_sha256": "5dfaaddb35c56e7237b2bef1391ed3e7333351e099388f806f777b85b8094fd3",
+      "legacy_id": "R4-19",
+      "drawer_goals": [
+        {
+          "id": "pencil",
+          "name": "office_pencil",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "pencil",
+          "item_zh": "铅笔",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "page",
+          "name": "office_diary_page",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-02.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-02.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S02": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-03_office_story_archive.json",
+      "config_sha256": "3bb34d025e3af5452d174797beb9fb6249640db2c32dce88324e94e1d1043b8c",
+      "legacy_id": "R4-20",
+      "drawer_goals": [
+        {
+          "id": "page",
+          "name": "office_diary_page",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "trowel",
+          "name": "escape_trowel",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "gardening shovel",
+          "item_zh": "园艺铲",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-03.S03": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-03_office_story_archive.json",
+      "config_sha256": "3bb34d025e3af5452d174797beb9fb6249640db2c32dce88324e94e1d1043b8c",
+      "legacy_id": "R4-20",
+      "drawer_goals": [
+        {
+          "id": "page",
+          "name": "office_diary_page",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "trowel",
+          "name": "escape_trowel",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "gardening shovel",
+          "item_zh": "园艺铲",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-03.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-03.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S11": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S12": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S13": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S14": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-04_office_story_captain.json",
+      "config_sha256": "1c3c33b764c0da7fd58f57cea50ce7f6b69fbcf43ce9a4ef1c96c970478f8834",
+      "legacy_id": "R4-21",
+      "drawer_goals": [
+        {
+          "id": "battery",
+          "name": "escape_battery",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "battery",
+          "item_zh": "电池",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "log",
+          "name": "office_postcard",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "small card",
+          "item_zh": "小卡片",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-04.S15": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S16": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-04.S17": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S08": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-05_office_story_restorer.json",
+      "config_sha256": "d50f69cc3f8a8056710d4336242431a3ff6e9227b96072d2c684e47f5d5da1c3",
+      "legacy_id": "R4-22",
+      "drawer_goals": [
+        {
+          "id": "mirror",
+          "name": "office_mirror",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "mirror",
+          "item_zh": "镜子",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "optics",
+          "name": "office_postcard",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-05.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S11": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-05.S12": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S08": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-06_office_story_grandma.json",
+      "config_sha256": "d09c4fcc8d2e56394eced82fd4de2b59d6dbc9b33fcba7dd28c69ff7facf03af",
+      "legacy_id": "R4-23",
+      "drawer_goals": [
+        {
+          "id": "ink",
+          "name": "escape_ink",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-06.S09": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-06_office_story_grandma.json",
+      "config_sha256": "d09c4fcc8d2e56394eced82fd4de2b59d6dbc9b33fcba7dd28c69ff7facf03af",
+      "legacy_id": "R4-23",
+      "drawer_goals": [
+        {
+          "id": "ink",
+          "name": "escape_ink",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-06.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S11": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-06.S12": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S11": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-07.S12": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S04": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-08_office_story_gardener.json",
+      "config_sha256": "8cd967123ebd436971d1e0bb1c880d130323df0c3d38557138181ebe401dff97",
+      "legacy_id": "R4-25",
+      "drawer_goals": [
+        {
+          "id": "trowel",
+          "name": "escape_trowel",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "gardening shovel",
+          "item_zh": "园艺铲",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "page",
+          "name": "office_diary_page",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-08.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-08.S11": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S05": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-09_office_story_stage.json",
+      "config_sha256": "9ad0d1c7921f655e676319bf3a84c45a7705a4ff1c0e46180cda11c50a1aa576",
+      "legacy_id": "R4-26",
+      "drawer_goals": [
+        {
+          "id": "blank_paper",
+          "name": "office_blank_paper",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "blank white sheet",
+          "item_zh": "空白纸",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ],
+      "after_en": "Use the blank sheet on the typewriter below the window.",
+      "after_zh": "把空白纸用在窗下的打字机上。"
+    },
+    "L3-09.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-09.S10": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S03": {
+      "primary": "lower_drawer",
+      "config_relative_path": "L3-10_office_story_expedition.json",
+      "config_sha256": "4b9a42ac2fc01d3611967ba467190b69a9b8db14d5560db4c69588e642852b8c",
+      "legacy_id": "R4-27",
+      "drawer_goals": [
+        {
+          "id": "water",
+          "name": "office_water",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "water bottle",
+          "item_zh": "水瓶",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        },
+        {
+          "id": "page",
+          "name": "office_diary_page",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "white sheet",
+          "item_zh": "白色纸张",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "L3-10.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "L3-10.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-01.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-01.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-01.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-01.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-01.S05": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-01_hub_two_rooms.json",
+      "config_sha256": "f625c7c1a1935dff4189799979c1f45a078a18a17a03203dfc00cfa7bf9840f8",
+      "legacy_id": "H1-01",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-01.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-01.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-02.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-02.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-02.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-02.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-02.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-02.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-03.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-03.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-03.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-03.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-03.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-04.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-05.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-05.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-05.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-05.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-05.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-05.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-06.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-06.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-06.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-06.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-06.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-07.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-07.S02": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-07_hub_pyramid.json",
+      "config_sha256": "816213199da1a59642edc56926c2f2267d580b70e7a40b7ae6154b3bfc60485a",
+      "legacy_id": "H3-01",
+      "drawer_goals": [
+        {
+          "id": "half_a",
+          "name": "escape_half_a",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            2
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "yellow sticky note",
+          "item_zh": "黄色便签",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "H1-07.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-07.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-07.S05": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-07_hub_pyramid.json",
+      "config_sha256": "816213199da1a59642edc56926c2f2267d580b70e7a40b7ae6154b3bfc60485a",
+      "legacy_id": "H3-01",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-07.S06": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-07_hub_pyramid.json",
+      "config_sha256": "816213199da1a59642edc56926c2f2267d580b70e7a40b7ae6154b3bfc60485a",
+      "legacy_id": "H3-01",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-07.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-08.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-09.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-09.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-09.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-09.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-09.S05": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-09_bathroom_start.json",
+      "config_sha256": "5d367bf899879af92090c33f23bcbc28beea8389df6389bcd98828532f1e1246",
+      "legacy_id": "H3-03",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-09.S06": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-09_bathroom_start.json",
+      "config_sha256": "5d367bf899879af92090c33f23bcbc28beea8389df6389bcd98828532f1e1246",
+      "legacy_id": "H3-03",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-09.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-10.S01": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-10_house_fake.json",
+      "config_sha256": "1a2946bc753b20ebbd3dc0f888e16bfdf51fddec39173ec14ffa6677019f1001",
+      "legacy_id": "H4-01",
+      "drawer_goals": [
+        {
+          "id": "note",
+          "name": "escape_note",
+          "cabinet": "bottom_cabinet_nddvba_0",
+          "allowed_parts": [
+            1,
+            2,
+            3
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "read",
+          "item_en": "yellow sticky note",
+          "item_zh": "黄色便签",
+          "cabinet_en": "office light-wood cabinet with silver handles",
+          "cabinet_zh": "办公室带银色把手的浅木色抽屉柜"
+        }
+      ]
+    },
+    "H1-10.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-10.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-10.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-10.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-10.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-10.S07": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-10_house_fake.json",
+      "config_sha256": "1a2946bc753b20ebbd3dc0f888e16bfdf51fddec39173ec14ffa6677019f1001",
+      "legacy_id": "H4-01",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-10.S08": {
+      "primary": "lower_drawer",
+      "config_relative_path": "H1-10_house_fake.json",
+      "config_sha256": "1a2946bc753b20ebbd3dc0f888e16bfdf51fddec39173ec14ffa6677019f1001",
+      "legacy_id": "H4-01",
+      "drawer_goals": [
+        {
+          "id": "key",
+          "name": "escape_key",
+          "cabinet": "bottom_cabinet_slgzfc_0",
+          "allowed_parts": [
+            4
+          ],
+          "placement_policy": "live_only; part/joint/kind required",
+          "verb": "take",
+          "item_en": "key",
+          "item_zh": "钥匙",
+          "cabinet_en": "laundry-room drawer cabinet",
+          "cabinet_zh": "洗衣房抽屉柜"
+        }
+      ],
+      "after_en": "Use the key at the outside exit.",
+      "after_zh": "在通往室外的出口门上使用钥匙。"
+    },
+    "H1-10.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S07": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S08": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "H1-11.S09": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "G01": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "G02": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "G03": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "G04": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "G05": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    },
+    "G06": {
+      "primary": "elsewhere_or_upper",
+      "drawer_goals": []
+    }
+  }
+}

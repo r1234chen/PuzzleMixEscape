@@ -1,0 +1,13 @@
+runs/
+.local/
+assets/datasets/
+.env
+.env.*
+*.key
+*.pem
+*.dpapi
+*.pfx
+__pycache__/
+*.pyc
+*.lock
+/runtime/esi/outputs/

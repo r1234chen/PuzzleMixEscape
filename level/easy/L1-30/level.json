@@ -1,0 +1,2926 @@
+{
+  "name": "L3-01_office_attic",
+  "scene": "Beechwood_0_garden",
+  "seed": 8002,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "My dears, while I am away flying, please look after the little doll house on the cabinet. Count its lit windows, floor by floor from the top: that number opens my desk drawer. Love, Dad",
+      "overlay": {
+        "texture": "hint_e03223a458.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      },
+      "display": "letter"
+    },
+    {
+      "id": "mom_note",
+      "name": "office_mom_note",
+      "category": "postcard",
+      "model": "aujfqp",
+      "kind": "clue",
+      "text": "Darling, Dad's old typewriter never prints the keys you press, so I locked our family photo in the red box with that trick. Type the number written on the box, and the paper will show the real code. Love, Mom",
+      "display": "note from Mom",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "overlay": {
+        "texture": "revision1010_mom_note.png",
+        "size": [
+          0.23,
+          0.28
+        ],
+        "center": [
+          0,
+          0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "blank_paper",
+      "name": "office_blank_paper",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "text": "",
+      "display": "blank paper",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2
+    },
+    {
+      "id": "photo",
+      "name": "office_family_photo",
+      "category": "postcard",
+      "model": "aujfqp",
+      "kind": "clue",
+      "text": "A family photo. On the back: Edward with his horse, Victoria with her turtle, Daniel with his shark, Lizzy with her panda. Every toy has its own place on the desk by the window.",
+      "display": "family photo",
+      "inside": "office_red_box",
+      "part": 1,
+      "at": [
+        2.57,
+        17.35,
+        0.03
+      ],
+      "yaw_deg": 90,
+      "overlay": {
+        "texture": "revision1010_photo.png",
+        "size": [
+          0.23,
+          0.28
+        ],
+        "center": [
+          0,
+          0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "horse",
+      "name": "office_horse",
+      "category": "toy_figure",
+      "model": "vcmcoi",
+      "kind": "clue",
+      "text": "",
+      "display": "toy horse",
+      "place": {
+        "position": [
+          5.2828,
+          16.7536,
+          0.7141
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_nddvba_0"
+      }
+    },
+    {
+      "id": "turtle",
+      "name": "office_turtle",
+      "category": "toy_figure",
+      "model": "gyrsew",
+      "kind": "clue",
+      "text": "",
+      "display": "toy turtle",
+      "place": {
+        "position": [
+          4.3735,
+          18.95,
+          0.8178
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      }
+    },
+    {
+      "id": "shark",
+      "name": "office_shark",
+      "category": "toy_figure",
+      "model": "lfxygp",
+      "kind": "clue",
+      "text": "",
+      "display": "toy shark",
+      "place": {
+        "position": [
+          5.4968,
+          18.9545,
+          0.7994
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      }
+    },
+    {
+      "id": "panda",
+      "name": "office_panda",
+      "category": "toy_figure",
+      "model": "gdekzd",
+      "kind": "clue",
+      "text": "",
+      "display": "toy panda",
+      "place": {
+        "position": [
+          5.5202,
+          16.7491,
+          0.7402
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_nddvba_0"
+      }
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "take": "office_family_photo",
+          "note": "红箱子里的全家福"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "photo"
+          },
+          "note": "读全家福背面：谁拿着哪只小动物"
+        },
+        {
+          "take": "office_horse",
+          "note": "拿 horse"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.04,
+            0.79
+          ],
+          "note": "回到窗前书桌的垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy horse"
+          },
+          "point_world": [
+            5.38,
+            18.04,
+            0.785
+          ],
+          "note": "horse 放到 Edward 的垫子上"
+        },
+        {
+          "take": "office_turtle",
+          "note": "拿 turtle"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.23,
+            0.79
+          ],
+          "note": "回到窗前书桌的垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy turtle"
+          },
+          "point_world": [
+            5.38,
+            18.23,
+            0.785
+          ],
+          "note": "turtle 放到 Victoria 的垫子上"
+        },
+        {
+          "take": "office_shark",
+          "note": "拿 shark"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.42,
+            0.79
+          ],
+          "note": "回到窗前书桌的垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy shark"
+          },
+          "point_world": [
+            5.38,
+            18.42,
+            0.785
+          ],
+          "note": "shark 放到 Daniel 的垫子上"
+        },
+        {
+          "take": "office_panda",
+          "note": "拿 panda"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.61,
+            0.79
+          ],
+          "note": "回到窗前书桌的垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy panda"
+          },
+          "point_world": [
+            5.38,
+            18.61,
+            0.785
+          ],
+          "note": "panda 放到 Lizzy 的垫子上：四个都对，门开"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "part_locks": [
+    {
+      "id": "drawer_b2",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "lock": "231",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.0,
+            17.35
+          ],
+          "aim": [
+            4.0,
+            16.63,
+            0.895
+          ],
+          "note": "数娃娃屋亮着的窗：从上到下 2 3 1"
+        }
+      ]
+    },
+    {
+      "id": "red_box_lock",
+      "container": "office_red_box",
+      "part": 1,
+      "lock": "2481",
+      "code_from": "look",
+      "look": [
+        {
+          "take": "office_mom_note",
+          "note": "柜子 B 第 2 层妈妈的便条"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "note"
+          },
+          "note": "读妈妈的便条：打字机打出来的才是红箱子的密码"
+        },
+        {
+          "take": "office_blank_paper",
+          "note": "同一层的白纸"
+        },
+        {
+          "at": [
+            3.35,
+            17.35
+          ],
+          "aim": [
+            2.734,
+            17.35,
+            0.095
+          ],
+          "note": "看红箱子正面写的数：5937"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.2700000000000005,
+            17.8,
+            0.8330000000000001
+          ],
+          "note": "站到打字机前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "typewriter",
+            "item": "blank paper"
+          },
+          "point_world": [
+            5.2700000000000005,
+            17.8,
+            0.8330000000000001
+          ],
+          "note": "白纸放进打字机"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "typewriter"
+          },
+          "point_world": [
+            5.384,
+            17.584,
+            0.893
+          ],
+          "note": "打 5 → 纸上打出 2"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "typewriter"
+          },
+          "point_world": [
+            5.326,
+            17.642,
+            0.893
+          ],
+          "note": "打 9 → 纸上打出 4"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "typewriter"
+          },
+          "point_world": [
+            5.384,
+            17.7,
+            0.893
+          ],
+          "note": "打 3 → 纸上打出 8"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "typewriter"
+          },
+          "point_world": [
+            5.326,
+            17.758,
+            0.893
+          ],
+          "note": "打 7 → 纸上打出 1"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.462000000000001,
+            17.7,
+            1.038
+          ],
+          "note": "看纸上打出来的数：2481"
+        }
+      ]
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "reveal",
+      "name": "office_typewriter",
+      "tool": "blank_paper",
+      "flag": "paper_in",
+      "text": "You put {it} into {tg}."
+    },
+    {
+      "type": "slot",
+      "name": "mat_edward",
+      "group": "family"
+    },
+    {
+      "type": "slot",
+      "name": "mat_victoria",
+      "group": "family"
+    },
+    {
+      "type": "slot",
+      "name": "mat_daniel",
+      "group": "family"
+    },
+    {
+      "type": "slot",
+      "name": "mat_lizzy",
+      "group": "family"
+    }
+  ],
+  "keypad": {
+    "mode": "typewriter",
+    "display": "typewriter",
+    "door": null,
+    "gadget": "office_typewriter",
+    "cipher": {
+      "5": "2",
+      "9": "4",
+      "3": "8",
+      "7": "1",
+      "0": "6",
+      "1": "9",
+      "2": "0",
+      "4": "3",
+      "6": "5",
+      "8": "7"
+    },
+    "center": [
+      5.355,
+      17.7,
+      0.893
+    ],
+    "panel": [
+      0.31,
+      0.13
+    ],
+    "key": 0.046,
+    "right": [
+      0,
+      -1,
+      0
+    ],
+    "up": [
+      1,
+      0,
+      0
+    ],
+    "keys": {
+      "1": [
+        5.384,
+        17.816,
+        0.893
+      ],
+      "2": [
+        5.384,
+        17.758,
+        0.893
+      ],
+      "3": [
+        5.384,
+        17.7,
+        0.893
+      ],
+      "4": [
+        5.384,
+        17.642,
+        0.893
+      ],
+      "5": [
+        5.384,
+        17.584,
+        0.893
+      ],
+      "6": [
+        5.326,
+        17.816,
+        0.893
+      ],
+      "7": [
+        5.326,
+        17.758,
+        0.893
+      ],
+      "8": [
+        5.326,
+        17.7,
+        0.893
+      ],
+      "9": [
+        5.326,
+        17.642,
+        0.893
+      ],
+      "0": [
+        5.326,
+        17.584,
+        0.893
+      ]
+    },
+    "stand": [
+      4.75,
+      17.62
+    ],
+    "names": {
+      "0": "0",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
+    },
+    "tw_prefix": "decor_tw_ch",
+    "tw_slots": 6
+  },
+  "slot_groups": {
+    "family": {
+      "kind": "assign",
+      "items": [
+        "horse",
+        "turtle",
+        "shark",
+        "panda"
+      ],
+      "answers": [
+        {
+          "mat_edward": "horse",
+          "mat_victoria": "turtle",
+          "mat_daniel": "shark",
+          "mat_lizzy": "panda"
+        }
+      ],
+      "door": "door_lvgliq_1"
+    }
+  },
+  "scene_add": [
+    {
+      "name": "office_red_box",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "red box",
+      "scale": [
+        1.0,
+        1.0,
+        0.6
+      ]
+    },
+    {
+      "name": "decor_s2_boxplate",
+      "plane": [
+        0.25,
+        0.12
+      ],
+      "position": [
+        2.734,
+        17.35,
+        0.095
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "s2_box_plate.png"
+    },
+    {
+      "name": "decor_s2dh_body",
+      "box": [
+        0.44,
+        0.22,
+        0.39
+      ],
+      "category": "walls",
+      "position": [
+        4.0,
+        16.52,
+        0.895
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.86,
+        0.8,
+        0.68,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_roof",
+      "box": [
+        0.48,
+        0.26,
+        0.03
+      ],
+      "category": "walls",
+      "position": [
+        4.0,
+        16.52,
+        1.105
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.55,
+        0.18,
+        0.14,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w00",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        3.8575,
+        16.632,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        0.86,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w01",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        3.9525,
+        16.632,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.16,
+        0.2,
+        0.28,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w02",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        4.0475,
+        16.632,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.16,
+        0.2,
+        0.28,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w03",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        4.1425,
+        16.632,
+        1.025
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        0.86,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w10",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        3.8575,
+        16.632,
+        0.895
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        0.86,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w11",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        3.9525,
+        16.632,
+        0.895
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        0.86,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w12",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        4.0475,
+        16.632,
+        0.895
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        0.86,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w13",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        4.1425,
+        16.632,
+        0.895
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.16,
+        0.2,
+        0.28,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w20",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        3.8575,
+        16.632,
+        0.765
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.16,
+        0.2,
+        0.28,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w21",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        3.9525,
+        16.632,
+        0.765
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.16,
+        0.2,
+        0.28,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w22",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        4.0475,
+        16.632,
+        0.765
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        0.86,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2dh_w23",
+      "plane": [
+        0.06,
+        0.075
+      ],
+      "position": [
+        4.1425,
+        16.632,
+        0.765
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.16,
+        0.2,
+        0.28,
+        1.0
+      ]
+    },
+    {
+      "name": "mat_edward",
+      "box": [
+        0.16,
+        0.16,
+        0.006
+      ],
+      "category": "mat",
+      "display": "mat marked Edward",
+      "position": [
+        5.38,
+        18.04,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.9,
+        0.88,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2mat_edward",
+      "plane": [
+        0.15,
+        0.15
+      ],
+      "position": [
+        5.38,
+        18.04,
+        0.7845
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "s2_name_edward.png"
+    },
+    {
+      "name": "mat_victoria",
+      "box": [
+        0.16,
+        0.16,
+        0.006
+      ],
+      "category": "mat",
+      "display": "mat marked Victoria",
+      "position": [
+        5.38,
+        18.23,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.9,
+        0.88,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2mat_victoria",
+      "plane": [
+        0.15,
+        0.15
+      ],
+      "position": [
+        5.38,
+        18.23,
+        0.7845
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "s2_name_victoria.png"
+    },
+    {
+      "name": "mat_daniel",
+      "box": [
+        0.16,
+        0.16,
+        0.006
+      ],
+      "category": "mat",
+      "display": "mat marked Daniel",
+      "position": [
+        5.38,
+        18.42,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.9,
+        0.88,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2mat_daniel",
+      "plane": [
+        0.15,
+        0.15
+      ],
+      "position": [
+        5.38,
+        18.42,
+        0.7845
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "s2_name_daniel.png"
+    },
+    {
+      "name": "mat_lizzy",
+      "box": [
+        0.16,
+        0.16,
+        0.006
+      ],
+      "category": "mat",
+      "display": "mat marked Lizzy",
+      "position": [
+        5.38,
+        18.61,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.9,
+        0.88,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_s2mat_lizzy",
+      "plane": [
+        0.15,
+        0.15
+      ],
+      "position": [
+        5.38,
+        18.61,
+        0.7845
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "s2_name_lizzy.png"
+    },
+    {
+      "name": "office_typewriter",
+      "box": [
+        0.26,
+        0.42,
+        0.11
+      ],
+      "category": "typewriter",
+      "position": [
+        5.4,
+        17.7,
+        0.833
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.16,
+        0.24,
+        0.2,
+        1.0
+      ],
+      "display": "typewriter"
+    },
+    {
+      "name": "decor_tw_roller",
+      "box": [
+        0.04,
+        0.46,
+        0.035
+      ],
+      "category": "walls",
+      "position": [
+        5.49,
+        17.7,
+        0.906
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.06,
+        0.06,
+        0.07,
+        1.0
+      ],
+      "visual_only": true
+    },
+    {
+      "name": "decor_tw_keys",
+      "plane": [
+        0.31,
+        0.13
+      ],
+      "position": [
+        5.355,
+        17.7,
+        0.89
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_keys.png"
+    },
+    {
+      "name": "decor_tw_paper",
+      "plane": [
+        0.27,
+        0.27
+      ],
+      "position": [
+        5.462,
+        17.7,
+        1.038
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.97,
+        0.97,
+        0.95,
+        1.0
+      ],
+      "hidden": true,
+      "paper_in": true
+    },
+    {
+      "name": "decor_tw_ch_0_0",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d0.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_1",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d1.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_2",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d2.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_3",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d3.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_4",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d4.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_5",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d5.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_6",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d6.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_7",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d7.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_8",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d8.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_0_9",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.775,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d9.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_0",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d0.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_1",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d1.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_2",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d2.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_3",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d3.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_4",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d4.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_5",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d5.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_6",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d6.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_7",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d7.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_8",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d8.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_1_9",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.745,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d9.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_0",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d0.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_1",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d1.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_2",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d2.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_3",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d3.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_4",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d4.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_5",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d5.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_6",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d6.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_7",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d7.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_8",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d8.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_2_9",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.715,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d9.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_0",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d0.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_1",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d1.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_2",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d2.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_3",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d3.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_4",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d4.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_5",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d5.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_6",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d6.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_7",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d7.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_8",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d8.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_3_9",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.685,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d9.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_0",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d0.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_1",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d1.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_2",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d2.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_3",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d3.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_4",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d4.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_5",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d5.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_6",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d6.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_7",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d7.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_8",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d8.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_4_9",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.655,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d9.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_0",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d0.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_1",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d1.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_2",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d2.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_3",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d3.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_4",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d4.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_5",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d5.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_6",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d6.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_7",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d7.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_8",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d8.png",
+      "cutout": true,
+      "hidden": true
+    },
+    {
+      "name": "decor_tw_ch_5_9",
+      "plane": [
+        0.034,
+        0.055
+      ],
+      "position": [
+        5.46,
+        17.625,
+        1.103
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T20_d9.png",
+      "cutout": true,
+      "hidden": true
+    }
+  ],
+  "max_steps": 150,
+  "revision1010": {
+    "requested_by_user": true,
+    "report_destination": "标准解过程报告1010",
+    "model_image": [
+      640,
+      360
+    ]
+  },
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_reason": "真实娃娃屋亮窗→抽屉取得白纸→打字机转换→红箱取得照片→实体玩具归位；故事和不同道具因果相依，用户明确150步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "explicit partial example",
+    "current_deployed_max_steps": 180,
+    "new_proposed_max_steps": 180,
+    "proposal_not_silently_applied": true,
+    "example_status": "用户明确示例",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L3-01",
+  "legacy_name": "R4-14_office_attic",
+  "legacy_id": "R4-14",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "用户明确示例",
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "1bc195df4063de9095c5c7e3f483be89821cee6126327225edc894d82a32b0a7"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-30",
+  "legacy_benchmark_id": "L3-01",
+  "recall_budget": 10,
+  "tip_window": 25
+}

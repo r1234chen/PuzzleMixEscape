@@ -1,0 +1,1150 @@
+{
+  "name": "L2-07_office_paint",
+  "scene": "Beechwood_0_garden",
+  "seed": 7024,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Mix the colour shown on each numbered card in the bowl with the same number. Red + yellow makes orange; yellow + blue makes green; red + blue makes purple. you can Use the rag to empty the bowl。",
+      "overlay": {
+        "texture": "paint_hint_exact_user1011_v79.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "paint_red",
+      "name": "office_paint_red",
+      "category": "bucket_of_paint",
+      "model": "gjjugj",
+      "kind": "clue",
+      "text": "RED PAINT",
+      "place": {
+        "position": [
+          3.8585,
+          16.498,
+          0.8185
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_immwzb_0"
+      },
+      "paint": "red",
+      "display": "red paint bucket"
+    },
+    {
+      "id": "paint_yellow",
+      "name": "office_paint_yellow",
+      "category": "bucket_of_paint",
+      "model": "mxyrzd",
+      "kind": "clue",
+      "text": "YELLOW PAINT",
+      "place": {
+        "position": [
+          4.0423,
+          16.5007,
+          0.8116
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_immwzb_0"
+      },
+      "paint": "yellow",
+      "display": "yellow paint bucket"
+    },
+    {
+      "id": "paint_blue",
+      "name": "office_paint_blue",
+      "category": "bucket_of_paint",
+      "model": "mxyrzd",
+      "kind": "clue",
+      "text": "BLUE PAINT",
+      "place": {
+        "position": [
+          4.2423,
+          16.5007,
+          0.8116
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_immwzb_0"
+      },
+      "paint": "blue",
+      "display": "blue paint bucket"
+    },
+    {
+      "id": "rag",
+      "name": "office_rag",
+      "category": "dishtowel",
+      "model": "dtfspn",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          5.3979,
+          16.7463,
+          0.7032
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_nddvba_0"
+      },
+      "wipes": true
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "站到碗前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "bowl"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：read 碗"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "bowl"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：take 碗"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "bowl",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：open 碗"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "bowl",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：close 碗"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "bowl"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：press 碗"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "bowl",
+            "code": "1234"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：unlock 碗"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "post it"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "乱试：use 碗"
+        },
+        {
+          "take": "office_paint_red",
+          "note": "拿红颜料（柜子 A 顶上，先读过标签）"
+        },
+        {
+          "take": "office_paint_yellow",
+          "note": "拿黄颜料"
+        },
+        {
+          "take": "office_paint_blue",
+          "note": "拿蓝颜料"
+        },
+        {
+          "take": "office_rag",
+          "note": "拿抹布（柜子 B 顶上）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.3,
+            0.8841886413574219
+          ],
+          "note": "回到三只碗前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "blue paint bucket"
+          },
+          "point_world": [
+            5.38,
+            18.3,
+            0.8841886413574219
+          ],
+          "note": "先倒错：蓝颜料倒进碗 1"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "dishtowel"
+          },
+          "point_world": [
+            5.38,
+            18.3,
+            0.8841886413574219
+          ],
+          "note": "用抹布擦干净碗 1"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "red paint bucket"
+          },
+          "point_world": [
+            5.38,
+            18.3,
+            0.8841886413574219
+          ],
+          "note": "红颜料倒进碗 1"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "yellow paint bucket"
+          },
+          "point_world": [
+            5.38,
+            18.3,
+            0.8841886413574219
+          ],
+          "note": "黄颜料倒进碗 1：橙色"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "yellow paint bucket"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "黄颜料倒进碗 2"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "blue paint bucket"
+          },
+          "point_world": [
+            5.38,
+            17.9,
+            0.8841886413574219
+          ],
+          "note": "蓝颜料倒进碗 2：绿色"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "red paint bucket"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            0.8841886413574219
+          ],
+          "note": "红颜料倒进碗 3"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "bowl",
+            "item": "blue paint bucket"
+          },
+          "point_world": [
+            5.38,
+            17.5,
+            0.8841886413574219
+          ],
+          "note": "蓝颜料倒进碗 3：紫色，三只都对，咔哒一声，门锁解开"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "bowl_1",
+      "category": "bowl",
+      "model": "bexgtn",
+      "position": [
+        5.38,
+        18.3,
+        0.8574
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "display": "bowl marked 1"
+    },
+    {
+      "name": "bowl_1_paint_red",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.8,
+        0.12,
+        0.1,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|red"
+    },
+    {
+      "name": "bowl_1_paint_yellow",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.82,
+        0.1,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|yellow"
+    },
+    {
+      "name": "bowl_1_paint_blue",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.12,
+        0.26,
+        0.8,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|blue"
+    },
+    {
+      "name": "bowl_1_paint_orange",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.96,
+        0.5,
+        0.08,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|orange"
+    },
+    {
+      "name": "bowl_1_paint_green",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.16,
+        0.6,
+        0.2,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|green"
+    },
+    {
+      "name": "bowl_1_paint_purple",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.5,
+        0.18,
+        0.6,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|purple"
+    },
+    {
+      "name": "bowl_1_paint_brown",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        18.3,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.42,
+        0.26,
+        0.12,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_1|brown"
+    },
+    {
+      "name": "bowl_1_label",
+      "plane": [
+        0.07,
+        0.07
+      ],
+      "position": [
+        5.15,
+        18.3,
+        0.7795
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T24_num1.png"
+    },
+    {
+      "name": "bowl_2",
+      "category": "bowl",
+      "model": "bexgtn",
+      "position": [
+        5.38,
+        17.9,
+        0.8574
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "display": "bowl marked 2"
+    },
+    {
+      "name": "bowl_2_paint_red",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.8,
+        0.12,
+        0.1,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|red"
+    },
+    {
+      "name": "bowl_2_paint_yellow",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.82,
+        0.1,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|yellow"
+    },
+    {
+      "name": "bowl_2_paint_blue",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.12,
+        0.26,
+        0.8,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|blue"
+    },
+    {
+      "name": "bowl_2_paint_orange",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.96,
+        0.5,
+        0.08,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|orange"
+    },
+    {
+      "name": "bowl_2_paint_green",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.16,
+        0.6,
+        0.2,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|green"
+    },
+    {
+      "name": "bowl_2_paint_purple",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.5,
+        0.18,
+        0.6,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|purple"
+    },
+    {
+      "name": "bowl_2_paint_brown",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.9,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.42,
+        0.26,
+        0.12,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_2|brown"
+    },
+    {
+      "name": "bowl_2_label",
+      "plane": [
+        0.07,
+        0.07
+      ],
+      "position": [
+        5.15,
+        17.9,
+        0.7795
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T24_num2.png"
+    },
+    {
+      "name": "bowl_3",
+      "category": "bowl",
+      "model": "bexgtn",
+      "position": [
+        5.38,
+        17.5,
+        0.8574
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "display": "bowl marked 3"
+    },
+    {
+      "name": "bowl_3_paint_red",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.8,
+        0.12,
+        0.1,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|red"
+    },
+    {
+      "name": "bowl_3_paint_yellow",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.82,
+        0.1,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|yellow"
+    },
+    {
+      "name": "bowl_3_paint_blue",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.12,
+        0.26,
+        0.8,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|blue"
+    },
+    {
+      "name": "bowl_3_paint_orange",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.96,
+        0.5,
+        0.08,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|orange"
+    },
+    {
+      "name": "bowl_3_paint_green",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.16,
+        0.6,
+        0.2,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|green"
+    },
+    {
+      "name": "bowl_3_paint_purple",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.5,
+        0.18,
+        0.6,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|purple"
+    },
+    {
+      "name": "bowl_3_paint_brown",
+      "disk": [
+        0.19,
+        0.19
+      ],
+      "position": [
+        5.38,
+        17.5,
+        0.8947
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.42,
+        0.26,
+        0.12,
+        1.0
+      ],
+      "hidden": true,
+      "bowl_paint": "bowl_3|brown"
+    },
+    {
+      "name": "bowl_3_label",
+      "plane": [
+        0.07,
+        0.07
+      ],
+      "position": [
+        5.15,
+        17.5,
+        0.7795
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T24_num3.png"
+    },
+    {
+      "name": "decor_color_card",
+      "plane": [
+        0.45,
+        0.21
+      ],
+      "position": [
+        4.95,
+        19.284,
+        1.55
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T24_card.png"
+    }
+  ],
+  "max_steps": 150,
+  "gadgets": [
+    {
+      "type": "paint_bowl",
+      "name": "bowl_1",
+      "group": "paint"
+    },
+    {
+      "type": "paint_bowl",
+      "name": "bowl_2",
+      "group": "paint"
+    },
+    {
+      "type": "paint_bowl",
+      "name": "bowl_3",
+      "group": "paint"
+    }
+  ],
+  "slot_groups": {
+    "paint": {
+      "kind": "paint",
+      "answer": {
+        "bowl_1": "orange",
+        "bowl_2": "green",
+        "bowl_3": "purple"
+      },
+      "door": "door_lvgliq_1"
+    }
+  },
+  "revision1010": {
+    "requested_by_user": true,
+    "report_destination": "标准解过程报告1010",
+    "model_image": [
+      640,
+      360
+    ]
+  },
+  "revision1011_full_standard_requested": true,
+  "native_paint_inside_only": true,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "三个碗有不同目标色，需要取颜料、分别混色并观察各碗状态；你改成100步，作为多步操作示例。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "explicit partial example",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "用户明确示例",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-07",
+  "legacy_name": "R2-25_office_paint",
+  "legacy_id": "R2-25",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "用户明确示例",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "3edafcaf2d5c1ec9af3ec1ff658477b15fbf9b2fb5a7a68d6d88b495edd692b5"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-07",
+  "legacy_benchmark_id": "L2-07",
+  "recall_budget": 10,
+  "tip_window": 25
+}

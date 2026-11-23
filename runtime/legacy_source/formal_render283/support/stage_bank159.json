@@ -1,0 +1,1654 @@
+{
+  "version": 159,
+  "levels": {
+    "L1-01": {
+      "legacy_id": "R1-04",
+      "stages": {
+        "S01": "Open the top drawer of the reddish-brown cabinet, look inside, and read the yellow sticky note.",
+        "S02": "Read the yellow sticky note in the top drawer of the reddish-brown cabinet.",
+        "S03": "Use the door-code information you actually read on the note at the exit lock.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-02": {
+      "legacy_id": "R1-05",
+      "stages": {
+        "S01": "Open the top drawer of the light-wood cabinet with silver handles and adjust your view to look for the key inside.",
+        "S02": "Take the visible key yourself.",
+        "S03": "Use the key on the exit door's keyhole.",
+        "S04": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-03": {
+      "legacy_id": "R1-09",
+      "stages": {
+        "S01": "Read the white sheet on the low table in the dining room.",
+        "S02": "Scan the whole dining room and count each type named on the card separately.",
+        "S03": "Use the category order on the white sheet to assemble the counts, counting each physical object once across different views.",
+        "S04": "Check the room boundary and each category again.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-04": {
+      "legacy_id": "R1-10",
+      "stages": {
+        "S01": "Read the yellow sticky note in the top drawer of the light-wood cabinet with silver handles.",
+        "S02": "Unlock the dark-covered book in the top drawer of the reddish-brown cabinet using the yellow sticky note in the top drawer of the light-wood cabinet with silver handles.",
+        "S03": "Read the unlocked dark-covered book in the top drawer of the reddish-brown cabinet.",
+        "S04": "Use the exit information from the dark-covered book found in the top drawer of the reddish-brown cabinet to unlock the exit door.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-05": {
+      "legacy_id": "R1-11",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Find the reddish-brown cabinet under the deer picture. Unlock its top compartment with the desk-sheet information if it is still locked, then open it.",
+        "S03": "Look into the opened compartment and take the key.",
+        "S04": "Use the recovered key on the office exit door.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-06": {
+      "legacy_id": "R1-12",
+      "stages": {
+        "S01": "Read the yellow sticky note in the top drawer of the reddish-brown cabinet and the white sheet in the top drawer of the light-wood cabinet with silver handles.",
+        "S02": "Read the fragment you still need: the yellow sticky note from the reddish-brown cabinet's top drawer or the white sheet from the top drawer of the light-wood cabinet with silver handles.",
+        "S03": "Use the paper labelled as the beginning first and the paper labelled as the ending second.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-07": {
+      "legacy_id": "R1-13",
+      "stages": {
+        "S01": "Open the top drawer of the light-wood cabinet with silver handles and read the yellow sticky note inside.",
+        "S02": "Use the exit information read from the yellow sticky note in the top drawer of the light-wood cabinet with silver handles.",
+        "S03": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-08": {
+      "legacy_id": "R1-14",
+      "stages": {
+        "S01": "Read the paper on top of the laundry cabinet. It describes the bottom drawer's lock.",
+        "S02": "Open the fourth drawer of the laundry-room cabinet. If it is still locked, unlock it using the paper on top of the cabinet.",
+        "S03": "Take the key from the fourth drawer of the laundry room drawer cabinet and use the key at the outside exit.",
+        "S04": "Use the retrieved key on the laundry-room exit door.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-09": {
+      "legacy_id": "R1-15",
+      "stages": {
+        "S01": "Inspect the third drawer of the laundry cabinet.",
+        "S02": "Read the note in the third drawer of the laundry-room cabinet.",
+        "S03": "Use the exit information read from the yellow sticky note in the third drawer of the laundry room drawer cabinet.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-10": {
+      "legacy_id": "R1-16",
+      "stages": {
+        "S01": "Read the yellow sticky note on the bathroom sink.",
+        "S02": "Face the toilet and find the light-wood cabinet with silver handles next to it. Unlock part 1 using the sink note if it is still locked, then open it.",
+        "S03": "Take the key from the opened cabinet.",
+        "S04": "Use the key on the bathroom exit door.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-11": {
+      "legacy_id": "R1-17",
+      "stages": {
+        "S01": "Read the torn paper on the office desk farthest from the window, then read the matching fragment in the top drawer of the light-wood cabinet with silver handles.",
+        "S02": "Align the fragments by the same character positions and fill only the missing places from the other fragment.",
+        "S03": "Align the two fragments by character position and fill their complementary gaps.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-12": {
+      "legacy_id": "R1-18",
+      "stages": {
+        "S01": "Inspect the glass bottle on the bathroom shelf and read the yellow sticky note on the bathroom sink.",
+        "S02": "If you are not holding the glass bottle, take it from the bathroom shelf. Use the bottle on the bathroom sink to fill it.",
+        "S03": "Hold the bottle and use the bottle on a reachable sink to release the key.",
+        "S04": "Take the visible yellow key at the mouth of the water-filled glass bottle on the bathroom sink counter.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-13": {
+      "legacy_id": "R1-19",
+      "stages": {
+        "S01": "Approach the glass-fronted display and face the note through the glass.",
+        "S02": "Read the note through the glass.",
+        "S03": "Use the exit information you read through the glass at the door lock.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-14": {
+      "legacy_id": "R1-20",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and inspect the missing-book space on the shelf.",
+        "S02": "Find and take the loose book that belongs in that gap.",
+        "S03": "Use the held book on the missing-book gap on the shelf. Then inspect the gap to confirm the book has been returned.",
+        "S04": "Returning the book has released the door. Check and open the exit."
+      }
+    },
+    "L1-15": {
+      "legacy_id": "R1-21",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Face the clock directly and read the hour and minute hands separately.",
+        "S03": "Interpret the observed time as an afternoon time in 24-hour notation. Write the hour followed by the minutes, using two digits for each.",
+        "S04": "Recheck the dial orientation and afternoon conversion.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-16": {
+      "legacy_id": "R1-22",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the complete shelf and identify the side nearest the door before numbering positions.",
+        "S03": "Number every book from that side, then use the positions of the red books in the required reading order.",
+        "S04": "Count all books when assigning positions, and check which end faces the door.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-17": {
+      "legacy_id": "R1-23",
+      "stages": {
+        "S01": "Move to a view of the whiteboard's reverse side.",
+        "S02": "Move close enough to see all the digits on the whiteboard's back clearly and read them from the image.",
+        "S03": "Use the digits you can actually see on the back of the whiteboard at the exit lock, keeping their displayed order.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-18": {
+      "legacy_id": "R1-24",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Move close enough to compare each liquid level with its own scale. Examine all the thermometers.",
+        "S03": "Read the levels separately and arrange the readings in the left-to-right order specified by the note.",
+        "S04": "Check the scale markings and reading direction.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-19": {
+      "legacy_id": "R1-25",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the marked route from its start to its exit, and compare the map grid with the actual layout of the door keypad.",
+        "S03": "Match the map grid positions to the keypad layout. Follow the marked route from its start to the exit and use the keys at the positions it passes through, in that order.",
+        "S04": "Trace only the marked route. Recheck the start-to-exit direction and the corresponding keypad positions before entering again.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-20": {
+      "legacy_id": "R1-26",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the coordinate card and inspect the row and column labels on the grid.",
+        "S03": "For each coordinate on the card, find the column and row intersection. Keep the card's coordinate order.",
+        "S04": "Check whether you swapped row and column or shifted the grid index.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-21": {
+      "legacy_id": "R1-27",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect every numbered binder on the shelf, including the gaps.",
+        "S03": "Compare the visible labels with the required complete range and order the missing labels as the note requests.",
+        "S04": "Use the labels. Include only genuinely missing binders.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-22": {
+      "legacy_id": "R1-28",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Look at both the calendar heading and the marked day.",
+        "S03": "Use the marked date in the month/day order requested by the note, including any required leading zero.",
+        "S04": "Identify the marked calendar date and read its month and day.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-23": {
+      "legacy_id": "R1-29",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect every outline from left to right so you can see corners that might be obscured.",
+        "S03": "Count the vertices of each shape and keep the shapes' displayed order.",
+        "S04": "Recheck the outline of the shape whose count is uncertain.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-24": {
+      "legacy_id": "R1-31",
+      "stages": {
+        "S01": "Take the loose handle from the desk by the window and inspect the wall-mounted cabinet missing a handle.",
+        "S02": "Use the loose handle on part 1 of the wall-mounted cabinet.",
+        "S03": "Open part 1 of the wall-mounted cabinet and take the key inside.",
+        "S04": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-25": {
+      "legacy_id": "R1-32",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect and record the Roman numerals exactly as shown.",
+        "S03": "Convert the written Roman numeral expression to ordinary numerals before using the lock.",
+        "S04": "Recheck the dot separators and the symbols within each group. Convert the groups independently and preserve their order.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-26": {
+      "legacy_id": "R1-33",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the fish pictures in their left-to-right order and compare them with the arrow buttons.",
+        "S03": "Use the direction in which each fish points, to choose the corresponding arrow.",
+        "S04": "After a rejected entry, start on the cleared display and recheck the fish's head and tail.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-27": {
+      "legacy_id": "R1-34",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the candles from a view that makes their heights and adjacent number labels clear.",
+        "S03": "Rank the candles by height and read their labels in the shortest-to-tallest order given on the note.",
+        "S04": "Sort by the candle height.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-28": {
+      "legacy_id": "R1-35",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Look closely at the keyboard's digit row and the letter row immediately below it, and record the clue letters.",
+        "S03": "Translate each clue letter using the digit key in the same column above it. Use the derived digits, at the door lock.",
+        "S04": "Compare the actual keyboard columns and preserve the written letter order.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-29": {
+      "legacy_id": "R1-36",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the pictured planets carefully enough to distinguish their identifying features.",
+        "S03": "For each pictured planet, use its position counted outward from the Sun, keeping the pictured order.",
+        "S04": "Identify each planet before assigning its solar-system position.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-30": {
+      "legacy_id": "R1-37",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window if you need the placement rule, and inspect the tool outlines. After a placement, inspect the whole board in a fresh view.",
+        "S02": "Take a tool that still needs a place on the board.",
+        "S03": "Match the tool's shape to its outline and use the tool on that outlined position.",
+        "S04": "Take the misplaced tool off the outline first, then place the tool whose silhouette matches it."
+      }
+    },
+    "L1-31": {
+      "legacy_id": "R1-38",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the red word and inspect the letter groups on the telephone-style keypad.",
+        "S03": "Map each letter of that word to the key containing it and press one corresponding key per letter.",
+        "S04": "Use the telephone keypad letter groups and press one key for each letter.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-32": {
+      "legacy_id": "R1-39",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect every abacus column and distinguish beads against the beam from beads away from it.",
+        "S03": "Read the active beads in each column using the abacus place-value rule, preserving the column order.",
+        "S04": "Count only engaged beads.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-33": {
+      "legacy_id": "R1-40",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Compare the star diagram with the physical layout of the keypad, including relative positions.",
+        "S03": "Use each star's position to identify its key and follow the biggest-to-smallest ordering on the note.",
+        "S04": "The star position chooses the key. Star size chooses when to press it.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-34": {
+      "legacy_id": "R1-41",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the number plate on the wall above the desk farther from the window and inspect the available keypad digits.",
+        "S03": "Retain only digits that have matching keys on this keypad, preserving their original order on the plaque.",
+        "S04": "A missing key means that digit is excluded.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-35": {
+      "legacy_id": "R1-42",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the full number plate and the separate star card.",
+        "S03": "Reverse the plate's written number first, then add the number shown on the star card, as instructed by the note.",
+        "S04": "Check the order of the two operations and any leading digits.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-36": {
+      "legacy_id": "R1-43",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the recipe sheet on top of the light-wood cabinet with silver handles, including its serving size and every ingredient.",
+        "S03": "Scale every ingredient to the requested serving size, keeping the ingredient order printed on the recipe.",
+        "S04": "Apply the same serving-size factor to every ingredient.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-37": {
+      "legacy_id": "R1-44",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the whole tree so the root, every left/right branch, and the numbered leaves are visible. Obtain the path instructions from the note.",
+        "S03": "Follow each path on the note from the root using its left/right rule. Read the reached leaf.",
+        "S04": "Restart each indicated path at the root node.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-38": {
+      "legacy_id": "R1-45",
+      "stages": {
+        "S01": "Inspect the coloured reference dots and the matching coloured levers.",
+        "S02": "Set each lever to the low, middle, or high level of its matching-colour dot. Pressing a lever cycles its level.",
+        "S03": "After pressing a lever, get a fresh view of the knobs and the chart. Compare each knob height with the same-colour dot."
+      }
+    },
+    "L1-39": {
+      "legacy_id": "R2-01",
+      "stages": {
+        "S01": "Read the card on the table in the dining room. It explains which room objects supply the exit information.",
+        "S02": "Scan the complete dining room and keep separate counts for the categories named on the card.",
+        "S03": "Use the room counts in the card's order.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-40": {
+      "legacy_id": "R2-02",
+      "stages": {
+        "S01": "Open the toolbox and take the hammer. The exit is physically blocked by boards.",
+        "S02": "Use the hammer on a board still attached to the exit door, then inspect the next image for its removal.",
+        "S03": "The physical blockage is gone. Try opening the exit door."
+      }
+    },
+    "L1-41": {
+      "legacy_id": "R2-03",
+      "stages": {
+        "S01": "Open part 1 of the fridge if it is closed, inspect the ice inside, and take the block before using it at a heat source.",
+        "S02": "Use the ice at a suitable heat source.",
+        "S03": "Inspect the released key and take it if needed.",
+        "S04": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-42": {
+      "legacy_id": "R2-04",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window if needed. Open the top drawer of the light-wood cabinet with silver handles if closed, then approach and take the gardening shovel inside.",
+        "S02": "Use the digging tool on the plant pot named by the note.",
+        "S03": "Look into the exposed soil opening and take the visible key yourself.",
+        "S04": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-43": {
+      "legacy_id": "R2-05",
+      "stages": {
+        "S01": "Open the toolbox and take the hammer. Inspecting the jar by taking it only puts it back.",
+        "S02": "Use the hammer on the jar where it sits in the scene.",
+        "S03": "Inspect what the broken jar released and take its key if necessary.",
+        "S04": "Use the hammer on any boards still blocking the exit.",
+        "S05": "Use the recovered key on the exit lock. Both the lock and the physical boards must be dealt with.",
+        "S06": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-44": {
+      "legacy_id": "R2-06",
+      "stages": {
+        "S01": "Inspect the high hanging key and find the long pole that can reach it.",
+        "S02": "Use the held pole on the high hanging key or its hook to bring the key within reach.",
+        "S03": "Take the hanging key once the key has been lowered within reach.",
+        "S04": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L1-45": {
+      "legacy_id": "R2-07",
+      "stages": {
+        "S01": "Read the yellow sticky note on top of the laundry-room drawer cabinet to learn how to power the dark keypad screen.",
+        "S02": "Open part 1 of the wall-mounted cabinet above the laundry-room drawer cabinet and take the battery inside.",
+        "S03": "Use the battery on the keypad screen beside the door.",
+        "S04": "Read the door-information paper on the dryer before entering anything.",
+        "S05": "Use the door-code information from the white sheet on the dryer to press the powered exit keypad one key at a time.",
+        "S06": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-46": {
+      "legacy_id": "R2-09",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Use the dial's printed numbers to establish the clock's own upright direction before reading its hands.",
+        "S03": "Read the stopped morning time in the format requested by the note, relative to the dial.",
+        "S04": "Check hand identity and dial orientation before re-entering anything.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-47": {
+      "legacy_id": "R2-10",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Face the window and tilt your view upward to inspect the ceiling writing.",
+        "S03": "Interpret the ceiling text from the viewing direction given in the note.",
+        "S04": "Face the window and tilt your view upward again before transcribing the ceiling characters.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-48": {
+      "legacy_id": "R2-11",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the mirrored writing and note the direction in which its strokes are reversed.",
+        "S03": "Undo the mirror reversal before reading the digits in their intended order.",
+        "S04": "The shapes of the written digits must also be read as mirrored.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-49": {
+      "legacy_id": "R2-12",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the top face of each die and preserve the left-to-right arrangement.",
+        "S03": "Use the standard relationship between opposite die faces to infer each bottom face from its top face.",
+        "S04": "Calculate the opposite faces individually.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-50": {
+      "legacy_id": "R2-14",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read every path instruction and inspect the numbered dots on the wall.",
+        "S03": "Trace each written dot-to-dot path separately. Read the digit formed by each path in the order listed on the white sheet.",
+        "S04": "Restart each drawing at the first dot of its own path and keep the order of the paths on the note.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-51": {
+      "legacy_id": "R2-15",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Locate the maze's start, goal, and solid walls.",
+        "S03": "Trace a valid start-to-goal path and encode each straight run using the legend on the note.",
+        "S04": "Merge consecutive moves in the same direction into one run.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-52": {
+      "legacy_id": "R2-17",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the keypad closely enough to distinguish worn keys from intact ones.",
+        "S03": "Identify only the worn keys and apply the ordering rule stated on the note.",
+        "S04": "Verify the wear on its surface.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-53": {
+      "legacy_id": "R2-19",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the given numbers in the grid on the wall above the desk and identify the empty cells.",
+        "S03": "Use the common row and column sum written on the note to solve the blank cells, then read them in the required grid order.",
+        "S04": "Every completed row and column must satisfy the same constraint. Recheck the candidate values as a system.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-54": {
+      "legacy_id": "R2-20",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the white sheet on the desk farther from the window and inspect any associated calendar information.",
+        "S03": "Identify the holiday described by the room's clues and use the date format requested by the note.",
+        "S04": "Keep month and day in the requested order and retain any leading zero required by the lock.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-55": {
+      "legacy_id": "R2-22",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect every tile's arrow and both printed numbers.",
+        "S03": "Mentally rotate each tile until its arrow points up, then read the side requested by the note.",
+        "S04": "Read the left side after mentally rotating the tile so its arrow points up.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-56": {
+      "legacy_id": "R2-23",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the board's alternating square colours and each square hidden by a red piece.",
+        "S03": "Infer each covered square from its neighbours and enter the inferred colours in the order specified on the note.",
+        "S04": "Use the actual black and white buttons. Re-enter only after the rejected display has cleared.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-57": {
+      "legacy_id": "R2-24",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Review the complete read feedback, including every recorded try and the restriction on repeated digits. Read the white sheet again if this information is unavailable.",
+        "S03": "Separate correct-position matches from misplaced matches and eliminate candidates against every recorded try.",
+        "S04": "A candidate must satisfy all rows simultaneously.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-58": {
+      "legacy_id": "R2-26",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the complete ladder diagram so every horizontal rung is visible.",
+        "S03": "Trace one symbol downward at a time and cross each rung you encounter, then use its final endpoint.",
+        "S04": "Follow the vertical line down to each horizontal rung, cross the rung, and continue down the new line.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-59": {
+      "legacy_id": "R2-27",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the rug's complete connecting lines and compare the endpoints with the keypad symbols.",
+        "S03": "Trace each starting symbol named in the note to its connected endpoint and press the endpoint symbol in the requested order.",
+        "S04": "Distinguish the angular diamond from the round circle, then follow each rug line to its actual endpoint symbol.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-60": {
+      "legacy_id": "R2-28",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect where each sticker overlaps another sticker.",
+        "S03": "Use the covering relationships to infer the application order and read the labels in that order.",
+        "S04": "A sticker covering another was placed later. Use several overlap relations to resolve ambiguous pairs.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-61": {
+      "legacy_id": "R2-30",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the compass and establish which side of the button box is actually north.",
+        "S03": "Translate the directions written on the note into buttons relative to that north direction.",
+        "S04": "Use the compass and retain the full written sequence.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-62": {
+      "legacy_id": "R2-31",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect each dart's sector label and whether it falls in a thin scoring ring.",
+        "S03": "Apply the scoring rule of the ring containing each dart and keep the spatial order given on the note.",
+        "S04": "The thin inner and outer rings use different multipliers.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-63": {
+      "legacy_id": "R2-32",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the reference arrow and the coloured buttons' positions.",
+        "S03": "Follow the continuous star-drawing route described by the card.",
+        "S04": "Use the stated start and arrow direction, and reset to a fresh entry after a rejected sequence.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-64": {
+      "legacy_id": "R2-33",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the entire tick/cross strip and the separate number plaque.",
+        "S03": "Align the two strips by position and keep only the numbers paired with ticks, in the original order.",
+        "S04": "Align the two strips by position and read the retained numbers in their printed order.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-65": {
+      "legacy_id": "R2-35",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the white sheet on the desk farther from the window and locate the corresponding symbol-to-value reference.",
+        "S03": "Translate each symbol using the reference available in the room, preserving the clue's symbol order.",
+        "S04": "Repeated symbols should use the same value.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-66": {
+      "legacy_id": "R2-36",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect each group of dots and dashes and the gaps between groups.",
+        "S03": "Decode one Morse group at a time using the room's reference and preserve group boundaries.",
+        "S04": "A gap separates characters.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-67": {
+      "legacy_id": "R2-37",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect which lamps in each group are lit and read the decoding card.",
+        "S03": "Match the lit and unlit pattern of each lamp column to the corresponding number on the reference card, keeping each column intact and preserving their left-to-right order.",
+        "S04": "Read each column from its highest-place-value end and match the lit and unlit states to the reference card.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-68": {
+      "legacy_id": "R2-38",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and inspect the number plate mentioned by it. The machine's output is different from its input.",
+        "S02": "Take the blank paper and use it on the typewriter before trying to type.",
+        "S03": "Type the number shown on the plate in its written order. If you can verify a correct partial entry, continue with the next key.",
+        "S04": "Compare the recent successful typewriter key presses with the number plate. If they form its complete entry, inspect that printed group separately from earlier test output and use only its observed result with unlock; otherwise continue or correct the entry.",
+        "S05": "Use only the observed output group produced by the complete number-plate entry with unlock at the door."
+      }
+    },
+    "L1-69": {
+      "legacy_id": "R3-01",
+      "stages": {
+        "S01": "Open the top drawer of the light-wood cabinet with silver handles and take the apparently blank white sheet. If needed, read the white sheet on the desk farther from the window for the light rule.",
+        "S02": "Use the sheet on the table lamp and inspect the writing revealed on the paper.",
+        "S03": "Read the revealed writing on the sheet beside the desk lamp.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-70": {
+      "legacy_id": "R3-02",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window about information appearing in darkness.",
+        "S02": "If the room is lit, press its light switch once. In the dark room, turn to inspect the walls for glowing writing.",
+        "S03": "Use the information visible in the dark state. Repeatedly turning the light back on hides the clue again.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-71": {
+      "legacy_id": "R3-03",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window, then inspect the floor for the footprints it mentions.",
+        "S02": "Move onto the footprint position and face the fragmented pattern.",
+        "S03": "Read the complete pattern formed from that viewpoint.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-72": {
+      "legacy_id": "R3-04",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window if needed, then open the top drawer of the light-wood cabinet with silver handles and take the UV flashlight if you are not holding it.",
+        "S02": "Open the wardrobe door or doors that block your view of the inner back panel, specifying the corresponding part, 1 or 2. Adjust your view until that panel is exposed.",
+        "S03": "With the ultraviolet flashlight held, use it at a point on the exposed inner back panel of the wardrobe. Inspect the UV-lit photo returned by that use.",
+        "S04": "Inspect the writing in the UV-lit photo returned by the flashlight use. If that photo is unavailable or unclear, shine at the exposed inner panel again.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-73": {
+      "legacy_id": "R3-05",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window. The gaming controller is the device used to operate the screen.",
+        "S02": "Take the controller from the desk farther from the window and the battery from the top drawer of the light-wood cabinet with silver handles, if needed.",
+        "S03": "Use the battery on the gaming controller, or the controller on the battery, to supply it with power.",
+        "S04": "If the powered controller is still on the office desk farthest from the window, take it first. Then use the powered controller on the television and inspect the screen it turns on.",
+        "S05": "Inspect the information on the television screen that is now on. If it is outside your current view, turn or move to see the screen.",
+        "S06": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-74": {
+      "legacy_id": "R3-06",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the black start square, each target square, and all thick barriers.",
+        "S03": "Find the shortest legal orthogonal route to each requested target independently, then use the target order on the note.",
+        "S04": "Trace every route from its marked start along the open grid connections.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-75": {
+      "legacy_id": "R3-08",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "View the sculpture square-on from one side, then from the other required side.",
+        "S03": "Recognise a complete number from each side and apply the smaller/larger ordering stated on the note.",
+        "S04": "Changing the camera by only a small angle may still show the same face. Obtain a genuinely different side view.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-76": {
+      "legacy_id": "R3-11",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and inspect the bottom of the empty glass tank.",
+        "S02": "Take the water container and use its water on the glass tank.",
+        "S03": "Inspect the bottom of the filled glass tank through the water. Adjust your view if the bottom is still out of sight.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-77": {
+      "legacy_id": "R3-12",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect every numbered node and the explicit lines connecting it to the lamp positions.",
+        "S03": "Find a lamp set that satisfies every linked-node count and the total number of lit lamps required on the note.",
+        "S04": "Only drawn connections count. Recheck the same candidate against all numbered nodes.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L1-78": {
+      "legacy_id": "R3-14",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window for the required total voltage, and inspect the voltage label on every switch.",
+        "S02": "While the door is still locked, choose a subset of the labelled voltages that totals the note's target exactly, and press the switches to set that subset. Stop adjusting after the door is released.",
+        "S03": "Add the labelled voltages of the switches currently on and adjust that set to reach the total required by the desk sheet. Each press toggles one switch."
+      }
+    },
+    "L1-79": {
+      "legacy_id": "R3-16",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect both wing halves on every card and the two specified endpoint colours.",
+        "S03": "Build a continuous chain whose touching halves match, respecting the required number of cards, then read the chain's labels.",
+        "S04": "Check both the next colour match and whether the route can still reach the required endpoint.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-80": {
+      "legacy_id": "R3-20",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window for the wall-switch order.",
+        "S02": "Identify the next switch from its location description on the card.",
+        "S03": "A wrong switch resets the sequence. Start again from the first location on the card."
+      }
+    },
+    "L1-81": {
+      "legacy_id": "R3-22",
+      "stages": {
+        "S01": "Read the exit clue on the office desk farthest from the window.",
+        "S02": "Inspect the top drawer of the office light-wood drawer cabinet with silver handles for the key and take it. Solving the numerical lock alone is insufficient.",
+        "S03": "Use unlock on the exit door with the information from the white sheet on the desk farther from the window.",
+        "S04": "If you already hold the recovered key and the key lock is still closed, use that key on the door. Separately, if the small light beside the locks is off, press the room's wall switch."
+      }
+    },
+    "L1-82": {
+      "legacy_id": "R3-24",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "If the spotlights are off, press their wall switch once. With the spotlights on, inspect the number illuminated by each beam.",
+        "S03": "Read only the illuminated labels, in the left-to-right spotlight order on the note.",
+        "S04": "Nearby unlit numbers are distractors. Align each beam with the surface it actually hits.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-83": {
+      "legacy_id": "R3-25",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read all the example equations and the expression or symbol order beside the door.",
+        "S03": "Solve the examples consistently for each shape's value before evaluating the door clue.",
+        "S04": "A shape must have the same value in every example. Preserve the operation signs and any grouped expression.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-84": {
+      "legacy_id": "R3-26",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the top and bottom colours of each numbered model and the reference card.",
+        "S03": "Match each two-colour pattern to a real model using top-versus-bottom orientation, then use the card's model order.",
+        "S04": "A reversed top/bottom pair is a different pattern.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-85": {
+      "legacy_id": "R3-29",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect each group of small frames and its adjacent label, then compare the reference card.",
+        "S03": "Match each pictured frame-group arrangement to the real wall group and read its label in the card's order.",
+        "S04": "Compare the internal arrangement of each group.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-86": {
+      "legacy_id": "R3-31",
+      "stages": {
+        "S01": "Read the white sheet on top of the light-wood cabinet with silver handles, then inspect the corresponding rows on the two letter boards above the desk.",
+        "S02": "For each word-card letter, find its column in the stated row of the left board and read the mirrored column in the same row of the right board.",
+        "S03": "Mirror the column position within the row.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-87": {
+      "legacy_id": "R4-01",
+      "stages": {
+        "S01": "Open the top drawer of the light-wood cabinet with silver handles in the bathroom and inspect the yellow sticky note inside.",
+        "S02": "Take the backwards-written yellow sticky note from the bathroom light-wood cabinet's top drawer if needed, use it on the bathroom mirror, then read the legible writing.",
+        "S03": "Use the legible exit information obtained from the yellow sticky note taken from the bathroom light-wood cabinet's top drawer to unlock the bathroom exit.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-88": {
+      "legacy_id": "R4-02",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window about the wardrobe top and take the stool that can raise your viewpoint.",
+        "S02": "If you are holding the stool, use it on the wardrobe to place it and raise your viewpoint. If it is already placed there, use the stool to step back onto it, then aim at the writing on top.",
+        "S03": "Face the wardrobe top from the raised viewpoint and inspect the writing there.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-89": {
+      "legacy_id": "R4-03",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window if needed, then open the top drawer of the light-wood cabinet with silver handles and take the camera if you are not holding it.",
+        "S02": "Use the camera to examine the sign outside the window while facing it.",
+        "S03": "Transcribe the observed sign.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-90": {
+      "legacy_id": "R4-04",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and take the board eraser.",
+        "S02": "Use the eraser on the whiteboard to remove the erasable writing, then inspect what remains.",
+        "S03": "Adjust your view to inspect the permanent marks that remain on the board, then use those observed marks at the exit.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-91": {
+      "legacy_id": "R4-05",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and take the box on the reddish-brown cabinet.",
+        "S02": "Use the box you took from the reddish-brown cabinet on the X-ray device and inspect the returned picture.",
+        "S03": "Use the information actually visible inside the scan.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-92": {
+      "legacy_id": "R4-06",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and take the pencil. The missing top page may have left impressions underneath.",
+        "S02": "Use the pencil on the remaining notepad sheet to reveal the indentations.",
+        "S03": "Look closely at the marks visible on the rubbed sheet, then use the observed information at the exit.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-93": {
+      "legacy_id": "R4-12",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect all completed example rows and the candidate tiles for each blank.",
+        "S03": "Compare which marks are retained or removed when the example tiles combine, infer one consistent rule, then apply it to the blanks.",
+        "S04": "Test the same rule against every completed row before choosing a candidate.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-94": {
+      "legacy_id": "R4-16",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and inspect the fingerprint reference cards on the wall above that desk.",
+        "S02": "Take the fingerprint-powder bottle from the top drawer of the reddish-brown cabinet if needed, then use it on the touched area of the window.",
+        "S03": "Compare the revealed print with the identity references and use the identifier of the matching person.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L1-95": {
+      "legacy_id": "R4-18",
+      "stages": {
+        "S01": "Take the coin and inspect the small chart that marks the body locations to scratch.",
+        "S02": "Scratch an intact marked body-location panel with the coin.",
+        "S03": "Inspect the numbers revealed at the chart's marked body locations and use the chart's numbered order at the exit.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-01": {
+      "legacy_id": "R1-30",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window so you know which objects matter and what order the readings require.",
+        "S02": "Take the next required object, place the object on the scale, and read its kg value.",
+        "S03": "Record the visible reading, then take the object off the scale before placing another object on it.",
+        "S04": "Review the scale images for every required object. If a reading is missing and that object is still on the scale, inspect its display.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-02": {
+      "legacy_id": "R2-08",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect each coloured pile from more than one side, keeping a separate tally for each colour.",
+        "S03": "Account for blocks hidden behind or supporting visible blocks, then use the colour order specified on the note.",
+        "S04": "Revisit the pile whose tally is uncertain.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-03": {
+      "legacy_id": "R2-13",
+      "stages": {
+        "S01": "Inspect the reference layout on the wall and compare its marked tiles with the floor grid. You may use the layout directly.",
+        "S02": "Take a plant that is still missing from, or misplaced in, the reference arrangement.",
+        "S03": "If a plant is still in your hand, use it on a missing position marked in the reference. After a placement, inspect the whole arrangement and its actual mechanism feedback before repeating any action.",
+        "S04": "Take a plant off a tile that should be empty in the reference, then place it on a missing marked tile. The plants are interchangeable."
+      }
+    },
+    "L2-04": {
+      "legacy_id": "R2-16",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the top and every shelf of both bookcases, taking comparable views.",
+        "S03": "Compare matching levels and count differences in the level order specified by the note.",
+        "S04": "Compare like-for-like shelf levels and count each actual difference once.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-05": {
+      "legacy_id": "R2-18",
+      "stages": {
+        "S01": "Find and take the metal detector. The key is inside a storage ottoman.",
+        "S02": "Use the detector on reachable ottomans one at a time and pay attention to which actual ottoman produces a beep.",
+        "S03": "Open the same ottoman that beeped.",
+        "S04": "Look inside the opened ottoman and take the visible key yourself.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L2-06": {
+      "legacy_id": "R2-21",
+      "stages": {
+        "S01": "Inspect the wall photograph and compare it with the current orientations of the toys on the desk by the window.",
+        "S02": "Press a toy whose orientation differs from the photograph and inspect the next image. Each press rotates that toy.",
+        "S03": "After pressing a toy, inspect the current orientations and the actual mechanism feedback before pressing again. Leave toys that already match the photograph alone."
+      }
+    },
+    "L2-07": {
+      "legacy_id": "R2-25",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and match each numbered colour card to the bowl with the same number.",
+        "S02": "Choose an empty bowl by its same-number target card. Identify a required primary paint from its liquid or label, take that paint bucket if needed, and use it on the bowl.",
+        "S03": "Compare the bowl with its same-number colour card. If its current primary colour belongs in the required mix, take and add the missing primary; otherwise use the rag to empty this bowl.",
+        "S04": "Use the rag to empty the numbered bowl containing an unwanted primary colour, then mix the required colours again.",
+        "S05": "Compare each bowl with its same-number colour card. Inspect the latest liquid colour and mechanism feedback; if a bowl contains an unwanted colour, use the rag to empty it before mixing again."
+      }
+    },
+    "L2-08": {
+      "legacy_id": "R2-29",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window, then locate the red-star floor tile and the direction of the window.",
+        "S02": "Use the red-star tile and the window direction to trace the route across the visible grid. Count tile boundaries.",
+        "S03": "If you are not holding the scraper, open the top drawer of the light-wood cabinet with silver handles and take it. Use the scraper on the destination tile inferred from the route and floor grid.",
+        "S04": "Take the exposed key from the opened floor tile.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L2-09": {
+      "legacy_id": "R2-34",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and inspect the floor plate before treating it as an ordinary button.",
+        "S02": "Take a substantial object from the room and bring it to the empty pressure plate.",
+        "S03": "Use the held object on the empty pressure plate, then inspect the plate and check the top drawer of the light-wood cabinet with silver handles.",
+        "S04": "Take the current object off the plate before trying a heavier object. The plate holds only one object at a time.",
+        "S05": "Inspect part 1 of the office light-wood drawer cabinet with silver handles released by the pressure plate. Open that compartment if it is closed and take the key inside.",
+        "S06": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L2-10": {
+      "legacy_id": "R3-07",
+      "stages": {
+        "S01": "Inspect the inlet, outlet, and the open ports of the pipe tiles before pressing tiles at random.",
+        "S02": "Trace a route from IN and rotate the tile at the first disconnected join so its opening connects to the next tile.",
+        "S03": "Check every connection along the inlet-to-outlet pipe route.",
+        "S04": "Any connected IN-to-OUT route is valid. Stop rotating the solved route and check the released exit."
+      }
+    },
+    "L2-11": {
+      "legacy_id": "R3-09",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and compare the coloured mats with the animal toys.",
+        "S02": "Use the fixed-colour, next-to, and endpoint restrictions together to work out a consistent seating arrangement.",
+        "S03": "Take the toy you want to place, then use it on the chosen mat. If that mat is occupied, take the toy off it before placing another one.",
+        "S04": "Recheck neighbour relationships and endpoint restrictions across the whole row."
+      }
+    },
+    "L2-12": {
+      "legacy_id": "R3-10",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the complete office-rules sheet, then inspect the room for violations of those rules.",
+        "S03": "Match violations in the room's original arrangement to their rule numbers, then use the order requested by the rules sheet. Compare earlier views to separate the initial arrangement from changes you made.",
+        "S04": "Compare your earlier room views with the rules sheet. A drawer you opened while searching is a change you caused.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-13": {
+      "legacy_id": "R3-13",
+      "stages": {
+        "S01": "Inspect the complete light panel and note which lights are currently on and off.",
+        "S02": "One press toggles its own light and its orthogonal neighbours. Compare the before and after images to account for all affected lights.",
+        "S03": "While the door is still locked, plan presses from the panel's current on/off state. Pressing the same button twice cancels its effect.",
+        "S04": "Check all rows of the panel. The target is the complete all-on state."
+      }
+    },
+    "L2-14": {
+      "legacy_id": "R3-15",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and inspect the board's rows, columns, and diagonals.",
+        "S02": "Take an available toy figure and use it on an empty board square. Place all four so that no pair shares a row, column, or diagonal; any arrangement satisfying these conditions works.",
+        "S03": "Take a conflicting figure off the board, then use it on another empty square that avoids row, column and diagonal conflicts.",
+        "S04": "Check every pair for diagonal conflicts as well as shared rows and columns."
+      }
+    },
+    "L2-15": {
+      "legacy_id": "R3-17",
+      "stages": {
+        "S01": "Read the yellow sticky note in the second drawer of the light-wood cabinet with silver handles.",
+        "S02": "Read the dark-covered book from the reddish-brown cabinet's top drawer. If it is locked, unlock it using the yellow sticky note from the second drawer of the light-wood cabinet with silver handles.",
+        "S03": "Read the white sheet in the top drawer of the light-wood cabinet with silver handles for the other part of the counting rule.",
+        "S04": "Count each room-object category named by the book and the white sheet, counting each physical object once across different views.",
+        "S05": "Use the first-part categories from the dark-covered book in the reddish-brown cabinet, followed by the last-part categories from the white sheet in the light-wood cabinet with silver handles.",
+        "S06": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-16": {
+      "legacy_id": "R3-18",
+      "stages": {
+        "S01": "Read the white sheet on top of the laundry-room drawer cabinet.",
+        "S02": "Find the dark-covered book in the second drawer of the laundry room drawer cabinet, unlock the book using the cabinet-top note, and read the book.",
+        "S03": "Use the drawer information from the dark-covered book in the laundry cabinet's second drawer to unlock part 4 of that cabinet. Open part 4 and inspect inside.",
+        "S04": "Take the key from the fourth drawer of the laundry room drawer cabinet and use the key at the outside exit.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L2-17": {
+      "legacy_id": "R3-19",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window for the symbol sequence to decode.",
+        "S02": "Read the symbol notes on both office desks, on the reddish-brown cabinet, and in the top drawer of the light-wood cabinet with silver handles.",
+        "S03": "Translate the symbol clue using the collected references. The same repeated symbol must always use the same value.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-18": {
+      "legacy_id": "R3-21",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window for the colour order, keeping the colour and value of each numerical note already found.",
+        "S02": "Read the notes in the top drawers of the reddish-brown cabinet and the light-wood cabinet with silver handles, plus those on the light-wood cabinet top and the desk below the window. Keep each value with its paper colour.",
+        "S03": "Associate each observed value with its note's colour and use the colour order on the card.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-19": {
+      "legacy_id": "R3-23",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window if needed, then take the loose mirror lying on that desk.",
+        "S02": "Compare the laser's approach direction with the sensor's position and use the mirror on a stand that can reflect toward the sensor.",
+        "S03": "Take the mirror back from its current stand before using it on another stand. Compare the reflected beam with the sensor.",
+        "S04": "The laser releases the top drawer of the office light-wood drawer cabinet with silver handles. Open that released drawer with part 1 and take the key inside.",
+        "S05": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L2-20": {
+      "legacy_id": "R3-27",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the menu and inspect all food and drink objects in the room. Count each physical object once across different views.",
+        "S03": "Add the menu prices for the food and drink objects actually present. Write the total with two decimal places, keeping any trailing zero, then remove the decimal point as the note instructs.",
+        "S04": "Match each room food object to its menu price and add one price for every object present.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-21": {
+      "legacy_id": "R3-28",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the white sheet on the light-wood cabinet with silver handles and locate the symbols listed on the sheet.",
+        "S03": "Describe each symbol's actual relative position, match that description to the location card, then keep the requested symbol order.",
+        "S04": "Use the whole spatial relation, including above/below and beside/behind.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-22": {
+      "legacy_id": "R3-30",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window, take the ruler, and compare the labelled plan with the taped shape on the floor.",
+        "S02": "Rotate the plan mentally to match the floor shape and choose the next required labelled edge.",
+        "S03": "Use the ruler on a required taped edge and inspect the scale in the photo returned by that measurement. Keep its plan label with the reading in the requested unit.",
+        "S04": "Use the labelled-edge order from the note.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-23": {
+      "legacy_id": "R4-07",
+      "stages": {
+        "S01": "Read the yellow sticky note in the top drawer of the light-wood cabinet with silver handles.",
+        "S02": "Read each number sheet on the desks and cabinets, then return to the doorway facing into the room.",
+        "S03": "Order the observed sheets by their positions from that fixed doorway view.",
+        "S04": "Stand at the doorway and order the sheets from left to right in that view.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-24": {
+      "legacy_id": "R4-08",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and the sticky note in the top drawer of the reddish-brown cabinet.",
+        "S02": "Use the window note to establish the room's compass directions and inspect every wall. Keep the rule note's required picture-count order separate.",
+        "S03": "Count pictures on each wall separately and use the compass-direction order specified by the rule sheet.",
+        "S04": "If you turned, your current left/right changed but north/east did not. Recheck the wall-to-direction mapping.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-25": {
+      "legacy_id": "R4-09",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect each bust's facing direction and the number lying along its gaze.",
+        "S03": "Associate one actual gaze target with each bust, then apply the size ordering required by the note.",
+        "S04": "Follow each bust's gaze to its actual number and keep the bust-size order from the desk sheet.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L2-26": {
+      "legacy_id": "R4-10",
+      "stages": {
+        "S01": "Read the sticky note beside each of the three numbered boxes on the floor.",
+        "S02": "Evaluate each candidate against the condition that only one statement is true. Choose only a box consistent with all statements.",
+        "S03": "Inspect the opened box and take the useful item inside before approaching the exit.",
+        "S04": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L2-27": {
+      "legacy_id": "R4-11",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window and identify both jugs, the water source, the emptying target, and the ice bucket.",
+        "S02": "Fill the tall jug from the water bucket before beginning the transfer.",
+        "S03": "Pour from the tall jug into the short jug until the short jug is full. Keep the water remaining in the tall jug.",
+        "S04": "Empty the short jug into the plant pot, keeping the water in the tall jug.",
+        "S05": "Pour the remaining water from the tall jug into the now-empty short jug.",
+        "S06": "Refill the tall jug from the water source while keeping the water already in the short jug.",
+        "S07": "Pour from the full tall jug into the partially filled short jug until the short jug is full. Retain the water left in the tall jug.",
+        "S08": "Use the tall jug on the ice bucket now.",
+        "S09": "Use transfers that fill the receiving jug or empty the pouring jug. Keep track of each container's remaining space.",
+        "S10": "Use the jug holding the required amount on the ice bucket. Stop manipulating other containers once the correct reserve has been isolated."
+      }
+    },
+    "L2-28": {
+      "legacy_id": "R4-13",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect every copy of the motto and identify the one upside-down letter in each copy.",
+        "S03": "Correct the orientation of each exceptional letter and use the location order given on the note.",
+        "S04": "Use the clue order and decode each upside-down letter individually.",
+        "S05": "Use the entry you derive from the room clues by pressing this existing keypad one key at a time. A rejected attempt starts again on the cleared display."
+      }
+    },
+    "L2-29": {
+      "legacy_id": "R4-17",
+      "stages": {
+        "S01": "Read the sticky notes on top of the reddish-brown cabinet, the light-wood cabinet with silver handles, and the desk below the window.",
+        "S02": "Express the later positions in terms of the first position, then enforce every stated relation and digit restriction together.",
+        "S03": "Recheck that each derived value is a permitted digit and that the same first-position choice satisfies every note.",
+        "S04": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L3-01": {
+      "legacy_id": "R4-14",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Inspect the doll house's lit windows on every floor and keep the top-to-bottom floor order given by the white sheet on the desk farther from the window.",
+        "S03": "Use your observed lit-window counts to unlock the second drawer of the office light-wood drawer cabinet with silver handles, then open it and inspect its contents.",
+        "S04": "In the second drawer of the light-wood cabinet with silver handles, read the small card and take the blank white sheet beside the card.",
+        "S05": "Use the blank paper on the typewriter before pressing keys.",
+        "S06": "Inspect the number written on the red box and type that observed input on the machine.",
+        "S07": "Use the printed result to unlock and open the red metal box on the floor, then read the back of the picture card inside.",
+        "S08": "Take an animal toy that still needs to be placed.",
+        "S09": "Use the photograph to associate the animal with its owner and place it on that owner's named mat. Remove a wrong occupant first if needed.",
+        "S10": "The family arrangement has released the exit. Check the door."
+      }
+    },
+    "L3-02": {
+      "legacy_id": "R4-19",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Read the wall clock in afternoon HHMM form for the lock on the second drawer of the light-wood cabinet with silver handles.",
+        "S03": "Use the clock reading to unlock and open the second drawer of the light-wood cabinet with silver handles, then take the pencil and read the white sheet inside.",
+        "S04": "If the indentations are still hidden, use the pencil on the remaining notepad sheet. Once marks appear, adjust your view to inspect them before going to the toolbox.",
+        "S05": "Use the observed rubbing result to unlock and open the red metal box on the floor.",
+        "S06": "Take the flashlight and read the small card inside the red metal box on the floor.",
+        "S07": "Open the wardrobe doors that block the inner back panel, then use the UV flashlight on the exposed panel. Inspect the UV-lit photo returned by that use.",
+        "S08": "Use the writing revealed in the ultraviolet-lit photograph at the outside exit lock.",
+        "S09": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L3-03": {
+      "legacy_id": "R4-20",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Use the afternoon clock reading to unlock and open the second drawer of the light-wood cabinet with silver handles.",
+        "S03": "Read the white sheet in the second drawer of the light-wood cabinet with silver handles and take the gardening shovel beside the sheet.",
+        "S04": "Use the gardening shovel on the plant pot described by the white sheet in the second drawer of the light-wood cabinet with silver handles.",
+        "S05": "Look into the opening and take the revealed key yourself.",
+        "S06": "Use the recovered key on the red metal box on the floor, then open the box.",
+        "S07": "Take the pencil and read the small card inside the red metal box on the floor.",
+        "S08": "Use the pencil on the remaining notepad if the marks are still hidden. Once they appear, adjust your view to inspect the recovered writing.",
+        "S09": "Read the actual recovered marks and use them at the exit.",
+        "S10": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "L3-04": {
+      "legacy_id": "R4-21",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Fill the tall jug from the water bucket before beginning the transfer.",
+        "S03": "Pour from the tall jug into the short jug until the short jug is full. Keep the water remaining in the tall jug.",
+        "S04": "Empty the short jug into the plant pot, keeping the water in the tall jug.",
+        "S05": "Pour the remaining water from the tall jug into the now-empty short jug.",
+        "S06": "Refill the tall jug from the water source while keeping the water already in the short jug.",
+        "S07": "Pour from the full tall jug into the partially filled short jug until the short jug is full. Retain the water left in the tall jug.",
+        "S08": "Use the tall jug on the ice bucket now.",
+        "S09": "Use full-to-capacity transfers and emptying to isolate the required reserve. The trays let you put one jug down while using the other.",
+        "S10": "Use the jug holding the required amount of water on the ice bucket.",
+        "S11": "Open the red metal box on the floor and inspect its contents.",
+        "S12": "Take the camera and read the white sheet inside the red metal box on the floor.",
+        "S13": "Use the camera to examine the sign beyond the window.",
+        "S14": "Use the information observed on the outdoor sign to unlock and open the second drawer of the light-wood cabinet with silver handles, then take the battery and read the small card inside.",
+        "S15": "Use the power cell on the screen beside the exit.",
+        "S16": "Apply the date format stated on the small card in the second drawer of the light-wood cabinet with silver handles and press the powered exit keypad one key at a time.",
+        "S17": "Use the information from the small card in the second drawer of the light-wood cabinet with silver handles at the powered exit keypad."
+      }
+    },
+    "L3-05": {
+      "legacy_id": "R4-22",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Take the hammer lying on the desk farther from the window.",
+        "S03": "Use the hammer on the jar where it sits in the scene, then inspect what was released.",
+        "S04": "Take the visible key released by the broken jar.",
+        "S05": "Use the key recovered from the jar to open the red metal box on the floor.",
+        "S06": "Take the flashlight and read the white sheet inside the red metal box on the floor.",
+        "S07": "Open the wardrobe doors that block the inner back panel, then use the UV flashlight on the exposed panel. Inspect the UV-lit photo returned by that use.",
+        "S08": "Use the observed ultraviolet writing to unlock and open the second drawer of the light-wood cabinet with silver handles, then take the mirror and read the white sheet inside.",
+        "S09": "Take the mirror back from a misplaced stand if needed, then use it to guide the visible laser beam into the sensor, following the white sheet from the second drawer of the light-wood cabinet with silver handles.",
+        "S10": "Check the first drawer of the office reddish-brown drawer cabinet, which the sensor has released, and take the final key.",
+        "S11": "Use the final key at the exit.",
+        "S12": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L3-06": {
+      "legacy_id": "R4-23",
+      "stages": {
+        "S01": "Read the white sheet on the window-side of the lamp, on the desk farther from the window.",
+        "S02": "If you are not holding the blank white sheet, take it from the side of the desk lamp away from the window. Use the sheet on the typewriter below the window.",
+        "S03": "Inspect the number plate beside the exit and type that observed input on the typewriter.",
+        "S04": "Use the typewriter printout to unlock and open the red metal box on the floor, then inspect the picture card and animal toys inside.",
+        "S05": "Read the back of the picture card from the red metal box on the floor.",
+        "S06": "Take one animal that still needs to be returned. It can come from the box or from a wrong placement.",
+        "S07": "Take an animal toy from the red metal box on the floor or a wrong placement if needed. Use the picture card to match it to its owner, clear the named mat if occupied, and place the toy there.",
+        "S08": "The completed toy arrangement released the second drawer of the office light-wood drawer cabinet with silver handles. Open the released drawer.",
+        "S09": "Take the white sheet in the second drawer of the light-wood cabinet with silver handles.",
+        "S10": "Take the white sheet from the second drawer of the light-wood cabinet with silver handles if needed, then use it on the table lamp and inspect the revealed writing.",
+        "S11": "Read the writing revealed on the sheet you took from the second drawer of the light-wood cabinet with silver handles.",
+        "S12": "Use the writing revealed on the sheet from the second drawer of the light-wood cabinet with silver handles to unlock the outside exit."
+      }
+    },
+    "L3-07": {
+      "legacy_id": "R4-24",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Take an unmeasured object named by the white sheet on the desk farther from the window and use it on the empty scale. Read and record the kg value on the scale's own screen.",
+        "S03": "Record the current reading, then take the object off the scale before bringing the next object onto it.",
+        "S04": "Use the scale readings in the object order given by the white sheet on the desk farther from the window to unlock and open the red metal box on the floor.",
+        "S05": "Read the white sheet inside the red metal box on the floor and take the controller and battery beside the sheet.",
+        "S06": "Use the power cell on the gaming controller so the controller can operate the television.",
+        "S07": "Use the powered controller on the television and inspect the broadcast information that appears.",
+        "S08": "Use the broadcast information to unlock and open the tall two-door wardrobe, then take the metal detector inside.",
+        "S09": "Use the detector on the storage ottomans within reach and identify the specific one that produces a beep.",
+        "S10": "Open the same ottoman that beeped.",
+        "S11": "Look inside the opened ottoman and take the visible key yourself before trying the exit.",
+        "S12": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L3-08": {
+      "legacy_id": "R4-25",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Compare the turned plan with the taped floor outline and inspect the labelled edges. Keep each label attached to its physical edge before measuring.",
+        "S03": "Use the ruler along an unmeasured required edge and inspect the scale in the photo returned by that measurement. Keep the edge label with the reading in the requested unit.",
+        "S04": "Use the measured edge lengths to unlock and open the second drawer of the light-wood cabinet with silver handles, then take the gardening shovel and read the white sheet inside.",
+        "S05": "Use the gardening shovel on the plant pot described by the white sheet in the second drawer of the light-wood cabinet with silver handles.",
+        "S06": "Take the visible key yourself.",
+        "S07": "Use the recovered key to open the tall two-door wardrobe. Inspect the bottle on the top shelf and the white sheet on the shelf directly below the bottle.",
+        "S08": "Read the white sheet on the wardrobe shelf directly below the bottle.",
+        "S09": "Take the bottle to the supply sink and use it there to fill it. Water raises the key from the bottom.",
+        "S10": "Inspect the floating key and take it if needed, then use it on the outside exit door.",
+        "S11": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "L3-09": {
+      "legacy_id": "R4-26",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Take the bowling ball from the floor.",
+        "S03": "Use the bowling ball on the floor pressure plate and leave it there.",
+        "S04": "Take the ineffective object off the plate before putting the bowling ball on it. The plate accepts only one object.",
+        "S05": "Open the second drawer of the light-wood cabinet with silver handles, take the blank sheet inside, and use the sheet on the typewriter below the window.",
+        "S06": "Type the number observed on the plate beside the exit and inspect what the machine prints.",
+        "S07": "Use the typewriter printout to unlock and open the red metal box on the floor, then read the white sheet and inspect the animal toys inside.",
+        "S08": "If another object occupies the pressure plate, take it off first. Put the bowling ball back on the empty plate and leave it there while returning the toys.",
+        "S09": "Read the white sheet from the red metal box on the floor and place each animal toy on its matching coloured mat.",
+        "S10": "The curtain-call arrangement has released the exit. Leave the effective setup in place and check the door."
+      }
+    },
+    "L3-10": {
+      "legacy_id": "R4-27",
+      "stages": {
+        "S01": "Read the white sheet on the desk farther from the window.",
+        "S02": "Trace a possible route from IN, rotating the tile at the first disconnected join. Any connected route to OUT is acceptable.",
+        "S03": "Open the second drawer of the light-wood cabinet with silver handles, take the water bottle, and read the white sheet in the second drawer of the light-wood cabinet with silver handles.",
+        "S04": "Use the water bottle on the glass tank if the writing is still hidden. Once it appears, adjust your view to inspect the writing at the tank's bottom before trying the next drawer.",
+        "S05": "Use the writing observed at the glass tank bottom to unlock and open the top drawer of the light-wood cabinet with silver handles, then take the hammer and read the white sheet inside.",
+        "S06": "Read the white sheet in the top drawer of the light-wood cabinet with silver handles.",
+        "S07": "Use the hammer on the jar where it sits.",
+        "S08": "Take the released key if necessary and use it at the exit. Stop striking the jar once it has disappeared.",
+        "S09": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-01": {
+      "legacy_id": "H1-01",
+      "stages": {
+        "S01": "Open the top drawer of the office light-wood cabinet with silver handles and read the yellow sticky note inside.",
+        "S02": "Use the yellow sticky note from the office light-wood cabinet's top drawer to unlock and read the dark-covered book in the office reddish-brown cabinet's top drawer.",
+        "S03": "Use the office-door information to unlock the specified room exit door, open it, and move into the connected area.",
+        "S04": "Inspect the paper on the laundry cabinet top. It describes the drawer that holds the exit key.",
+        "S05": "Unlock and open the laundry cabinet's bottom drawer using the paper's drawer information, then take the key.",
+        "S06": "Use that key on the hall's outside exit door.",
+        "S07": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-02": {
+      "legacy_id": "H1-02",
+      "stages": {
+        "S01": "Find and read the office-door note in the top drawer of the office light-wood drawer cabinet with silver handles.",
+        "S02": "Read the beginning fragment in the top drawer of the office reddish-brown cabinet.",
+        "S03": "Unlock and open the office door using its own note, then explore the connected room.",
+        "S04": "Search the laundry cabinet's top drawer for the note that provides the ending of the outside-door information.",
+        "S05": "Join the beginning and ending clues in their stated order and use the result at the outside exit.",
+        "S06": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "H1-03": {
+      "legacy_id": "H1-03",
+      "stages": {
+        "S01": "Open the top drawer of the office light-wood cabinet with silver handles and read the yellow sticky note inside.",
+        "S02": "Unlock and read the dark-covered book in the top drawer of the office reddish-brown drawer cabinet. It explains both the office door and how the outside door is released.",
+        "S03": "Use the office-door information from the dark-covered book in the office reddish-brown cabinet's top drawer to unlock and open the office door, then pass through it.",
+        "S04": "Find and press the wall switch in the laundry room described by the dark-covered book from the office reddish-brown cabinet's top drawer.",
+        "S05": "Return to the hall's outside exit and open the released door."
+      }
+    },
+    "H1-04": {
+      "legacy_id": "H2-01",
+      "stages": {
+        "S01": "Read the white sheet on the low table in the dining room. It explains the room-count lock and the cabinet holding the exit key.",
+        "S02": "Count the categories in the dining room only, following the category order on the card.",
+        "S03": "Open the solved dining-room door and move into the connected area. This is an internal doorway.",
+        "S04": "Use the dining-room card to unlock and open the top compartment of the kitchen cabinet directly beneath the cooking burners.",
+        "S05": "Take the key from the opened top compartment of the kitchen cabinet directly beneath the cooking burners.",
+        "S06": "Use the recovered key on the garden exit door and then open the specified room exit door.",
+        "S07": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-05": {
+      "legacy_id": "H2-02",
+      "stages": {
+        "S01": "Read the white sheet on the low table in the dining room.",
+        "S02": "Count the named dining-room objects in the card's order and use those counts for the dining-room door, then open and pass it.",
+        "S03": "Face the living-room fireplace and find the cabinet immediately to its right.",
+        "S04": "Use the white sheet from the dining-room low table to unlock the top compartment of the cabinet immediately to the right of the fireplace as you face it, then open it and take the key.",
+        "S05": "Use the recovered key on the actual garden exit.",
+        "S06": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-06": {
+      "legacy_id": "H2-03",
+      "stages": {
+        "S01": "Read the white sheet on the low table in the shared office.",
+        "S02": "Enter the office identified by the plant and inspect its cabinet.",
+        "S03": "Open the top drawer of the cabinet in the office with the plant and read the yellow sticky note inside.",
+        "S04": "Use the note from the office selected by the location card at the building exit lock.",
+        "S05": "Use unlock on the final door with the information you derive from the collected clues."
+      }
+    },
+    "H1-07": {
+      "legacy_id": "H3-01",
+      "stages": {
+        "S01": "Open the top drawer of the office reddish-brown cabinet and read the yellow sticky note inside.",
+        "S02": "Open the second drawer of the office light-wood cabinet with silver handles and read the yellow sticky note inside.",
+        "S03": "Unlock and open the office door, then move through it to reach the connected rooms.",
+        "S04": "Read the yellow sticky note on the washbasin in the bathroom.",
+        "S05": "Combine the beginning and ending clues in their stated order to unlock and open the fourth drawer of the laundry-room cabinet.",
+        "S06": "Take the key from the fourth drawer of the laundry room drawer cabinet and use the key at the outside exit.",
+        "S07": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-08": {
+      "legacy_id": "H3-02",
+      "stages": {
+        "S01": "Read the white sheet on the low table in the dining room.",
+        "S02": "Solve the dining-room count lock from the card, then open and pass the internal door.",
+        "S03": "Open the top compartment of the kitchen cabinet directly under the cooking burners and read the white sheet inside for the beginning of the drawer clue.",
+        "S04": "Face the living-room fireplace, open the top compartment of the cabinet immediately to its right, and read the yellow sticky note inside for the ending fragment.",
+        "S05": "Use the collected clue information to unlock and open the top drawer of the living room reddish-brown drawer cabinet.",
+        "S06": "Take the key from the top drawer of the living room reddish-brown drawer cabinet and use the key at the outside exit.",
+        "S07": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-09": {
+      "legacy_id": "H3-03",
+      "stages": {
+        "S01": "Read the yellow sticky note on the bathroom sink.",
+        "S02": "Use the yellow sticky note from the bathroom sink to unlock the dark-covered book in the top drawer of the bathroom light-wood cabinet with silver handles, then read the book.",
+        "S03": "Use the bathroom-door information from the dark-covered book in the bathroom light-wood cabinet's top drawer to unlock and open the bathroom door, then explore the connected rooms.",
+        "S04": "Read the white sheet on top of the laundry-room drawer cabinet for the ending of the office-drawer clue.",
+        "S05": "Combine the beginning from the book in the bathroom cabinet with the ending from the white sheet on the laundry-room cabinet to unlock and open the fourth drawer of the office light-wood cabinet with silver handles.",
+        "S06": "Take the key from the fourth drawer of the office light-wood drawer cabinet with silver handles and use the key at the outside exit.",
+        "S07": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-10": {
+      "legacy_id": "H4-01",
+      "stages": {
+        "S01": "Open the second drawer of the office light-wood cabinet with silver handles and read the yellow sticky note inside.",
+        "S02": "Unlock and read the dark-covered book in the top drawer of the office reddish-brown drawer cabinet.",
+        "S03": "Count the office objects in the category order given by the dark-covered book from the top drawer of the office reddish-brown cabinet, then use those counts to unlock and open the office door.",
+        "S04": "Open the top compartment of the kitchen cabinet directly beneath the cooking burners and read the white sheet inside.",
+        "S05": "Press the laundry-room wall switch identified by the dark-covered book in the top drawer of the office reddish-brown drawer cabinet to release the dining-room door.",
+        "S06": "Read the white sheet on the low table in the dining room.",
+        "S07": "Combine the two matching clue fragments to unlock and open the fourth drawer of the laundry room drawer cabinet.",
+        "S08": "Take the key from the fourth drawer of the laundry room drawer cabinet and use the key at the outside exit.",
+        "S09": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    },
+    "H1-11": {
+      "legacy_id": "H4-02",
+      "stages": {
+        "S01": "Read the white sheet on the office desk farthest from the window. It lists the office objects to count.",
+        "S02": "Count those office categories in the card's order, then unlock, open, and pass the office door.",
+        "S03": "Read the fixed note on the bathroom sink. It identifies the hall door and the split clue for the garden key.",
+        "S04": "Use the hall-door information from the sink note at the hall door.",
+        "S05": "Open the top compartment of the kitchen cabinet directly under the cooking burners and read the white sheet inside for the beginning of the drawer clue.",
+        "S06": "Face the living-room fireplace, open the top compartment of the cabinet immediately to its right, and read the yellow sticky note inside for the ending of the same drawer clue.",
+        "S07": "Use the collected clue information to unlock and open the top drawer of the living room reddish-brown drawer cabinet.",
+        "S08": "Take the key from the top drawer of the living-room reddish-brown cabinet and use it on the garden exit.",
+        "S09": "Use the recovered exit key on the final door lock, then check the door itself. A released key still has to be applied."
+      }
+    }
+  },
+  "aliases": {
+    "R1-04": "L1-01",
+    "R1-05": "L1-02",
+    "R1-09": "L1-03",
+    "R1-10": "L1-04",
+    "R1-11": "L1-05",
+    "R1-12": "L1-06",
+    "R1-13": "L1-07",
+    "R1-14": "L1-08",
+    "R1-15": "L1-09",
+    "R1-16": "L1-10",
+    "R1-17": "L1-11",
+    "R1-18": "L1-12",
+    "R1-19": "L1-13",
+    "R1-20": "L1-14",
+    "R1-21": "L1-15",
+    "R1-22": "L1-16",
+    "R1-23": "L1-17",
+    "R1-24": "L1-18",
+    "R1-25": "L1-19",
+    "R1-26": "L1-20",
+    "R1-27": "L1-21",
+    "R1-28": "L1-22",
+    "R1-29": "L1-23",
+    "R1-31": "L1-24",
+    "R1-32": "L1-25",
+    "R1-33": "L1-26",
+    "R1-34": "L1-27",
+    "R1-35": "L1-28",
+    "R1-36": "L1-29",
+    "R1-37": "L1-30",
+    "R1-38": "L1-31",
+    "R1-39": "L1-32",
+    "R1-40": "L1-33",
+    "R1-41": "L1-34",
+    "R1-42": "L1-35",
+    "R1-43": "L1-36",
+    "R1-44": "L1-37",
+    "R1-45": "L1-38",
+    "R2-01": "L1-39",
+    "R2-02": "L1-40",
+    "R2-03": "L1-41",
+    "R2-04": "L1-42",
+    "R2-05": "L1-43",
+    "R2-06": "L1-44",
+    "R2-07": "L1-45",
+    "R2-09": "L1-46",
+    "R2-10": "L1-47",
+    "R2-11": "L1-48",
+    "R2-12": "L1-49",
+    "R2-14": "L1-50",
+    "R2-15": "L1-51",
+    "R2-17": "L1-52",
+    "R2-19": "L1-53",
+    "R2-20": "L1-54",
+    "R2-22": "L1-55",
+    "R2-23": "L1-56",
+    "R2-24": "L1-57",
+    "R2-26": "L1-58",
+    "R2-27": "L1-59",
+    "R2-28": "L1-60",
+    "R2-30": "L1-61",
+    "R2-31": "L1-62",
+    "R2-32": "L1-63",
+    "R2-33": "L1-64",
+    "R2-35": "L1-65",
+    "R2-36": "L1-66",
+    "R2-37": "L1-67",
+    "R2-38": "L1-68",
+    "R3-01": "L1-69",
+    "R3-02": "L1-70",
+    "R3-03": "L1-71",
+    "R3-04": "L1-72",
+    "R3-05": "L1-73",
+    "R3-06": "L1-74",
+    "R3-08": "L1-75",
+    "R3-11": "L1-76",
+    "R3-12": "L1-77",
+    "R3-14": "L1-78",
+    "R3-16": "L1-79",
+    "R3-20": "L1-80",
+    "R3-22": "L1-81",
+    "R3-24": "L1-82",
+    "R3-25": "L1-83",
+    "R3-26": "L1-84",
+    "R3-29": "L1-85",
+    "R3-31": "L1-86",
+    "R4-01": "L1-87",
+    "R4-02": "L1-88",
+    "R4-03": "L1-89",
+    "R4-04": "L1-90",
+    "R4-05": "L1-91",
+    "R4-06": "L1-92",
+    "R4-12": "L1-93",
+    "R4-16": "L1-94",
+    "R4-18": "L1-95",
+    "R1-30": "L2-01",
+    "R2-08": "L2-02",
+    "R2-13": "L2-03",
+    "R2-16": "L2-04",
+    "R2-18": "L2-05",
+    "R2-21": "L2-06",
+    "R2-25": "L2-07",
+    "R2-29": "L2-08",
+    "R2-34": "L2-09",
+    "R3-07": "L2-10",
+    "R3-09": "L2-11",
+    "R3-10": "L2-12",
+    "R3-13": "L2-13",
+    "R3-15": "L2-14",
+    "R3-17": "L2-15",
+    "R3-18": "L2-16",
+    "R3-19": "L2-17",
+    "R3-21": "L2-18",
+    "R3-23": "L2-19",
+    "R3-27": "L2-20",
+    "R3-28": "L2-21",
+    "R3-30": "L2-22",
+    "R4-07": "L2-23",
+    "R4-08": "L2-24",
+    "R4-09": "L2-25",
+    "R4-10": "L2-26",
+    "R4-11": "L2-27",
+    "R4-13": "L2-28",
+    "R4-17": "L2-29",
+    "R4-14": "L3-01",
+    "R4-19": "L3-02",
+    "R4-20": "L3-03",
+    "R4-21": "L3-04",
+    "R4-22": "L3-05",
+    "R4-23": "L3-06",
+    "R4-24": "L3-07",
+    "R4-25": "L3-08",
+    "R4-26": "L3-09",
+    "R4-27": "L3-10",
+    "H1-01": "H1-01",
+    "H1-02": "H1-02",
+    "H1-03": "H1-03",
+    "H2-01": "H1-04",
+    "H2-02": "H1-05",
+    "H2-03": "H1-06",
+    "H3-01": "H1-07",
+    "H3-02": "H1-08",
+    "H3-03": "H1-09",
+    "H4-01": "H1-10",
+    "H4-02": "H1-11"
+  },
+  "common": {
+    "G01": "Open the released outside exit door.",
+    "G02": "Walk through the open outside exit door.",
+    "G03": "Move close enough to see and reach the interaction target.",
+    "G04": "Take the required tool and select it with item when holding several tools.",
+    "G05": "Start a new entry on the cleared keypad display using the observed clue.",
+    "G06": "Take the current object off the occupied placement surface before placing the next item."
+  },
+  "source_manifest_sha256": "c4b05a1cba7370af267ef13caf18ae5bdcfd16984bf57538bf2cc73a671f233b"
+}

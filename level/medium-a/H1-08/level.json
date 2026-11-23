@@ -1,0 +1,170 @@
+{
+  "name": "H1-08_dining_halves",
+  "scene": "Beechwood_0_garden",
+  "seed": 244,
+  "start": {
+    "room": "dining_room_0",
+    "xy": [
+      -5.1,
+      18.15
+    ],
+    "yaw_deg": -90
+  },
+  "prompt_intro": "You are a robot locked inside a house. You start in one room; your goal is to get out of the house.\nDoors may be locked. What opens them is not told in this message; you have to find out by searching.\nThings can be hidden inside furniture that opens, and some things are locked themselves (with a code lock or a keyhole).",
+  "doors_default": "unlocked",
+  "items": [
+    {
+      "id": "card",
+      "name": "escape_card",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "Dining room door: the number of chairs in this room, then the number of floor lamps, then the number of pictures, then the number of tables. The garden door key is locked in a drawer in the living room. The first half of that drawer's code is in the cabinet right under the burner; the second half is in the cabinet on the right of the fireplace, as you face the fireplace.",
+      "on": {
+        "category": "coffee_table",
+        "room": "dining_room_0"
+      }
+    },
+    {
+      "id": "half_a",
+      "name": "escape_half_a",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "The living room drawer code starts with {drawer_a}.",
+      "inside": {
+        "nearest_to": "burner",
+        "categories": [
+          "bottom_cabinet",
+          "bottom_cabinet_no_top"
+        ],
+        "min_margin": 0.5
+      },
+      "part": 1
+    },
+    {
+      "id": "half_b",
+      "name": "escape_half_b",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "...and the living room drawer code ends with {drawer_b}.",
+      "inside": "bottom_cabinet_qacthv_0",
+      "part": 1
+    },
+    {
+      "id": "key",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "gqbwfv",
+      "kind": "key",
+      "inside": "bottom_cabinet_immwzb_1",
+      "part": 1
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "inside": "bottom_cabinet_no_top_qohxjq_1",
+      "part": 1,
+      "kind": "decoy"
+    }
+  ],
+  "doors": [
+    {
+      "id": "dining",
+      "name": "door_ohagsq_0",
+      "lock": {
+        "count": [
+          [
+            "straight_chair",
+            "dining_room_0"
+          ],
+          [
+            "floor_lamp",
+            "dining_room_0"
+          ],
+          [
+            "picture",
+            "dining_room_0"
+          ],
+          [
+            "coffee_table",
+            "dining_room_0"
+          ]
+        ],
+        "clue": "card"
+      },
+      "pass_checkpoint": true
+    },
+    {
+      "id": "exit",
+      "name": "door_lvncak_0",
+      "key": "key",
+      "exit": true
+    },
+    {
+      "name": "door_xdcuws_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_1",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_2",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_3",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_4",
+      "lock": null
+    }
+  ],
+  "max_steps": 200,
+  "part_locks": [
+    {
+      "id": "drawer",
+      "container": "bottom_cabinet_immwzb_1",
+      "part": 1,
+      "lock": "random:4"
+    }
+  ],
+  "room_mode": "multi",
+  "difficulty": null,
+  "difficulty_reason": "多房间不分难度，统一200动作；保留原布局和谜题链。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "confirmed multi-room200 rule",
+    "current_deployed_max_steps": 200,
+    "new_proposed_max_steps": 200,
+    "proposal_not_silently_applied": true,
+    "example_status": "多房间统一规则（已确认）",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "H1-08",
+  "legacy_name": "H3-02_dining_halves",
+  "legacy_id": "H3-02",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "多房间统一规则（已确认）",
+  "budget_revision260": {
+    "actions": 200,
+    "recalls": 20,
+    "hint_window": 50,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "55ea59a267e4517d208c6a409dc2e18ac9e0b52933c333fe82b29d561da3ccc4"
+  },
+  "protocol": "unified_v2",
+  "public_id": "H1-08",
+  "legacy_benchmark_id": "H1-08",
+  "recall_budget": 20,
+  "tip_window": 50
+}

@@ -1,0 +1,1028 @@
+{
+  "name": "L3-07_office_story_radio",
+  "scene": "Beechwood_0_garden",
+  "seed": 980024,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_reason": "逐件实际称量形成供电物资箱码，取电池和控制器使电视显示广播，广播开启探测器柜，实际探测后开对应凳盖并手动取钥匙。",
+  "story_definition": {
+    "title": "电台没发出的求救信",
+    "version": 98,
+    "form": "real native props, no wall-table story",
+    "causal_chain": [
+      "weigh four packages on native kg display -> supply drawer",
+      "battery inserted in controller -> native TV broadcast4718",
+      "broadcast opens detector drawer",
+      "detector beep authorizes same ottoman lid; manually take key"
+    ],
+    "native_acceptance": "pending104; known native storage poses reused, shallow-drawer items moved to proper physical hosts",
+    "user_design_acceptance": "pending"
+  },
+  "items": [
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "I am the radio operator. To restore our last message, first weigh the briefcase, paint supply, rice bag and packing box, in that order, using the floor scale. Their kilogram readings form the radio-case code. The power cell, controller and last page of my log are locked there.",
+      "display": "letter"
+    },
+    {
+      "id": "briefcase",
+      "name": "office_briefcase",
+      "category": "briefcase",
+      "model": "haecvf",
+      "kind": "tool",
+      "place": {
+        "position": [
+          4.0009,
+          16.54,
+          0.7629
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_immwzb_0"
+      }
+    },
+    {
+      "id": "paint",
+      "name": "office_paint",
+      "category": "bucket_of_paint",
+      "model": "qbqche",
+      "kind": "tool",
+      "scale": 1.3,
+      "place": {
+        "position": [
+          3.15,
+          18.25,
+          0.1388
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "rice",
+      "name": "office_rice",
+      "category": "bag_of_rice",
+      "model": "eddcjz",
+      "kind": "tool",
+      "place": {
+        "position": [
+          5.3631,
+          16.7306,
+          0.7459
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_nddvba_0"
+      }
+    },
+    {
+      "id": "box",
+      "name": "office_box",
+      "category": "packing_box",
+      "model": "cjhskr",
+      "kind": "tool",
+      "scale": 0.55,
+      "place": {
+        "position": [
+          4.45,
+          18.98,
+          0.8191
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      }
+    },
+    {
+      "id": "controller",
+      "name": "office_controller",
+      "category": "gaming_controller",
+      "model": "yofqbq",
+      "kind": "tool",
+      "inside": "office_radio_case",
+      "part": 1,
+      "at": [
+        2.57,
+        17.48,
+        0.064
+      ],
+      "yaw_deg": 90
+    },
+    {
+      "id": "battery",
+      "name": "office_battery",
+      "category": "battery",
+      "model": "dcjyzg",
+      "kind": "tool",
+      "inside": "office_radio_case",
+      "part": 1,
+      "at": [
+        2.64,
+        17.36,
+        0.064
+      ],
+      "yaw_deg": 90,
+      "scale": 1.0
+    },
+    {
+      "id": "broadcast_note",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "office_radio_case",
+      "part": 1,
+      "text": "Put the power cell into the gaming controller, then use that controller on the television. My last broadcast gives the storage-cabinet code. That cabinet holds the detector: scan the stools, open only one that beeps, then take the key yourself.",
+      "at": [
+        2.57,
+        17.22,
+        0.03
+      ],
+      "yaw_deg": 90,
+      "display": "radio log"
+    },
+    {
+      "id": "detector",
+      "name": "office_detector",
+      "category": "carpet_sweeper",
+      "model": "xboreo",
+      "kind": "tool",
+      "display": "metal detector",
+      "dig_tool": true,
+      "inside": "office_radio_store",
+      "part": 1,
+      "at": [
+        3.33,
+        18.95,
+        0.1668
+      ],
+      "yaw_deg": 180,
+      "scale": 0.9
+    },
+    {
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "id": "exitkey",
+      "name": "escape_key",
+      "buried_in": "office_ottoman_3",
+      "dig_text": "Beep, beep, beep."
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_scale",
+      "category": "digital_scale",
+      "model": "hfetby",
+      "center": [
+        3.22,
+        16.68
+      ],
+      "yaw_deg": 90,
+      "scale": [
+        2.8,
+        2.8,
+        0.7
+      ]
+    },
+    {
+      "name": "office_tv",
+      "category": "wall_mounted_tv",
+      "model": "dxyfxf",
+      "position": [
+        5.06,
+        16.32,
+        1.4
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        90
+      ],
+      "display": "TV"
+    },
+    {
+      "name": "decor_tv_bg",
+      "plane": [
+        0.82,
+        0.44
+      ],
+      "position": [
+        5.06,
+        16.354,
+        1.4
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.05,
+        0.12,
+        0.35,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_0f",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        5.31,
+        16.358,
+        1.4375
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_0g",
+      "plane": [
+        0.08,
+        0.018
+      ],
+      "position": [
+        5.27,
+        16.358,
+        1.4
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_0b",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        5.23,
+        16.358,
+        1.4375
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_0c",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        5.23,
+        16.358,
+        1.3625
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_1a",
+      "plane": [
+        0.08,
+        0.018
+      ],
+      "position": [
+        5.13,
+        16.358,
+        1.475
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_1b",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        5.09,
+        16.358,
+        1.4375
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_1c",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        5.09,
+        16.358,
+        1.3625
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_2b",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        4.95,
+        16.358,
+        1.4375
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_2c",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        4.95,
+        16.358,
+        1.3625
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3a",
+      "plane": [
+        0.08,
+        0.018
+      ],
+      "position": [
+        4.85,
+        16.358,
+        1.475
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3b",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        4.81,
+        16.358,
+        1.4375
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3c",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        4.81,
+        16.358,
+        1.3625
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3d",
+      "plane": [
+        0.08,
+        0.018
+      ],
+      "position": [
+        4.85,
+        16.358,
+        1.325
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3e",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        4.89,
+        16.358,
+        1.3625
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3f",
+      "plane": [
+        0.018,
+        0.075
+      ],
+      "position": [
+        4.89,
+        16.358,
+        1.4375
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "decor_tv_code_3g",
+      "plane": [
+        0.08,
+        0.018
+      ],
+      "position": [
+        4.85,
+        16.358,
+        1.4
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.92,
+        1.0
+      ],
+      "screen_on": true
+    },
+    {
+      "name": "office_ottoman_3",
+      "category": "ottoman",
+      "model": "miftfy",
+      "center": [
+        4.3,
+        18.2
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_radio_case",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0,
+      "display": "toolbox",
+      "scale": [
+        1.0,
+        1.0,
+        0.6
+      ]
+    },
+    {
+      "name": "office_radio_store",
+      "category": "wardrobe",
+      "model": "brimns",
+      "center": [
+        3.5,
+        18.98
+      ],
+      "yaw_deg": 270,
+      "scale": [
+        0.79,
+        0.79,
+        0.79
+      ],
+      "front": [
+        0,
+        -1
+      ],
+      "front_cone_deg": 15
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "scale",
+      "name": "office_scale",
+      "weights": {
+        "briefcase": 3,
+        "paint": 8,
+        "rice": 5,
+        "box": 1
+      }
+    },
+    {
+      "type": "screen",
+      "name": "office_tv",
+      "remote": "controller",
+      "battery": "battery"
+    }
+  ],
+  "native_storage_targets": [
+    "office_ottoman_3"
+  ],
+  "native_storage_detector_id": "detector",
+  "part_locks": [
+    {
+      "id": "power_supplies",
+      "container": "office_radio_case",
+      "part": 1,
+      "lock": "3851",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "站到秤前：下面对它把七个动作各试一次"
+        },
+        {
+          "take": "office_briefcase",
+          "note": "拿briefcase"
+        },
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "回到秤前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "scale",
+            "item": "briefcase"
+          },
+          "point_world": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "briefcase放上秤：读重量"
+        },
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            3.15,
+            18.25,
+            0.1388
+          ],
+          "note": "已经在合法秤前观察位：直接转头看可达的油漆桶，不绕到柜后"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "bucket of paint"
+          },
+          "point_world": [
+            3.15,
+            18.25,
+            0.1388
+          ],
+          "note": "由真实像素和原reach/visibility守卫取桶；不是传送或强制holding"
+        },
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "回到秤前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "scale",
+            "item": "bucket of paint"
+          },
+          "point_world": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "bucket of paint放上秤：读重量"
+        },
+        {
+          "take": "office_rice",
+          "note": "拿bag of rice"
+        },
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "回到秤前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "scale",
+            "item": "bag of rice"
+          },
+          "point_world": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "bag of rice放上秤：读重量"
+        },
+        {
+          "take": "office_box",
+          "note": "拿packing box"
+        },
+        {
+          "at": [
+            3.3,
+            17.6
+          ],
+          "aim": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "回到秤前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "scale",
+            "item": "packing box"
+          },
+          "point_world": [
+            3.22,
+            16.68,
+            0.07
+          ],
+          "note": "packing box放上秤：读重量"
+        }
+      ]
+    },
+    {
+      "id": "detector_drawer",
+      "container": "office_radio_store",
+      "part": 1,
+      "lock": "4718",
+      "code_from": "look",
+      "pre_steps": [
+        {
+          "take": "office_diary_page"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "radio log"
+          }
+        }
+      ],
+      "look": [
+        {
+          "at": [
+            4.5,
+            17.4
+          ],
+          "aim": [
+            5.06,
+            16.32,
+            1.4
+          ],
+          "note": "站到电视前：下面对它把七个动作各试一次"
+        },
+        {
+          "take": "office_controller",
+          "note": "从已解锁的 radio case 取手柄"
+        },
+        {
+          "at": [
+            4.5,
+            17.4
+          ],
+          "aim": [
+            5.06,
+            16.32,
+            1.4
+          ],
+          "note": "回到电视前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tv",
+            "item": "gaming controller"
+          },
+          "point_world": [
+            5.06,
+            16.32,
+            1.4
+          ],
+          "note": "没装电池的手柄对电视：应没反应"
+        },
+        {
+          "take": "office_battery",
+          "note": "从同一个 radio case 取电池"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "item": "battery",
+            "target": "gaming controller"
+          },
+          "point_world": null,
+          "note": "手里的电池对手里的手柄：装上电池"
+        },
+        {
+          "at": [
+            4.5,
+            17.4
+          ],
+          "aim": [
+            5.06,
+            16.32,
+            1.4
+          ],
+          "note": "回到电视前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tv",
+            "item": "gaming controller"
+          },
+          "point_world": [
+            5.06,
+            16.32,
+            1.4
+          ],
+          "note": "装了电池的手柄对电视：电视打开"
+        },
+        {
+          "aim": [
+            5.06,
+            16.32,
+            1.4
+          ],
+          "note": "看电视屏幕上的门码"
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "_instrument_dimensions_applied": true,
+  "benchmark_id": "L3-07",
+  "legacy_name": "R4-24_office_story_radio",
+  "legacy_id": "R4-24",
+  "naming_policy": "difficulty_names157",
+  "difficulty_assessment": {
+    "current_deployed_max_steps": 180,
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "classification_origin157": "用户本次要求·新增故事关",
+  "native_key_presentation215": {
+    "escape_key": {
+      "mode": "storage_floor",
+      "yaw_deg": 30.0,
+      "offset_xy": [
+        -0.075,
+        0.075
+      ]
+    }
+  },
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "881500060c9147ebb4d8c97d840df0b08d1268ae39669937a04547a4fdc33163"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-36",
+  "legacy_benchmark_id": "L3-07",
+  "recall_budget": 10,
+  "tip_window": 25
+}

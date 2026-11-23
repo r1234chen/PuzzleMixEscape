@@ -1,0 +1,116 @@
+{
+  "name": "L2-17_office_symbols",
+  "scene": "Beechwood_0_garden",
+  "seed": 240,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "card",
+      "name": "escape_card",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "Door code: ▲ ★ ● ★",
+      "on": "desk_rzyfxk_0",
+      "fixed": true
+    },
+    {
+      "id": "s_star",
+      "name": "escape_s_star",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "★ {s_star}",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1,
+      "digit": true
+    },
+    {
+      "id": "s_tri",
+      "name": "escape_s_tri",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "▲ {s_tri}",
+      "on": "desk_rzyfxk_1",
+      "fixed": true,
+      "digit": true
+    },
+    {
+      "id": "s_dot",
+      "name": "escape_s_dot",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "● {s_dot}",
+      "on": "bottom_cabinet_immwzb_0",
+      "fixed": true,
+      "digit": true
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 3,
+      "kind": "decoy"
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": {
+        "concat": [
+          "s_tri",
+          "s_star",
+          "s_dot",
+          "s_star"
+        ]
+      },
+      "clue": "card"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "符号数值分在两柜内和不同桌上，需要逐处打开、读取并集齐，不是完整符号表一幅图直接查码。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-17",
+  "legacy_name": "R3-19_office_symbols",
+  "legacy_id": "R3-19",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "13b5d1c5c1e07dc812a79603ecaa5c38c9e088af07323305597fd89029aab82e"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-17",
+  "legacy_benchmark_id": "L2-17",
+  "recall_budget": 10,
+  "tip_window": 25
+}

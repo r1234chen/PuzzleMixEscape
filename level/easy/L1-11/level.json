@@ -1,0 +1,580 @@
+{
+  "name": "L2-11_office_seats",
+  "scene": "Beechwood_0_garden",
+  "seed": 7011,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Four friends sit on the four mats on the desk by the window. The panda sits on the green mat. The crab sits right next to the panda. The turtle does not sit at either end.",
+      "overlay": {
+        "texture": "hint_60252fe7dc.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "panda",
+      "name": "office_panda",
+      "category": "toy_figure",
+      "model": "gdekzd",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.0502,
+          16.4991,
+          0.7502
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_immwzb_0"
+      },
+      "display": "toy panda"
+    },
+    {
+      "id": "crab",
+      "name": "office_crab",
+      "category": "toy_figure",
+      "model": "psfkaj",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          5.3987,
+          16.7454,
+          0.715
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "bottom_cabinet_nddvba_0"
+      },
+      "display": "toy crab"
+    },
+    {
+      "id": "octopus",
+      "name": "office_octopus",
+      "category": "toy_figure",
+      "model": "zltgeo",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.3507,
+          18.9502,
+          0.8134
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      },
+      "display": "toy octopus"
+    },
+    {
+      "id": "turtle",
+      "name": "office_turtle",
+      "category": "toy_figure",
+      "model": "gyrsew",
+      "kind": "clue",
+      "text": "",
+      "place": {
+        "position": [
+          4.6135,
+          18.95,
+          0.8178
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ],
+        "container": "desk_rzyfxk_0"
+      },
+      "display": "toy turtle"
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "站到垫子前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "mat"
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：read 垫子"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "mat"
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：take 垫子"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "mat",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：open 垫子"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "mat",
+            "part": 1
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：close 垫子"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "mat"
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：press 垫子"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "mat",
+            "code": "1234"
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：unlock 垫子"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "post it"
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "乱试：use 垫子"
+        },
+        {
+          "take": "office_panda",
+          "note": "拿熊猫（柜子 A 顶上）"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.45,
+            0.784
+          ],
+          "note": "回到垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy panda"
+          },
+          "point_world": [
+            5.38,
+            18.45,
+            0.784
+          ],
+          "note": "先放错：熊猫放在红垫子上"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "toy figure"
+          },
+          "point_world": [
+            5.38,
+            18.45,
+            0.85
+          ],
+          "note": "拿回来"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy panda"
+          },
+          "point_world": [
+            5.38,
+            17.75,
+            0.784
+          ],
+          "note": "熊猫坐绿垫子（第 3 块）"
+        },
+        {
+          "take": "office_crab",
+          "note": "拿螃蟹"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            17.4,
+            0.784
+          ],
+          "note": "回到垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy crab"
+          },
+          "point_world": [
+            5.38,
+            17.4,
+            0.784
+          ],
+          "note": "坐第 4 块垫子"
+        },
+        {
+          "take": "office_octopus",
+          "note": "拿章鱼"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.45,
+            0.784
+          ],
+          "note": "回到垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy octopus"
+          },
+          "point_world": [
+            5.38,
+            18.45,
+            0.784
+          ],
+          "note": "坐第 1 块垫子"
+        },
+        {
+          "take": "office_turtle",
+          "note": "拿乌龟"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "回到垫子前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "mat",
+            "item": "toy turtle"
+          },
+          "point_world": [
+            5.38,
+            18.1,
+            0.784
+          ],
+          "note": "坐第 2 块垫子：四个都对，咔哒一声，门锁解开"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "mat_1",
+      "box": [
+        0.24,
+        0.24,
+        0.006
+      ],
+      "category": "mat",
+      "display": "red mat",
+      "position": [
+        5.38,
+        18.45,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.8,
+        0.16,
+        0.14,
+        1.0
+      ]
+    },
+    {
+      "name": "mat_2",
+      "box": [
+        0.24,
+        0.24,
+        0.006
+      ],
+      "category": "mat",
+      "display": "blue mat",
+      "position": [
+        5.38,
+        18.1,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.16,
+        0.3,
+        0.78,
+        1.0
+      ]
+    },
+    {
+      "name": "mat_3",
+      "box": [
+        0.24,
+        0.24,
+        0.006
+      ],
+      "category": "mat",
+      "display": "green mat",
+      "position": [
+        5.38,
+        17.75,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.16,
+        0.56,
+        0.22,
+        1.0
+      ]
+    },
+    {
+      "name": "mat_4",
+      "box": [
+        0.24,
+        0.24,
+        0.006
+      ],
+      "category": "mat",
+      "display": "yellow mat",
+      "position": [
+        5.38,
+        17.4,
+        0.781
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.94,
+        0.8,
+        0.14,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "gadgets": [
+    {
+      "type": "slot",
+      "name": "mat_1",
+      "group": "seats"
+    },
+    {
+      "type": "slot",
+      "name": "mat_2",
+      "group": "seats"
+    },
+    {
+      "type": "slot",
+      "name": "mat_3",
+      "group": "seats"
+    },
+    {
+      "type": "slot",
+      "name": "mat_4",
+      "group": "seats"
+    }
+  ],
+  "slot_groups": {
+    "seats": {
+      "kind": "assign",
+      "items": [
+        "panda",
+        "crab",
+        "octopus",
+        "turtle"
+      ],
+      "answers": [
+        {
+          "mat_1": "octopus",
+          "mat_2": "turtle",
+          "mat_3": "panda",
+          "mat_4": "crab"
+        }
+      ],
+      "door": "door_lvgliq_1"
+    }
+  },
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "四个玩偶实际分在不同柜面和桌上，要逐个找到、拿取并按空间座次放到垫子；按多物体操作建议100步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-11",
+  "legacy_name": "R3-09_office_seats",
+  "legacy_id": "R3-09",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "57dbe36ca89abb0b5e6805146bd1a6b1b55eb41d260253359942fadf07d03c90"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-11",
+  "legacy_benchmark_id": "L2-11",
+  "recall_budget": 10,
+  "tip_window": 25
+}

@@ -1,0 +1,1816 @@
+{
+  "name": "L3-10_office_story_expedition",
+  "scene": "Beechwood_0_garden",
+  "seed": 1000027,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "hard",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_reason": "转动真实管块形成IN到OUT可达通路，打开水瓶抽屉，注水显出玻璃容器底部数字以取得锤子，破罐取得钥匙离开；连通允许多解。",
+  "story_definition": {
+    "title": "探险队的返程信",
+    "version": 100,
+    "form": "real native props, not a whiteboard table",
+    "causal_chain": [
+      "actual pipe connectivity IN->OUT -> water supply drawer",
+      "water bottle reveals actual tank bottom8253 -> hammer drawer",
+      "hammer breaks real sealed jar; no debris -> key -> exit"
+    ],
+    "native_acceptance": "pending worker-C native/640x360 visual acceptance; CPU source geometry is not rendered acceptance",
+    "user_design_acceptance": "pending",
+    "worker_C_revision": "104-C1; only assigned JSON geometry repairs; immutable v104 parent untouched"
+  },
+  "items": [
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "I am the expedition leader. Restore our water line by turning the pipe tiles until IN reaches OUT; any connected route is valid. That releases the second supply drawer. Take its water bottle and follow the field record to recover the sealed return key.",
+      "display": "letter"
+    },
+    {
+      "id": "water",
+      "name": "office_water",
+      "category": "bottle_of_water",
+      "model": "eeaimz",
+      "kind": "clue",
+      "text": "",
+      "display": "bottle of water",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "at": [
+        5.335,
+        16.9,
+        0.5334
+      ],
+      "yaw_deg": 90,
+      "inside_rpy_deg": [
+        90,
+        0,
+        0
+      ],
+      "scale": 0.9
+    },
+    {
+      "id": "hammer",
+      "name": "escape_hammer",
+      "category": "hammer",
+      "model": "bbzlel",
+      "kind": "tool",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1,
+      "yaw_deg": 90,
+      "at": [
+        5.28,
+        16.88,
+        0.623
+      ],
+      "scale": 0.7
+    },
+    {
+      "id": "jar",
+      "name": "escape_jar",
+      "category": "hingeless_jar",
+      "model": "qzwijs",
+      "display": "jar",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "take_text": "Something rattles inside.",
+      "break_text": "The jar breaks.",
+      "melts": false,
+      "at": [
+        4.45,
+        18.95,
+        0.83
+      ],
+      "take_return_text": "You picked up the sealed jar. Something rattles inside.you put it back"
+    },
+    {
+      "id": "key",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "inside_item": "jar",
+      "scale": 0.6
+    },
+    {
+      "id": "page",
+      "name": "office_diary_page",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "text": "The return route was recorded on the bottom of the empty glass tank. Pour this water into the tank and read the digits that appear. They open the first drawer, where I left the hammer and the last page.",
+      "at": [
+        5.335,
+        16.54,
+        0.4845
+      ],
+      "yaw_deg": 90,
+      "display": "expedition page"
+    },
+    {
+      "id": "last_page",
+      "name": "office_postcard",
+      "category": "paper_sheet",
+      "model": "uqbipw",
+      "kind": "clue",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1,
+      "text": "Our last key was sealed inside the jar. Use the hammer to break the jar, then use its key at the exit. The pipe route and submerged record have already restored our return supplies.",
+      "at": [
+        5.335,
+        16.6,
+        0.6
+      ],
+      "yaw_deg": 90,
+      "display": "return note"
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "decor_pipe_board",
+      "plane": [
+        0.58,
+        0.56
+      ],
+      "position": [
+        4.05,
+        19.286,
+        1.4
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T5_board.png"
+    },
+    {
+      "name": "pipe_tile_00",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.885,
+        19.28,
+        1.565
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_00_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.885,
+        19.2725,
+        1.565
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_01",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.995,
+        19.28,
+        1.565
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_01_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.995,
+        19.2725,
+        1.565
+      ],
+      "rpy_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_02",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.105,
+        19.28,
+        1.565
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_02_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.105,
+        19.2725,
+        1.565
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_03",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.215,
+        19.28,
+        1.565
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_03_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.215,
+        19.2725,
+        1.565
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_10",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.885,
+        19.28,
+        1.455
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_10_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.885,
+        19.2725,
+        1.455
+      ],
+      "rpy_deg": [
+        -90.0,
+        0.0,
+        -180.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_11",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.995,
+        19.28,
+        1.455
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_11_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.995,
+        19.2725,
+        1.455
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_12",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.105,
+        19.28,
+        1.455
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_12_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.105,
+        19.2725,
+        1.455
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_13",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.215,
+        19.28,
+        1.455
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_13_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.215,
+        19.2725,
+        1.455
+      ],
+      "rpy_deg": [
+        90.0,
+        90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_20",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.885,
+        19.28,
+        1.345
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_20_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.885,
+        19.2725,
+        1.345
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_21",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.995,
+        19.28,
+        1.345
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_21_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.995,
+        19.2725,
+        1.345
+      ],
+      "rpy_deg": [
+        90.0,
+        90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_22",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.105,
+        19.28,
+        1.345
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_22_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.105,
+        19.2725,
+        1.345
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_23",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.215,
+        19.28,
+        1.345
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_23_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.215,
+        19.2725,
+        1.345
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_30",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.885,
+        19.28,
+        1.235
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_30_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.885,
+        19.2725,
+        1.235
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_31",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        3.995,
+        19.28,
+        1.235
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_31_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        3.995,
+        19.2725,
+        1.235
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_S.png"
+    },
+    {
+      "name": "pipe_tile_32",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.105,
+        19.28,
+        1.235
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_32_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.105,
+        19.2725,
+        1.235
+      ],
+      "rpy_deg": [
+        90.0,
+        90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "pipe_tile_33",
+      "box": [
+        0.1,
+        0.012,
+        0.1
+      ],
+      "category": "pipe_tile",
+      "display": "pipe tile",
+      "position": [
+        4.215,
+        19.28,
+        1.235
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.84,
+        0.84,
+        0.82,
+        1.0
+      ]
+    },
+    {
+      "name": "pipe_tile_33_tex",
+      "plane": [
+        0.096,
+        0.096
+      ],
+      "position": [
+        4.215,
+        19.2725,
+        1.235
+      ],
+      "rpy_deg": [
+        90.0,
+        -90.0,
+        0.0
+      ],
+      "rgba": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "texture": "b7_T5_L.png"
+    },
+    {
+      "name": "office_tank",
+      "category": "tank",
+      "model": "bsdexp",
+      "position": [
+        5.3978,
+        17.9493,
+        0.9072
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "display": "glass tank",
+      "hide_links": [
+        "lid"
+      ]
+    },
+    {
+      "name": "decor_tk_digits",
+      "plane": [
+        0.5,
+        0.18
+      ],
+      "position": [
+        5.4,
+        17.95,
+        0.79
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "b7_T15_digits.png",
+      "cutout": true,
+      "hidden": true,
+      "water": true
+    },
+    {
+      "name": "decor_tk_waterline",
+      "plane": [
+        0.6,
+        0.012
+      ],
+      "position": [
+        5.535,
+        17.95,
+        0.998
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.35,
+        0.6,
+        0.9,
+        1.0
+      ],
+      "hidden": true,
+      "water": true
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "rotator",
+      "name": "pipe_tile_00",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_00_tex"
+      ],
+      "turns": 0,
+      "target": 1,
+      "period": 2,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_01",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_01_tex"
+      ],
+      "turns": 0,
+      "target": 2,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_02",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_02_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_03",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_03_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_10",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_10_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_11",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_11_tex"
+      ],
+      "turns": 0,
+      "target": 1,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_12",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_12_tex"
+      ],
+      "turns": 0,
+      "target": 1,
+      "period": 2,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_13",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_13_tex"
+      ],
+      "turns": 0,
+      "target": 1,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_20",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_20_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_21",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_21_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_22",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_22_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_23",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_23_tex"
+      ],
+      "turns": 0,
+      "target": 1,
+      "period": 2,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_30",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_30_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_31",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_31_tex"
+      ],
+      "turns": 0,
+      "target": 0,
+      "period": 1,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_32",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_32_tex"
+      ],
+      "turns": 0,
+      "target": 2,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "rotator",
+      "name": "pipe_tile_33",
+      "group": "pipes",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "attach": [
+        "pipe_tile_33_tex"
+      ],
+      "turns": 0,
+      "target": 2,
+      "period": 4,
+      "step": 90.0
+    },
+    {
+      "type": "reveal",
+      "name": "office_tank",
+      "tool": "water",
+      "flag": "water",
+      "text": "You poured {it} into {tg}. Some digits show at the bottom."
+    }
+  ],
+  "slot_groups": {
+    "pipes": {
+      "kind": "rotate",
+      "connectivity": {
+        "tiles": {
+          "pipe_tile_00": {
+            "cell": [
+              0,
+              0
+            ],
+            "ports": [
+              "N",
+              "S"
+            ]
+          },
+          "pipe_tile_01": {
+            "cell": [
+              0,
+              1
+            ],
+            "ports": [
+              "N",
+              "E"
+            ]
+          },
+          "pipe_tile_02": {
+            "cell": [
+              0,
+              2
+            ],
+            "ports": [
+              "E",
+              "S"
+            ]
+          },
+          "pipe_tile_03": {
+            "cell": [
+              0,
+              3
+            ],
+            "ports": [
+              "E",
+              "W"
+            ]
+          },
+          "pipe_tile_10": {
+            "cell": [
+              1,
+              0
+            ],
+            "ports": [
+              "N",
+              "E"
+            ]
+          },
+          "pipe_tile_11": {
+            "cell": [
+              1,
+              1
+            ],
+            "ports": [
+              "E",
+              "S"
+            ]
+          },
+          "pipe_tile_12": {
+            "cell": [
+              1,
+              2
+            ],
+            "ports": [
+              "N",
+              "S"
+            ]
+          },
+          "pipe_tile_13": {
+            "cell": [
+              1,
+              3
+            ],
+            "ports": [
+              "N",
+              "W"
+            ]
+          },
+          "pipe_tile_20": {
+            "cell": [
+              2,
+              0
+            ],
+            "ports": [
+              "N",
+              "S"
+            ]
+          },
+          "pipe_tile_21": {
+            "cell": [
+              2,
+              1
+            ],
+            "ports": [
+              "N",
+              "W"
+            ]
+          },
+          "pipe_tile_22": {
+            "cell": [
+              2,
+              2
+            ],
+            "ports": [
+              "E",
+              "W"
+            ]
+          },
+          "pipe_tile_23": {
+            "cell": [
+              2,
+              3
+            ],
+            "ports": [
+              "E",
+              "W"
+            ]
+          },
+          "pipe_tile_30": {
+            "cell": [
+              3,
+              0
+            ],
+            "ports": [
+              "E",
+              "S"
+            ]
+          },
+          "pipe_tile_31": {
+            "cell": [
+              3,
+              1
+            ],
+            "ports": [
+              "N",
+              "S"
+            ]
+          },
+          "pipe_tile_32": {
+            "cell": [
+              3,
+              2
+            ],
+            "ports": [
+              "N",
+              "W"
+            ]
+          },
+          "pipe_tile_33": {
+            "cell": [
+              3,
+              3
+            ],
+            "ports": [
+              "E",
+              "S"
+            ]
+          }
+        },
+        "inlet": {
+          "cell": [
+            0,
+            0
+          ],
+          "side": "W"
+        },
+        "outlet": {
+          "cell": [
+            3,
+            2
+          ],
+          "side": "S"
+        }
+      },
+      "unlocks": [
+        [
+          "bottom_cabinet_nddvba_0",
+          2
+        ]
+      ]
+    }
+  },
+  "part_locks": [
+    {
+      "id": "water_line_drawer",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "at": [
+            3.95,
+            18.4
+          ],
+          "aim": [
+            4.05,
+            19.273,
+            1.4
+          ],
+          "note": "Inspect IN and OUT before connecting the pipe tiles."
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.885,
+            19.273,
+            1.565
+          ],
+          "note": "Alternate IN to OUT route: rotate 00"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.9949999999999997,
+            19.273,
+            1.565
+          ],
+          "note": "Alternate IN to OUT route: rotate 01"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.9949999999999997,
+            19.273,
+            1.565
+          ],
+          "note": "Alternate IN to OUT route: rotate 01"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.9949999999999997,
+            19.273,
+            1.4549999999999998
+          ],
+          "note": "Alternate IN to OUT route: rotate 11"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.9949999999999997,
+            19.273,
+            1.4549999999999998
+          ],
+          "note": "Alternate IN to OUT route: rotate 11"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.885,
+            19.273,
+            1.4549999999999998
+          ],
+          "note": "Alternate IN to OUT route: rotate 10"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.885,
+            19.273,
+            1.4549999999999998
+          ],
+          "note": "Alternate IN to OUT route: rotate 10"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.885,
+            19.273,
+            1.4549999999999998
+          ],
+          "note": "Alternate IN to OUT route: rotate 10"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.885,
+            19.273,
+            1.2349999999999999
+          ],
+          "note": "Alternate IN to OUT route: rotate 30"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            3.9949999999999997,
+            19.273,
+            1.2349999999999999
+          ],
+          "note": "Alternate IN to OUT route: rotate 31"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "tile"
+          },
+          "point_world": [
+            4.1049999999999995,
+            19.273,
+            1.2349999999999999
+          ],
+          "note": "Alternate IN to OUT route: rotate 32"
+        }
+      ]
+    },
+    {
+      "id": "hammer_drawer",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 1,
+      "lock": "8253",
+      "code_from": "look",
+      "pre_steps": [
+        {
+          "take": "office_diary_page"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "expedition page"
+          }
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.4,
+            17.849999999999998,
+            0.84
+          ],
+          "note": "站到玻璃缸前：下面对它把七个动作各试一次"
+        },
+        {
+          "take": "office_water",
+          "note": "拿已解锁 part2 抽屉中横放的真实水瓶"
+        },
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.4,
+            17.849999999999998,
+            0.84
+          ],
+          "note": "站到玻璃缸前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "tank",
+            "item": "bottle of water"
+          },
+          "point_world": [
+            5.4,
+            17.849999999999998,
+            0.84
+          ],
+          "note": "把水倒进玻璃缸：缸底显出数来"
+        }
+      ],
+      "look": [
+        {
+          "at": [
+            4.75,
+            17.62
+          ],
+          "aim": [
+            5.4,
+            17.95,
+            0.79
+          ],
+          "note": "看缸底显出来的数"
+        }
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "key",
+      "pre_steps": [
+        {
+          "take": "office_postcard"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "item": "return note"
+          }
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "benchmark_id": "L3-10",
+  "legacy_name": "R4-27_office_story_expedition",
+  "legacy_id": "R4-27",
+  "naming_policy": "difficulty_names157",
+  "difficulty_assessment": {
+    "current_deployed_max_steps": 180,
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "classification_origin157": "用户本次要求·新增故事关",
+  "native_key_presentation215": {
+    "escape_key": {
+      "mode": "material_only",
+      "material": {
+        "diffuseColor": [
+          0.43,
+          0.32,
+          0.13
+        ],
+        "emissiveColor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "roughness": 0.95,
+        "metallic": 0.0,
+        "specular": 0.05
+      }
+    }
+  },
+  "budget_revision260": {
+    "actions": 180,
+    "recalls": 18,
+    "hint_window": 40,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "5512c406d3553ddcbea3d7e44ed9fcd9a826978dc4e8c2f19277ef187122ce0d"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-39",
+  "legacy_benchmark_id": "L3-10",
+  "recall_budget": 10,
+  "tip_window": 25
+}

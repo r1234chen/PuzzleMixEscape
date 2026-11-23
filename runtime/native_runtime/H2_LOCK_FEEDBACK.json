@@ -1,0 +1,380 @@
+{
+  "schema": "authored_lock_release_feedback_v1",
+  "levels": {
+    "R23": {
+      "source_sha256": "8be80d9dd4b45c25d41cd1ef67cefa70f60d29793f9a1b854ca462665f932452",
+      "rules": {
+        "tool_door": {
+          "path": "solved.0",
+          "op": "eq",
+          "value": true
+        },
+        "hatch": {
+          "path": "solved.1",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R24": {
+      "source_sha256": "0484293c78b744407ffe724281e68b3418ad5ac1b01313fe711d80ec5a781150",
+      "rules": {
+        "crank_cab": {
+          "path": "solved.0",
+          "op": "eq",
+          "value": true
+        },
+        "chest_lid": {
+          "path": "solved.1",
+          "op": "eq",
+          "value": true
+        },
+        "read_door": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R25": {
+      "source_sha256": "68a5526ea31c9b8e85780a874527d0911ee65159f8759d9a4614aa8a77f6c488",
+      "rules": {
+        "canister_lid": {
+          "path": "solved.0",
+          "op": "eq",
+          "value": true
+        },
+        "card_box": {
+          "path": "solved.1",
+          "op": "eq",
+          "value": true
+        },
+        "store_door": {
+          "path": "state.store_unlocked",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R26": {
+      "source_sha256": "51d93dfe465db0c7619008dc72c6da585e82284d202037e9c7062c4091078147",
+      "rules": {
+        "arch_door": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R27": {
+      "source_sha256": "3f01eb14e459e011e31d367f37f71e7ea8f870bbc4f0b66d73c8d6cd117116c1",
+      "rules": {
+        "case_door": {
+          "path": "solved.0",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R28": {
+      "source_sha256": "c91c04062886900b38782c13c53d2a9436231f656d7b55a4def357782439cc9c",
+      "rules": {}
+    },
+    "R29": {
+      "source_sha256": "68cc8577e6b344d9eed08cbf3284e93fafc76653507bdfbc21039370aa3eb3ea",
+      "rules": {
+        "case_lid": {
+          "path": "solved.0",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R30": {
+      "source_sha256": "9b4c98cb3e79a7b3f5b790ece41b9eaa843f7187616af37e76a23a759dfe3b3b",
+      "rules": {
+        "rec_door": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R31": {
+      "source_sha256": "ff463cfa860f60041a181196f16fc47bd84893d928b9d64af642f95c10fd3048",
+      "rules": {}
+    },
+    "R32": {
+      "source_sha256": "a343459e57dc4cd5ad06ce6fa61674e0a432be10695f913d7309bf91873871cd",
+      "rules": {
+        "wheel_door": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R33": {
+      "source_sha256": "6cdecd47e64181b55e6b7e431a79de8ce5c1702a66e4bd56802f0b86c81bfb37",
+      "rules": {
+        "case_door": {
+          "path": "solved.0",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R34": {
+      "source_sha256": "7736189e7a3f9eed46bf588225d4ee4f242059fe1e29d3d5d5c5b93ce1112c60",
+      "rules": {
+        "read_door": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R35": {
+      "source_sha256": "d53b5d8a72e43ca4acd6e9245aa3cef2d48768a5ea220bbeb9c2aef8cd3d0f7b",
+      "rules": {}
+    },
+    "R36": {
+      "source_sha256": "23036339d4911801bad1ea5e8e585467736c67de8c7bfd260667b2d69a02fbc2",
+      "rules": {}
+    },
+    "R37": {
+      "source_sha256": "272f8c08fbd32059e69bb9121109a9c95ea2cc9f8cdc46e3e24a70924e35d329",
+      "rules": {}
+    },
+    "R38": {
+      "source_sha256": "4f9f758641a95939b853d89adab2db0413f112d2e3195c465660d2ad5396341f",
+      "rules": {
+        "board_cover": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    },
+    "R39": {
+      "source_sha256": "3d4bbd5357e12e3747afd28c9c66a59ecae8084fd0334b9a8e2b78db08d62c56",
+      "rules": {}
+    },
+    "R40": {
+      "source_sha256": "b1f9b996c9e978a6f387375ae3711f42d1b926a659c2b065eacf56e290703323",
+      "rules": {}
+    },
+    "R41": {
+      "source_sha256": "dc7d6927abc4c73c58b254c382a62630648f290c923ed3cf592f9765d2d70d4c",
+      "rules": {}
+    },
+    "R42": {
+      "source_sha256": "7de0596e777369ea6f8bfa3ce6eb38f53e3956b69cc8c60d0c1e1c8809ee0b5e",
+      "rules": {}
+    },
+    "R43": {
+      "source_sha256": "54489da038ccdd2531d48754abe20f19fa8564f3d633335e13e9713501ea9004",
+      "rules": {}
+    },
+    "R44": {
+      "source_sha256": "6821c2b3b9c2d12b63eb86051a0cd52e5508212ee757619ed4da917ac28c98f5",
+      "rules": {
+        "table_cover": {
+          "path": "solved.2",
+          "op": "eq",
+          "value": true
+        }
+      }
+    }
+  },
+  "evidence": [
+    {
+      "level": "R23",
+      "key": "tool_door",
+      "line": 113,
+      "guard": "verb == 'open' and (not self.solved[0])",
+      "release_rule": {
+        "path": "solved.0",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R23",
+      "key": "hatch",
+      "line": 128,
+      "guard": "verb == 'open' and (not self.solved[1])",
+      "release_rule": {
+        "path": "solved.1",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R24",
+      "key": "crank_cab",
+      "line": 81,
+      "guard": "verb == 'open' and (not self.solved[0])",
+      "release_rule": {
+        "path": "solved.0",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R24",
+      "key": "chest_lid",
+      "line": 92,
+      "guard": "verb == 'open' and (not self.solved[1])",
+      "release_rule": {
+        "path": "solved.1",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R24",
+      "key": "read_door",
+      "line": 122,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R25",
+      "key": "canister_lid",
+      "line": 100,
+      "guard": "verb == 'open' and (not self.solved[0])",
+      "release_rule": {
+        "path": "solved.0",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R25",
+      "key": "card_box",
+      "line": 120,
+      "guard": "verb == 'open' and (not self.solved[1])",
+      "release_rule": {
+        "path": "solved.1",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R25",
+      "key": "store_door",
+      "line": 134,
+      "guard": "verb == 'open' and (not s['store_unlocked'])",
+      "release_rule": {
+        "path": "state.store_unlocked",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R26",
+      "key": "arch_door",
+      "line": 90,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R27",
+      "key": "case_door",
+      "line": 77,
+      "guard": "verb == 'open' and (not self.solved[0])",
+      "release_rule": {
+        "path": "solved.0",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R29",
+      "key": "case_lid",
+      "line": 66,
+      "guard": "verb == 'open' and (not self.solved[0])",
+      "release_rule": {
+        "path": "solved.0",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R30",
+      "key": "rec_door",
+      "line": 87,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R32",
+      "key": "wheel_door",
+      "line": 112,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R33",
+      "key": "case_door",
+      "line": 84,
+      "guard": "verb == 'open' and (not self.solved[0])",
+      "release_rule": {
+        "path": "solved.0",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R34",
+      "key": "read_door",
+      "line": 111,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R38",
+      "key": "board_cover",
+      "line": 129,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "level": "R44",
+      "key": "table_cover",
+      "line": 146,
+      "guard": "verb == 'open' and (not self.solved[2])",
+      "release_rule": {
+        "path": "solved.2",
+        "op": "eq",
+        "value": true
+      }
+    }
+  ],
+  "not_an_action_or_success_override": true
+}

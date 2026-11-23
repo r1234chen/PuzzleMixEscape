@@ -1,0 +1,6467 @@
+{
+  "policy": "per_level_fixed_evidence_checkpoints268_v2",
+  "version": 2,
+  "date": "2026-10-17",
+  "scope": "145 exact frozen configs; reporting only",
+  "runtime_hint_table_unchanged": true,
+  "source_engine_sha256": "cea71cf4145c615ff776c3fa3a49126aa275dbe184575b8937dc11657571019c",
+  "levels": {
+    "H1-01_hub_two_rooms": {
+      "level": "H1-01",
+      "title": "两个房间",
+      "config_file": "H1-01_hub_two_rooms.json",
+      "config_sha256": "b009b1c7ca509c6570c172f9093f5b8f20bb3b80a10b70636a82c1d80fbb1fb5",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found diary",
+          "kind": "mark",
+          "aliases": [
+            "found diary"
+          ],
+          "label_zh": "发现必要线索/物品 diary"
+        },
+        {
+          "key": "read diary",
+          "kind": "mark",
+          "aliases": [
+            "read diary"
+          ],
+          "label_zh": "实际读取必要内容 diary"
+        },
+        {
+          "key": "unlocked diary",
+          "kind": "mark",
+          "aliases": [
+            "unlocked diary"
+          ],
+          "label_zh": "解开独立锁 diary"
+        },
+        {
+          "key": "found memo",
+          "kind": "mark",
+          "aliases": [
+            "found memo"
+          ],
+          "label_zh": "发现必要线索/物品 memo"
+        },
+        {
+          "key": "read memo",
+          "kind": "mark",
+          "aliases": [
+            "read memo"
+          ],
+          "label_zh": "实际读取必要内容 memo"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer"
+          ],
+          "label_zh": "解开独立锁 drawer"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened office",
+          "kind": "mark",
+          "aliases": [
+            "opened office"
+          ],
+          "label_zh": "打开必要通道 office"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "diary",
+        "key",
+        "memo",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-02_hub_halves": {
+      "level": "H1-02",
+      "title": "两个房间·两半",
+      "config_file": "H1-02_hub_halves.json",
+      "config_sha256": "831eef7b88b715a786e418ef1645b8a9b27c6d4ec47fc7c93566d85cd01c0a16",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found half_a",
+          "kind": "mark",
+          "aliases": [
+            "found half_a"
+          ],
+          "label_zh": "发现必要线索/物品 half_a"
+        },
+        {
+          "key": "read half_a",
+          "kind": "mark",
+          "aliases": [
+            "read half_a"
+          ],
+          "label_zh": "实际读取必要内容 half_a"
+        },
+        {
+          "key": "found half_b",
+          "kind": "mark",
+          "aliases": [
+            "found half_b"
+          ],
+          "label_zh": "发现必要线索/物品 half_b"
+        },
+        {
+          "key": "read half_b",
+          "kind": "mark",
+          "aliases": [
+            "read half_b"
+          ],
+          "label_zh": "实际读取必要内容 half_b"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened office",
+          "kind": "mark",
+          "aliases": [
+            "opened office"
+          ],
+          "label_zh": "打开必要通道 office"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "half_a",
+        "half_b",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-03_hub_switch": {
+      "level": "H1-03",
+      "title": "两个房间·开关",
+      "config_file": "H1-03_hub_switch.json",
+      "config_sha256": "4076f836d517e024f39ecce2b648f93dc2110b62bdda1ee1048004b60f4e4409",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found diary",
+          "kind": "mark",
+          "aliases": [
+            "found diary"
+          ],
+          "label_zh": "发现必要线索/物品 diary"
+        },
+        {
+          "key": "read diary",
+          "kind": "mark",
+          "aliases": [
+            "read diary"
+          ],
+          "label_zh": "实际读取必要内容 diary"
+        },
+        {
+          "key": "unlocked diary",
+          "kind": "mark",
+          "aliases": [
+            "unlocked diary"
+          ],
+          "label_zh": "解开独立锁 diary"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened office",
+          "kind": "mark",
+          "aliases": [
+            "opened office"
+          ],
+          "label_zh": "打开必要通道 office"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "diary",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-04_dining_burner": {
+      "level": "H1-04",
+      "title": "炉灶下的钥匙",
+      "config_file": "H1-04_dining_burner.json",
+      "config_sha256": "17e61c43aafb76e7a394d0f603db0e9c8d7a44bd69c61536a82b227fc7cbe6a0",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked cab",
+          "kind": "mark",
+          "aliases": [
+            "unlocked cab"
+          ],
+          "label_zh": "解开独立锁 cab"
+        },
+        {
+          "key": "unlocked dining",
+          "kind": "mark",
+          "aliases": [
+            "unlocked dining"
+          ],
+          "label_zh": "解开独立锁 dining"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened dining",
+          "kind": "mark",
+          "aliases": [
+            "opened dining"
+          ],
+          "label_zh": "打开必要通道 dining"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "card",
+        "key"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-05_dining_fireplace": {
+      "level": "H1-05",
+      "title": "壁炉旁的柜子",
+      "config_file": "H1-05_dining_fireplace.json",
+      "config_sha256": "b28af350aa5a859a127897c946794645267afa1a2f0dab33c2ed929564a92173",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked cab",
+          "kind": "mark",
+          "aliases": [
+            "unlocked cab"
+          ],
+          "label_zh": "解开独立锁 cab"
+        },
+        {
+          "key": "unlocked dining",
+          "kind": "mark",
+          "aliases": [
+            "unlocked dining"
+          ],
+          "label_zh": "解开独立锁 dining"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened dining",
+          "kind": "mark",
+          "aliases": [
+            "opened dining"
+          ],
+          "label_zh": "打开必要通道 dining"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "card",
+        "key"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-06_twin_offices": {
+      "level": "H1-06",
+      "title": "双胞胎房间",
+      "config_file": "H1-06_twin_offices.json",
+      "config_sha256": "af4a04f735f8f52199bc4714c8f3ce50edd86f11cd2a2e092a62d8a392b56896",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found real",
+          "kind": "mark",
+          "aliases": [
+            "found real"
+          ],
+          "label_zh": "发现必要线索/物品 real"
+        },
+        {
+          "key": "read real",
+          "kind": "mark",
+          "aliases": [
+            "read real"
+          ],
+          "label_zh": "实际读取必要内容 real"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened twin_plant",
+          "kind": "mark",
+          "aliases": [
+            "opened twin_plant"
+          ],
+          "label_zh": "打开必要通道 twin_plant"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found fake": "explicit_distractor",
+        "read fake": "explicit_distractor",
+        "opened twin_other": "optional_distractor_room"
+      },
+      "required_items": [
+        "card",
+        "real"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-07_hub_pyramid": {
+      "level": "H1-07",
+      "title": "门厅金字塔",
+      "config_file": "H1-07_hub_pyramid.json",
+      "config_sha256": "f9245d277de12c4494d6a15c548e0006efc27e17e7146da41801145d5129274a",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found half_a",
+          "kind": "mark",
+          "aliases": [
+            "found half_a"
+          ],
+          "label_zh": "发现必要线索/物品 half_a"
+        },
+        {
+          "key": "read half_a",
+          "kind": "mark",
+          "aliases": [
+            "read half_a"
+          ],
+          "label_zh": "实际读取必要内容 half_a"
+        },
+        {
+          "key": "found half_b",
+          "kind": "mark",
+          "aliases": [
+            "found half_b"
+          ],
+          "label_zh": "发现必要线索/物品 half_b"
+        },
+        {
+          "key": "read half_b",
+          "kind": "mark",
+          "aliases": [
+            "read half_b"
+          ],
+          "label_zh": "实际读取必要内容 half_b"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer"
+          ],
+          "label_zh": "解开独立锁 drawer"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened office",
+          "kind": "mark",
+          "aliases": [
+            "opened office"
+          ],
+          "label_zh": "打开必要通道 office"
+        },
+        {
+          "key": "opened bathdoor",
+          "kind": "mark",
+          "aliases": [
+            "opened bathdoor"
+          ],
+          "label_zh": "打开必要通道 bathdoor"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "half_a",
+        "half_b",
+        "key",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-08_dining_halves": {
+      "level": "H1-08",
+      "title": "餐厅出发·开放区",
+      "config_file": "H1-08_dining_halves.json",
+      "config_sha256": "01d13d795b4ffc2f6d3cad2a35e66ad898602ba08b2f6a19c2755b00d1aaca7c",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found half_a",
+          "kind": "mark",
+          "aliases": [
+            "found half_a"
+          ],
+          "label_zh": "发现必要线索/物品 half_a"
+        },
+        {
+          "key": "read half_a",
+          "kind": "mark",
+          "aliases": [
+            "read half_a"
+          ],
+          "label_zh": "实际读取必要内容 half_a"
+        },
+        {
+          "key": "found half_b",
+          "kind": "mark",
+          "aliases": [
+            "found half_b"
+          ],
+          "label_zh": "发现必要线索/物品 half_b"
+        },
+        {
+          "key": "read half_b",
+          "kind": "mark",
+          "aliases": [
+            "read half_b"
+          ],
+          "label_zh": "实际读取必要内容 half_b"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer"
+          ],
+          "label_zh": "解开独立锁 drawer"
+        },
+        {
+          "key": "unlocked dining",
+          "kind": "mark",
+          "aliases": [
+            "unlocked dining"
+          ],
+          "label_zh": "解开独立锁 dining"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened dining",
+          "kind": "mark",
+          "aliases": [
+            "opened dining"
+          ],
+          "label_zh": "打开必要通道 dining"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "card",
+        "half_a",
+        "half_b",
+        "key"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-09_bathroom_start": {
+      "level": "H1-09",
+      "title": "卫生间出发",
+      "config_file": "H1-09_bathroom_start.json",
+      "config_sha256": "15cdf93989105e6b99c0298f3da5d1f4f4b32b1fffad5781dd2922066ae009f2",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found diary",
+          "kind": "mark",
+          "aliases": [
+            "found diary"
+          ],
+          "label_zh": "发现必要线索/物品 diary"
+        },
+        {
+          "key": "read diary",
+          "kind": "mark",
+          "aliases": [
+            "read diary"
+          ],
+          "label_zh": "实际读取必要内容 diary"
+        },
+        {
+          "key": "unlocked diary",
+          "kind": "mark",
+          "aliases": [
+            "unlocked diary"
+          ],
+          "label_zh": "解开独立锁 diary"
+        },
+        {
+          "key": "found memo",
+          "kind": "mark",
+          "aliases": [
+            "found memo"
+          ],
+          "label_zh": "发现必要线索/物品 memo"
+        },
+        {
+          "key": "read memo",
+          "kind": "mark",
+          "aliases": [
+            "read memo"
+          ],
+          "label_zh": "实际读取必要内容 memo"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked bath",
+          "kind": "mark",
+          "aliases": [
+            "unlocked bath"
+          ],
+          "label_zh": "解开独立锁 bath"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened bath",
+          "kind": "mark",
+          "aliases": [
+            "opened bath"
+          ],
+          "label_zh": "打开必要通道 bath"
+        },
+        {
+          "key": "opened officedoor",
+          "kind": "mark",
+          "aliases": [
+            "opened officedoor"
+          ],
+          "label_zh": "打开必要通道 officedoor"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "diary",
+        "key",
+        "memo",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-10_house_fake": {
+      "level": "H1-10",
+      "title": "全屋 + 真假线索",
+      "config_file": "H1-10_house_fake.json",
+      "config_sha256": "3b406a243c3ef8b4b9338f2425fa2c157a6a2f1b0a30355f06ca2174ba4ae75b",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found diary",
+          "kind": "mark",
+          "aliases": [
+            "found diary"
+          ],
+          "label_zh": "发现必要线索/物品 diary"
+        },
+        {
+          "key": "read diary",
+          "kind": "mark",
+          "aliases": [
+            "read diary"
+          ],
+          "label_zh": "实际读取必要内容 diary"
+        },
+        {
+          "key": "unlocked diary",
+          "kind": "mark",
+          "aliases": [
+            "unlocked diary"
+          ],
+          "label_zh": "解开独立锁 diary"
+        },
+        {
+          "key": "found stove",
+          "kind": "mark",
+          "aliases": [
+            "found stove"
+          ],
+          "label_zh": "发现必要线索/物品 stove"
+        },
+        {
+          "key": "read stove",
+          "kind": "mark",
+          "aliases": [
+            "read stove"
+          ],
+          "label_zh": "实际读取必要内容 stove"
+        },
+        {
+          "key": "found table",
+          "kind": "mark",
+          "aliases": [
+            "found table"
+          ],
+          "label_zh": "发现必要线索/物品 table"
+        },
+        {
+          "key": "read table",
+          "kind": "mark",
+          "aliases": [
+            "read table"
+          ],
+          "label_zh": "实际读取必要内容 table"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked laundry",
+          "kind": "mark",
+          "aliases": [
+            "unlocked laundry"
+          ],
+          "label_zh": "解开独立锁 laundry"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "unlocked dining",
+          "kind": "mark",
+          "aliases": [
+            "unlocked dining"
+          ],
+          "label_zh": "解开独立锁 dining"
+        },
+        {
+          "key": "opened office",
+          "kind": "mark",
+          "aliases": [
+            "opened office"
+          ],
+          "label_zh": "打开必要通道 office"
+        },
+        {
+          "key": "opened dining",
+          "kind": "mark",
+          "aliases": [
+            "opened dining"
+          ],
+          "label_zh": "打开必要通道 dining"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "found fake": "explicit_distractor",
+        "read fake": "explicit_distractor"
+      },
+      "required_items": [
+        "diary",
+        "key",
+        "note",
+        "stove",
+        "table"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "H1-11_hub_house": {
+      "level": "H1-11",
+      "title": "门厅 + 全屋",
+      "config_file": "H1-11_hub_house.json",
+      "config_sha256": "2fa052b6badfa90f235eda1bb47a44ee9907fc98626797df1c5c24bfcb081eb7",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found hallnote",
+          "kind": "mark",
+          "aliases": [
+            "found hallnote"
+          ],
+          "label_zh": "发现必要线索/物品 hallnote"
+        },
+        {
+          "key": "read hallnote",
+          "kind": "mark",
+          "aliases": [
+            "read hallnote"
+          ],
+          "label_zh": "实际读取必要内容 hallnote"
+        },
+        {
+          "key": "found half_a",
+          "kind": "mark",
+          "aliases": [
+            "found half_a"
+          ],
+          "label_zh": "发现必要线索/物品 half_a"
+        },
+        {
+          "key": "read half_a",
+          "kind": "mark",
+          "aliases": [
+            "read half_a"
+          ],
+          "label_zh": "实际读取必要内容 half_a"
+        },
+        {
+          "key": "found half_b",
+          "kind": "mark",
+          "aliases": [
+            "found half_b"
+          ],
+          "label_zh": "发现必要线索/物品 half_b"
+        },
+        {
+          "key": "read half_b",
+          "kind": "mark",
+          "aliases": [
+            "read half_b"
+          ],
+          "label_zh": "实际读取必要内容 half_b"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer"
+          ],
+          "label_zh": "解开独立锁 drawer"
+        },
+        {
+          "key": "unlocked office",
+          "kind": "mark",
+          "aliases": [
+            "unlocked office"
+          ],
+          "label_zh": "解开独立锁 office"
+        },
+        {
+          "key": "unlocked hall",
+          "kind": "mark",
+          "aliases": [
+            "unlocked hall"
+          ],
+          "label_zh": "解开独立锁 hall"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "opened office",
+          "kind": "mark",
+          "aliases": [
+            "opened office"
+          ],
+          "label_zh": "打开必要通道 office"
+        },
+        {
+          "key": "opened bathdoor",
+          "kind": "mark",
+          "aliases": [
+            "opened bathdoor"
+          ],
+          "label_zh": "打开必要通道 bathdoor"
+        },
+        {
+          "key": "opened hall",
+          "kind": "mark",
+          "aliases": [
+            "opened hall"
+          ],
+          "label_zh": "打开必要通道 hall"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found fake": "explicit_distractor",
+        "read fake": "explicit_distractor",
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "card",
+        "half_a",
+        "half_b",
+        "hallnote",
+        "key"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-01_office_scale": {
+      "level": "L2-01",
+      "title": "秤东西",
+      "config_file": "L2-01_office_scale.json",
+      "config_sha256": "b40fe71228a4638e5dbf39d4bc4344a8357205da4173aa97f77f9e389f01c3ca",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found briefcase",
+          "kind": "mark",
+          "aliases": [
+            "found briefcase"
+          ],
+          "label_zh": "发现必要线索/物品 briefcase"
+        },
+        {
+          "key": "took briefcase",
+          "kind": "take",
+          "aliases": [
+            "took briefcase"
+          ],
+          "label_zh": "拿到必要道具 briefcase",
+          "item": "briefcase"
+        },
+        {
+          "key": "found paint",
+          "kind": "mark",
+          "aliases": [
+            "found paint"
+          ],
+          "label_zh": "发现必要线索/物品 paint"
+        },
+        {
+          "key": "took paint",
+          "kind": "take",
+          "aliases": [
+            "took paint"
+          ],
+          "label_zh": "拿到必要道具 paint",
+          "item": "paint"
+        },
+        {
+          "key": "found rice",
+          "kind": "mark",
+          "aliases": [
+            "found rice"
+          ],
+          "label_zh": "发现必要线索/物品 rice"
+        },
+        {
+          "key": "took rice",
+          "kind": "take",
+          "aliases": [
+            "took rice"
+          ],
+          "label_zh": "拿到必要道具 rice",
+          "item": "rice"
+        },
+        {
+          "key": "found box",
+          "kind": "mark",
+          "aliases": [
+            "found box"
+          ],
+          "label_zh": "发现必要线索/物品 box"
+        },
+        {
+          "key": "took box",
+          "kind": "take",
+          "aliases": [
+            "took box"
+          ],
+          "label_zh": "拿到必要道具 box",
+          "item": "box"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "weighed briefcase",
+          "kind": "mark",
+          "aliases": [
+            "weighed briefcase"
+          ],
+          "label_zh": "完成必要称重 briefcase"
+        },
+        {
+          "key": "weighed paint",
+          "kind": "mark",
+          "aliases": [
+            "weighed paint"
+          ],
+          "label_zh": "完成必要称重 paint"
+        },
+        {
+          "key": "weighed rice",
+          "kind": "mark",
+          "aliases": [
+            "weighed rice"
+          ],
+          "label_zh": "完成必要称重 rice"
+        },
+        {
+          "key": "weighed box",
+          "kind": "mark",
+          "aliases": [
+            "weighed box"
+          ],
+          "label_zh": "完成必要称重 box"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "box",
+        "briefcase",
+        "hint",
+        "paint",
+        "rice"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-02_office_blocks": {
+      "level": "L2-02",
+      "title": "数积木",
+      "config_file": "L2-02_office_blocks.json",
+      "config_sha256": "c9674a74f1f0f6b02e3fd8b12fd81d6c4fb28e666439343f25ba52391eece32a",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-03_office_pots": {
+      "level": "L2-03",
+      "title": "照图摆花盆",
+      "config_file": "L2-03_office_pots.json",
+      "config_sha256": "1ed79e97b28dc19770d34e12c4ef30f0817ae06cab4f241ab49f156768b196b3",
+      "nodes": [
+        {
+          "key": "matched pots 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "pots",
+          "rank": 1,
+          "total": 3
+        },
+        {
+          "key": "matched pots 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "pots",
+          "rank": 2,
+          "total": 3
+        },
+        {
+          "key": "matched pots 3",
+          "kind": "group_rank",
+          "aliases": [
+            "solved pots",
+            "unlocked exit"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "pots",
+          "rank": 3,
+          "total": 3
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found pot1",
+          "kind": "mark",
+          "aliases": [
+            "found pot1"
+          ],
+          "label_zh": "发现必要线索/物品 pot1"
+        },
+        {
+          "key": "took pot1",
+          "kind": "take",
+          "aliases": [
+            "took pot1"
+          ],
+          "label_zh": "拿到必要道具 pot1",
+          "item": "pot1"
+        },
+        {
+          "key": "found pot2",
+          "kind": "mark",
+          "aliases": [
+            "found pot2"
+          ],
+          "label_zh": "发现必要线索/物品 pot2"
+        },
+        {
+          "key": "took pot2",
+          "kind": "take",
+          "aliases": [
+            "took pot2"
+          ],
+          "label_zh": "拿到必要道具 pot2",
+          "item": "pot2"
+        },
+        {
+          "key": "found pot3",
+          "kind": "mark",
+          "aliases": [
+            "found pot3"
+          ],
+          "label_zh": "发现必要线索/物品 pot3"
+        },
+        {
+          "key": "took pot3",
+          "kind": "take",
+          "aliases": [
+            "took pot3"
+          ],
+          "label_zh": "拿到必要道具 pot3",
+          "item": "pot3"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved pots": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "hint",
+        "pot1",
+        "pot2",
+        "pot3"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-04_office_diff": {
+      "level": "L2-04",
+      "title": "找不同",
+      "config_file": "L2-04_office_diff.json",
+      "config_sha256": "abf6b3e62050b82ac8250f4070b2f026cae11b2062dc2d74e34d89363b899020",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-05_office_detector": {
+      "level": "L2-05",
+      "title": "金属探测器",
+      "config_file": "L2-05_office_detector.json",
+      "config_sha256": "4936fb68284c54542dd941a19b97d13fd2a914c92780dbb006dcf199c695d305",
+      "nodes": [
+        {
+          "key": "exposed exitkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed exitkey",
+            "revealed exitkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found detector",
+          "kind": "mark",
+          "aliases": [
+            "found detector"
+          ],
+          "label_zh": "发现必要线索/物品 detector"
+        },
+        {
+          "key": "took detector",
+          "kind": "take",
+          "aliases": [
+            "took detector"
+          ],
+          "label_zh": "拿到必要道具 detector",
+          "item": "detector"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "detected exitkey",
+          "kind": "mark",
+          "aliases": [
+            "detected exitkey"
+          ],
+          "label_zh": "detected exitkey"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "freed exitkey": "same_exposure_event",
+        "revealed exitkey": "same_exposure_event",
+        "found exitkey": "auto_discovery_is_same_exposure_event"
+      },
+      "required_items": [
+        "detector",
+        "exitkey",
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-06_office_turn": {
+      "level": "L2-06",
+      "title": "照图转玩偶",
+      "config_file": "L2-06_office_turn.json",
+      "config_sha256": "2ed91221de67a1bd900f4efef224e38f541d1e9461905e51f0566e7bd7bc4061",
+      "nodes": [
+        {
+          "key": "matched figures 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "figures",
+          "rank": 1,
+          "total": 5
+        },
+        {
+          "key": "matched figures 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "figures",
+          "rank": 2,
+          "total": 5
+        },
+        {
+          "key": "matched figures 3",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "figures",
+          "rank": 3,
+          "total": 5
+        },
+        {
+          "key": "matched figures 4",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 4",
+          "group": "figures",
+          "rank": 4,
+          "total": 5
+        },
+        {
+          "key": "matched figures 5",
+          "kind": "group_rank",
+          "aliases": [
+            "solved figures",
+            "unlocked exit"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 5",
+          "group": "figures",
+          "rank": 5,
+          "total": 5
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved figures": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-07_office_paint": {
+      "level": "L2-07",
+      "title": "调颜料",
+      "config_file": "L2-07_office_paint.json",
+      "config_sha256": "a9994d39329f795d1fed3d58a9b3608815a48342cf0f6f0eb7052030a7769aa6",
+      "nodes": [
+        {
+          "key": "mixed bowl_1",
+          "kind": "paint",
+          "aliases": [],
+          "label_zh": "对应碗达到指定颜色 bowl_1",
+          "group": "paint",
+          "target": "bowl_1",
+          "colour": "orange"
+        },
+        {
+          "key": "mixed bowl_2",
+          "kind": "paint",
+          "aliases": [],
+          "label_zh": "对应碗达到指定颜色 bowl_2",
+          "group": "paint",
+          "target": "bowl_2",
+          "colour": "green"
+        },
+        {
+          "key": "mixed bowl_3",
+          "kind": "paint",
+          "aliases": [
+            "solved paint",
+            "unlocked exit"
+          ],
+          "label_zh": "对应碗达到指定颜色 bowl_3",
+          "group": "paint",
+          "target": "bowl_3",
+          "colour": "purple"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found paint_red",
+          "kind": "mark",
+          "aliases": [
+            "found paint_red"
+          ],
+          "label_zh": "发现必要线索/物品 paint_red"
+        },
+        {
+          "key": "found paint_yellow",
+          "kind": "mark",
+          "aliases": [
+            "found paint_yellow"
+          ],
+          "label_zh": "发现必要线索/物品 paint_yellow"
+        },
+        {
+          "key": "found paint_blue",
+          "kind": "mark",
+          "aliases": [
+            "found paint_blue"
+          ],
+          "label_zh": "发现必要线索/物品 paint_blue"
+        },
+        {
+          "key": "took paint_blue",
+          "kind": "take",
+          "aliases": [
+            "took paint_blue"
+          ],
+          "label_zh": "拿到必要道具 paint_blue",
+          "item": "paint_blue"
+        },
+        {
+          "key": "took paint_red",
+          "kind": "take",
+          "aliases": [
+            "took paint_red"
+          ],
+          "label_zh": "拿到必要道具 paint_red",
+          "item": "paint_red"
+        },
+        {
+          "key": "took paint_yellow",
+          "kind": "take",
+          "aliases": [
+            "took paint_yellow"
+          ],
+          "label_zh": "拿到必要道具 paint_yellow",
+          "item": "paint_yellow"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "found rag": "irrelevant_trial_object_or_optional_recovery_tool",
+        "read rag": "irrelevant_trial_object_or_optional_recovery_tool",
+        "took rag": "irrelevant_trial_object_or_optional_recovery_tool",
+        "read paint_red": "visible_colour_label_read_is_optional",
+        "read paint_yellow": "visible_colour_label_read_is_optional",
+        "read paint_blue": "visible_colour_label_read_is_optional",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved paint": "represented_by_each_required_bowl_colour"
+      },
+      "required_items": [
+        "hint",
+        "paint_blue",
+        "paint_red",
+        "paint_yellow"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-08_office_pacing": {
+      "level": "L2-08",
+      "title": "按步数找地砖",
+      "config_file": "L2-08_office_pacing.json",
+      "config_sha256": "542d8dd7c05c9189d9b377dcb861d7e77baa3e219c6f6688eb6d71e5d3fafd47",
+      "nodes": [
+        {
+          "key": "exposed exitkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed exitkey",
+            "revealed exitkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "found scraper",
+          "kind": "mark",
+          "aliases": [
+            "found scraper"
+          ],
+          "label_zh": "发现必要线索/物品 scraper"
+        },
+        {
+          "key": "took scraper",
+          "kind": "take",
+          "aliases": [
+            "took scraper"
+          ],
+          "label_zh": "拿到必要道具 scraper",
+          "item": "scraper"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "freed exitkey": "same_exposure_event",
+        "revealed exitkey": "same_exposure_event",
+        "found exitkey": "auto_discovery_is_same_exposure_event"
+      },
+      "required_items": [
+        "exitkey",
+        "hint",
+        "scraper"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-09_office_plate": {
+      "level": "L2-09",
+      "title": "重物压机关",
+      "config_file": "L2-09_office_plate.json",
+      "config_sha256": "a77861e133a0032a6f9e25d7b292c03994f1213e31fed7fe3de534db8fb9a852",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found ball",
+          "kind": "mark",
+          "aliases": [
+            "found ball"
+          ],
+          "label_zh": "发现必要线索/物品 ball"
+        },
+        {
+          "key": "took ball",
+          "kind": "take",
+          "aliases": [
+            "took ball"
+          ],
+          "label_zh": "拿到必要道具 ball",
+          "item": "ball"
+        },
+        {
+          "key": "found exitkey",
+          "kind": "mark",
+          "aliases": [
+            "found exitkey"
+          ],
+          "label_zh": "发现必要线索/物品 exitkey"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "pressed office_plate",
+          "kind": "mark",
+          "aliases": [
+            "pressed office_plate",
+            "unlocked cab_lock"
+          ],
+          "label_zh": "pressed office_plate"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "found pillow": "irrelevant_trial_object_or_optional_recovery_tool",
+        "read pillow": "irrelevant_trial_object_or_optional_recovery_tool",
+        "took pillow": "irrelevant_trial_object_or_optional_recovery_tool",
+        "found plant": "irrelevant_trial_object_or_optional_recovery_tool",
+        "read plant": "irrelevant_trial_object_or_optional_recovery_tool",
+        "took plant": "irrelevant_trial_object_or_optional_recovery_tool",
+        "found carton": "irrelevant_trial_object_or_optional_recovery_tool",
+        "read carton": "irrelevant_trial_object_or_optional_recovery_tool",
+        "took carton": "irrelevant_trial_object_or_optional_recovery_tool",
+        "unlocked cab_lock": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "ball",
+        "exitkey",
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-10_office_pipes": {
+      "level": "L2-10",
+      "title": "管道拼接",
+      "config_file": "L2-10_office_pipes.json",
+      "config_sha256": "15a3502f9ca30006a4312d6935aa91dfbcef6d2f655ed058960a8519370bfb04",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "solved pipes",
+          "kind": "mark",
+          "aliases": [
+            "solved pipes",
+            "unlocked exit"
+          ],
+          "label_zh": "完成必要机关 pipes"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked exit": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-11_office_seats": {
+      "level": "L2-11",
+      "title": "座次推理",
+      "config_file": "L2-11_office_seats.json",
+      "config_sha256": "e0d3ccfb376b8962a3950b1911ef8d03347b719f36bb8cfb2c3bdb8b2c2cc798",
+      "nodes": [
+        {
+          "key": "matched seats 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "seats",
+          "rank": 1,
+          "total": 4
+        },
+        {
+          "key": "matched seats 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "seats",
+          "rank": 2,
+          "total": 4
+        },
+        {
+          "key": "matched seats 3",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "seats",
+          "rank": 3,
+          "total": 4
+        },
+        {
+          "key": "matched seats 4",
+          "kind": "group_rank",
+          "aliases": [
+            "solved seats",
+            "unlocked exit"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 4",
+          "group": "seats",
+          "rank": 4,
+          "total": 4
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found panda",
+          "kind": "mark",
+          "aliases": [
+            "found panda"
+          ],
+          "label_zh": "发现必要线索/物品 panda"
+        },
+        {
+          "key": "found crab",
+          "kind": "mark",
+          "aliases": [
+            "found crab"
+          ],
+          "label_zh": "发现必要线索/物品 crab"
+        },
+        {
+          "key": "found octopus",
+          "kind": "mark",
+          "aliases": [
+            "found octopus"
+          ],
+          "label_zh": "发现必要线索/物品 octopus"
+        },
+        {
+          "key": "found turtle",
+          "kind": "mark",
+          "aliases": [
+            "found turtle"
+          ],
+          "label_zh": "发现必要线索/物品 turtle"
+        },
+        {
+          "key": "took crab",
+          "kind": "take",
+          "aliases": [
+            "took crab"
+          ],
+          "label_zh": "拿到必要道具 crab",
+          "item": "crab"
+        },
+        {
+          "key": "took octopus",
+          "kind": "take",
+          "aliases": [
+            "took octopus"
+          ],
+          "label_zh": "拿到必要道具 octopus",
+          "item": "octopus"
+        },
+        {
+          "key": "took panda",
+          "kind": "take",
+          "aliases": [
+            "took panda"
+          ],
+          "label_zh": "拿到必要道具 panda",
+          "item": "panda"
+        },
+        {
+          "key": "took turtle",
+          "kind": "take",
+          "aliases": [
+            "took turtle"
+          ],
+          "label_zh": "拿到必要道具 turtle",
+          "item": "turtle"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved seats": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "crab",
+        "hint",
+        "octopus",
+        "panda",
+        "turtle"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-12_office_rules": {
+      "level": "L2-12",
+      "title": "违反的办公室规定",
+      "config_file": "L2-12_office_rules.json",
+      "config_sha256": "e2df86ef393a094ff0795779bd6c24789cba8c23d8b3d1cdee8d0a492156ce29",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-13_office_lights": {
+      "level": "L2-13",
+      "title": "联动灯盘",
+      "config_file": "L2-13_office_lights.json",
+      "config_sha256": "cf997dcfba278052ec2e90c7fe97386109080cd9c47d6294bc9e33d4bec7e3ab",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "solved lights",
+          "kind": "mark",
+          "aliases": [
+            "solved lights"
+          ],
+          "label_zh": "完成必要机关 lights"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-14_office_queens": {
+      "level": "L2-14",
+      "title": "四皇后",
+      "config_file": "L2-14_office_queens.json",
+      "config_sha256": "bb6e6c82b425c65bb85f4f7a74c3c26d1fe2eb5ac6d26024ffdd50985646286a",
+      "nodes": [
+        {
+          "key": "matched queens 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "queens",
+          "rank": 1,
+          "total": 4
+        },
+        {
+          "key": "matched queens 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "queens",
+          "rank": 2,
+          "total": 4
+        },
+        {
+          "key": "matched queens 3",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "queens",
+          "rank": 3,
+          "total": 4
+        },
+        {
+          "key": "matched queens 4",
+          "kind": "group_rank",
+          "aliases": [
+            "solved queens",
+            "unlocked exit"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 4",
+          "group": "queens",
+          "rank": 4,
+          "total": 4
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found q1",
+          "kind": "mark",
+          "aliases": [
+            "found q1"
+          ],
+          "label_zh": "发现必要线索/物品 q1"
+        },
+        {
+          "key": "found q2",
+          "kind": "mark",
+          "aliases": [
+            "found q2"
+          ],
+          "label_zh": "发现必要线索/物品 q2"
+        },
+        {
+          "key": "found q3",
+          "kind": "mark",
+          "aliases": [
+            "found q3"
+          ],
+          "label_zh": "发现必要线索/物品 q3"
+        },
+        {
+          "key": "found q4",
+          "kind": "mark",
+          "aliases": [
+            "found q4"
+          ],
+          "label_zh": "发现必要线索/物品 q4"
+        },
+        {
+          "key": "took q1",
+          "kind": "take",
+          "aliases": [
+            "took q1"
+          ],
+          "label_zh": "拿到必要道具 q1",
+          "item": "q1"
+        },
+        {
+          "key": "took q2",
+          "kind": "take",
+          "aliases": [
+            "took q2"
+          ],
+          "label_zh": "拿到必要道具 q2",
+          "item": "q2"
+        },
+        {
+          "key": "took q3",
+          "kind": "take",
+          "aliases": [
+            "took q3"
+          ],
+          "label_zh": "拿到必要道具 q3",
+          "item": "q3"
+        },
+        {
+          "key": "took q4",
+          "kind": "take",
+          "aliases": [
+            "took q4"
+          ],
+          "label_zh": "拿到必要道具 q4",
+          "item": "q4"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved queens": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "hint",
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-15_office_count_halves": {
+      "level": "L2-15",
+      "title": "数数 + 两半",
+      "config_file": "L2-15_office_count_halves.json",
+      "config_sha256": "5e01bc290730d251a2c855f03eff8165a93c13edf94ef603cf68d8e000c0170b",
+      "nodes": [
+        {
+          "key": "found memo",
+          "kind": "mark",
+          "aliases": [
+            "found memo"
+          ],
+          "label_zh": "发现必要线索/物品 memo"
+        },
+        {
+          "key": "read memo",
+          "kind": "mark",
+          "aliases": [
+            "read memo"
+          ],
+          "label_zh": "实际读取必要内容 memo"
+        },
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found diary",
+          "kind": "mark",
+          "aliases": [
+            "found diary"
+          ],
+          "label_zh": "发现必要线索/物品 diary"
+        },
+        {
+          "key": "read diary",
+          "kind": "mark",
+          "aliases": [
+            "read diary"
+          ],
+          "label_zh": "实际读取必要内容 diary"
+        },
+        {
+          "key": "unlocked diary",
+          "kind": "mark",
+          "aliases": [
+            "unlocked diary"
+          ],
+          "label_zh": "解开独立锁 diary"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "diary",
+        "memo",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-16_laundry_five": {
+      "level": "L2-16",
+      "title": "洗衣房五环",
+      "config_file": "L2-16_laundry_five.json",
+      "config_sha256": "8e54f89e75e3a4d31dda35e54a5af4ac209755d1cd398a571fb767a4087a0f09",
+      "nodes": [
+        {
+          "key": "found note",
+          "kind": "mark",
+          "aliases": [
+            "found note"
+          ],
+          "label_zh": "发现必要线索/物品 note"
+        },
+        {
+          "key": "read note",
+          "kind": "mark",
+          "aliases": [
+            "read note"
+          ],
+          "label_zh": "实际读取必要内容 note"
+        },
+        {
+          "key": "found diary",
+          "kind": "mark",
+          "aliases": [
+            "found diary"
+          ],
+          "label_zh": "发现必要线索/物品 diary"
+        },
+        {
+          "key": "read diary",
+          "kind": "mark",
+          "aliases": [
+            "read diary"
+          ],
+          "label_zh": "实际读取必要内容 diary"
+        },
+        {
+          "key": "unlocked diary",
+          "kind": "mark",
+          "aliases": [
+            "unlocked diary"
+          ],
+          "label_zh": "解开独立锁 diary"
+        },
+        {
+          "key": "found key",
+          "kind": "mark",
+          "aliases": [
+            "found key"
+          ],
+          "label_zh": "发现必要线索/物品 key"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "unlocked drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer"
+          ],
+          "label_zh": "解开独立锁 drawer"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "diary",
+        "key",
+        "note"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-17_office_symbols": {
+      "level": "L2-17",
+      "title": "符号对应",
+      "config_file": "L2-17_office_symbols.json",
+      "config_sha256": "5d8e4a5e0a7a7df946870731653e7aefba419b86d594ccea7a5d73c3b3750486",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found s_star",
+          "kind": "mark",
+          "aliases": [
+            "found s_star"
+          ],
+          "label_zh": "发现必要线索/物品 s_star"
+        },
+        {
+          "key": "read s_star",
+          "kind": "mark",
+          "aliases": [
+            "read s_star"
+          ],
+          "label_zh": "实际读取必要内容 s_star"
+        },
+        {
+          "key": "found s_tri",
+          "kind": "mark",
+          "aliases": [
+            "found s_tri"
+          ],
+          "label_zh": "发现必要线索/物品 s_tri"
+        },
+        {
+          "key": "read s_tri",
+          "kind": "mark",
+          "aliases": [
+            "read s_tri"
+          ],
+          "label_zh": "实际读取必要内容 s_tri"
+        },
+        {
+          "key": "found s_dot",
+          "kind": "mark",
+          "aliases": [
+            "found s_dot"
+          ],
+          "label_zh": "发现必要线索/物品 s_dot"
+        },
+        {
+          "key": "read s_dot",
+          "kind": "mark",
+          "aliases": [
+            "read s_dot"
+          ],
+          "label_zh": "实际读取必要内容 s_dot"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "card",
+        "s_dot",
+        "s_star",
+        "s_tri"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-18_office_colors": {
+      "level": "L2-18",
+      "title": "四色便签",
+      "config_file": "L2-18_office_colors.json",
+      "config_sha256": "be420d16ea44404475bf6e66b9a91a8e4fd784bee0c9e96db21d723d34240206",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found c_yellow",
+          "kind": "mark",
+          "aliases": [
+            "found c_yellow"
+          ],
+          "label_zh": "发现必要线索/物品 c_yellow"
+        },
+        {
+          "key": "read c_yellow",
+          "kind": "mark",
+          "aliases": [
+            "read c_yellow"
+          ],
+          "label_zh": "实际读取必要内容 c_yellow"
+        },
+        {
+          "key": "found c_blue",
+          "kind": "mark",
+          "aliases": [
+            "found c_blue"
+          ],
+          "label_zh": "发现必要线索/物品 c_blue"
+        },
+        {
+          "key": "read c_blue",
+          "kind": "mark",
+          "aliases": [
+            "read c_blue"
+          ],
+          "label_zh": "实际读取必要内容 c_blue"
+        },
+        {
+          "key": "found c_pink",
+          "kind": "mark",
+          "aliases": [
+            "found c_pink"
+          ],
+          "label_zh": "发现必要线索/物品 c_pink"
+        },
+        {
+          "key": "read c_pink",
+          "kind": "mark",
+          "aliases": [
+            "read c_pink"
+          ],
+          "label_zh": "实际读取必要内容 c_pink"
+        },
+        {
+          "key": "found c_white",
+          "kind": "mark",
+          "aliases": [
+            "found c_white"
+          ],
+          "label_zh": "发现必要线索/物品 c_white"
+        },
+        {
+          "key": "read c_white",
+          "kind": "mark",
+          "aliases": [
+            "read c_white"
+          ],
+          "label_zh": "实际读取必要内容 c_white"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {},
+      "required_items": [
+        "c_blue",
+        "c_pink",
+        "c_white",
+        "c_yellow",
+        "card"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-19_office_laser": {
+      "level": "L2-19",
+      "title": "镜子反射激光",
+      "config_file": "L2-19_office_laser.json",
+      "config_sha256": "7a9cb2fea7f6e59a15d585a5b9749f2e9555a5627e6fa5868b1f44b6ad716383",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found mirror",
+          "kind": "mark",
+          "aliases": [
+            "found mirror"
+          ],
+          "label_zh": "发现必要线索/物品 mirror"
+        },
+        {
+          "key": "took mirror",
+          "kind": "take",
+          "aliases": [
+            "took mirror"
+          ],
+          "label_zh": "拿到必要道具 mirror",
+          "item": "mirror"
+        },
+        {
+          "key": "found exitkey",
+          "kind": "mark",
+          "aliases": [
+            "found exitkey"
+          ],
+          "label_zh": "发现必要线索/物品 exitkey"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "solved laser",
+          "kind": "mark",
+          "aliases": [
+            "solved laser",
+            "unlocked cab_lock"
+          ],
+          "label_zh": "完成必要机关 laser"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked cab_lock": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "exitkey",
+        "hint",
+        "mirror"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-20_office_bill": {
+      "level": "L2-20",
+      "title": "外卖账单",
+      "config_file": "L2-20_office_bill.json",
+      "config_sha256": "68cce59f817108faaca059f47793e3161e5d6b938e48fa075bd9e61770d869df",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found menu",
+          "kind": "mark",
+          "aliases": [
+            "found menu"
+          ],
+          "label_zh": "发现必要线索/物品 menu"
+        },
+        {
+          "key": "read menu",
+          "kind": "mark",
+          "aliases": [
+            "read menu"
+          ],
+          "label_zh": "实际读取必要内容 menu"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint",
+        "menu"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-21_office_places": {
+      "level": "L2-21",
+      "title": "位置对应编号",
+      "config_file": "L2-21_office_places.json",
+      "config_sha256": "33a657342fbda4dc555acc60615ee17508f92e593b270d1c090d5c604ba14651",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found playlist",
+          "kind": "mark",
+          "aliases": [
+            "found playlist"
+          ],
+          "label_zh": "发现必要线索/物品 playlist"
+        },
+        {
+          "key": "read playlist",
+          "kind": "mark",
+          "aliases": [
+            "read playlist"
+          ],
+          "label_zh": "实际读取必要内容 playlist"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint",
+        "playlist"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-22_office_measure": {
+      "level": "L2-22",
+      "title": "量地上的图形",
+      "config_file": "L2-22_office_measure.json",
+      "config_sha256": "dacb22e5ad73a34d8e3fa1c4babd1dfbe7e461312431267626263a74228b7a24",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found ruler",
+          "kind": "mark",
+          "aliases": [
+            "found ruler"
+          ],
+          "label_zh": "发现必要线索/物品 ruler"
+        },
+        {
+          "key": "took ruler",
+          "kind": "take",
+          "aliases": [
+            "took ruler"
+          ],
+          "label_zh": "拿到必要道具 ruler",
+          "item": "ruler"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "measured u7_edge_1",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_1",
+          "target": "u7_edge_1",
+          "item": "ruler"
+        },
+        {
+          "key": "measured u7_edge_3",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_3",
+          "target": "u7_edge_3",
+          "item": "ruler"
+        },
+        {
+          "key": "measured u7_edge_4",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_4",
+          "target": "u7_edge_4",
+          "item": "ruler"
+        },
+        {
+          "key": "measured u7_edge_5",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_5",
+          "target": "u7_edge_5",
+          "item": "ruler"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint",
+        "ruler"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-23_office_order": {
+      "level": "L2-23",
+      "title": "四张卡片·从左到右",
+      "config_file": "L2-23_office_order.json",
+      "config_sha256": "5f8b68225ed8b8148716263dc4930bf0d62fa0699b93bb0d505a6fd63c2905d0",
+      "nodes": [
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found t1",
+          "kind": "mark",
+          "aliases": [
+            "found t1"
+          ],
+          "label_zh": "发现必要线索/物品 t1"
+        },
+        {
+          "key": "read t1",
+          "kind": "mark",
+          "aliases": [
+            "read t1"
+          ],
+          "label_zh": "实际读取必要内容 t1"
+        },
+        {
+          "key": "found t2",
+          "kind": "mark",
+          "aliases": [
+            "found t2"
+          ],
+          "label_zh": "发现必要线索/物品 t2"
+        },
+        {
+          "key": "read t2",
+          "kind": "mark",
+          "aliases": [
+            "read t2"
+          ],
+          "label_zh": "实际读取必要内容 t2"
+        },
+        {
+          "key": "found t3",
+          "kind": "mark",
+          "aliases": [
+            "found t3"
+          ],
+          "label_zh": "发现必要线索/物品 t3"
+        },
+        {
+          "key": "read t3",
+          "kind": "mark",
+          "aliases": [
+            "read t3"
+          ],
+          "label_zh": "实际读取必要内容 t3"
+        },
+        {
+          "key": "found t4",
+          "kind": "mark",
+          "aliases": [
+            "found t4"
+          ],
+          "label_zh": "发现必要线索/物品 t4"
+        },
+        {
+          "key": "read t4",
+          "kind": "mark",
+          "aliases": [
+            "read t4"
+          ],
+          "label_zh": "实际读取必要内容 t4"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {},
+      "required_items": [
+        "card",
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-24_office_walls": {
+      "level": "L2-24",
+      "title": "各面墙上的画",
+      "config_file": "L2-24_office_walls.json",
+      "config_sha256": "470b5e621368fb56bb42171e5297dcff077cabc1bc319698fada60f51b5d84bf",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found rule",
+          "kind": "mark",
+          "aliases": [
+            "found rule"
+          ],
+          "label_zh": "发现必要线索/物品 rule"
+        },
+        {
+          "key": "read rule",
+          "kind": "mark",
+          "aliases": [
+            "read rule"
+          ],
+          "label_zh": "实际读取必要内容 rule"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint",
+        "rule"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-25_office_busts": {
+      "level": "L2-25",
+      "title": "半身像盯着的数字",
+      "config_file": "L2-25_office_busts.json",
+      "config_sha256": "7f7d4136b3bb10785da6bffbe39618c2d1ad87740737fff6c5f883b3aeb920cc",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-26_office_boxes": {
+      "level": "L2-26",
+      "title": "真假话箱子",
+      "config_file": "L2-26_office_boxes.json",
+      "config_sha256": "b20a03b484cb2fb92cf097e9745b06a6fb90e91216a4276ddd5f8a927d443aef",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found boxnote1",
+          "kind": "mark",
+          "aliases": [
+            "found boxnote1"
+          ],
+          "label_zh": "发现必要线索/物品 boxnote1"
+        },
+        {
+          "key": "read boxnote1",
+          "kind": "mark",
+          "aliases": [
+            "read boxnote1"
+          ],
+          "label_zh": "实际读取必要内容 boxnote1"
+        },
+        {
+          "key": "found boxnote2",
+          "kind": "mark",
+          "aliases": [
+            "found boxnote2"
+          ],
+          "label_zh": "发现必要线索/物品 boxnote2"
+        },
+        {
+          "key": "read boxnote2",
+          "kind": "mark",
+          "aliases": [
+            "read boxnote2"
+          ],
+          "label_zh": "实际读取必要内容 boxnote2"
+        },
+        {
+          "key": "found boxnote3",
+          "kind": "mark",
+          "aliases": [
+            "found boxnote3"
+          ],
+          "label_zh": "发现必要线索/物品 boxnote3"
+        },
+        {
+          "key": "read boxnote3",
+          "kind": "mark",
+          "aliases": [
+            "read boxnote3"
+          ],
+          "label_zh": "实际读取必要内容 boxnote3"
+        },
+        {
+          "key": "found exitkey",
+          "kind": "mark",
+          "aliases": [
+            "found exitkey"
+          ],
+          "label_zh": "发现必要线索/物品 exitkey"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked box1_lock": "trap_only_latent_lock",
+        "unlocked box2_lock": "trap_only_latent_lock",
+        "unlocked box3_lock": "trap_only_latent_lock",
+        "trap office_toolbox_1": "negative_trap_event",
+        "trap office_toolbox_3": "negative_trap_event"
+      },
+      "required_items": [
+        "boxnote1",
+        "boxnote2",
+        "boxnote3",
+        "exitkey",
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-27_office_jugs": {
+      "level": "L2-27",
+      "title": "量出 4 升水",
+      "config_file": "L2-27_office_jugs.json",
+      "config_sha256": "8fb274df8d67c3e82f9858ef3a4e73bb14d5c5e07c3fc8a02eccb06425ae8c93",
+      "nodes": [
+        {
+          "key": "prepared office_ice_bucket",
+          "kind": "water_ready",
+          "aliases": [],
+          "label_zh": "任一合法倒水路线已量出目标水量",
+          "amount": 4,
+          "items": [
+            "jug5",
+            "jug3"
+          ]
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found jug5",
+          "kind": "mark",
+          "aliases": [
+            "found jug5"
+          ],
+          "label_zh": "发现必要线索/物品 jug5"
+        },
+        {
+          "key": "found jug3",
+          "kind": "mark",
+          "aliases": [
+            "found jug3"
+          ],
+          "label_zh": "发现必要线索/物品 jug3"
+        },
+        {
+          "key": "solved office_ice_bucket",
+          "kind": "mark",
+          "aliases": [
+            "solved office_ice_bucket",
+            "unlocked exit"
+          ],
+          "label_zh": "完成必要机关 office_ice_bucket"
+        },
+        {
+          "key": "took jug3",
+          "kind": "take",
+          "aliases": [
+            "took jug3"
+          ],
+          "label_zh": "拿到必要道具 jug3",
+          "item": "jug3"
+        },
+        {
+          "key": "took jug5",
+          "kind": "take",
+          "aliases": [
+            "took jug5"
+          ],
+          "label_zh": "拿到必要道具 jug5",
+          "item": "jug5"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "solved trays": "optional_rest_slot",
+        "unlocked exit": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "hint",
+        "jug3",
+        "jug5"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-28_office_motto": {
+      "level": "L2-28",
+      "title": "倒过来的字母",
+      "config_file": "L2-28_office_motto.json",
+      "config_sha256": "0a2eb8f108b37d136d56c1415cb723454e51c9b06ace8e1c380dfa62ee327934",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L2-29_office_relations": {
+      "level": "L2-29",
+      "title": "数字关系便签",
+      "config_file": "L2-29_office_relations.json",
+      "config_sha256": "cd14ae103a8ef006ad2f54c3410a7409bf591eed609442729033b2e8e8c5faf9",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found rel1",
+          "kind": "mark",
+          "aliases": [
+            "found rel1"
+          ],
+          "label_zh": "发现必要线索/物品 rel1"
+        },
+        {
+          "key": "read rel1",
+          "kind": "mark",
+          "aliases": [
+            "read rel1"
+          ],
+          "label_zh": "实际读取必要内容 rel1"
+        },
+        {
+          "key": "found rel2",
+          "kind": "mark",
+          "aliases": [
+            "found rel2"
+          ],
+          "label_zh": "发现必要线索/物品 rel2"
+        },
+        {
+          "key": "read rel2",
+          "kind": "mark",
+          "aliases": [
+            "read rel2"
+          ],
+          "label_zh": "实际读取必要内容 rel2"
+        },
+        {
+          "key": "found rel3",
+          "kind": "mark",
+          "aliases": [
+            "found rel3"
+          ],
+          "label_zh": "发现必要线索/物品 rel3"
+        },
+        {
+          "key": "read rel3",
+          "kind": "mark",
+          "aliases": [
+            "read rel3"
+          ],
+          "label_zh": "实际读取必要内容 rel3"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "hint",
+        "rel1",
+        "rel2",
+        "rel3"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-01_office_attic": {
+      "level": "L3-01",
+      "title": "爸爸的信",
+      "config_file": "L3-01_office_attic.json",
+      "config_sha256": "91ffa13e3bf2dc44e92c1d9c1aa36c571007c6015a0c63df29d28e16d664a5fc",
+      "nodes": [
+        {
+          "key": "matched family 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "family",
+          "rank": 1,
+          "total": 4
+        },
+        {
+          "key": "matched family 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "family",
+          "rank": 2,
+          "total": 4
+        },
+        {
+          "key": "matched family 3",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "family",
+          "rank": 3,
+          "total": 4
+        },
+        {
+          "key": "matched family 4",
+          "kind": "group_rank",
+          "aliases": [
+            "solved family",
+            "unlocked exit"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 4",
+          "group": "family",
+          "rank": 4,
+          "total": 4
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found mom_note",
+          "kind": "mark",
+          "aliases": [
+            "found mom_note"
+          ],
+          "label_zh": "发现必要线索/物品 mom_note"
+        },
+        {
+          "key": "read mom_note",
+          "kind": "mark",
+          "aliases": [
+            "read mom_note"
+          ],
+          "label_zh": "实际读取必要内容 mom_note"
+        },
+        {
+          "key": "found blank_paper",
+          "kind": "mark",
+          "aliases": [
+            "found blank_paper"
+          ],
+          "label_zh": "发现必要线索/物品 blank_paper"
+        },
+        {
+          "key": "found photo",
+          "kind": "mark",
+          "aliases": [
+            "found photo"
+          ],
+          "label_zh": "发现必要线索/物品 photo"
+        },
+        {
+          "key": "read photo",
+          "kind": "mark",
+          "aliases": [
+            "read photo"
+          ],
+          "label_zh": "实际读取必要内容 photo"
+        },
+        {
+          "key": "found horse",
+          "kind": "mark",
+          "aliases": [
+            "found horse"
+          ],
+          "label_zh": "发现必要线索/物品 horse"
+        },
+        {
+          "key": "found turtle",
+          "kind": "mark",
+          "aliases": [
+            "found turtle"
+          ],
+          "label_zh": "发现必要线索/物品 turtle"
+        },
+        {
+          "key": "found shark",
+          "kind": "mark",
+          "aliases": [
+            "found shark"
+          ],
+          "label_zh": "发现必要线索/物品 shark"
+        },
+        {
+          "key": "found panda",
+          "kind": "mark",
+          "aliases": [
+            "found panda"
+          ],
+          "label_zh": "发现必要线索/物品 panda"
+        },
+        {
+          "key": "unlocked drawer_b2",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer_b2"
+          ],
+          "label_zh": "解开独立锁 drawer_b2"
+        },
+        {
+          "key": "unlocked red_box_lock",
+          "kind": "mark",
+          "aliases": [
+            "unlocked red_box_lock"
+          ],
+          "label_zh": "解开独立锁 red_box_lock"
+        },
+        {
+          "key": "revealed office_typewriter",
+          "kind": "mark",
+          "aliases": [
+            "revealed office_typewriter"
+          ],
+          "label_zh": "显现必要信息 office_typewriter"
+        },
+        {
+          "key": "took blank_paper",
+          "kind": "take",
+          "aliases": [
+            "took blank_paper"
+          ],
+          "label_zh": "拿到必要道具 blank_paper",
+          "item": "blank_paper"
+        },
+        {
+          "key": "took horse",
+          "kind": "take",
+          "aliases": [
+            "took horse"
+          ],
+          "label_zh": "拿到必要道具 horse",
+          "item": "horse"
+        },
+        {
+          "key": "took panda",
+          "kind": "take",
+          "aliases": [
+            "took panda"
+          ],
+          "label_zh": "拿到必要道具 panda",
+          "item": "panda"
+        },
+        {
+          "key": "took shark",
+          "kind": "take",
+          "aliases": [
+            "took shark"
+          ],
+          "label_zh": "拿到必要道具 shark",
+          "item": "shark"
+        },
+        {
+          "key": "took turtle",
+          "kind": "take",
+          "aliases": [
+            "took turtle"
+          ],
+          "label_zh": "拿到必要道具 turtle",
+          "item": "turtle"
+        },
+        {
+          "key": "printed office_typewriter",
+          "kind": "printed",
+          "aliases": [],
+          "label_zh": "实际打印出所需完整转换结果（任意有效输入次序）",
+          "target": "office_typewriter",
+          "length": 4,
+          "accepted_outputs": [
+            "2481"
+          ]
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved family": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "blank_paper",
+        "hint",
+        "horse",
+        "mom_note",
+        "panda",
+        "photo",
+        "shark",
+        "turtle"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-02_office_inspector": {
+      "level": "L3-02",
+      "title": "侦探的信",
+      "config_file": "L3-02_office_inspector.json",
+      "config_sha256": "d10207222ac60f40fdd29cc739c4d19d97494a4a25668aabda515fb567ff8d92",
+      "nodes": [
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found page",
+          "kind": "mark",
+          "aliases": [
+            "found page"
+          ],
+          "label_zh": "发现必要线索/物品 page"
+        },
+        {
+          "key": "read page",
+          "kind": "mark",
+          "aliases": [
+            "read page"
+          ],
+          "label_zh": "实际读取必要内容 page"
+        },
+        {
+          "key": "found pencil",
+          "kind": "mark",
+          "aliases": [
+            "found pencil"
+          ],
+          "label_zh": "发现必要线索/物品 pencil"
+        },
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "found flashlight",
+          "kind": "mark",
+          "aliases": [
+            "found flashlight"
+          ],
+          "label_zh": "发现必要线索/物品 flashlight"
+        },
+        {
+          "key": "took flashlight",
+          "kind": "take",
+          "aliases": [
+            "took flashlight"
+          ],
+          "label_zh": "拿到必要道具 flashlight",
+          "item": "flashlight"
+        },
+        {
+          "key": "unlocked drawer_b2",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer_b2"
+          ],
+          "label_zh": "解开独立锁 drawer_b2"
+        },
+        {
+          "key": "unlocked toolbox_lock",
+          "kind": "mark",
+          "aliases": [
+            "unlocked toolbox_lock"
+          ],
+          "label_zh": "解开独立锁 toolbox_lock"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "revealed office_notepad",
+          "kind": "mark",
+          "aliases": [
+            "revealed office_notepad"
+          ],
+          "label_zh": "显现必要信息 office_notepad"
+        },
+        {
+          "key": "took pencil",
+          "kind": "take",
+          "aliases": [
+            "took pencil"
+          ],
+          "label_zh": "拿到必要道具 pencil",
+          "item": "pencil"
+        },
+        {
+          "key": "observed uv_code",
+          "kind": "uv",
+          "aliases": [],
+          "label_zh": "实际照中目标，获得未遮挡的紫外观测",
+          "item": "flashlight"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "found plumber": "explicit_distractor",
+        "read plumber": "explicit_distractor"
+      },
+      "required_items": [
+        "card",
+        "flashlight",
+        "hint",
+        "page",
+        "pencil"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-03_office_story_archive": {
+      "level": "L3-03",
+      "title": "档案员的归还凭据",
+      "config_file": "L3-03_office_story_archive.json",
+      "config_sha256": "9cb798bd53732b801f34cc7612b489b0e241bf2810d26a36e641e56e5416a609",
+      "nodes": [
+        {
+          "key": "exposed boxkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed boxkey",
+            "revealed boxkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 boxkey",
+          "item": "boxkey"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found page",
+          "kind": "mark",
+          "aliases": [
+            "found page"
+          ],
+          "label_zh": "发现必要线索/物品 page"
+        },
+        {
+          "key": "read page",
+          "kind": "mark",
+          "aliases": [
+            "read page"
+          ],
+          "label_zh": "实际读取必要内容 page"
+        },
+        {
+          "key": "found trowel",
+          "kind": "mark",
+          "aliases": [
+            "found trowel"
+          ],
+          "label_zh": "发现必要线索/物品 trowel"
+        },
+        {
+          "key": "took trowel",
+          "kind": "take",
+          "aliases": [
+            "took trowel"
+          ],
+          "label_zh": "拿到必要道具 trowel",
+          "item": "trowel"
+        },
+        {
+          "key": "took boxkey",
+          "kind": "take",
+          "aliases": [
+            "took boxkey"
+          ],
+          "label_zh": "拿到必要道具 boxkey",
+          "item": "boxkey"
+        },
+        {
+          "key": "found pencil",
+          "kind": "mark",
+          "aliases": [
+            "found pencil"
+          ],
+          "label_zh": "发现必要线索/物品 pencil"
+        },
+        {
+          "key": "found card",
+          "kind": "mark",
+          "aliases": [
+            "found card"
+          ],
+          "label_zh": "发现必要线索/物品 card"
+        },
+        {
+          "key": "read card",
+          "kind": "mark",
+          "aliases": [
+            "read card"
+          ],
+          "label_zh": "实际读取必要内容 card"
+        },
+        {
+          "key": "unlocked drawer_b2",
+          "kind": "mark",
+          "aliases": [
+            "unlocked drawer_b2"
+          ],
+          "label_zh": "解开独立锁 drawer_b2"
+        },
+        {
+          "key": "unlocked archive_toolbox",
+          "kind": "mark",
+          "aliases": [
+            "unlocked archive_toolbox"
+          ],
+          "label_zh": "解开独立锁 archive_toolbox"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "revealed office_notepad",
+          "kind": "mark",
+          "aliases": [
+            "revealed office_notepad"
+          ],
+          "label_zh": "显现必要信息 office_notepad"
+        },
+        {
+          "key": "took pencil",
+          "kind": "take",
+          "aliases": [
+            "took pencil"
+          ],
+          "label_zh": "拿到必要道具 pencil",
+          "item": "pencil"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "freed boxkey": "same_exposure_event",
+        "revealed boxkey": "same_exposure_event",
+        "found boxkey": "auto_discovery_is_same_exposure_event"
+      },
+      "required_items": [
+        "boxkey",
+        "card",
+        "hint",
+        "page",
+        "pencil",
+        "trowel"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-04_office_story_captain": {
+      "level": "L3-04",
+      "title": "船长的应急物资",
+      "config_file": "L3-04_office_story_captain.json",
+      "config_sha256": "0274b6d567e28b5e810f2981d4f0f74c337f23ee1459aa0afea1650de8fb3961",
+      "nodes": [
+        {
+          "key": "prepared office_ice_bucket",
+          "kind": "water_ready",
+          "aliases": [],
+          "label_zh": "任一合法倒水路线已量出目标水量",
+          "amount": 4,
+          "items": [
+            "jug5",
+            "jug3"
+          ]
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found jug5",
+          "kind": "mark",
+          "aliases": [
+            "found jug5"
+          ],
+          "label_zh": "发现必要线索/物品 jug5"
+        },
+        {
+          "key": "found jug3",
+          "kind": "mark",
+          "aliases": [
+            "found jug3"
+          ],
+          "label_zh": "发现必要线索/物品 jug3"
+        },
+        {
+          "key": "found camera",
+          "kind": "mark",
+          "aliases": [
+            "found camera"
+          ],
+          "label_zh": "发现必要线索/物品 camera"
+        },
+        {
+          "key": "took camera",
+          "kind": "take",
+          "aliases": [
+            "took camera"
+          ],
+          "label_zh": "拿到必要道具 camera",
+          "item": "camera"
+        },
+        {
+          "key": "found page",
+          "kind": "mark",
+          "aliases": [
+            "found page"
+          ],
+          "label_zh": "发现必要线索/物品 page"
+        },
+        {
+          "key": "read page",
+          "kind": "mark",
+          "aliases": [
+            "read page"
+          ],
+          "label_zh": "实际读取必要内容 page"
+        },
+        {
+          "key": "found battery",
+          "kind": "mark",
+          "aliases": [
+            "found battery"
+          ],
+          "label_zh": "发现必要线索/物品 battery"
+        },
+        {
+          "key": "took battery",
+          "kind": "take",
+          "aliases": [
+            "took battery"
+          ],
+          "label_zh": "拿到必要道具 battery",
+          "item": "battery"
+        },
+        {
+          "key": "found log",
+          "kind": "mark",
+          "aliases": [
+            "found log"
+          ],
+          "label_zh": "发现必要线索/物品 log"
+        },
+        {
+          "key": "read log",
+          "kind": "mark",
+          "aliases": [
+            "read log"
+          ],
+          "label_zh": "实际读取必要内容 log"
+        },
+        {
+          "key": "unlocked departure_supplies",
+          "kind": "mark",
+          "aliases": [
+            "unlocked departure_supplies"
+          ],
+          "label_zh": "解开独立锁 departure_supplies"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "powered exit",
+          "kind": "mark",
+          "aliases": [
+            "powered exit"
+          ],
+          "label_zh": "恢复供电 exit"
+        },
+        {
+          "key": "solved office_ice_bucket",
+          "kind": "mark",
+          "aliases": [
+            "solved office_ice_bucket",
+            "unlocked camera_compartment"
+          ],
+          "label_zh": "完成必要机关 office_ice_bucket"
+        },
+        {
+          "key": "took jug3",
+          "kind": "take",
+          "aliases": [
+            "took jug3"
+          ],
+          "label_zh": "拿到必要道具 jug3",
+          "item": "jug3"
+        },
+        {
+          "key": "took jug5",
+          "kind": "take",
+          "aliases": [
+            "took jug5"
+          ],
+          "label_zh": "拿到必要道具 jug5",
+          "item": "jug5"
+        },
+        {
+          "key": "observed zoom_sign",
+          "kind": "zoom",
+          "aliases": [],
+          "label_zh": "用相机取得目标牌子的有效放大观测",
+          "item": "camera",
+          "targets": [
+            "garden_sign"
+          ]
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "solved trays": "optional_rest_slot",
+        "unlocked camera_compartment": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "battery",
+        "camera",
+        "hint",
+        "jug3",
+        "jug5",
+        "log",
+        "page"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-05_office_story_restorer": {
+      "level": "L3-05",
+      "title": "修复师抢救藏品",
+      "config_file": "L3-05_office_story_restorer.json",
+      "config_sha256": "e952f9fdfb98b1431ee3b62991da0226372497d7f0ea160f22233d6ccb89b378",
+      "nodes": [
+        {
+          "key": "exposed boxkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed boxkey",
+            "revealed boxkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 boxkey",
+          "item": "boxkey"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found hammer",
+          "kind": "mark",
+          "aliases": [
+            "found hammer"
+          ],
+          "label_zh": "发现必要线索/物品 hammer"
+        },
+        {
+          "key": "took hammer",
+          "kind": "take",
+          "aliases": [
+            "took hammer"
+          ],
+          "label_zh": "拿到必要道具 hammer",
+          "item": "hammer"
+        },
+        {
+          "key": "found jar",
+          "kind": "mark",
+          "aliases": [
+            "found jar"
+          ],
+          "label_zh": "发现必要线索/物品 jar"
+        },
+        {
+          "key": "took boxkey",
+          "kind": "take",
+          "aliases": [
+            "took boxkey"
+          ],
+          "label_zh": "拿到必要道具 boxkey",
+          "item": "boxkey"
+        },
+        {
+          "key": "found flashlight",
+          "kind": "mark",
+          "aliases": [
+            "found flashlight"
+          ],
+          "label_zh": "发现必要线索/物品 flashlight"
+        },
+        {
+          "key": "took flashlight",
+          "kind": "take",
+          "aliases": [
+            "took flashlight"
+          ],
+          "label_zh": "拿到必要道具 flashlight",
+          "item": "flashlight"
+        },
+        {
+          "key": "found page",
+          "kind": "mark",
+          "aliases": [
+            "found page"
+          ],
+          "label_zh": "发现必要线索/物品 page"
+        },
+        {
+          "key": "read page",
+          "kind": "mark",
+          "aliases": [
+            "read page"
+          ],
+          "label_zh": "实际读取必要内容 page"
+        },
+        {
+          "key": "found mirror",
+          "kind": "mark",
+          "aliases": [
+            "found mirror"
+          ],
+          "label_zh": "发现必要线索/物品 mirror"
+        },
+        {
+          "key": "took mirror",
+          "kind": "take",
+          "aliases": [
+            "took mirror"
+          ],
+          "label_zh": "拿到必要道具 mirror",
+          "item": "mirror"
+        },
+        {
+          "key": "found optics",
+          "kind": "mark",
+          "aliases": [
+            "found optics"
+          ],
+          "label_zh": "发现必要线索/物品 optics"
+        },
+        {
+          "key": "read optics",
+          "kind": "mark",
+          "aliases": [
+            "read optics"
+          ],
+          "label_zh": "实际读取必要内容 optics"
+        },
+        {
+          "key": "found exitkey",
+          "kind": "mark",
+          "aliases": [
+            "found exitkey"
+          ],
+          "label_zh": "发现必要线索/物品 exitkey"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "unlocked inspection_kit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked inspection_kit"
+          ],
+          "label_zh": "解开独立锁 inspection_kit"
+        },
+        {
+          "key": "unlocked mirror_drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked mirror_drawer"
+          ],
+          "label_zh": "解开独立锁 mirror_drawer"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "solved laser",
+          "kind": "mark",
+          "aliases": [
+            "solved laser",
+            "unlocked sensor_key_drawer"
+          ],
+          "label_zh": "完成必要机关 laser"
+        },
+        {
+          "key": "observed uv_code",
+          "kind": "uv",
+          "aliases": [],
+          "label_zh": "实际照中目标，获得未遮挡的紫外观测",
+          "item": "flashlight"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "freed boxkey": "same_exposure_event",
+        "revealed boxkey": "same_exposure_event",
+        "found boxkey": "auto_discovery_is_same_exposure_event",
+        "unlocked sensor_key_drawer": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "boxkey",
+        "exitkey",
+        "flashlight",
+        "hammer",
+        "hint",
+        "jar",
+        "mirror",
+        "optics",
+        "page"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-06_office_story_grandma": {
+      "level": "L3-06",
+      "title": "外婆留给孩子的礼物",
+      "config_file": "L3-06_office_story_grandma.json",
+      "config_sha256": "3c3e0f67dfc90de367360e07819a999a4bd390f998b2daa3ad416c800d8aadf3",
+      "nodes": [
+        {
+          "key": "matched family 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "family",
+          "rank": 1,
+          "total": 4
+        },
+        {
+          "key": "matched family 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "family",
+          "rank": 2,
+          "total": 4
+        },
+        {
+          "key": "matched family 3",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "family",
+          "rank": 3,
+          "total": 4
+        },
+        {
+          "key": "matched family 4",
+          "kind": "group_rank",
+          "aliases": [
+            "solved family",
+            "unlocked last_letter_drawer"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 4",
+          "group": "family",
+          "rank": 4,
+          "total": 4
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found blank_paper",
+          "kind": "mark",
+          "aliases": [
+            "found blank_paper"
+          ],
+          "label_zh": "发现必要线索/物品 blank_paper"
+        },
+        {
+          "key": "found photo",
+          "kind": "mark",
+          "aliases": [
+            "found photo"
+          ],
+          "label_zh": "发现必要线索/物品 photo"
+        },
+        {
+          "key": "read photo",
+          "kind": "mark",
+          "aliases": [
+            "read photo"
+          ],
+          "label_zh": "实际读取必要内容 photo"
+        },
+        {
+          "key": "found horse",
+          "kind": "mark",
+          "aliases": [
+            "found horse"
+          ],
+          "label_zh": "发现必要线索/物品 horse"
+        },
+        {
+          "key": "found turtle",
+          "kind": "mark",
+          "aliases": [
+            "found turtle"
+          ],
+          "label_zh": "发现必要线索/物品 turtle"
+        },
+        {
+          "key": "found shark",
+          "kind": "mark",
+          "aliases": [
+            "found shark"
+          ],
+          "label_zh": "发现必要线索/物品 shark"
+        },
+        {
+          "key": "found panda",
+          "kind": "mark",
+          "aliases": [
+            "found panda"
+          ],
+          "label_zh": "发现必要线索/物品 panda"
+        },
+        {
+          "key": "found ink",
+          "kind": "mark",
+          "aliases": [
+            "found ink"
+          ],
+          "label_zh": "发现必要线索/物品 ink"
+        },
+        {
+          "key": "revealed ink",
+          "kind": "mark",
+          "aliases": [
+            "revealed ink"
+          ],
+          "label_zh": "显现必要信息 ink"
+        },
+        {
+          "key": "read ink",
+          "kind": "mark",
+          "aliases": [
+            "read ink"
+          ],
+          "label_zh": "实际读取必要内容 ink"
+        },
+        {
+          "key": "unlocked gift_box",
+          "kind": "mark",
+          "aliases": [
+            "unlocked gift_box"
+          ],
+          "label_zh": "解开独立锁 gift_box"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "revealed office_typewriter",
+          "kind": "mark",
+          "aliases": [
+            "revealed office_typewriter"
+          ],
+          "label_zh": "显现必要信息 office_typewriter"
+        },
+        {
+          "key": "took blank_paper",
+          "kind": "take",
+          "aliases": [
+            "took blank_paper"
+          ],
+          "label_zh": "拿到必要道具 blank_paper",
+          "item": "blank_paper"
+        },
+        {
+          "key": "took horse",
+          "kind": "take",
+          "aliases": [
+            "took horse"
+          ],
+          "label_zh": "拿到必要道具 horse",
+          "item": "horse"
+        },
+        {
+          "key": "took ink",
+          "kind": "take",
+          "aliases": [
+            "took ink"
+          ],
+          "label_zh": "拿到必要道具 ink",
+          "item": "ink"
+        },
+        {
+          "key": "took panda",
+          "kind": "take",
+          "aliases": [
+            "took panda"
+          ],
+          "label_zh": "拿到必要道具 panda",
+          "item": "panda"
+        },
+        {
+          "key": "took shark",
+          "kind": "take",
+          "aliases": [
+            "took shark"
+          ],
+          "label_zh": "拿到必要道具 shark",
+          "item": "shark"
+        },
+        {
+          "key": "took turtle",
+          "kind": "take",
+          "aliases": [
+            "took turtle"
+          ],
+          "label_zh": "拿到必要道具 turtle",
+          "item": "turtle"
+        },
+        {
+          "key": "printed office_typewriter",
+          "kind": "printed",
+          "aliases": [],
+          "label_zh": "实际打印出所需完整转换结果（任意有效输入次序）",
+          "target": "office_typewriter",
+          "length": 4,
+          "accepted_outputs": [
+            "2481"
+          ]
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "unlocked last_letter_drawer": "automatic_release_alias_of_mechanism",
+        "solved family": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "blank_paper",
+        "hint",
+        "horse",
+        "ink",
+        "panda",
+        "photo",
+        "shark",
+        "turtle"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-07_office_story_radio": {
+      "level": "L3-07",
+      "title": "电台没发出的求救信",
+      "config_file": "L3-07_office_story_radio.json",
+      "config_sha256": "12912f727c1eda2c2a87fa8a160d236282338dd6826c7e5ee9104b512b62a7c7",
+      "nodes": [
+        {
+          "key": "exposed exitkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed exitkey",
+            "revealed exitkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found briefcase",
+          "kind": "mark",
+          "aliases": [
+            "found briefcase"
+          ],
+          "label_zh": "发现必要线索/物品 briefcase"
+        },
+        {
+          "key": "took briefcase",
+          "kind": "take",
+          "aliases": [
+            "took briefcase"
+          ],
+          "label_zh": "拿到必要道具 briefcase",
+          "item": "briefcase"
+        },
+        {
+          "key": "found paint",
+          "kind": "mark",
+          "aliases": [
+            "found paint"
+          ],
+          "label_zh": "发现必要线索/物品 paint"
+        },
+        {
+          "key": "took paint",
+          "kind": "take",
+          "aliases": [
+            "took paint"
+          ],
+          "label_zh": "拿到必要道具 paint",
+          "item": "paint"
+        },
+        {
+          "key": "found rice",
+          "kind": "mark",
+          "aliases": [
+            "found rice"
+          ],
+          "label_zh": "发现必要线索/物品 rice"
+        },
+        {
+          "key": "took rice",
+          "kind": "take",
+          "aliases": [
+            "took rice"
+          ],
+          "label_zh": "拿到必要道具 rice",
+          "item": "rice"
+        },
+        {
+          "key": "found box",
+          "kind": "mark",
+          "aliases": [
+            "found box"
+          ],
+          "label_zh": "发现必要线索/物品 box"
+        },
+        {
+          "key": "took box",
+          "kind": "take",
+          "aliases": [
+            "took box"
+          ],
+          "label_zh": "拿到必要道具 box",
+          "item": "box"
+        },
+        {
+          "key": "found controller",
+          "kind": "mark",
+          "aliases": [
+            "found controller"
+          ],
+          "label_zh": "发现必要线索/物品 controller"
+        },
+        {
+          "key": "took controller",
+          "kind": "take",
+          "aliases": [
+            "took controller"
+          ],
+          "label_zh": "拿到必要道具 controller",
+          "item": "controller"
+        },
+        {
+          "key": "found battery",
+          "kind": "mark",
+          "aliases": [
+            "found battery"
+          ],
+          "label_zh": "发现必要线索/物品 battery"
+        },
+        {
+          "key": "took battery",
+          "kind": "take",
+          "aliases": [
+            "took battery"
+          ],
+          "label_zh": "拿到必要道具 battery",
+          "item": "battery"
+        },
+        {
+          "key": "found broadcast_note",
+          "kind": "mark",
+          "aliases": [
+            "found broadcast_note"
+          ],
+          "label_zh": "发现必要线索/物品 broadcast_note"
+        },
+        {
+          "key": "read broadcast_note",
+          "kind": "mark",
+          "aliases": [
+            "read broadcast_note"
+          ],
+          "label_zh": "实际读取必要内容 broadcast_note"
+        },
+        {
+          "key": "found detector",
+          "kind": "mark",
+          "aliases": [
+            "found detector"
+          ],
+          "label_zh": "发现必要线索/物品 detector"
+        },
+        {
+          "key": "took detector",
+          "kind": "take",
+          "aliases": [
+            "took detector"
+          ],
+          "label_zh": "拿到必要道具 detector",
+          "item": "detector"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "unlocked power_supplies",
+          "kind": "mark",
+          "aliases": [
+            "unlocked power_supplies"
+          ],
+          "label_zh": "解开独立锁 power_supplies"
+        },
+        {
+          "key": "unlocked detector_drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked detector_drawer"
+          ],
+          "label_zh": "解开独立锁 detector_drawer"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "weighed briefcase",
+          "kind": "mark",
+          "aliases": [
+            "weighed briefcase"
+          ],
+          "label_zh": "完成必要称重 briefcase"
+        },
+        {
+          "key": "weighed paint",
+          "kind": "mark",
+          "aliases": [
+            "weighed paint"
+          ],
+          "label_zh": "完成必要称重 paint"
+        },
+        {
+          "key": "weighed rice",
+          "kind": "mark",
+          "aliases": [
+            "weighed rice"
+          ],
+          "label_zh": "完成必要称重 rice"
+        },
+        {
+          "key": "weighed box",
+          "kind": "mark",
+          "aliases": [
+            "weighed box"
+          ],
+          "label_zh": "完成必要称重 box"
+        },
+        {
+          "key": "powered controller",
+          "kind": "mark",
+          "aliases": [
+            "powered controller"
+          ],
+          "label_zh": "恢复供电 controller"
+        },
+        {
+          "key": "turned on office_tv",
+          "kind": "mark",
+          "aliases": [
+            "turned on office_tv"
+          ],
+          "label_zh": "打开设备 on office_tv"
+        },
+        {
+          "key": "detected exitkey",
+          "kind": "mark",
+          "aliases": [
+            "detected exitkey"
+          ],
+          "label_zh": "detected exitkey"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "freed exitkey": "same_exposure_event",
+        "revealed exitkey": "same_exposure_event",
+        "found exitkey": "auto_discovery_is_same_exposure_event"
+      },
+      "required_items": [
+        "battery",
+        "box",
+        "briefcase",
+        "broadcast_note",
+        "controller",
+        "detector",
+        "exitkey",
+        "hint",
+        "paint",
+        "rice"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-08_office_story_gardener": {
+      "level": "L3-08",
+      "title": "园丁的温室记录",
+      "config_file": "L3-08_office_story_gardener.json",
+      "config_sha256": "6d20006ecc3f568281fe2f67ed9883744297b6a1ecb939591fddafa22e0dae6d",
+      "nodes": [
+        {
+          "key": "exposed boxkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed boxkey",
+            "revealed boxkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 boxkey",
+          "item": "boxkey"
+        },
+        {
+          "key": "exposed exitkey",
+          "kind": "exposed",
+          "aliases": [
+            "freed exitkey",
+            "revealed exitkey"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found ruler",
+          "kind": "mark",
+          "aliases": [
+            "found ruler"
+          ],
+          "label_zh": "发现必要线索/物品 ruler"
+        },
+        {
+          "key": "took ruler",
+          "kind": "take",
+          "aliases": [
+            "took ruler"
+          ],
+          "label_zh": "拿到必要道具 ruler",
+          "item": "ruler"
+        },
+        {
+          "key": "found trowel",
+          "kind": "mark",
+          "aliases": [
+            "found trowel"
+          ],
+          "label_zh": "发现必要线索/物品 trowel"
+        },
+        {
+          "key": "took trowel",
+          "kind": "take",
+          "aliases": [
+            "took trowel"
+          ],
+          "label_zh": "拿到必要道具 trowel",
+          "item": "trowel"
+        },
+        {
+          "key": "took boxkey",
+          "kind": "take",
+          "aliases": [
+            "took boxkey"
+          ],
+          "label_zh": "拿到必要道具 boxkey",
+          "item": "boxkey"
+        },
+        {
+          "key": "found page",
+          "kind": "mark",
+          "aliases": [
+            "found page"
+          ],
+          "label_zh": "发现必要线索/物品 page"
+        },
+        {
+          "key": "read page",
+          "kind": "mark",
+          "aliases": [
+            "read page"
+          ],
+          "label_zh": "实际读取必要内容 page"
+        },
+        {
+          "key": "found bottle",
+          "kind": "mark",
+          "aliases": [
+            "found bottle"
+          ],
+          "label_zh": "发现必要线索/物品 bottle"
+        },
+        {
+          "key": "took exitkey",
+          "kind": "take",
+          "aliases": [
+            "took exitkey"
+          ],
+          "label_zh": "拿到必要道具 exitkey",
+          "item": "exitkey"
+        },
+        {
+          "key": "found log",
+          "kind": "mark",
+          "aliases": [
+            "found log"
+          ],
+          "label_zh": "发现必要线索/物品 log"
+        },
+        {
+          "key": "read log",
+          "kind": "mark",
+          "aliases": [
+            "read log"
+          ],
+          "label_zh": "实际读取必要内容 log"
+        },
+        {
+          "key": "unlocked trowel_drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked trowel_drawer"
+          ],
+          "label_zh": "解开独立锁 trowel_drawer"
+        },
+        {
+          "key": "unlocked water_toolbox",
+          "kind": "mark",
+          "aliases": [
+            "unlocked water_toolbox"
+          ],
+          "label_zh": "解开独立锁 water_toolbox"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "took bottle",
+          "kind": "take",
+          "aliases": [
+            "took bottle"
+          ],
+          "label_zh": "拿到必要道具 bottle",
+          "item": "bottle"
+        },
+        {
+          "key": "measured u7_edge_1",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_1",
+          "target": "u7_edge_1",
+          "item": "ruler"
+        },
+        {
+          "key": "measured u7_edge_3",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_3",
+          "target": "u7_edge_3",
+          "item": "ruler"
+        },
+        {
+          "key": "measured u7_edge_4",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_4",
+          "target": "u7_edge_4",
+          "item": "ruler"
+        },
+        {
+          "key": "measured u7_edge_5",
+          "kind": "measure",
+          "aliases": [],
+          "label_zh": "成功测量密码所需的边 u7_edge_5",
+          "target": "u7_edge_5",
+          "item": "ruler"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "freed boxkey": "same_exposure_event",
+        "revealed boxkey": "same_exposure_event",
+        "found boxkey": "auto_discovery_is_same_exposure_event",
+        "freed exitkey": "same_exposure_event",
+        "revealed exitkey": "same_exposure_event",
+        "found exitkey": "auto_discovery_is_same_exposure_event"
+      },
+      "required_items": [
+        "bottle",
+        "boxkey",
+        "exitkey",
+        "hint",
+        "log",
+        "page",
+        "ruler",
+        "trowel"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-09_office_story_stage": {
+      "level": "L3-09",
+      "title": "舞台监督的谢幕信",
+      "config_file": "L3-09_office_story_stage.json",
+      "config_sha256": "e0300066a68a8e749856de15dcb66a54a50cbda2f3c6b4d642ec26c77e9cbb7f",
+      "nodes": [
+        {
+          "key": "matched seats 1",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 1",
+          "group": "seats",
+          "rank": 1,
+          "total": 4
+        },
+        {
+          "key": "matched seats 2",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 2",
+          "group": "seats",
+          "rank": 2,
+          "total": 4
+        },
+        {
+          "key": "matched seats 3",
+          "kind": "group_rank",
+          "aliases": [],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 3",
+          "group": "seats",
+          "rank": 3,
+          "total": 4
+        },
+        {
+          "key": "matched seats 4",
+          "kind": "group_rank",
+          "aliases": [
+            "solved seats",
+            "unlocked exit"
+          ],
+          "label_zh": "满足任一合法完整解的正确子目标数量 ≥ 4",
+          "group": "seats",
+          "rank": 4,
+          "total": 4
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found ball",
+          "kind": "mark",
+          "aliases": [
+            "found ball"
+          ],
+          "label_zh": "发现必要线索/物品 ball"
+        },
+        {
+          "key": "took ball",
+          "kind": "take",
+          "aliases": [
+            "took ball"
+          ],
+          "label_zh": "拿到必要道具 ball",
+          "item": "ball"
+        },
+        {
+          "key": "found blank_paper",
+          "kind": "mark",
+          "aliases": [
+            "found blank_paper"
+          ],
+          "label_zh": "发现必要线索/物品 blank_paper"
+        },
+        {
+          "key": "found cast",
+          "kind": "mark",
+          "aliases": [
+            "found cast"
+          ],
+          "label_zh": "发现必要线索/物品 cast"
+        },
+        {
+          "key": "read cast",
+          "kind": "mark",
+          "aliases": [
+            "read cast"
+          ],
+          "label_zh": "实际读取必要内容 cast"
+        },
+        {
+          "key": "found panda",
+          "kind": "mark",
+          "aliases": [
+            "found panda"
+          ],
+          "label_zh": "发现必要线索/物品 panda"
+        },
+        {
+          "key": "found crab",
+          "kind": "mark",
+          "aliases": [
+            "found crab"
+          ],
+          "label_zh": "发现必要线索/物品 crab"
+        },
+        {
+          "key": "found octopus",
+          "kind": "mark",
+          "aliases": [
+            "found octopus"
+          ],
+          "label_zh": "发现必要线索/物品 octopus"
+        },
+        {
+          "key": "found turtle",
+          "kind": "mark",
+          "aliases": [
+            "found turtle"
+          ],
+          "label_zh": "发现必要线索/物品 turtle"
+        },
+        {
+          "key": "unlocked prop_box",
+          "kind": "mark",
+          "aliases": [
+            "unlocked prop_box"
+          ],
+          "label_zh": "解开独立锁 prop_box"
+        },
+        {
+          "key": "pressed office_plate",
+          "kind": "mark",
+          "aliases": [
+            "pressed office_plate",
+            "unlocked paper_interlock"
+          ],
+          "label_zh": "pressed office_plate"
+        },
+        {
+          "key": "revealed office_typewriter",
+          "kind": "mark",
+          "aliases": [
+            "revealed office_typewriter"
+          ],
+          "label_zh": "显现必要信息 office_typewriter"
+        },
+        {
+          "key": "took blank_paper",
+          "kind": "take",
+          "aliases": [
+            "took blank_paper"
+          ],
+          "label_zh": "拿到必要道具 blank_paper",
+          "item": "blank_paper"
+        },
+        {
+          "key": "took crab",
+          "kind": "take",
+          "aliases": [
+            "took crab"
+          ],
+          "label_zh": "拿到必要道具 crab",
+          "item": "crab"
+        },
+        {
+          "key": "took octopus",
+          "kind": "take",
+          "aliases": [
+            "took octopus"
+          ],
+          "label_zh": "拿到必要道具 octopus",
+          "item": "octopus"
+        },
+        {
+          "key": "took panda",
+          "kind": "take",
+          "aliases": [
+            "took panda"
+          ],
+          "label_zh": "拿到必要道具 panda",
+          "item": "panda"
+        },
+        {
+          "key": "took turtle",
+          "kind": "take",
+          "aliases": [
+            "took turtle"
+          ],
+          "label_zh": "拿到必要道具 turtle",
+          "item": "turtle"
+        },
+        {
+          "key": "printed office_typewriter",
+          "kind": "printed",
+          "aliases": [],
+          "label_zh": "实际打印出所需完整转换结果（任意有效输入次序）",
+          "target": "office_typewriter",
+          "length": 4,
+          "accepted_outputs": [
+            "2481"
+          ]
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "unlocked paper_interlock": "automatic_release_alias_of_mechanism",
+        "unlocked exit": "automatic_release_alias_of_mechanism",
+        "solved seats": "represented_by_legal_partial_goal_states"
+      },
+      "required_items": [
+        "ball",
+        "blank_paper",
+        "cast",
+        "crab",
+        "hint",
+        "octopus",
+        "panda",
+        "turtle"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    },
+    "L3-10_office_story_expedition": {
+      "level": "L3-10",
+      "title": "探险队的返程信",
+      "config_file": "L3-10_office_story_expedition.json",
+      "config_sha256": "607cef7407582854289b05fb279c96839a0596a1c9b3c54acf599e90d77fee72",
+      "nodes": [
+        {
+          "key": "exposed key",
+          "kind": "exposed",
+          "aliases": [
+            "freed key",
+            "revealed key"
+          ],
+          "label_zh": "使隐藏或不可达物品可取用 key",
+          "item": "key"
+        },
+        {
+          "key": "found hint",
+          "kind": "mark",
+          "aliases": [
+            "found hint"
+          ],
+          "label_zh": "发现必要线索/物品 hint"
+        },
+        {
+          "key": "read hint",
+          "kind": "mark",
+          "aliases": [
+            "read hint"
+          ],
+          "label_zh": "实际读取必要内容 hint"
+        },
+        {
+          "key": "found water",
+          "kind": "mark",
+          "aliases": [
+            "found water"
+          ],
+          "label_zh": "发现必要线索/物品 water"
+        },
+        {
+          "key": "found hammer",
+          "kind": "mark",
+          "aliases": [
+            "found hammer"
+          ],
+          "label_zh": "发现必要线索/物品 hammer"
+        },
+        {
+          "key": "took hammer",
+          "kind": "take",
+          "aliases": [
+            "took hammer"
+          ],
+          "label_zh": "拿到必要道具 hammer",
+          "item": "hammer"
+        },
+        {
+          "key": "found jar",
+          "kind": "mark",
+          "aliases": [
+            "found jar"
+          ],
+          "label_zh": "发现必要线索/物品 jar"
+        },
+        {
+          "key": "took key",
+          "kind": "take",
+          "aliases": [
+            "took key"
+          ],
+          "label_zh": "拿到必要道具 key",
+          "item": "key"
+        },
+        {
+          "key": "found page",
+          "kind": "mark",
+          "aliases": [
+            "found page"
+          ],
+          "label_zh": "发现必要线索/物品 page"
+        },
+        {
+          "key": "read page",
+          "kind": "mark",
+          "aliases": [
+            "read page"
+          ],
+          "label_zh": "实际读取必要内容 page"
+        },
+        {
+          "key": "found last_page",
+          "kind": "mark",
+          "aliases": [
+            "found last_page"
+          ],
+          "label_zh": "发现必要线索/物品 last_page"
+        },
+        {
+          "key": "read last_page",
+          "kind": "mark",
+          "aliases": [
+            "read last_page"
+          ],
+          "label_zh": "实际读取必要内容 last_page"
+        },
+        {
+          "key": "unlocked hammer_drawer",
+          "kind": "mark",
+          "aliases": [
+            "unlocked hammer_drawer"
+          ],
+          "label_zh": "解开独立锁 hammer_drawer"
+        },
+        {
+          "key": "unlocked exit",
+          "kind": "mark",
+          "aliases": [
+            "unlocked exit"
+          ],
+          "label_zh": "解开独立锁 exit"
+        },
+        {
+          "key": "revealed office_tank",
+          "kind": "mark",
+          "aliases": [
+            "revealed office_tank"
+          ],
+          "label_zh": "显现必要信息 office_tank"
+        },
+        {
+          "key": "solved pipes",
+          "kind": "mark",
+          "aliases": [
+            "solved pipes",
+            "unlocked water_line_drawer"
+          ],
+          "label_zh": "完成必要机关 pipes"
+        },
+        {
+          "key": "took water",
+          "kind": "take",
+          "aliases": [
+            "took water"
+          ],
+          "label_zh": "拿到必要道具 water",
+          "item": "water"
+        },
+        {
+          "key": "exited",
+          "kind": "mark",
+          "aliases": [
+            "exited"
+          ],
+          "label_zh": "成功open真实出口"
+        }
+      ],
+      "removed": {
+        "freed key": "same_exposure_event",
+        "revealed key": "same_exposure_event",
+        "found key": "auto_discovery_is_same_exposure_event",
+        "unlocked water_line_drawer": "automatic_release_alias_of_mechanism"
+      },
+      "required_items": [
+        "hammer",
+        "hint",
+        "jar",
+        "key",
+        "last_page",
+        "page",
+        "water"
+      ],
+      "legal_solution_rule": "Actual accepted goal state; no prescribed route, action order, tool identity when interchangeable, or unique pipe orientation. No fabricated read/take from terminal success.",
+      "reviewed": true,
+      "review_basis": [
+        "frozen puzzle config",
+        "actual mechanism predicates",
+        "necessary items and clue roles",
+        "per-level audit exceptions"
+      ]
+    }
+  }
+}

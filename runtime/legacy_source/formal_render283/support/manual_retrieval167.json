@@ -1,0 +1,96 @@
+{
+  "version": 167,
+  "manual_retrieval": {
+    "L2-05": {
+      "escape_key": {
+        "en": "Take the visible key inside the storage ottoman whose lid you just opened.",
+        "zh": "拿起刚打开盖子的储物凳内可见的钥匙。",
+        "key_id": "exitkey"
+      }
+    },
+    "L2-08": {
+      "escape_key": {
+        "en": "Take the key exposed in the opening left by the floor tile you just pried up.",
+        "zh": "拿起刚撬开地砖留下的开口中露出的钥匙。",
+        "key_id": "exitkey"
+      }
+    },
+    "L3-03": {
+      "escape_key": {
+        "en": "Take the key exposed in the soil opening of the plant pot you just dug.",
+        "zh": "拿起刚挖过的花盆土洞中露出的钥匙。",
+        "key_id": "boxkey"
+      }
+    },
+    "L3-05": {
+      "escape_boxkey": {
+        "en": "Take the key revealed where the jar stood on the desk.",
+        "zh": "拿起桌上原来放罐子的位置露出的钥匙。",
+        "key_id": "boxkey"
+      }
+    },
+    "L3-07": {
+      "escape_key": {
+        "en": "Take the visible key inside the storage ottoman whose lid you just opened.",
+        "zh": "拿起刚打开盖子的储物凳内可见的钥匙。",
+        "key_id": "exitkey"
+      }
+    },
+    "L3-08": {
+      "escape_boxkey": {
+        "en": "Take the key exposed in the soil opening of the plant pot you just dug.",
+        "zh": "拿起刚挖过的花盆土洞中露出的钥匙。",
+        "key_id": "boxkey"
+      },
+      "escape_key": {
+        "en": "Take the key at the mouth of the water-filled bottle on the sink counter.",
+        "zh": "拿起洗手台台面上注满水的瓶子瓶口的钥匙。",
+        "key_id": "exitkey"
+      }
+    },
+    "L3-10": {
+      "escape_key": {
+        "en": "Take the key revealed where the jar stood on the desk.",
+        "zh": "拿起桌上原来放罐子的位置露出的钥匙。",
+        "key_id": "key"
+      }
+    },
+    "L1-12": {
+      "escape_key": {
+        "en": "Take the yellow key at the mouth of the water-filled glass bottle on the bathroom sink counter.",
+        "zh": "拿起浴室洗手台台面上注满水的玻璃瓶瓶口的黄色钥匙。",
+        "key_id": "key"
+      }
+    },
+    "L1-41": {
+      "escape_key": {
+        "en": "Take the key exposed after the ice melts.",
+        "zh": "拿起冰融化后露出的钥匙。",
+        "key_id": "key"
+      }
+    },
+    "L1-42": {
+      "escape_key": {
+        "en": "Take the yellow key exposed in the soil opening of the dug plant pot.",
+        "zh": "拿起挖过的花盆土洞里露出的黄色钥匙。",
+        "key_id": "key"
+      }
+    },
+    "L1-43": {
+      "escape_key": {
+        "en": "Take the key exposed on the floor where the sealed jar stood.",
+        "zh": "拿起地板上原来放密封罐的位置露出的钥匙。",
+        "key_id": "key"
+      }
+    },
+    "L1-44": {
+      "escape_key": {
+        "en": "Take the key lowered from the high wall hook with the pole.",
+        "zh": "拿起用长杆从墙上高挂钩降下的钥匙。",
+        "key_id": "key"
+      }
+    }
+  },
+  "stages_count_unchanged": true,
+  "english_only_to_model": true
+}

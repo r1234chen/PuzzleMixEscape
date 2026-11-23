@@ -1,0 +1,860 @@
+{
+  "name": "L2-26_office_boxes",
+  "scene": "Beechwood_0_garden",
+  "seed": 1028,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Only one of the notes in front of the three boxes is true. If you open a wrong box, the other boxes lock.",
+      "overlay": {
+        "texture": "hint_1c14b9703f.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "boxnote1",
+      "name": "office_boxnote_1",
+      "category": "post_it",
+      "model": "drlhqi",
+      "kind": "clue",
+      "text": "The key is in this box.",
+      "place": {
+        "position": [
+          2.83,
+          16.7,
+          0.012
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ],
+        "container": "office_toolbox_1"
+      }
+    },
+    {
+      "id": "boxnote2",
+      "name": "office_boxnote_2",
+      "category": "post_it",
+      "model": "drlhqi",
+      "kind": "clue",
+      "text": "The key is not in this box.",
+      "place": {
+        "position": [
+          2.83,
+          17.35,
+          0.012
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ],
+        "container": "office_toolbox_2"
+      }
+    },
+    {
+      "id": "boxnote3",
+      "name": "office_boxnote_3",
+      "category": "post_it",
+      "model": "drlhqi",
+      "kind": "clue",
+      "text": "The key is not in box 1.",
+      "place": {
+        "position": [
+          2.83,
+          18.0,
+          0.012
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0
+        ],
+        "container": "office_toolbox_3"
+      }
+    },
+    {
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "id": "exitkey",
+      "name": "escape_key",
+      "inside": "office_toolbox_2",
+      "part": 1,
+      "after_take": [
+        {
+          "at": [
+            3.35,
+            17.35
+          ],
+          "aim": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "拿到钥匙以后：开错的 1 号箱，看陷阱"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "toolbox"
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：read 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "toolbox"
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：take 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "toolbox",
+            "part": 1
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：open 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "toolbox",
+            "part": 1
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：close 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toolbox"
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：press 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "toolbox",
+            "code": "1234"
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：unlock 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "toolbox",
+            "item": "post it"
+          },
+          "point_world": [
+            2.65,
+            16.7,
+            0.3
+          ],
+          "note": "乱试：use 1 号箱（open 触发陷阱：另外两个锁上）"
+        },
+        {
+          "aim": [
+            2.65,
+            18.0,
+            0.3
+          ],
+          "note": "再看 3 号箱"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "toolbox",
+            "part": 1
+          },
+          "point_world": [
+            2.65,
+            18.0,
+            0.3
+          ],
+          "note": "3 号箱已经被锁上：应被拒"
+        }
+      ],
+      "at": [
+        2.527,
+        17.356,
+        0.022
+      ],
+      "yaw_deg": 90
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey",
+      "pre_steps": [
+        {
+          "at": [
+            3.35,
+            17.35
+          ],
+          "aim": [
+            2.83,
+            17.35,
+            0.01
+          ],
+          "note": "站到三个工具箱前"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "note"
+          },
+          "point_world": [
+            2.83,
+            16.7,
+            0.01
+          ],
+          "note": "读 1 号箱前面的便签"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "note"
+          },
+          "point_world": [
+            2.83,
+            17.35,
+            0.01
+          ],
+          "note": "读 2 号箱前面的便签"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "note"
+          },
+          "point_world": [
+            2.83,
+            18.0,
+            0.01
+          ],
+          "note": "读 3 号箱前面的便签"
+        },
+        {
+          "at": [
+            3.35,
+            17.35
+          ],
+          "aim": [
+            2.65,
+            17.35,
+            0.3
+          ],
+          "note": "对 2 号箱（对的那个）把七个动作各试一次：open 开的是对的箱子，不触发"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "toolbox"
+          },
+          "point_world": [
+            2.65,
+            17.35,
+            0.3
+          ],
+          "note": "乱试：read 2 号箱"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "toolbox"
+          },
+          "point_world": [
+            2.65,
+            17.35,
+            0.3
+          ],
+          "note": "乱试：take 2 号箱"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "toolbox"
+          },
+          "point_world": [
+            2.65,
+            17.35,
+            0.3
+          ],
+          "note": "乱试：press 2 号箱"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "toolbox",
+            "code": "1234"
+          },
+          "point_world": [
+            2.65,
+            17.35,
+            0.3
+          ],
+          "note": "乱试：unlock 2 号箱"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "toolbox",
+            "item": "post it"
+          },
+          "point_world": [
+            2.65,
+            17.35,
+            0.3
+          ],
+          "note": "乱试：use 2 号箱"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_toolbox_1",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        16.7
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_toolbox_2",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        17.35
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_toolbox_3",
+      "category": "toolbox",
+      "model": "redmtl",
+      "center": [
+        2.6,
+        18.0
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "decor_tbn_plate0",
+      "plane": [
+        0.12,
+        0.14
+      ],
+      "position": [
+        2.734,
+        16.7,
+        0.2
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.93,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n0_0b",
+      "plane": [
+        0.012,
+        0.045
+      ],
+      "position": [
+        2.738,
+        16.725,
+        0.2225
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n0_0c",
+      "plane": [
+        0.012,
+        0.045
+      ],
+      "position": [
+        2.738,
+        16.725,
+        0.1775
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_plate1",
+      "plane": [
+        0.12,
+        0.14
+      ],
+      "position": [
+        2.734,
+        17.35,
+        0.2
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.93,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n1_0a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.738,
+        17.35,
+        0.245
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n1_0b",
+      "plane": [
+        0.012,
+        0.045
+      ],
+      "position": [
+        2.738,
+        17.375,
+        0.2225
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n1_0g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.738,
+        17.35,
+        0.2
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n1_0e",
+      "plane": [
+        0.012,
+        0.045
+      ],
+      "position": [
+        2.738,
+        17.325,
+        0.1775
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n1_0d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.738,
+        17.35,
+        0.155
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_plate2",
+      "plane": [
+        0.12,
+        0.14
+      ],
+      "position": [
+        2.734,
+        18.0,
+        0.2
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.95,
+        0.95,
+        0.93,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n2_0a",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.738,
+        18.0,
+        0.245
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n2_0b",
+      "plane": [
+        0.012,
+        0.045
+      ],
+      "position": [
+        2.738,
+        18.025,
+        0.2225
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n2_0g",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.738,
+        18.0,
+        0.2
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n2_0c",
+      "plane": [
+        0.012,
+        0.045
+      ],
+      "position": [
+        2.738,
+        18.025,
+        0.1775
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_tbn_n2_0d",
+      "plane": [
+        0.05,
+        0.012
+      ],
+      "position": [
+        2.738,
+        18.0,
+        0.155
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.1,
+        0.12,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "part_locks": [
+    {
+      "id": "box1_lock",
+      "container": "office_toolbox_1",
+      "part": 1,
+      "mechanism": true,
+      "latent": true
+    },
+    {
+      "id": "box2_lock",
+      "container": "office_toolbox_2",
+      "part": 1,
+      "mechanism": true,
+      "latent": true
+    },
+    {
+      "id": "box3_lock",
+      "container": "office_toolbox_3",
+      "part": 1,
+      "mechanism": true,
+      "latent": true
+    }
+  ],
+  "traps": [
+    {
+      "container": "office_toolbox_1",
+      "part": 1,
+      "locks": [
+        [
+          "office_toolbox_2",
+          1
+        ],
+        [
+          "office_toolbox_3",
+          1
+        ]
+      ],
+      "text": "You hear the other two boxes lock.",
+      "fatal_item": "exitkey"
+    },
+    {
+      "container": "office_toolbox_3",
+      "part": 1,
+      "locks": [
+        [
+          "office_toolbox_1",
+          1
+        ],
+        [
+          "office_toolbox_2",
+          1
+        ]
+      ],
+      "text": "You hear the other two boxes lock.",
+      "fatal_item": "exitkey"
+    }
+  ],
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "三箱前各有一张便条，需逐处读取证词再选箱，错开不可逆；以多处信息获取建议100步，风险不单独升困难。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-26",
+  "legacy_name": "R4-10_office_boxes",
+  "legacy_id": "R4-10",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "c816ebebff3eeb1bb16dc4d2145e020cd9520adb9ac1cf8ad947c9ee020d5b71"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-26",
+  "legacy_benchmark_id": "L2-26",
+  "recall_budget": 10,
+  "tip_window": 25
+}

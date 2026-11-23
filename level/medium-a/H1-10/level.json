@@ -1,0 +1,202 @@
+{
+  "name": "H1-10_house_fake",
+  "scene": "Beechwood_0_garden",
+  "seed": 252,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "prompt_intro": "You are a robot locked inside a house. You start in one room; your goal is to get out of the house.\nDoors may be locked. What opens them is not told in this message; you have to find out by searching.\nThings can be hidden inside furniture that opens, and some things are locked themselves (with a code lock or a keyhole).\nWhen you go through a door into a part of the house you have not seen, you first walk around it and look (this costs no actions);\nthe objects found there are added to the list of objects you know.",
+  "doors_default": "unlocked",
+  "items": [
+    {
+      "id": "note",
+      "name": "escape_note",
+      "category": "post_it",
+      "model": "drlhqi",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": {
+        "random": [
+          1,
+          2,
+          3
+        ]
+      },
+      "text": "Diary: {diary}"
+    },
+    {
+      "id": "diary",
+      "name": "escape_diary",
+      "category": "notebook",
+      "model": "qwhiqc",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1,
+      "lock": "random:3",
+      "text": "Office door: its four digits are counts of things in this room, in this order: pictures, bookcases, cabinets, chairs. The key to the front door is locked in a drawer in the laundry room. The first half of that drawer's code is on a note in the cabinet right under the burner. The second half is on a note glued to the table in the dining room. The dining room door has no keyhole or code lock: the wall switch in the laundry room opens it."
+    },
+    {
+      "id": "stove",
+      "name": "escape_stove",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "inside": {
+        "nearest_to": "burner",
+        "categories": [
+          "bottom_cabinet",
+          "bottom_cabinet_no_top"
+        ],
+        "min_margin": 0.5
+      },
+      "part": 1,
+      "text": "The drawer code starts with {laundry_a}."
+    },
+    {
+      "id": "table",
+      "name": "escape_table",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": {
+        "category": "coffee_table",
+        "room": "dining_room_0"
+      },
+      "fixed": true,
+      "text": "...and the drawer code ends with {laundry_b}."
+    },
+    {
+      "id": "key",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "gqbwfv",
+      "kind": "key",
+      "inside": "bottom_cabinet_slgzfc_0",
+      "part": 4,
+      "text": ""
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 4,
+      "text": "Call the plumber on Monday."
+    },
+    {
+      "id": "fake",
+      "name": "escape_fake",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "The laundry drawer code is 4417.",
+      "inside": "bottom_cabinet_no_top_qohxjq_1",
+      "part": 1,
+      "kind": "decoy"
+    }
+  ],
+  "part_locks": [
+    {
+      "id": "laundry",
+      "container": "bottom_cabinet_slgzfc_0",
+      "part": 4,
+      "lock": "random:4"
+    }
+  ],
+  "doors": [
+    {
+      "id": "office",
+      "name": "door_lvgliq_1",
+      "lock": {
+        "count": [
+          [
+            "picture",
+            "private_office_0"
+          ],
+          [
+            "bookcase",
+            "private_office_0"
+          ],
+          [
+            "bottom_cabinet",
+            "private_office_0"
+          ],
+          [
+            "swivel_chair",
+            "private_office_0"
+          ]
+        ],
+        "clue": "diary"
+      },
+      "pass_checkpoint": true
+    },
+    {
+      "id": "laundrydoor",
+      "name": "door_lvgliq_2",
+      "unlocked": true,
+      "pass_checkpoint": true
+    },
+    {
+      "id": "exit",
+      "name": "door_lvncak_0",
+      "key": "key",
+      "exit": true
+    },
+    {
+      "name": "door_xdcuws_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    },
+    {
+      "id": "dining",
+      "name": "door_ohagsq_0",
+      "switch": "sw",
+      "clue": "diary",
+      "pass_checkpoint": true
+    }
+  ],
+  "max_steps": 200,
+  "switches": [
+    {
+      "id": "sw",
+      "in_room": "utility_room_0",
+      "opens": "dining"
+    }
+  ],
+  "room_mode": "multi",
+  "difficulty": null,
+  "difficulty_reason": "多房间不分难度，统一200动作；保留原布局和谜题链。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "confirmed multi-room200 rule",
+    "current_deployed_max_steps": 200,
+    "new_proposed_max_steps": 200,
+    "proposal_not_silently_applied": true,
+    "example_status": "多房间统一规则（已确认）",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "H1-10",
+  "legacy_name": "H4-01_house_fake",
+  "legacy_id": "H4-01",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "多房间统一规则（已确认）",
+  "budget_revision260": {
+    "actions": 200,
+    "recalls": 20,
+    "hint_window": 50,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "1a2946bc753b20ebbd3dc0f888e16bfdf51fddec39173ec14ffa6677019f1001"
+  },
+  "protocol": "unified_v2",
+  "public_id": "H1-10",
+  "legacy_benchmark_id": "H1-10",
+  "recall_budget": 20,
+  "tip_window": 50
+}

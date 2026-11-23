@@ -1,0 +1,724 @@
+{
+  "name": "L2-19_office_laser",
+  "scene": "Beechwood_0_garden",
+  "seed": 1004,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      4.5,
+      17.7
+    ],
+    "yaw_deg": 180
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The laser has to reach the sensor.",
+      "overlay": {
+        "texture": "hint_c382781e23.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "mirror",
+      "name": "office_mirror",
+      "category": "mirror",
+      "model": "rgbvxy",
+      "kind": "tool",
+      "place": {
+        "position": [
+          4.45,
+          18.98,
+          0.7855
+        ],
+        "rpy_deg": [
+          0,
+          90,
+          0
+        ],
+        "container": "desk_rzyfxk_0"
+      }
+    },
+    {
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "id": "exitkey",
+      "name": "escape_key",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 1
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_stand_1",
+      "category": "plant_pot_stand",
+      "model": "dylpyb",
+      "center": [
+        3.3,
+        18.4
+      ],
+      "yaw_deg": 90,
+      "display": "stand"
+    },
+    {
+      "name": "office_stand_2",
+      "category": "plant_pot_stand",
+      "model": "dylpyb",
+      "center": [
+        3.3,
+        17.8
+      ],
+      "yaw_deg": 90,
+      "display": "stand"
+    },
+    {
+      "name": "office_stand_3",
+      "category": "plant_pot_stand",
+      "model": "dylpyb",
+      "center": [
+        3.3,
+        17.25
+      ],
+      "yaw_deg": 90,
+      "display": "stand"
+    },
+    {
+      "name": "decor_laser_emitter",
+      "box": [
+        0.08,
+        0.1,
+        0.07
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        19.24,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.12,
+        0.12,
+        0.13,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_laser_seg0",
+      "box": [
+        0.79,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        18.795,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 0
+    },
+    {
+      "name": "decor_laser_seg1",
+      "box": [
+        0.6,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        18.1,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 1
+    },
+    {
+      "name": "decor_laser_seg2",
+      "box": [
+        0.55,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        17.525,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 2
+    },
+    {
+      "name": "decor_laser_seg3",
+      "box": [
+        0.962,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        3.3,
+        16.769,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        -90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_seg": 3
+    },
+    {
+      "name": "decor_laser_dot_s",
+      "disk": [
+        0.03,
+        0.03
+      ],
+      "position": [
+        3.3,
+        16.289,
+        1.08
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "laser_seg": 3
+    },
+    {
+      "name": "decor_laser_ref0",
+      "box": [
+        1.33,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        2.635,
+        18.4,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_ref": 0,
+      "hidden": true
+    },
+    {
+      "name": "decor_laser_ref1",
+      "box": [
+        0.935,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        2.8325,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_ref": 1,
+      "hidden": true
+    },
+    {
+      "name": "decor_laser_ref2",
+      "box": [
+        1.01,
+        0.012,
+        0.012
+      ],
+      "category": "board",
+      "position": [
+        2.795,
+        17.25,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "visual_only": true,
+      "laser_ref": 2,
+      "hidden": true
+    },
+    {
+      "name": "decor_laser_sensor",
+      "box": [
+        0.12,
+        0.14,
+        0.14
+      ],
+      "category": "board",
+      "position": [
+        2.3,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0.12,
+        0.12,
+        0.13,
+        1.0
+      ],
+      "visual_only": true
+    },
+    {
+      "name": "decor_laser_sensor_red",
+      "disk": [
+        0.06,
+        0.06
+      ],
+      "position": [
+        2.363,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.95,
+        0.05,
+        0.05,
+        1.0
+      ],
+      "sensor_off": true
+    },
+    {
+      "name": "decor_laser_sensor_green",
+      "disk": [
+        0.06,
+        0.06
+      ],
+      "position": [
+        2.364,
+        17.8,
+        1.08
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        90.0
+      ],
+      "rgba": [
+        0.1,
+        0.85,
+        0.2,
+        1.0
+      ],
+      "sensor_on": true,
+      "hidden": true
+    }
+  ],
+  "max_steps": 150,
+  "part_locks": [
+    {
+      "id": "cab_lock",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 1,
+      "mechanism": true,
+      "solve_steps": [
+        {
+          "at": [
+            4.45,
+            17.8
+          ],
+          "aim": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "站到花架东边"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "stand"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：read 2 号花架"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "stand"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：take 2 号花架"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "stand",
+            "part": 1
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：open 2 号花架"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "stand",
+            "part": 1
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：close 2 号花架"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "stand"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：press 2 号花架"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "stand",
+            "code": "1234"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：unlock 2 号花架"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "stand",
+            "item": "post it"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "乱试：use 2 号花架"
+        },
+        {
+          "take": "office_mirror",
+          "note": "拿北墙书桌上的镜子"
+        },
+        {
+          "at": [
+            3.85,
+            18.4
+          ],
+          "aim": [
+            3.3,
+            18.4,
+            0.65
+          ],
+          "note": "到 1 号花架（最北）边"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "stand",
+            "item": "mirror"
+          },
+          "point_world": [
+            3.3,
+            18.4,
+            0.65
+          ],
+          "note": "镜子放到 1 号花架上：光折向门，传感器还是红的"
+        },
+        {
+          "aim": [
+            2.4,
+            18.4,
+            1.08
+          ],
+          "note": "看折过去的光打到哪"
+        },
+        {
+          "aim": [
+            3.3,
+            18.4,
+            1.08
+          ],
+          "note": "对准花架上的镜子"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "mirror"
+          },
+          "point_world": [
+            3.3,
+            18.4,
+            1.08
+          ],
+          "note": "把镜子拿回来：光束复原"
+        },
+        {
+          "at": [
+            4.0,
+            17.3
+          ],
+          "aim": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "到 2 号花架东南边（从这儿看传感器，镜子挡不住）"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "stand",
+            "item": "mirror"
+          },
+          "point_world": [
+            3.3,
+            17.8,
+            0.65
+          ],
+          "note": "镜子放到 2 号花架上：光打到传感器，咔哒一声"
+        },
+        {
+          "aim": [
+            2.36,
+            17.8,
+            1.08
+          ],
+          "note": "看传感器变绿"
+        }
+      ]
+    }
+  ],
+  "gadgets": [
+    {
+      "type": "slot",
+      "name": "office_stand_1",
+      "group": "laser"
+    },
+    {
+      "type": "slot",
+      "name": "office_stand_2",
+      "group": "laser"
+    },
+    {
+      "type": "slot",
+      "name": "office_stand_3",
+      "group": "laser"
+    }
+  ],
+  "slot_groups": {
+    "laser": {
+      "kind": "laser",
+      "items": [
+        "mirror"
+      ],
+      "order": [
+        "office_stand_1",
+        "office_stand_2",
+        "office_stand_3"
+      ],
+      "segments": 4,
+      "correct": 1,
+      "unlocks": [
+        [
+          "bottom_cabinet_nddvba_0",
+          1
+        ]
+      ],
+      "rpy_deg": [
+        0,
+        0,
+        135
+      ]
+    }
+  },
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "要拿镜子放到真实花架，观察光路与传感器状态，必要时取回重放；按实体状态探索建议100步。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-19",
+  "legacy_name": "R3-23_office_laser",
+  "legacy_id": "R3-23",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "849fd7019ecbdac1ffb43efb7a338fd4ae620e9d52c907f2ff86cb6818982735"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-19",
+  "legacy_benchmark_id": "L2-19",
+  "recall_budget": 10,
+  "tip_window": 25
+}

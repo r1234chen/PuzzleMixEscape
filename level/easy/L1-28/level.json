@@ -1,0 +1,443 @@
+{
+  "name": "L2-28_office_motto",
+  "scene": "Beechwood_0_garden",
+  "seed": 8101,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "Our motto is written in four places in this room, and in each copy one letter is upside down. The door code is those upside-down letters, in this order: the copy high on the wall above the desk, the one beside the window, the one lying on the desk, and the one next to the deer picture.",
+      "overlay": {
+        "texture": "hint_ff6f70c5f2.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "GRTE",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "站到书桌上方的标语牌前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "motto"
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：read 书桌上方的标语牌"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "motto"
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：take 书桌上方的标语牌"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "motto",
+            "part": 1
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：open 书桌上方的标语牌"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "motto",
+            "part": 1
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：close 书桌上方的标语牌"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "motto"
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：press 书桌上方的标语牌"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "motto",
+            "code": "1234"
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：unlock 书桌上方的标语牌"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "motto",
+            "item": "post it"
+          },
+          "point_world": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "乱试：use 书桌上方的标语牌"
+        },
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.95,
+            19.29,
+            1.62
+          ],
+          "note": "看书桌上方墙上那块（第一处）：TOGETHER 里倒着的是 G"
+        },
+        {
+          "at": [
+            4.75,
+            17.0
+          ],
+          "aim": [
+            5.676,
+            16.62,
+            1.45
+          ],
+          "note": "看窗户旁边那块（第二处）：倒着的是 R"
+        },
+        {
+          "at": [
+            4.45,
+            18.3
+          ],
+          "aim": [
+            4.45,
+            18.95,
+            0.778
+          ],
+          "note": "看书桌上平放的那块（第三处）：倒着的是 T"
+        },
+        {
+          "at": [
+            4.66,
+            17.4
+          ],
+          "aim": [
+            4.66,
+            16.286,
+            1.6
+          ],
+          "note": "看小鹿那幅画旁边那块（第四处）：倒着的是 E"
+        }
+      ],
+      "wrong_reading": "TOGE"
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "decor_u1_poster",
+      "plane": [
+        0.62,
+        0.16
+      ],
+      "position": [
+        4.95,
+        19.286,
+        1.62
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u1_motto_poster.png"
+    },
+    {
+      "name": "decor_u1_calendar",
+      "plane": [
+        0.4,
+        0.11
+      ],
+      "position": [
+        5.672,
+        16.62,
+        1.45
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u1_motto_calendar.png"
+    },
+    {
+      "name": "decor_u1_desk_mat",
+      "plane": [
+        0.44,
+        0.12
+      ],
+      "position": [
+        4.45,
+        18.95,
+        0.7795
+      ],
+      "rpy_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u1_motto_desk_mat.png"
+    },
+    {
+      "name": "decor_u1_sign",
+      "plane": [
+        0.52,
+        0.14
+      ],
+      "position": [
+        4.66,
+        16.29,
+        1.6
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u1_motto_sign.png"
+    },
+    {
+      "name": "decor_u1_keys",
+      "plane": [
+        0.19,
+        0.13
+      ],
+      "position": [
+        3.32,
+        19.286,
+        1.15
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "texture": "u1_keys.png"
+    }
+  ],
+  "max_steps": 150,
+  "keypad": {
+    "door": "door_lvgliq_1",
+    "center": [
+      3.32,
+      19.284,
+      1.15
+    ],
+    "panel": [
+      0.19,
+      0.13
+    ],
+    "key": 0.05,
+    "right": [
+      1,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "keys": {
+      "T": [
+        3.262,
+        19.284,
+        1.18
+      ],
+      "O": [
+        3.32,
+        19.284,
+        1.18
+      ],
+      "G": [
+        3.378,
+        19.284,
+        1.18
+      ],
+      "E": [
+        3.262,
+        19.284,
+        1.12
+      ],
+      "H": [
+        3.32,
+        19.284,
+        1.12
+      ],
+      "R": [
+        3.378,
+        19.284,
+        1.12
+      ]
+    },
+    "stand": [
+      3.3,
+      18.5
+    ],
+    "alphabet": "TOGEHR",
+    "names": {
+      "T": "T",
+      "O": "O",
+      "G": "G",
+      "E": "E",
+      "H": "H",
+      "R": "R"
+    }
+  },
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "局部异常朝向辨认与四处派生字母的位置整合构成实质负担；提示给出方法不等于直接读数，但仍无全局耦合。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "explicit partial example",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "用户明确示例",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-28",
+  "legacy_name": "R4-13_office_motto",
+  "legacy_id": "R4-13",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "用户明确示例",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "37c2d1cf87a87b7c76a51b83c41c66d660098f2fa29c40a5b9d3a00e5ec4ceb1"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-28",
+  "legacy_benchmark_id": "L2-28",
+  "recall_budget": 10,
+  "tip_window": 25
+}

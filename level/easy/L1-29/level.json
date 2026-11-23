@@ -1,0 +1,147 @@
+{
+  "name": "L2-29_office_relations",
+  "scene": "Beechwood_0_garden",
+  "seed": 7040,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The door code has four digits. The other notes in this room tell how they go together.",
+      "overlay": {
+        "texture": "hint_a880d14dab.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "category": "post_it",
+      "model": "xakxes",
+      "on": "bottom_cabinet_immwzb_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "id": "rel1",
+      "name": "office_note_rel1",
+      "text": "The second digit is three times the first."
+    },
+    {
+      "category": "post_it",
+      "model": "ooetjh",
+      "on": "bottom_cabinet_nddvba_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "id": "rel2",
+      "name": "office_note_rel2",
+      "text": "The third digit is one less than the second."
+    },
+    {
+      "category": "post_it",
+      "model": "xakxes",
+      "on": "desk_rzyfxk_1",
+      "on_mode": "surface",
+      "kind": "hint",
+      "id": "rel3",
+      "name": "office_note_rel3",
+      "text": "The last digit is the first two added together. The first digit is even."
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "2658",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            4.16,
+            18.3
+          ],
+          "aim": [
+            4.95,
+            18.88,
+            0.78
+          ],
+          "note": "读便签（其余三张标准解会自己去找、去读）"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "三张关系便签分在不同柜面和桌面，需探索集齐才求完整四位码；建议100步，不因算式难而升档。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-29",
+  "legacy_name": "R4-17_office_relations",
+  "legacy_id": "R4-17",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "53912adcd69140f3a8460c7a8a80f6fbfca3f9718e84655ae530358aeadada2e"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-29",
+  "legacy_benchmark_id": "L2-29",
+  "recall_budget": 10,
+  "tip_window": 25
+}

@@ -1,0 +1,347 @@
+{
+  "name": "L2-05_office_detector",
+  "scene": "Beechwood_0_garden",
+  "seed": 1022,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The key is hidden inside one of the ottomans.",
+      "overlay": {
+        "texture": "hint_15f91779be.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "detector",
+      "name": "office_detector",
+      "category": "carpet_sweeper",
+      "model": "xboreo",
+      "kind": "tool",
+      "display": "metal detector",
+      "dig_tool": true,
+      "place": {
+        "position": [
+          3.5668,
+          18.9505,
+          0.1138
+        ],
+        "rpy_deg": [
+          0,
+          0,
+          0.0
+        ]
+      }
+    },
+    {
+      "category": "key_chain",
+      "model": "wirxcw",
+      "kind": "key",
+      "id": "exitkey",
+      "name": "escape_key",
+      "buried_in": "office_ottoman_3",
+      "dig_text": "The detector beeps. You find a key inside the ottoman."
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "key": "exitkey",
+      "pre_steps": [
+        {
+          "at": [
+            3.45,
+            17.35
+          ],
+          "aim": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "站到1 号脚凳前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "ottoman"
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：read 1 号脚凳"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "ottoman"
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：take 1 号脚凳"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "ottoman",
+            "part": 1
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：open 1 号脚凳"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "ottoman",
+            "part": 1
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：close 1 号脚凳"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "ottoman"
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：press 1 号脚凳"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "ottoman",
+            "code": "1234"
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：unlock 1 号脚凳"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ottoman",
+            "item": "post it"
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "乱试：use 1 号脚凳"
+        },
+        {
+          "take": "office_detector",
+          "note": "拿北墙边的金属探测器"
+        },
+        {
+          "at": [
+            3.45,
+            17.35
+          ],
+          "aim": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "回到 1 号脚凳前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ottoman",
+            "item": "metal detector"
+          },
+          "point_world": [
+            2.95,
+            16.8,
+            0.2
+          ],
+          "note": "探测器扫 1 号脚凳：没反应"
+        },
+        {
+          "at": [
+            4.1,
+            17.7
+          ],
+          "aim": [
+            4.7,
+            17.45,
+            0.2
+          ],
+          "note": "到 4 号脚凳前"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "ottoman",
+            "item": "metal detector"
+          },
+          "point_world": [
+            4.7,
+            17.45,
+            0.2
+          ],
+          "note": "探测器扫 4 号脚凳：没反应"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "office_ottoman_1",
+      "category": "ottoman",
+      "model": "miftfy",
+      "center": [
+        2.95,
+        16.8
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_ottoman_2",
+      "category": "ottoman",
+      "model": "miftfy",
+      "center": [
+        2.45,
+        18.05
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_ottoman_3",
+      "category": "ottoman",
+      "model": "miftfy",
+      "center": [
+        3.95,
+        18.4
+      ],
+      "yaw_deg": 0
+    },
+    {
+      "name": "office_ottoman_4",
+      "category": "ottoman",
+      "model": "miftfy",
+      "center": [
+        4.7,
+        17.45
+      ],
+      "yaw_deg": 0
+    }
+  ],
+  "max_steps": 150,
+  "revision1010": {
+    "requested_by_user": true,
+    "report_destination": "标准解过程报告1010",
+    "model_image": [
+      640,
+      360
+    ]
+  },
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "要用探测器扫描不同储物凳，以实际响声逐个排除，再开对应凳盖取钥匙；属于主动多物体探索。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-05",
+  "legacy_name": "R2-18_office_detector",
+  "legacy_id": "R2-18",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "native_key_presentation215": {
+    "escape_key": {
+      "mode": "storage_floor",
+      "yaw_deg": 30.0,
+      "offset_xy": [
+        -0.075,
+        0.075
+      ]
+    }
+  },
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "279249b25d61beabb6d847333d8f0ae027c92befdf17a6193dafb9785fa68ef7"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-05",
+  "legacy_benchmark_id": "L2-05",
+  "recall_budget": 10,
+  "tip_window": 25
+}

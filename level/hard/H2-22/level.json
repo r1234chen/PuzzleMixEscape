@@ -1,0 +1,13 @@
+{
+  "public_id": "H2-22",
+  "source_id": "R44",
+  "paper_group": "hard",
+  "entry": "level_R44.py",
+  "max_steps": 250,
+  "recall_budget": 25,
+  "tip_window": 60,
+  "image_size": [
+    640,
+    360
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "public_id": "H2-03",
+  "source_id": "R25",
+  "paper_group": "hard",
+  "entry": "level_R25.py",
+  "max_steps": 250,
+  "recall_budget": 25,
+  "tip_window": 60,
+  "image_size": [
+    640,
+    360
+  ]
+}

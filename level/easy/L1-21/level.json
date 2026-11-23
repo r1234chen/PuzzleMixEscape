@@ -1,0 +1,587 @@
+{
+  "name": "L2-21_office_places",
+  "scene": "Beechwood_0_garden",
+  "seed": 7014,
+  "start": {
+    "room": "private_office_0",
+    "xy": [
+      3.3,
+      17.6
+    ],
+    "yaw_deg": 0
+  },
+  "items": [
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "kind": "decoy",
+      "inside": "bottom_cabinet_immwzb_0",
+      "part": 1
+    },
+    {
+      "id": "hint",
+      "name": "escape_hint",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "on": "desk_rzyfxk_0",
+      "on_mode": "surface",
+      "kind": "hint",
+      "fixed": true,
+      "spot_near": [
+        4.95,
+        18.88
+      ],
+      "spot_yaw0": true,
+      "flush": true,
+      "text": "The card on the cabinet gives a number for each place in this room. Find where ▲, ●, ■ and ✚ are drawn. The door code is the numbers of those places, in that order.",
+      "overlay": {
+        "texture": "hint_947ccb608e.png",
+        "size": [
+          0.188,
+          0.248
+        ],
+        "center": [
+          -0.001,
+          0.0
+        ],
+        "grid": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "playlist",
+      "name": "office_playlist",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "kind": "hint",
+      "text": "Above the Door: 2. Under the Light Switch: 7. Over the Bookcase: 3. Beside the Window: 5. Behind the Chair: 6. Below the Bus: 8. Above the Desk: 4. Next to the Deer: 9.",
+      "on": "bottom_cabinet_nddvba_0",
+      "on_mode": "surface",
+      "display": "card"
+    }
+  ],
+  "doors": [
+    {
+      "id": "exit",
+      "name": "door_lvgliq_1",
+      "exit": true,
+      "lock": "7589",
+      "code_from": "look",
+      "look": [
+        {
+          "at": [
+            3.3,
+            18.4
+          ],
+          "aim": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "站到开关下面的三角前：下面对它把七个动作各试一次"
+        },
+        {
+          "claw": {
+            "action": "read",
+            "target": "triangle"
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：read 开关下面的三角"
+        },
+        {
+          "claw": {
+            "action": "take",
+            "target": "triangle"
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：take 开关下面的三角"
+        },
+        {
+          "claw": {
+            "action": "open",
+            "target": "triangle",
+            "part": 1
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：open 开关下面的三角"
+        },
+        {
+          "claw": {
+            "action": "close",
+            "target": "triangle",
+            "part": 1
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：close 开关下面的三角"
+        },
+        {
+          "claw": {
+            "action": "press",
+            "target": "triangle"
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：press 开关下面的三角"
+        },
+        {
+          "claw": {
+            "action": "unlock",
+            "target": "triangle",
+            "code": "1234"
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：unlock 开关下面的三角"
+        },
+        {
+          "claw": {
+            "action": "use",
+            "target": "triangle",
+            "item": "post it"
+          },
+          "point_world": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "乱试：use 开关下面的三角"
+        },
+        {
+          "at": [
+            3.3,
+            18.4
+          ],
+          "aim": [
+            3.062,
+            19.29,
+            0.93
+          ],
+          "note": "▲ 在开关下面"
+        },
+        {
+          "at": [
+            4.8,
+            17.3
+          ],
+          "aim": [
+            5.676,
+            16.52,
+            1.3
+          ],
+          "note": "● 在窗户旁边"
+        },
+        {
+          "at": [
+            3.0,
+            17.2
+          ],
+          "aim": [
+            2.986,
+            16.286,
+            0.93
+          ],
+          "note": "■ 在鹿那幅画下面"
+        },
+        {
+          "at": [
+            4.4,
+            17.25
+          ],
+          "aim": [
+            4.62,
+            16.286,
+            1.5
+          ],
+          "note": "✚ 在巴士那幅画旁边"
+        }
+      ]
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "decor_song_tri_0",
+      "plane": [
+        0.074,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9041
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_1",
+      "plane": [
+        0.0663,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9109
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_2",
+      "plane": [
+        0.0585,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9176
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_3",
+      "plane": [
+        0.0507,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9244
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_4",
+      "plane": [
+        0.0429,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9311
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_5",
+      "plane": [
+        0.0351,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9379
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_6",
+      "plane": [
+        0.0273,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9446
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_7",
+      "plane": [
+        0.0195,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9514
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_8",
+      "plane": [
+        0.0117,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9581
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_tri_9",
+      "plane": [
+        0.0039,
+        0.0078
+      ],
+      "position": [
+        3.062,
+        19.284,
+        0.9649
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "rgba": [
+        0.82,
+        0.12,
+        0.12,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_circ_d",
+      "disk": [
+        0.08549999999999999,
+        0.08549999999999999
+      ],
+      "position": [
+        5.67,
+        16.52,
+        1.3
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        -90.0
+      ],
+      "rgba": [
+        0.15,
+        0.32,
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_sq_s",
+      "plane": [
+        0.072,
+        0.072
+      ],
+      "position": [
+        2.986,
+        16.292,
+        0.93
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.15,
+        0.58,
+        0.22,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_plus_a",
+      "plane": [
+        0.09,
+        0.027
+      ],
+      "position": [
+        4.62,
+        16.292,
+        1.5
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.52,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "name": "decor_song_plus_b",
+      "plane": [
+        0.027,
+        0.09
+      ],
+      "position": [
+        4.62,
+        16.292,
+        1.5
+      ],
+      "rpy_deg": [
+        90.0,
+        0.0,
+        180.0
+      ],
+      "rgba": [
+        0.95,
+        0.52,
+        0.1,
+        1.0
+      ]
+    }
+  ],
+  "max_steps": 150,
+  "room_mode": "single",
+  "difficulty": "medium",
+  "difficulty_reason": "四个标记分别位于门、开关、书柜和窗等真实位置，需多视角寻找后查同一对应卡；核心增加的是探索量。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "previous deployed budget; NOT user final approval",
+    "current_deployed_max_steps": 120,
+    "new_proposed_max_steps": 120,
+    "proposal_not_silently_applied": true,
+    "example_status": "助手按示例复核·待调整",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "L2-21",
+  "legacy_name": "R3-28_office_places",
+  "legacy_id": "R3-28",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "助手按示例复核·待调整",
+  "budget_revision260": {
+    "actions": 120,
+    "recalls": 12,
+    "hint_window": 30,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "583ca6c643d5547ed1d405fbb2dda69bf8b37240fb8a8957d68aba035825b9e3"
+  },
+  "protocol": "unified_v2",
+  "public_id": "L1-21",
+  "legacy_benchmark_id": "L2-21",
+  "recall_budget": 10,
+  "tip_window": 25
+}

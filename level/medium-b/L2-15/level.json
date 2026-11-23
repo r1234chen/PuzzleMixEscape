@@ -1,0 +1,13 @@
+{
+  "public_id": "L2-15",
+  "source_id": "R15",
+  "paper_group": "medium-b",
+  "entry": "level_R15.py",
+  "max_steps": 200,
+  "recall_budget": 15,
+  "tip_window": 40,
+  "image_size": [
+    640,
+    360
+  ]
+}

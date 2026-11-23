@@ -1,0 +1,156 @@
+{
+  "name": "H1-09_bathroom_start",
+  "scene": "Beechwood_0_garden",
+  "seed": 245,
+  "start": {
+    "room": "bathroom_0",
+    "xy": [
+      1.28,
+      20.98
+    ],
+    "yaw_deg": 90
+  },
+  "prompt_intro": "You are a robot locked inside a house. You start in one room; your goal is to get out of the house.\nDoors may be locked. What opens them is not told in this message; you have to find out by searching.\nThings can be hidden inside furniture that opens, and some things are locked themselves (with a code lock or a keyhole).",
+  "doors_default": "unlocked",
+  "items": [
+    {
+      "id": "note",
+      "name": "escape_note",
+      "category": "post_it",
+      "model": "drlhqi",
+      "text": "Diary: {diary}",
+      "on": {
+        "category": "furniture_sink",
+        "room": "bathroom_0"
+      },
+      "fixed": true,
+      "on_mode": "surface"
+    },
+    {
+      "id": "diary",
+      "name": "escape_diary",
+      "category": "notebook",
+      "model": "qwhiqc",
+      "text": "Bathroom door: {bath}. The locked drawer in the office: its code starts with {office_a}.",
+      "inside": "add_bath_cabinet",
+      "part": 1,
+      "lock": "random:3"
+    },
+    {
+      "id": "memo",
+      "name": "escape_memo",
+      "category": "paper_sheet",
+      "model": "afdjfk",
+      "text": "...and the office drawer code ends with {office_b}.",
+      "on": "bottom_cabinet_slgzfc_0"
+    },
+    {
+      "id": "key",
+      "name": "escape_key",
+      "category": "key_chain",
+      "model": "gqbwfv",
+      "kind": "key",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 4
+    },
+    {
+      "id": "plumber",
+      "name": "escape_plumber",
+      "category": "post_it",
+      "model": "ooetjh",
+      "text": "Call the plumber on Monday.",
+      "inside": "bottom_cabinet_nddvba_0",
+      "part": 2,
+      "kind": "decoy"
+    }
+  ],
+  "doors": [
+    {
+      "id": "bath",
+      "name": "door_lvgliq_3",
+      "lock": "random:4",
+      "pass_checkpoint": true
+    },
+    {
+      "id": "officedoor",
+      "name": "door_lvgliq_1",
+      "unlocked": true,
+      "pass_checkpoint": true
+    },
+    {
+      "id": "exit",
+      "name": "door_lvncak_0",
+      "key": "key",
+      "exit": true
+    },
+    {
+      "name": "door_xdcuws_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_0",
+      "lock": null
+    },
+    {
+      "name": "door_lvgliq_4",
+      "lock": null
+    }
+  ],
+  "max_steps": 200,
+  "part_locks": [
+    {
+      "id": "office",
+      "container": "bottom_cabinet_nddvba_0",
+      "part": 4,
+      "lock": "random:4"
+    }
+  ],
+  "scene_add": [
+    {
+      "name": "add_bath_cabinet",
+      "category": "bottom_cabinet",
+      "model": "nddvba",
+      "center": [
+        2.1,
+        20.75
+      ],
+      "yaw_deg": 180,
+      "scale": [
+        1.0,
+        1.1,
+        1.5
+      ]
+    }
+  ],
+  "room_mode": "multi",
+  "difficulty": null,
+  "difficulty_reason": "多房间不分难度，统一200动作；保留原布局和谜题链。",
+  "difficulty_version": "latest_document_applied_with_names157",
+  "budget_policy": null,
+  "difficulty_assessment": {
+    "basis": "confirmed multi-room200 rule",
+    "current_deployed_max_steps": 200,
+    "new_proposed_max_steps": 200,
+    "proposal_not_silently_applied": true,
+    "example_status": "多房间统一规则（已确认）",
+    "classification_source": "latest local difficulty document applied by requested name regrouping; preserve per-row origin"
+  },
+  "benchmark_id": "H1-09",
+  "legacy_name": "H3-03_bathroom_start",
+  "legacy_id": "H3-03",
+  "naming_policy": "difficulty_names157",
+  "classification_origin157": "多房间统一规则（已确认）",
+  "budget_revision260": {
+    "actions": 200,
+    "recalls": 20,
+    "hint_window": 50,
+    "single_tip": true,
+    "early_stop": false,
+    "historical_config_sha256": "5d367bf899879af92090c33f23bcbc28beea8389df6389bcd98828532f1e1246"
+  },
+  "protocol": "unified_v2",
+  "public_id": "H1-09",
+  "legacy_benchmark_id": "H1-09",
+  "recall_budget": 20,
+  "tip_window": 50
+}
