@@ -1,0 +1,54 @@
+#fig-4.analysis-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0 12px;font:13px/1.4 system-ui,"Microsoft YaHei",sans-serif;color:#183d36;font-variant-numeric:tabular-nums}
+#fig-4 .af-panel{background:linear-gradient(155deg,#f1f6ef 0,#fbfbf6 52%,#fffef8 100%);border:1px solid #cfdcd3;border-radius:14px;padding:16px 13px 11px;min-width:0;display:flex;flex-direction:column}
+#fig-4 .af-head{display:flex;gap:9px;align-items:center;margin:0 0 6px;font:650 15px/1.25 system-ui,"Microsoft YaHei",sans-serif;color:#193d34}
+#fig-4 .af-letter{border:1px solid #abc2b6;border-radius:50%;font:600 10px/19px ui-monospace,monospace;width:21px;height:21px;text-align:center;color:#386451;flex:none}
+#fig-4 svg{width:100%;height:auto;display:block;overflow:visible;margin:auto 0;user-select:none}
+#fig-4 svg text{fill:#36564b;font:11px system-ui,"Microsoft YaHei",sans-serif}
+#fig-4 .af-number{font:600 23px system-ui;letter-spacing:-1px;fill:#173e36}
+#fig-4 .af-small{font-size:10px}
+#fig-4 .af-tick{font-size:11px;fill:#52695f}
+#fig-4 .af-value{font-size:10px;font-weight:650;fill:#183e32}
+#fig-4 [data-pick]{cursor:pointer;outline:none}
+#fig-4 [data-pick]:focus-visible{outline:2px solid #99621e;outline-offset:1px}
+#fig-4 .af-seg{transition:opacity .17s,stroke-width .17s}
+#fig-4 .af-seg.chosen{stroke-width:17}
+#fig-4 .af-key.chosen text{fill:#112e25;font-weight:700}
+#fig-4 .af-bar{transform-box:fill-box;transform-origin:center bottom}
+#fig-4.af-enter .af-bar{animation:af-rise .62s cubic-bezier(.2,.7,.2,1) both}
+@keyframes af-rise{from{transform:scaleY(.02)}to{transform:scaleY(1)}}
+#fig-4 .af-bin rect{transition:opacity .14s}
+#fig-4 .af-bin.dim rect{opacity:.48}
+#fig-4 .af-bin.chosen rect{stroke:#193c32;stroke-width:2}
+#fig-4 .af-read{border-top:1px solid #d8e2d7;padding-top:8px;margin:5px 0 0;font:500 11px/1.45 system-ui,"Microsoft YaHei",sans-serif;color:#476454;min-height:25px}
+@media(max-width:1040px) and (min-width:821px){#fig-4.analysis-grid{gap:6px}#fig-4 .af-panel{padding:11px 7px}}
+@media(max-width:740px){#fig-4.analysis-grid{grid-template-columns:minmax(0,1fr)}#fig-4 .af-panel{padding:14px 17px}#fig-4 svg{width:100%;max-width:360px;align-self:center}}
+@media(prefers-reduced-motion:reduce){#fig-4 *,#fig-4.af-enter .af-bar{animation:none!important;transition:none!important}}
+
+#fig-4 svg.af-leader-ring{width:100%;height:auto;max-width:430px;margin:auto;overflow:visible}
+#fig-4 .af-leader-ring .af-total{font:650 26px system-ui;fill:#173e36;font-variant-numeric:tabular-nums}
+#fig-4 .af-leader-ring .af-unit{font-size:11px;fill:#51695b}
+#fig-4 .af-leader-ring .af-name{font-size:11px;fill:#294a40}
+#fig-4 .af-leader-ring .af-percent{font-size:13px;font-weight:700;fill:#183e32}
+
+#fig-4 svg.af-leader-ring{max-width:252px}
+#fig-4 .af-donut-legend{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:4px 6px;margin:6px 0 9px}
+#fig-4 .af-legend-key{appearance:none;display:flex;align-items:baseline;gap:6px;padding:2px 0;border:0;background:none;color:#36564b;font:12px/1.35 system-ui,"Microsoft YaHei",sans-serif;text-align:left}
+#fig-4 .af-legend-key.chosen{color:#173d32;font-weight:700}
+#fig-4 .af-legend-dot{width:7px;height:7px;flex:none;border-radius:3px}
+#fig-4 .af-callout.chosen .af-percent{fill:#102e23}
+#fig-4 .af-callout.chosen line{stroke-width:1.8}
+
+/* Reserve space for the longest selected label, not just its regular weight. */
+#fig-4 [data-plot="donut"]{container-type:inline-size}
+#fig-4 .af-legend-key{white-space:nowrap;font-size:clamp(10.5px,3.8cqi,12px)}
+@container (max-width:254px){
+  #fig-4 .af-donut-legend{grid-template-columns:minmax(0,1fr)}
+  #fig-4 .af-legend-key{font-size:12px}
+}
+
+/* Figure 4B: retain the original chart; only brighten the hovered pair. */
+#fig-4 [data-plot="bars"] .af-bar { transition: filter .12s ease-out; }
+@media (hover: hover) {
+  #fig-4 [data-plot="bars"] g[data-pick]:hover .af-bar { filter: brightness(1.08); }
+}
+#fig-4 [data-plot="bars"] g[data-pick]:focus-visible .af-bar { filter: brightness(1.08); }

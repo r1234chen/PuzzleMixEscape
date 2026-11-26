@@ -1,0 +1,8 @@
+Pyodide 0.27.7 official build, including Python, NumPy and Pillow. Backing files are unmodified inside the base64 transport bundle. No remote requests are required.
+pyodide.js b4cb23a53aba19c221659b9fb40a2f18281d685691dc06647fb0afd0681baf98 https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js
+pyodide.asm.js 6b4c90de5b7172873f04f21884d0e9d2274e305fe32116558fe3e4fbe3618d51 https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.asm.js
+pyodide.asm.wasm a50dd1843f805a0b7c45b61037ee0d7b26dfe85efe0e18ef95a34ad24e401f5f https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.asm.wasm
+pyodide-lock.json 9c45b916001a750f4102fc287494f3eab215909c7535c626a20db80fd6333e2c https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide-lock.json
+python_stdlib.zip 16611534726e5d8ac2bd8f926410b2dcb8d6f49aa24913463533b457a2115c16 https://cdn.jsdelivr.net/pyodide/v0.27.7/full/python_stdlib.zip
+numpy-2.0.2-cp312-cp312-pyodide_2024_0_wasm32.whl ebb61241d962b98b21597d7ce43b67668a6d5bab3acec4fbe958657320d7cd08 https://cdn.jsdelivr.net/pyodide/v0.27.7/full/numpy-2.0.2-cp312-cp312-pyodide_2024_0_wasm32.whl
+pillow-10.2.0-cp312-cp312-pyodide_2024_0_wasm32.whl 43eab147a9355385a99eeac18fb577d4af2fe4bd0bbd23d3ba3ddb92e72c2815 https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pillow-10.2.0-cp312-cp312-pyodide_2024_0_wasm32.whl

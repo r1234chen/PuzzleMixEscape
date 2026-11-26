@@ -1,0 +1,34 @@
+#digits{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin:12px 0}.slip{background:#fff3ce;border:1px solid #ad966f;padding:8px 14px;margin:8px 0}.slip output{display:block;font:600 28px/1.4 monospace;letter-spacing:.15em}dialog{color:#1b3c31;max-width:90vw}dialog form{min-width:min(270px,72vw)}#out{font-variant-numeric:tabular-nums}.hint-art{display:block;max-width:min(350px,90%);height:auto;margin:6px auto}.hint-art[hidden]{display:none}#paperrow[hidden]{display:none}
+.level-rail .difficulty-group{margin:0;padding:0;border:0}
+.level-rail .difficulty-group summary{display:flex;gap:5px;align-items:center;cursor:pointer;list-style:none;min-height:34px;padding:5px 7px;border-top:1px solid #ced9d0;font:650 .9rem/1.3 system-ui;color:#254f40}
+.level-rail .difficulty-group summary::-webkit-details-marker{display:none}
+.level-rail .difficulty-group summary::before{content:'▸';width:.7em;color:#53715e}
+.level-rail .difficulty-group[open]>summary::before{content:'▾'}
+.level-rail .difficulty-count{margin-left:auto;font-size:.82rem;font-weight:500;color:#516755}
+.level-rail .difficulty-levels{display:grid;gap:2px}
+@media(max-width:700px){.level-rail .difficulty-group summary{padding:5px 1px;font-size:.71rem;gap:1px;white-space:nowrap}.level-rail .difficulty-count{display:none}}
+
+.overview-demo main.wrap{display:block;width:100%;max-width:none;margin:0;padding:0}
+
+
+.game-panel .play-controls{display:block;color:#253f33}
+.game-panel .hud #interact{display:none}
+.game-panel .cap{justify-content:flex-start;align-items:center;flex-wrap:wrap;gap:4px 12px}
+.game-panel .cap #status{flex:1;min-width:0}
+.game-panel .cap #reset{margin-left:auto;padding:3px 9px;line-height:1.4;font-size:.83rem}
+.game-panel footer{display:block;padding:6px 12px 8px;line-height:1.45}
+
+
+.playtest-note{margin:.5rem auto 0;color:#52635c;font-size:.84rem;line-height:1.45}.overview-demo .playtest-note{display:none}
+
+html:has(.overview-demo){overflow:hidden}
+
+/* Match the article table of contents at both of its responsive sizes. */
+.level-rail{font-size:.93rem}
+@media(min-width:821px){.level-rail{font-size:.8125rem}}
+.level-rail :is(strong,a,.level-name,.difficulty-count),.level-rail .difficulty-group summary{font-size:inherit}
+@media(max-width:700px){.level-rail .difficulty-group summary{white-space:normal}}
+
+/* A legible in-view transcript for papers, not an enlarged or lowered game camera. */
+#reading-caption:not([hidden]){position:absolute;z-index:2;top:10px;left:10px;box-sizing:border-box;max-width:min(86%,40rem);max-height:45%;overflow:auto;background:#fff8e8;color:#182e27;border:1px solid #806b44;border-radius:5px;padding:8px 13px;box-shadow:0 2px 8px #17231940;pointer-events:none;font:600 clamp(15px,1.7vw,20px)/1.45 system-ui,sans-serif}
+#reading-caption strong{display:block;color:#455d50;font-size:.78em}#reading-caption span{white-space:pre-wrap;overflow-wrap:anywhere}

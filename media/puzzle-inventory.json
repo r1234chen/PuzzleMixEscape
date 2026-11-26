@@ -1,0 +1,2915 @@
+{
+  "schema": "pme-puzzle-instance-audit-v1",
+  "counting_policy_zh": "在同一关按独立目标计数；同一机制跨关分别计。同一目标的线索、重复操作、替代解法不重复计。有目标辨别要求的找提示纸、循线索找物、判断机关释放哪个抽屉均算探索题；就地打开明显的盖或拿已露出的奖励不另计。多个线索仍需合并推导门码，另计一题；照抄答案、插钥匙或开门不另计。每题按主要认知要求人工归入一个类别；不是论文旧图的多标签分母。",
+  "source_index_sha256": "658be6608dccbd6c56a29b69989824e04bfb608d3d770cd08e099f43fefa97e3",
+  "milestone_sha256": "531b46e29bdb563f94901aaa6bdfdc92062f1698c78e7d91014fb5930ca0e223",
+  "total": 335,
+  "groups": {
+    "easy": 102,
+    "medium-a": 45,
+    "medium-b": 93,
+    "hard": 95
+  },
+  "categories": [
+    {
+      "id": "E",
+      "en": "Active exploration",
+      "zh": "主动探索",
+      "count": 118,
+      "share_percent": 35.2
+    },
+    {
+      "id": "S",
+      "en": "Spatial reasoning",
+      "zh": "空间推理",
+      "count": 66,
+      "share_percent": 19.7
+    },
+    {
+      "id": "P",
+      "en": "Physical reasoning",
+      "zh": "物理推理",
+      "count": 49,
+      "share_percent": 14.6
+    },
+    {
+      "id": "T",
+      "en": "Long-horizon planning",
+      "zh": "长程规划",
+      "count": 10,
+      "share_percent": 3.0
+    },
+    {
+      "id": "N",
+      "en": "Numerical reasoning",
+      "zh": "数值推理",
+      "count": 36,
+      "share_percent": 10.7
+    },
+    {
+      "id": "L",
+      "en": "Logic & commonsense",
+      "zh": "逻辑与常识",
+      "count": 56,
+      "share_percent": 16.7
+    }
+  ],
+  "levels": [
+    {
+      "level": "L1-01",
+      "group": "easy",
+      "title": "称量台",
+      "source": "level/easy/L1-01/level.json",
+      "source_sha256": "58750a20553bf0651f4297fc565fa93a0a73b4c2249cd46a963dda1eb575052b",
+      "units": [
+        {
+          "unit_id": "L1-01:01",
+          "primary_category": "E",
+          "goal_zh": "按便签找齐四种指定称量物",
+          "source_anchor": "item:hint; door:exit; device:scale"
+        },
+        {
+          "unit_id": "L1-01:02",
+          "primary_category": "N",
+          "goal_zh": "按指定顺序称量并组成门码",
+          "source_anchor": "item:hint; door:exit; device:scale"
+        }
+      ]
+    },
+    {
+      "level": "L1-02",
+      "group": "easy",
+      "title": "被遮住的积木",
+      "source": "level/easy/L1-02/level.json",
+      "source_sha256": "aeb41af0b44d19758cd92fdaaaf1f704e903c7117f3677227f87c5c18c832dcf",
+      "units": [
+        {
+          "unit_id": "L1-02:01",
+          "primary_category": "E",
+          "goal_zh": "变换视点找出被遮挡的积木",
+          "source_anchor": "item:hint; door:exit"
+        },
+        {
+          "unit_id": "L1-02:02",
+          "primary_category": "N",
+          "goal_zh": "按纸条给定的颜色依次计数",
+          "source_anchor": "item:hint; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-03",
+      "group": "easy",
+      "title": "花盆与地砖",
+      "source": "level/easy/L1-03/level.json",
+      "source_sha256": "eb688887561bad7d41b696133e66431094f9ec9cedfcc0fbd37f566b04b0b82e",
+      "units": [
+        {
+          "unit_id": "L1-03:01",
+          "primary_category": "S",
+          "goal_zh": "把墙图中的花盆位置映射到地砖上",
+          "source_anchor": "item:hint; door:exit; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-04",
+      "group": "easy",
+      "title": "成对的书架",
+      "source": "level/easy/L1-04/level.json",
+      "source_sha256": "e9a031aa135fa5ae3a970fc6f4b02e8b323d2a327ac62b3470620d76c462fac7",
+      "units": [
+        {
+          "unit_id": "L1-04:01",
+          "primary_category": "E",
+          "goal_zh": "逐层比对两座书架找出不同陈设",
+          "source_anchor": "item:hint; door:exit"
+        },
+        {
+          "unit_id": "L1-04:02",
+          "primary_category": "N",
+          "goal_zh": "将各层差异数量编码",
+          "source_anchor": "item:hint; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-05",
+      "group": "easy",
+      "title": "会响的脚凳",
+      "source": "level/easy/L1-05/level.json",
+      "source_sha256": "eb3204744b412526fa531e36fd7544808b46cf93b100fa66d5026516ee4245e7",
+      "units": [
+        {
+          "unit_id": "L1-05:01",
+          "primary_category": "E",
+          "goal_zh": "依据金属反馈在相似储物凳中定位藏钥匙的一只",
+          "source_anchor": "item:hint; item:exitkey; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-06",
+      "group": "easy",
+      "title": "玩偶合影",
+      "source": "level/easy/L1-06/level.json",
+      "source_sha256": "19964807b1854ed771a05873bfa51df1972b30b00d3ef499cc5ebd22f7974ff1",
+      "units": [
+        {
+          "unit_id": "L1-06:01",
+          "primary_category": "E",
+          "goal_zh": "找到用来校准桌上玩偶的参考照片",
+          "source_anchor": "item:hint; door:exit; device:rotator"
+        },
+        {
+          "unit_id": "L1-06:02",
+          "primary_category": "S",
+          "goal_zh": "根据照片还原各玩偶朝向",
+          "source_anchor": "item:hint; door:exit; device:rotator"
+        }
+      ]
+    },
+    {
+      "level": "L1-07",
+      "group": "easy",
+      "title": "调色碗",
+      "source": "level/easy/L1-07/level.json",
+      "source_sha256": "ec3f1883f1fec44e00f2308f1425b5613269c438db8308b399e45b3fe3aa5ea4",
+      "units": [
+        {
+          "unit_id": "L1-07:01",
+          "primary_category": "L",
+          "goal_zh": "按配色规则为各样卡选出颜料组合",
+          "source_anchor": "item:hint; item:paint_red; item:paint_yellow; item:paint_blue; door:exit; device:paint_bowl"
+        }
+      ]
+    },
+    {
+      "level": "L1-08",
+      "group": "easy",
+      "title": "地砖上的步程",
+      "source": "level/easy/L1-08/level.json",
+      "source_sha256": "ca35818d8d8c0b882420f3d6bedc7b6c1e2ba4fe2e62969282d7325ef7908584",
+      "units": [
+        {
+          "unit_id": "L1-08:01",
+          "primary_category": "S",
+          "goal_zh": "从红星按朝向和步数定位地砖",
+          "source_anchor": "item:hint; item:exitkey; door:exit"
+        },
+        {
+          "unit_id": "L1-08:02",
+          "primary_category": "P",
+          "goal_zh": "用刮板揭开目标地砖取得藏物",
+          "source_anchor": "item:hint; item:exitkey; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-09",
+      "group": "easy",
+      "title": "承重机关",
+      "source": "level/easy/L1-09/level.json",
+      "source_sha256": "faac3f36b56e290ae63a4448b7ded65630aed8f0f33d90395e84ac8a00c65839",
+      "units": [
+        {
+          "unit_id": "L1-09:01",
+          "primary_category": "P",
+          "goal_zh": "用合适的重物使压力板持续受压",
+          "source_anchor": "item:hint; item:exitkey; lock:cab_lock; door:exit; device:plate"
+        },
+        {
+          "unit_id": "L1-09:02",
+          "primary_category": "E",
+          "goal_zh": "判断哪一格柜体被释放并找到里面的钥匙",
+          "source_anchor": "item:hint; item:exitkey; lock:cab_lock; door:exit; device:plate"
+        }
+      ]
+    },
+    {
+      "level": "L1-10",
+      "group": "easy",
+      "title": "旋转管道",
+      "source": "level/easy/L1-10/level.json",
+      "source_sha256": "4b81861a2c5f4057cac3446ca35e1c4c53832ec3295b169ca17195995d290d16",
+      "units": [
+        {
+          "unit_id": "L1-10:01",
+          "primary_category": "S",
+          "goal_zh": "调整管片使入口和出口连通",
+          "source_anchor": "item:hint; door:exit; device:rotator"
+        }
+      ]
+    },
+    {
+      "level": "L1-11",
+      "group": "easy",
+      "title": "玩偶座次",
+      "source": "level/easy/L1-11/level.json",
+      "source_sha256": "3e92801afd494969257959b4dbf981a17f2eeba9535abe90595423eb7ab476ef",
+      "units": [
+        {
+          "unit_id": "L1-11:01",
+          "primary_category": "L",
+          "goal_zh": "按相邻和排除条件确定四个座位",
+          "source_anchor": "item:hint; door:exit; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-12",
+      "group": "easy",
+      "title": "办公室守则",
+      "source": "level/easy/L1-12/level.json",
+      "source_sha256": "a6d8067c814dceb86df9347d7c1c7de047a776b683b7a814db5812e995ec4e9c",
+      "units": [
+        {
+          "unit_id": "L1-12:01",
+          "primary_category": "E",
+          "goal_zh": "检查房间并识别逐条规定所指的实际陈设",
+          "source_anchor": "item:hint; door:exit"
+        },
+        {
+          "unit_id": "L1-12:02",
+          "primary_category": "L",
+          "goal_zh": "判断违反了哪些规定并据此组成门码",
+          "source_anchor": "item:hint; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-13",
+      "group": "easy",
+      "title": "联动灯盘",
+      "source": "level/easy/L1-13/level.json",
+      "source_sha256": "6ebe64fd53c68322f6bb6a3a0e9ba6dec36534eee73919959501088665a39592",
+      "units": [
+        {
+          "unit_id": "L1-13:01",
+          "primary_category": "L",
+          "goal_zh": "利用邻灯联动使整块灯板点亮",
+          "source_anchor": "item:hint; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-14",
+      "group": "easy",
+      "title": "四皇后",
+      "source": "level/easy/L1-14/level.json",
+      "source_sha256": "0bc21a75c8cdc145eb514eaf00ee7a6713b8f50fceabef500e09ef8b02eb4c84",
+      "units": [
+        {
+          "unit_id": "L1-14:01",
+          "primary_category": "S",
+          "goal_zh": "在棋盘上布置互不攻击的四个位置",
+          "source_anchor": "item:hint; door:exit; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-15",
+      "group": "easy",
+      "title": "分散的清点单",
+      "source": "level/easy/L1-15/level.json",
+      "source_sha256": "1db2d47608e10fe59533903bfb6197cc5c2141c4a3214ed2c46c78187b63ae82",
+      "units": [
+        {
+          "unit_id": "L1-15:01",
+          "primary_category": "E",
+          "goal_zh": "搜得分藏的清点备忘与日记密码便签",
+          "source_anchor": "item:memo; item:note; item:diary; door:exit"
+        },
+        {
+          "unit_id": "L1-15:02",
+          "primary_category": "E",
+          "goal_zh": "找到密码对应的日记并取得另一半清点规则",
+          "source_anchor": "item:memo; item:note; item:diary; door:exit"
+        },
+        {
+          "unit_id": "L1-15:03",
+          "primary_category": "N",
+          "goal_zh": "合并两份规则按顺序统计家具",
+          "source_anchor": "item:memo; item:note; item:diary; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-16",
+      "group": "easy",
+      "title": "洗衣房五环",
+      "source": "level/easy/L1-16/level.json",
+      "source_sha256": "3acdc7e82e6d91681e64560258b9b421c6df290b85b3973cda0eedfc2453b062",
+      "units": [
+        {
+          "unit_id": "L1-16:01",
+          "primary_category": "E",
+          "goal_zh": "找到日记密码的来源",
+          "source_anchor": "item:note; item:diary; item:key; lock:drawer; door:exit"
+        },
+        {
+          "unit_id": "L1-16:02",
+          "primary_category": "E",
+          "goal_zh": "在储物格中定位上锁日记并取得抽屉线索",
+          "source_anchor": "item:note; item:diary; item:key; lock:drawer; door:exit"
+        },
+        {
+          "unit_id": "L1-16:03",
+          "primary_category": "E",
+          "goal_zh": "按日记指示识别下层抽屉并寻得门钥匙",
+          "source_anchor": "item:note; item:diary; item:key; lock:drawer; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-17",
+      "group": "easy",
+      "title": "符号便签",
+      "source": "level/easy/L1-17/level.json",
+      "source_sha256": "542c8cfc3a5eda218ea0339e0009a226c0d5864bc9e33b02949616601d185df4",
+      "units": [
+        {
+          "unit_id": "L1-17:01",
+          "primary_category": "E",
+          "goal_zh": "搜集分散的符号数值便签",
+          "source_anchor": "item:card; item:s_star; item:s_tri; item:s_dot; door:exit"
+        },
+        {
+          "unit_id": "L1-17:02",
+          "primary_category": "L",
+          "goal_zh": "按题卡上的符号序列译出门码",
+          "source_anchor": "item:card; item:s_star; item:s_tri; item:s_dot; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-18",
+      "group": "easy",
+      "title": "四色便签",
+      "source": "level/easy/L1-18/level.json",
+      "source_sha256": "cfd6875ff41bf0df776da38fbbf385346382d68c535089f1a9e019ad5e7591e0",
+      "units": [
+        {
+          "unit_id": "L1-18:01",
+          "primary_category": "E",
+          "goal_zh": "在不同位置搜获颜色便签",
+          "source_anchor": "item:card; item:c_yellow; item:c_blue; item:c_pink; item:c_white; door:exit"
+        },
+        {
+          "unit_id": "L1-18:02",
+          "primary_category": "L",
+          "goal_zh": "按色序卡排列各便签的数字",
+          "source_anchor": "item:card; item:c_yellow; item:c_blue; item:c_pink; item:c_white; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-19",
+      "group": "easy",
+      "title": "光束与镜架",
+      "source": "level/easy/L1-19/level.json",
+      "source_sha256": "15f19969e95674900f4c30401a41d909beab0988565e9bd144d63af824217cef",
+      "units": [
+        {
+          "unit_id": "L1-19:01",
+          "primary_category": "S",
+          "goal_zh": "布置反射光路使传感器收到光束",
+          "source_anchor": "item:hint; item:exitkey; lock:cab_lock; door:exit; device:slot"
+        },
+        {
+          "unit_id": "L1-19:02",
+          "primary_category": "E",
+          "goal_zh": "找到传感器释放的正确柜格及钥匙",
+          "source_anchor": "item:hint; item:exitkey; lock:cab_lock; door:exit; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-20",
+      "group": "easy",
+      "title": "外卖账单",
+      "source": "level/easy/L1-20/level.json",
+      "source_sha256": "78e13f204632c5b00aefba4f4254e3254d8ad4648b88799cea857a052f185e8b",
+      "units": [
+        {
+          "unit_id": "L1-20:01",
+          "primary_category": "E",
+          "goal_zh": "找全房间中需计价的食物并定位菜单",
+          "source_anchor": "item:hint; item:menu; door:exit"
+        },
+        {
+          "unit_id": "L1-20:02",
+          "primary_category": "N",
+          "goal_zh": "对照菜单计算总价",
+          "source_anchor": "item:hint; item:menu; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-21",
+      "group": "easy",
+      "title": "房间符号图",
+      "source": "level/easy/L1-21/level.json",
+      "source_sha256": "d61ec018eb7efbe1e14fc8cf7c5d3f8ff91e25e25180d29d95c2998931deb56f",
+      "units": [
+        {
+          "unit_id": "L1-21:01",
+          "primary_category": "E",
+          "goal_zh": "按提示找到四个目标符号及位置索引卡",
+          "source_anchor": "item:hint; item:playlist; door:exit"
+        },
+        {
+          "unit_id": "L1-21:02",
+          "primary_category": "S",
+          "goal_zh": "把符号相对地标的位置映射为数字",
+          "source_anchor": "item:hint; item:playlist; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-22",
+      "group": "easy",
+      "title": "地面测绘",
+      "source": "level/easy/L1-22/level.json",
+      "source_sha256": "9f9e87d7a0b5f658b78ceaf7cc4df187e8acebb4f59d2bad48457573f691b087",
+      "units": [
+        {
+          "unit_id": "L1-22:01",
+          "primary_category": "E",
+          "goal_zh": "依提示找到海景图旁的参照图和地面图形",
+          "source_anchor": "item:hint; door:exit; device:measure"
+        },
+        {
+          "unit_id": "L1-22:02",
+          "primary_category": "S",
+          "goal_zh": "将旋转图样与实物边对应",
+          "source_anchor": "item:hint; door:exit; device:measure"
+        },
+        {
+          "unit_id": "L1-22:03",
+          "primary_category": "N",
+          "goal_zh": "实测指定边并按单位和顺序编码",
+          "source_anchor": "item:hint; door:exit; device:measure"
+        }
+      ]
+    },
+    {
+      "level": "L1-23",
+      "group": "easy",
+      "title": "门口的视角",
+      "source": "level/easy/L1-23/level.json",
+      "source_sha256": "b4dc3138dc8f2988320a04eeac0d7199b174d0c3e32c3405d4780fd6a8e9e5cf",
+      "units": [
+        {
+          "unit_id": "L1-23:01",
+          "primary_category": "E",
+          "goal_zh": "找到柜内记录观察规则的卡片及散布的数字",
+          "source_anchor": "item:card; item:t1; item:t2; item:t3; item:t4; door:exit"
+        },
+        {
+          "unit_id": "L1-23:02",
+          "primary_category": "S",
+          "goal_zh": "从指定视点恢复从左到右的顺序",
+          "source_anchor": "item:card; item:t1; item:t2; item:t3; item:t4; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-24",
+      "group": "easy",
+      "title": "四面墙的画",
+      "source": "level/easy/L1-24/level.json",
+      "source_sha256": "2436ba996bd342bb792193b47062d750417a532e30657304be563adb20f6e51c",
+      "units": [
+        {
+          "unit_id": "L1-24:01",
+          "primary_category": "E",
+          "goal_zh": "找到隐藏的分墙清点规则",
+          "source_anchor": "item:hint; item:rule; door:exit"
+        },
+        {
+          "unit_id": "L1-24:02",
+          "primary_category": "S",
+          "goal_zh": "用窗户确定实际方位",
+          "source_anchor": "item:hint; item:rule; door:exit"
+        },
+        {
+          "unit_id": "L1-24:03",
+          "primary_category": "N",
+          "goal_zh": "按方向分墙计数",
+          "source_anchor": "item:hint; item:rule; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-25",
+      "group": "easy",
+      "title": "半身像的视线",
+      "source": "level/easy/L1-25/level.json",
+      "source_sha256": "ab8afbda2ee60081e04d764fbb7b6b5564e326f315247d3d79fa22fe41929f15",
+      "units": [
+        {
+          "unit_id": "L1-25:01",
+          "primary_category": "S",
+          "goal_zh": "根据雕像身高次序及注视方向对应墙面标记",
+          "source_anchor": "item:hint; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-26",
+      "group": "easy",
+      "title": "真假话箱子",
+      "source": "level/easy/L1-26/level.json",
+      "source_sha256": "5b5e512eba7e2a58ad3e1fe563f37b0ba55c4be9f2e69113537b085c647f0274",
+      "units": [
+        {
+          "unit_id": "L1-26:01",
+          "primary_category": "L",
+          "goal_zh": "从互斥陈述推出藏钥匙的唯一箱子",
+          "source_anchor": "item:hint; item:boxnote1; item:boxnote2; item:boxnote3; item:exitkey; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-27",
+      "group": "easy",
+      "title": "量水壶",
+      "source": "level/easy/L1-27/level.json",
+      "source_sha256": "8b21cdb97b1679f327c5b37c27336204a85c3bdbaf0b5a653683a762d15dd3a8",
+      "units": [
+        {
+          "unit_id": "L1-27:01",
+          "primary_category": "P",
+          "goal_zh": "用不同容量的壶及倒水操作配出四升水",
+          "source_anchor": "item:hint; door:exit; device:jug_empty; device:jug_fill; device:jug_goal; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-28",
+      "group": "easy",
+      "title": "标语里的字母",
+      "source": "level/easy/L1-28/level.json",
+      "source_sha256": "6d77895788a54c343b2ac1a260707f2919bd42e5bd297edb3a4adb1641ce0385",
+      "units": [
+        {
+          "unit_id": "L1-28:01",
+          "primary_category": "E",
+          "goal_zh": "搜出四处标语",
+          "source_anchor": "item:hint; door:exit"
+        },
+        {
+          "unit_id": "L1-28:02",
+          "primary_category": "L",
+          "goal_zh": "比对字母朝向取得异常字符并组合",
+          "source_anchor": "item:hint; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-29",
+      "group": "easy",
+      "title": "数字关系便签",
+      "source": "level/easy/L1-29/level.json",
+      "source_sha256": "2f3633d450e6b177865e97a9041b3a309bff937e3b89fa5e42b98dc0368a433e",
+      "units": [
+        {
+          "unit_id": "L1-29:01",
+          "primary_category": "E",
+          "goal_zh": "找齐各处的数字关系提示",
+          "source_anchor": "item:hint; item:rel1; item:rel2; item:rel3; door:exit"
+        },
+        {
+          "unit_id": "L1-29:02",
+          "primary_category": "N",
+          "goal_zh": "联立约束求四位数",
+          "source_anchor": "item:hint; item:rel1; item:rel2; item:rel3; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L1-30",
+      "group": "easy",
+      "title": "爸爸的信",
+      "source": "level/easy/L1-30/level.json",
+      "source_sha256": "af3f20ef534a745d97d981d27a07c0fbd81abffd6d8ffaf8a1d4e9b38165e429",
+      "units": [
+        {
+          "unit_id": "L1-30:01",
+          "primary_category": "N",
+          "goal_zh": "用娃娃屋各层亮窗数得出抽屉密码",
+          "source_anchor": "item:hint; item:mom_note; item:photo; lock:drawer_b2; lock:red_box_lock; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-30:02",
+          "primary_category": "E",
+          "goal_zh": "找到对应的书桌抽屉及下一条记录",
+          "source_anchor": "item:hint; item:mom_note; item:photo; lock:drawer_b2; lock:red_box_lock; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-30:03",
+          "primary_category": "L",
+          "goal_zh": "利用打字机变换推出盒码",
+          "source_anchor": "item:hint; item:mom_note; item:photo; lock:drawer_b2; lock:red_box_lock; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-30:04",
+          "primary_category": "E",
+          "goal_zh": "依照记录找到装有照片的红盒",
+          "source_anchor": "item:hint; item:mom_note; item:photo; lock:drawer_b2; lock:red_box_lock; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-30:05",
+          "primary_category": "S",
+          "goal_zh": "按照片把四只玩具归到各自主人的位置",
+          "source_anchor": "item:hint; item:mom_note; item:photo; lock:drawer_b2; lock:red_box_lock; door:exit; device:reveal; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-31",
+      "group": "easy",
+      "title": "侦探的信",
+      "source": "level/easy/L1-31/level.json",
+      "source_sha256": "1a3c4f4331a799cd047f25ddedba0848c5826a71b84bdf7fc5f6a3bc5acc56d4",
+      "units": [
+        {
+          "unit_id": "L1-31:01",
+          "primary_category": "N",
+          "goal_zh": "根据停钟的下午时间换算密码",
+          "source_anchor": "item:hint; item:page; item:card; lock:drawer_b2; lock:toolbox_lock; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-31:02",
+          "primary_category": "E",
+          "goal_zh": "定位藏有案卷的指定抽屉",
+          "source_anchor": "item:hint; item:page; item:card; lock:drawer_b2; lock:toolbox_lock; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-31:03",
+          "primary_category": "P",
+          "goal_zh": "用铅笔拓出撕去页的压痕",
+          "source_anchor": "item:hint; item:page; item:card; lock:drawer_b2; lock:toolbox_lock; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-31:04",
+          "primary_category": "E",
+          "goal_zh": "按文字线索定位白色衣柜内的隐形标记",
+          "source_anchor": "item:hint; item:page; item:card; lock:drawer_b2; lock:toolbox_lock; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-31:05",
+          "primary_category": "P",
+          "goal_zh": "用特殊照明显出出口密码",
+          "source_anchor": "item:hint; item:page; item:card; lock:drawer_b2; lock:toolbox_lock; door:exit; device:reveal"
+        }
+      ]
+    },
+    {
+      "level": "L1-32",
+      "group": "easy",
+      "title": "档案员的归还凭据",
+      "source": "level/easy/L1-32/level.json",
+      "source_sha256": "0f72266c630b89f019882fc157838abe3fec11e7c3e851deb056bf81259b6212",
+      "units": [
+        {
+          "unit_id": "L1-32:01",
+          "primary_category": "N",
+          "goal_zh": "将停钟读数换成抽屉密码",
+          "source_anchor": "item:hint; item:page; item:boxkey; item:card; lock:drawer_b2; lock:archive_toolbox; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-32:02",
+          "primary_category": "E",
+          "goal_zh": "依据记录定位下柜第二格",
+          "source_anchor": "item:hint; item:page; item:boxkey; item:card; lock:drawer_b2; lock:archive_toolbox; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-32:03",
+          "primary_category": "E",
+          "goal_zh": "按线索定位埋在盆土里的工具箱钥匙",
+          "source_anchor": "item:hint; item:page; item:boxkey; item:card; lock:drawer_b2; lock:archive_toolbox; door:exit; device:reveal"
+        },
+        {
+          "unit_id": "L1-32:04",
+          "primary_category": "P",
+          "goal_zh": "拓出撕页留下的离开记录",
+          "source_anchor": "item:hint; item:page; item:boxkey; item:card; lock:drawer_b2; lock:archive_toolbox; door:exit; device:reveal"
+        }
+      ]
+    },
+    {
+      "level": "L1-33",
+      "group": "easy",
+      "title": "船长的应急物资",
+      "source": "level/easy/L1-33/level.json",
+      "source_sha256": "54320ac68e058a250bed4efa9758ee7c784ac0bc66fd2597a133bb38f749152b",
+      "units": [
+        {
+          "unit_id": "L1-33:01",
+          "primary_category": "P",
+          "goal_zh": "量取规定水量以释放相机",
+          "source_anchor": "item:hint; item:page; item:log; lock:camera_compartment; lock:departure_supplies; door:exit; device:jug_empty; device:jug_fill; device:jug_goal; device:slot"
+        },
+        {
+          "unit_id": "L1-33:02",
+          "primary_category": "E",
+          "goal_zh": "找到左墙边被释放的相机盒",
+          "source_anchor": "item:hint; item:page; item:log; lock:camera_compartment; lock:departure_supplies; door:exit; device:jug_empty; device:jug_fill; device:jug_goal; device:slot"
+        },
+        {
+          "unit_id": "L1-33:03",
+          "primary_category": "E",
+          "goal_zh": "根据发货记录定位远处货签并用相机辨读",
+          "source_anchor": "item:hint; item:page; item:log; lock:camera_compartment; lock:departure_supplies; door:exit; device:jug_empty; device:jug_fill; device:jug_goal; device:slot"
+        },
+        {
+          "unit_id": "L1-33:04",
+          "primary_category": "E",
+          "goal_zh": "用货签信息识别并打开指定的第二格抽屉",
+          "source_anchor": "item:hint; item:page; item:log; lock:camera_compartment; lock:departure_supplies; door:exit; device:jug_empty; device:jug_fill; device:jug_goal; device:slot"
+        },
+        {
+          "unit_id": "L1-33:05",
+          "primary_category": "P",
+          "goal_zh": "给出口屏供电以显出最后的信息",
+          "source_anchor": "item:hint; item:page; item:log; lock:camera_compartment; lock:departure_supplies; door:exit; device:jug_empty; device:jug_fill; device:jug_goal; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-34",
+      "group": "easy",
+      "title": "修复师抢救藏品",
+      "source": "level/easy/L1-34/level.json",
+      "source_sha256": "540578346cec6e3625c1c29b0fd04ce77bf3eda84b36566b8611ac0c2dd5e8c6",
+      "units": [
+        {
+          "unit_id": "L1-34:01",
+          "primary_category": "P",
+          "goal_zh": "打碎指定小罐取得工具箱钥匙",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:optics; item:exitkey; lock:inspection_kit; lock:mirror_drawer; lock:sensor_key_drawer; door:exit; device:slot"
+        },
+        {
+          "unit_id": "L1-34:02",
+          "primary_category": "E",
+          "goal_zh": "辨认藏有检查用具与记录的工具箱",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:optics; item:exitkey; lock:inspection_kit; lock:mirror_drawer; lock:sensor_key_drawer; door:exit; device:slot"
+        },
+        {
+          "unit_id": "L1-34:03",
+          "primary_category": "P",
+          "goal_zh": "用紫外光显出检查标记",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:optics; item:exitkey; lock:inspection_kit; lock:mirror_drawer; lock:sensor_key_drawer; door:exit; device:slot"
+        },
+        {
+          "unit_id": "L1-34:04",
+          "primary_category": "E",
+          "goal_zh": "按标记定位第二格下柜里的镜子和光学说明",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:optics; item:exitkey; lock:inspection_kit; lock:mirror_drawer; lock:sensor_key_drawer; door:exit; device:slot"
+        },
+        {
+          "unit_id": "L1-34:05",
+          "primary_category": "S",
+          "goal_zh": "调整反射光路对准传感器",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:optics; item:exitkey; lock:inspection_kit; lock:mirror_drawer; lock:sensor_key_drawer; door:exit; device:slot"
+        },
+        {
+          "unit_id": "L1-34:06",
+          "primary_category": "E",
+          "goal_zh": "找到传感器释放的藏钥匙柜格",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:optics; item:exitkey; lock:inspection_kit; lock:mirror_drawer; lock:sensor_key_drawer; door:exit; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-35",
+      "group": "easy",
+      "title": "外婆的礼物",
+      "source": "level/easy/L1-35/level.json",
+      "source_sha256": "c8a640b651ffa95b174213c2099dc427de09142aabafd6a28ff46643c273fc42",
+      "units": [
+        {
+          "unit_id": "L1-35:01",
+          "primary_category": "L",
+          "goal_zh": "通过打字机变换得出礼盒密码",
+          "source_anchor": "item:hint; item:photo; lock:gift_box; lock:last_letter_drawer; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-35:02",
+          "primary_category": "E",
+          "goal_zh": "根据记录找到存着家庭照片的礼盒",
+          "source_anchor": "item:hint; item:photo; lock:gift_box; lock:last_letter_drawer; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-35:03",
+          "primary_category": "S",
+          "goal_zh": "按照片把各玩具放回姓名垫",
+          "source_anchor": "item:hint; item:photo; lock:gift_box; lock:last_letter_drawer; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-35:04",
+          "primary_category": "E",
+          "goal_zh": "找到玩具机关释放的下柜隔层及末封信",
+          "source_anchor": "item:hint; item:photo; lock:gift_box; lock:last_letter_drawer; door:exit; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-35:05",
+          "primary_category": "P",
+          "goal_zh": "用灯光显出末封信中的信息",
+          "source_anchor": "item:hint; item:photo; lock:gift_box; lock:last_letter_drawer; door:exit; device:reveal; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-36",
+      "group": "easy",
+      "title": "未发出的求救信",
+      "source": "level/easy/L1-36/level.json",
+      "source_sha256": "dea2f3665a0c20a119d14d6e7838792e219c9639bf6bfb0d6df284cace21052f",
+      "units": [
+        {
+          "unit_id": "L1-36:01",
+          "primary_category": "E",
+          "goal_zh": "找齐广播记录要求的四件物资",
+          "source_anchor": "item:hint; item:broadcast_note; item:exitkey; lock:power_supplies; lock:detector_drawer; door:exit; device:scale; device:screen"
+        },
+        {
+          "unit_id": "L1-36:02",
+          "primary_category": "N",
+          "goal_zh": "由称量结果得出物资盒密码",
+          "source_anchor": "item:hint; item:broadcast_note; item:exitkey; lock:power_supplies; lock:detector_drawer; door:exit; device:scale; device:screen"
+        },
+        {
+          "unit_id": "L1-36:03",
+          "primary_category": "T",
+          "goal_zh": "按供电和控制顺序恢复电视广播",
+          "source_anchor": "item:hint; item:broadcast_note; item:exitkey; lock:power_supplies; lock:detector_drawer; door:exit; device:scale; device:screen"
+        },
+        {
+          "unit_id": "L1-36:04",
+          "primary_category": "E",
+          "goal_zh": "依广播定位装探测器的储物格",
+          "source_anchor": "item:hint; item:broadcast_note; item:exitkey; lock:power_supplies; lock:detector_drawer; door:exit; device:scale; device:screen"
+        },
+        {
+          "unit_id": "L1-36:05",
+          "primary_category": "E",
+          "goal_zh": "用探测器确认藏钥匙的位置",
+          "source_anchor": "item:hint; item:broadcast_note; item:exitkey; lock:power_supplies; lock:detector_drawer; door:exit; device:scale; device:screen"
+        }
+      ]
+    },
+    {
+      "level": "L1-37",
+      "group": "easy",
+      "title": "园丁的温室记录",
+      "source": "level/easy/L1-37/level.json",
+      "source_sha256": "50e99b918ab324b656ad6669cf5a1e273a85d9b4789f3e070836ed13206db52e",
+      "units": [
+        {
+          "unit_id": "L1-37:01",
+          "primary_category": "S",
+          "goal_zh": "按参照图匹配花圃轮廓的标记边",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:exitkey; item:log; lock:trowel_drawer; lock:water_toolbox; door:exit; device:measure"
+        },
+        {
+          "unit_id": "L1-37:02",
+          "primary_category": "N",
+          "goal_zh": "实测指定边并组成抽屉密码",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:exitkey; item:log; lock:trowel_drawer; lock:water_toolbox; door:exit; device:measure"
+        },
+        {
+          "unit_id": "L1-37:03",
+          "primary_category": "E",
+          "goal_zh": "找到正确的第二格抽屉和园艺工具",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:exitkey; item:log; lock:trowel_drawer; lock:water_toolbox; door:exit; device:measure"
+        },
+        {
+          "unit_id": "L1-37:04",
+          "primary_category": "E",
+          "goal_zh": "依记录确定埋钥匙的花盆",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:exitkey; item:log; lock:trowel_drawer; lock:water_toolbox; door:exit; device:measure"
+        },
+        {
+          "unit_id": "L1-37:05",
+          "primary_category": "P",
+          "goal_zh": "用水把瓶底的钥匙浮起",
+          "source_anchor": "item:hint; item:boxkey; item:page; item:exitkey; item:log; lock:trowel_drawer; lock:water_toolbox; door:exit; device:measure"
+        }
+      ]
+    },
+    {
+      "level": "L1-38",
+      "group": "easy",
+      "title": "舞台监督的谢幕信",
+      "source": "level/easy/L1-38/level.json",
+      "source_sha256": "376abfc7fcb543f7b1cdb3e79e98399f048be9f42960def21e7f37896097ae86",
+      "units": [
+        {
+          "unit_id": "L1-38:01",
+          "primary_category": "P",
+          "goal_zh": "用重道具触发压力板",
+          "source_anchor": "item:hint; item:cast; lock:paper_interlock; lock:prop_box; door:exit; device:plate; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-38:02",
+          "primary_category": "E",
+          "goal_zh": "找到联锁释放的纸张抽屉",
+          "source_anchor": "item:hint; item:cast; lock:paper_interlock; lock:prop_box; door:exit; device:plate; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-38:03",
+          "primary_category": "L",
+          "goal_zh": "利用打字机转换门旁牌号得到道具盒密码",
+          "source_anchor": "item:hint; item:cast; lock:paper_interlock; lock:prop_box; door:exit; device:plate; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-38:04",
+          "primary_category": "E",
+          "goal_zh": "找到存放演出名单的道具盒",
+          "source_anchor": "item:hint; item:cast; lock:paper_interlock; lock:prop_box; door:exit; device:plate; device:reveal; device:slot"
+        },
+        {
+          "unit_id": "L1-38:05",
+          "primary_category": "T",
+          "goal_zh": "一边保持压力板受压一边按名单完成玩偶和彩垫的配对",
+          "source_anchor": "item:hint; item:cast; lock:paper_interlock; lock:prop_box; door:exit; device:plate; device:reveal; device:slot"
+        }
+      ]
+    },
+    {
+      "level": "L1-39",
+      "group": "easy",
+      "title": "探险队的返程信",
+      "source": "level/easy/L1-39/level.json",
+      "source_sha256": "a8e393ad9ce7072f4fd90937985295ae932e849006caa01acc2b4cf2f052a15e",
+      "units": [
+        {
+          "unit_id": "L1-39:01",
+          "primary_category": "S",
+          "goal_zh": "连通供水管网",
+          "source_anchor": "item:hint; item:key; item:page; item:last_page; lock:water_line_drawer; lock:hammer_drawer; door:exit; device:reveal; device:rotator"
+        },
+        {
+          "unit_id": "L1-39:02",
+          "primary_category": "E",
+          "goal_zh": "找到水路机关释放的第二格物资抽屉",
+          "source_anchor": "item:hint; item:key; item:page; item:last_page; lock:water_line_drawer; lock:hammer_drawer; door:exit; device:reveal; device:rotator"
+        },
+        {
+          "unit_id": "L1-39:03",
+          "primary_category": "P",
+          "goal_zh": "注水显出水箱底部的返程信息",
+          "source_anchor": "item:hint; item:key; item:page; item:last_page; lock:water_line_drawer; lock:hammer_drawer; door:exit; device:reveal; device:rotator"
+        },
+        {
+          "unit_id": "L1-39:04",
+          "primary_category": "E",
+          "goal_zh": "根据返程信息定位藏锤子的抽屉",
+          "source_anchor": "item:hint; item:key; item:page; item:last_page; lock:water_line_drawer; lock:hammer_drawer; door:exit; device:reveal; device:rotator"
+        },
+        {
+          "unit_id": "L1-39:05",
+          "primary_category": "P",
+          "goal_zh": "用锤打开密封钥匙罐",
+          "source_anchor": "item:hint; item:key; item:page; item:last_page; lock:water_line_drawer; lock:hammer_drawer; door:exit; device:reveal; device:rotator"
+        }
+      ]
+    },
+    {
+      "level": "H1-01",
+      "group": "medium-a",
+      "title": "门厅与两间房",
+      "source": "level/medium-a/H1-01/level.json",
+      "source_sha256": "b9ca64446224f2e33168a66d64b15d9f431697517e40d6b70e015a3366a4effe",
+      "units": [
+        {
+          "unit_id": "H1-01:01",
+          "primary_category": "E",
+          "goal_zh": "找到最初提供日记密码的便签",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-01:02",
+          "primary_category": "E",
+          "goal_zh": "定位上锁日记取得办公室门码",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-01:03",
+          "primary_category": "E",
+          "goal_zh": "跨房间搜得下层抽屉的密码纸",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-01:04",
+          "primary_category": "E",
+          "goal_zh": "辨认正确的下层抽屉并取回前门钥匙",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:drawer; door:office; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-02",
+      "group": "medium-a",
+      "title": "两地的半张密码",
+      "source": "level/medium-a/H1-02/level.json",
+      "source_sha256": "722eb46b7b8f42dfeeb2e92c8dc045fc1f502e2c660284e2928e5e5e9b7b118b",
+      "units": [
+        {
+          "unit_id": "H1-02:01",
+          "primary_category": "E",
+          "goal_zh": "找到办公室门码来源",
+          "source_anchor": "item:note; item:half_a; item:half_b; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-02:02",
+          "primary_category": "E",
+          "goal_zh": "搜得办公室一侧的前门密码半片",
+          "source_anchor": "item:note; item:half_a; item:half_b; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-02:03",
+          "primary_category": "E",
+          "goal_zh": "跨房间找到另一半记录",
+          "source_anchor": "item:note; item:half_a; item:half_b; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-02:04",
+          "primary_category": "L",
+          "goal_zh": "按起止说明组合前门密码",
+          "source_anchor": "item:note; item:half_a; item:half_b; door:office; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-03",
+      "group": "medium-a",
+      "title": "远端开关",
+      "source": "level/medium-a/H1-03/level.json",
+      "source_sha256": "ef0038ac56b0a2ee46ca33f12a575eb47f51e165621976752e717863078a2c65",
+      "units": [
+        {
+          "unit_id": "H1-03:01",
+          "primary_category": "E",
+          "goal_zh": "搜得日记密码纸",
+          "source_anchor": "item:note; item:diary; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-03:02",
+          "primary_category": "E",
+          "goal_zh": "定位日记取得办公室门码与跨房间说明",
+          "source_anchor": "item:note; item:diary; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-03:03",
+          "primary_category": "E",
+          "goal_zh": "依日记找到控制前门的洗衣房开关",
+          "source_anchor": "item:note; item:diary; door:office; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-04",
+      "group": "medium-a",
+      "title": "餐厅与厨房",
+      "source": "level/medium-a/H1-04/level.json",
+      "source_sha256": "f83796e1a47aa4580fcbc8ae3053de7958e894a13859bee4ee639ace5099c2ab",
+      "units": [
+        {
+          "unit_id": "H1-04:01",
+          "primary_category": "N",
+          "goal_zh": "按卡片所列类别清点餐厅物件",
+          "source_anchor": "item:card; item:key; lock:cab; door:dining; door:exit"
+        },
+        {
+          "unit_id": "H1-04:02",
+          "primary_category": "E",
+          "goal_zh": "根据炉头这一地标认出下方的目标柜并取钥匙",
+          "source_anchor": "item:card; item:key; lock:cab; door:dining; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-05",
+      "group": "medium-a",
+      "title": "餐厅与壁炉",
+      "source": "level/medium-a/H1-05/level.json",
+      "source_sha256": "9b182f4d79aa788eb60ef69f2d29139dd1b0c35b6882bfd2b8aa03c3bba268d8",
+      "units": [
+        {
+          "unit_id": "H1-05:01",
+          "primary_category": "N",
+          "goal_zh": "按卡片清点餐厅陈设",
+          "source_anchor": "item:card; item:key; lock:cab; door:dining; door:exit"
+        },
+        {
+          "unit_id": "H1-05:02",
+          "primary_category": "E",
+          "goal_zh": "按面向壁炉时的右侧关系定位藏钥匙的柜子",
+          "source_anchor": "item:card; item:key; lock:cab; door:dining; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-06",
+      "group": "medium-a",
+      "title": "双胞胎办公室",
+      "source": "level/medium-a/H1-06/level.json",
+      "source_sha256": "ac6a28f81c632ec54c52aa7e642d985af59b454fff6f04102f02de53100c5d87",
+      "units": [
+        {
+          "unit_id": "H1-06:01",
+          "primary_category": "E",
+          "goal_zh": "用植物地标在相似办公室里找出真正的密码纸",
+          "source_anchor": "item:card; item:real; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-07",
+      "group": "medium-a",
+      "title": "门厅汇流",
+      "source": "level/medium-a/H1-07/level.json",
+      "source_sha256": "a161a00e2d98671109de03b395956e400019bbd374d3e3d1437d948fd20bbe20",
+      "units": [
+        {
+          "unit_id": "H1-07:01",
+          "primary_category": "E",
+          "goal_zh": "找到办公室门码的便签",
+          "source_anchor": "item:note; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-07:02",
+          "primary_category": "E",
+          "goal_zh": "找到办公室内的抽屉密码半片",
+          "source_anchor": "item:note; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-07:03",
+          "primary_category": "E",
+          "goal_zh": "跨房间搜到卫生间的另一半",
+          "source_anchor": "item:note; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-07:04",
+          "primary_category": "L",
+          "goal_zh": "组合抽屉密码",
+          "source_anchor": "item:note; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:exit"
+        },
+        {
+          "unit_id": "H1-07:05",
+          "primary_category": "E",
+          "goal_zh": "识别洗衣房对应的抽屉取出钥匙",
+          "source_anchor": "item:note; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-08",
+      "group": "medium-a",
+      "title": "餐厅外的开放区",
+      "source": "level/medium-a/H1-08/level.json",
+      "source_sha256": "4a87cb8641ec75b09ef286978fb570b127f46132caf122113c78880d968aaa85",
+      "units": [
+        {
+          "unit_id": "H1-08:01",
+          "primary_category": "N",
+          "goal_zh": "按餐厅家具数量求门码",
+          "source_anchor": "item:card; item:half_a; item:half_b; item:key; lock:drawer; door:dining; door:exit"
+        },
+        {
+          "unit_id": "H1-08:02",
+          "primary_category": "E",
+          "goal_zh": "在炉头下方定位第一张半码纸",
+          "source_anchor": "item:card; item:half_a; item:half_b; item:key; lock:drawer; door:dining; door:exit"
+        },
+        {
+          "unit_id": "H1-08:03",
+          "primary_category": "E",
+          "goal_zh": "在客厅定位第二张半码纸",
+          "source_anchor": "item:card; item:half_a; item:half_b; item:key; lock:drawer; door:dining; door:exit"
+        },
+        {
+          "unit_id": "H1-08:04",
+          "primary_category": "L",
+          "goal_zh": "依前后半顺序复原抽屉密码",
+          "source_anchor": "item:card; item:half_a; item:half_b; item:key; lock:drawer; door:dining; door:exit"
+        },
+        {
+          "unit_id": "H1-08:05",
+          "primary_category": "E",
+          "goal_zh": "找到此码对应的客厅抽屉及钥匙",
+          "source_anchor": "item:card; item:half_a; item:half_b; item:key; lock:drawer; door:dining; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-09",
+      "group": "medium-a",
+      "title": "从卫生间出发",
+      "source": "level/medium-a/H1-09/level.json",
+      "source_sha256": "ffbd83b8dbf947e30f0b2c644da1136dc3ed33ae725003546f47ba5a3120ded8",
+      "units": [
+        {
+          "unit_id": "H1-09:01",
+          "primary_category": "E",
+          "goal_zh": "在卫生间搜得日记的密码来源",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:office; door:bath; door:exit"
+        },
+        {
+          "unit_id": "H1-09:02",
+          "primary_category": "E",
+          "goal_zh": "找到日记取得浴室门码并识别要保留的半码",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:office; door:bath; door:exit"
+        },
+        {
+          "unit_id": "H1-09:03",
+          "primary_category": "E",
+          "goal_zh": "找到载有后半密码的备忘",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:office; door:bath; door:exit"
+        },
+        {
+          "unit_id": "H1-09:04",
+          "primary_category": "T",
+          "goal_zh": "将起点日记的信息和之后所得信息用于同一抽屉",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:office; door:bath; door:exit"
+        },
+        {
+          "unit_id": "H1-09:05",
+          "primary_category": "E",
+          "goal_zh": "识别办公室被指定的抽屉并取钥匙",
+          "source_anchor": "item:note; item:diary; item:memo; item:key; lock:office; door:bath; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "H1-10",
+      "group": "medium-a",
+      "title": "全屋真假线索",
+      "source": "level/medium-a/H1-10/level.json",
+      "source_sha256": "c61fd9c8a8cafc584a28f109148f468e976fef4422b0065fdac551461ca28b08",
+      "units": [
+        {
+          "unit_id": "H1-10:01",
+          "primary_category": "E",
+          "goal_zh": "搜得日记密码来源",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:02",
+          "primary_category": "E",
+          "goal_zh": "依据便签找到对应的上锁日记",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:03",
+          "primary_category": "N",
+          "goal_zh": "按日记清点办公室家具",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:04",
+          "primary_category": "E",
+          "goal_zh": "找到能释放餐厅门的洗衣房开关",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:05",
+          "primary_category": "E",
+          "goal_zh": "按炉头定位藏前半密码的柜子",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:06",
+          "primary_category": "E",
+          "goal_zh": "在餐厅桌边找到后半密码",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:07",
+          "primary_category": "L",
+          "goal_zh": "还原完整抽屉密码",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        },
+        {
+          "unit_id": "H1-10:08",
+          "primary_category": "E",
+          "goal_zh": "定位洗衣房的目标抽屉取得前门钥匙",
+          "source_anchor": "item:note; item:diary; item:stove; item:table; item:key; lock:laundry; door:office; door:exit; door:dining"
+        }
+      ]
+    },
+    {
+      "level": "H1-11",
+      "group": "medium-a",
+      "title": "穿过门厅的全屋调查",
+      "source": "level/medium-a/H1-11/level.json",
+      "source_sha256": "f65754db9fe6d776f5176f08b24c681ddfa7d596890ff757fb959e122968aeab",
+      "units": [
+        {
+          "unit_id": "H1-11:01",
+          "primary_category": "N",
+          "goal_zh": "按卡片清点办公室物体",
+          "source_anchor": "item:card; item:hallnote; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:hall; door:exit"
+        },
+        {
+          "unit_id": "H1-11:02",
+          "primary_category": "E",
+          "goal_zh": "找到含门厅密码与下一步位置说明的便签",
+          "source_anchor": "item:card; item:hallnote; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:hall; door:exit"
+        },
+        {
+          "unit_id": "H1-11:03",
+          "primary_category": "E",
+          "goal_zh": "找到炉头正下方的半码纸",
+          "source_anchor": "item:card; item:hallnote; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:hall; door:exit"
+        },
+        {
+          "unit_id": "H1-11:04",
+          "primary_category": "E",
+          "goal_zh": "找到面对壁炉右侧的半码纸",
+          "source_anchor": "item:card; item:hallnote; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:hall; door:exit"
+        },
+        {
+          "unit_id": "H1-11:05",
+          "primary_category": "L",
+          "goal_zh": "合并两张记录求得抽屉密码",
+          "source_anchor": "item:card; item:hallnote; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:hall; door:exit"
+        },
+        {
+          "unit_id": "H1-11:06",
+          "primary_category": "E",
+          "goal_zh": "跨房间定位指定抽屉取得花园门钥匙",
+          "source_anchor": "item:card; item:hallnote; item:half_a; item:half_b; item:key; lock:drawer; door:office; door:hall; door:exit"
+        }
+      ]
+    },
+    {
+      "level": "L2-01",
+      "group": "medium-b",
+      "title": "维修储物间",
+      "source": "level/medium-b/L2-01/level_R01.py",
+      "source_sha256": "007f4e78435dd13f1a75354a91dd12d8e456ca9a34de238211c242a2a0a4eaa5",
+      "units": [
+        {
+          "unit_id": "L2-01:01",
+          "primary_category": "E",
+          "goal_zh": "按颜色清单在房间找齐各组散球",
+          "source_anchor": "runtime/native_milestones.json#L2-01/balls_red"
+        },
+        {
+          "unit_id": "L2-01:02",
+          "primary_category": "N",
+          "goal_zh": "按纸条指定颜色顺序计数取得抽屉码",
+          "source_anchor": "runtime/native_milestones.json#L2-01/drawer_unlock"
+        },
+        {
+          "unit_id": "L2-01:03",
+          "primary_category": "E",
+          "goal_zh": "判断密码对应的是抽屉柜的中层并找到内藏数字纸",
+          "source_anchor": "runtime/native_milestones.json#L2-01/drawer_open"
+        },
+        {
+          "unit_id": "L2-01:04",
+          "primary_category": "E",
+          "goal_zh": "按数字纸找到对应工具箱取得螺丝刀",
+          "source_anchor": "runtime/native_milestones.json#L2-01/toolbox_unlock"
+        },
+        {
+          "unit_id": "L2-01:05",
+          "primary_category": "P",
+          "goal_zh": "识别通风格栅的紧固方式并释放格栅",
+          "source_anchor": "runtime/native_milestones.json#L2-01/free_grille"
+        }
+      ]
+    },
+    {
+      "level": "L2-02",
+      "group": "medium-b",
+      "title": "旧式照相馆",
+      "source": "level/medium-b/L2-02/level_R02.py",
+      "source_sha256": "a1c742ad819121330e362205d5f676944efd626a1914fbc359f1a78617c51c0a",
+      "units": [
+        {
+          "unit_id": "L2-02:01",
+          "primary_category": "E",
+          "goal_zh": "从上下抽屉中找到电池",
+          "source_anchor": "runtime/native_milestones.json#L2-02/battery_drawer"
+        },
+        {
+          "unit_id": "L2-02:02",
+          "primary_category": "P",
+          "goal_zh": "让灯箱通电",
+          "source_anchor": "runtime/native_milestones.json#L2-02/power"
+        },
+        {
+          "unit_id": "L2-02:03",
+          "primary_category": "S",
+          "goal_zh": "还原照片拼块",
+          "source_anchor": "runtime/native_milestones.json#L2-02/puzzle_picture"
+        },
+        {
+          "unit_id": "L2-02:04",
+          "primary_category": "E",
+          "goal_zh": "找到灯箱释放的档案抽屉及其中照片",
+          "source_anchor": "runtime/native_milestones.json#L2-02/archive_drawer"
+        },
+        {
+          "unit_id": "L2-02:05",
+          "primary_category": "L",
+          "goal_zh": "按日期排序照片文件号解开相机盒",
+          "source_anchor": "runtime/native_milestones.json#L2-02/case_unlock"
+        }
+      ]
+    },
+    {
+      "level": "L2-03",
+      "group": "medium-b",
+      "title": "缝纫工作间",
+      "source": "level/medium-b/L2-03/level_R03.py",
+      "source_sha256": "9cf899ada80e5c582cb0e52e6a5406d8c71da8397692786268f2c766364739f5",
+      "units": [
+        {
+          "unit_id": "L2-03:01",
+          "primary_category": "S",
+          "goal_zh": "sewing table fabric mounts",
+          "source_anchor": "runtime/native_milestones.json#L2-03/puzzle_1"
+        },
+        {
+          "unit_id": "L2-03:02",
+          "primary_category": "L",
+          "goal_zh": "wooden sewing box",
+          "source_anchor": "runtime/native_milestones.json#L2-03/puzzle_2"
+        },
+        {
+          "unit_id": "L2-03:03",
+          "primary_category": "S",
+          "goal_zh": "linen cabinet patchwork latch",
+          "source_anchor": "runtime/native_milestones.json#L2-03/puzzle_3"
+        },
+        {
+          "unit_id": "L2-03:04",
+          "primary_category": "E",
+          "goal_zh": "找到拼图释放的缝纫台抽屉取线迹布样",
+          "source_anchor": "runtime/native_milestones.json#L2-03/open_s2_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-04",
+      "group": "medium-b",
+      "title": "园艺储藏室",
+      "source": "level/medium-b/L2-04/level_R04.py",
+      "source_sha256": "c31ee8e3f0f011f73eaf13c27680ec950aaede1e336428dbd18033ad79b3b644",
+      "units": [
+        {
+          "unit_id": "L2-04:01",
+          "primary_category": "S",
+          "goal_zh": "irrigation connection board",
+          "source_anchor": "runtime/native_milestones.json#L2-04/puzzle_1"
+        },
+        {
+          "unit_id": "L2-04:02",
+          "primary_category": "P",
+          "goal_zh": "watering bench",
+          "source_anchor": "runtime/native_milestones.json#L2-04/puzzle_2"
+        },
+        {
+          "unit_id": "L2-04:03",
+          "primary_category": "L",
+          "goal_zh": "seed cabinet leaf lock",
+          "source_anchor": "runtime/native_milestones.json#L2-04/puzzle_3"
+        },
+        {
+          "unit_id": "L2-04:04",
+          "primary_category": "E",
+          "goal_zh": "找到灌溉机关释放的工作台抽屉取水壶",
+          "source_anchor": "runtime/native_milestones.json#L2-04/open_s2_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-05",
+      "group": "medium-b",
+      "title": "茶叶备货间",
+      "source": "level/medium-b/L2-05/level_R05.py",
+      "source_sha256": "6f555b42bace183f66c6491c4a53fd5eaa24972896b898d84a35cbcae067aef2",
+      "units": [
+        {
+          "unit_id": "L2-05:01",
+          "primary_category": "N",
+          "goal_zh": "tea sample scale",
+          "source_anchor": "runtime/native_milestones.json#L2-05/puzzle_1"
+        },
+        {
+          "unit_id": "L2-05:02",
+          "primary_category": "L",
+          "goal_zh": "根据分装单完成五罐摆放",
+          "source_anchor": "runtime/native_milestones.json#L2-05/puzzle_2"
+        },
+        {
+          "unit_id": "L2-05:03",
+          "primary_category": "N",
+          "goal_zh": "tea badge chest",
+          "source_anchor": "runtime/native_milestones.json#L2-05/puzzle_3"
+        },
+        {
+          "unit_id": "L2-05:04",
+          "primary_category": "E",
+          "goal_zh": "根据秤台的解锁结果找到存有分装单的样品柜",
+          "source_anchor": "runtime/native_milestones.json#L2-05/open_s2_cover"
+        },
+        {
+          "unit_id": "L2-05:05",
+          "primary_category": "E",
+          "goal_zh": "找到分装机关释放的茶牌抽屉并取得计数参照",
+          "source_anchor": "runtime/native_milestones.json#L2-05/open_s3_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-06",
+      "group": "medium-b",
+      "title": "信号展示维护间",
+      "source": "level/medium-b/L2-06/level_R06.py",
+      "source_sha256": "709e5abab957c732d2b9b9d58beddec226f3d6abf9a9d30788e321309e9bacbd",
+      "units": [
+        {
+          "unit_id": "L2-06:01",
+          "primary_category": "S",
+          "goal_zh": "signal lead patch panel",
+          "source_anchor": "runtime/native_milestones.json#L2-06/puzzle_1"
+        },
+        {
+          "unit_id": "L2-06:02",
+          "primary_category": "L",
+          "goal_zh": "signal lamp recorder",
+          "source_anchor": "runtime/native_milestones.json#L2-06/puzzle_2"
+        },
+        {
+          "unit_id": "L2-06:03",
+          "primary_category": "E",
+          "goal_zh": "signal comparison panel",
+          "source_anchor": "runtime/native_milestones.json#L2-06/puzzle_3"
+        }
+      ]
+    },
+    {
+      "level": "L2-07",
+      "group": "medium-b",
+      "title": "画室",
+      "source": "level/medium-b/L2-07/level_R07.py",
+      "source_sha256": "3ed2133b8ba82738d58ed80172e23e65f028ab29517d256970de25d119996c7b",
+      "units": [
+        {
+          "unit_id": "L2-07:01",
+          "primary_category": "P",
+          "goal_zh": "easel support adjusters",
+          "source_anchor": "runtime/native_milestones.json#L2-07/puzzle_1"
+        },
+        {
+          "unit_id": "L2-07:02",
+          "primary_category": "S",
+          "goal_zh": "colour sample windows",
+          "source_anchor": "runtime/native_milestones.json#L2-07/puzzle_2"
+        },
+        {
+          "unit_id": "L2-07:03",
+          "primary_category": "S",
+          "goal_zh": "kite picture lock",
+          "source_anchor": "runtime/native_milestones.json#L2-07/puzzle_3"
+        },
+        {
+          "unit_id": "L2-07:04",
+          "primary_category": "E",
+          "goal_zh": "定位颜料样品下方藏调色刀的工具抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-07/open_paint_tool_drawer"
+        }
+      ]
+    },
+    {
+      "level": "L2-08",
+      "group": "medium-b",
+      "title": "档案整理室",
+      "source": "level/medium-b/L2-08/level_R08.py",
+      "source_sha256": "c345d5964017b2abc4fc437cd1278706ed65e775e40efa411d050820ac542475",
+      "units": [
+        {
+          "unit_id": "L2-08:01",
+          "primary_category": "L",
+          "goal_zh": "archive index cabinet",
+          "source_anchor": "runtime/native_milestones.json#L2-08/puzzle_1"
+        },
+        {
+          "unit_id": "L2-08:02",
+          "primary_category": "S",
+          "goal_zh": "registration slide viewer",
+          "source_anchor": "runtime/native_milestones.json#L2-08/puzzle_2"
+        },
+        {
+          "unit_id": "L2-08:03",
+          "primary_category": "L",
+          "goal_zh": "archive pattern lock",
+          "source_anchor": "runtime/native_milestones.json#L2-08/puzzle_3"
+        }
+      ]
+    },
+    {
+      "level": "L2-09",
+      "group": "medium-b",
+      "title": "家庭食品储藏间",
+      "source": "level/medium-b/L2-09/level_R09.py",
+      "source_sha256": "307411eee9a4ced7e452d3c8e5fd6ebec69d49074d1b44114ea9118245d5d7f2",
+      "units": [
+        {
+          "unit_id": "L2-09:01",
+          "primary_category": "N",
+          "goal_zh": "pantry weighing station",
+          "source_anchor": "runtime/native_milestones.json#L2-09/puzzle_1"
+        },
+        {
+          "unit_id": "L2-09:02",
+          "primary_category": "L",
+          "goal_zh": "food classification rack",
+          "source_anchor": "runtime/native_milestones.json#L2-09/puzzle_2"
+        },
+        {
+          "unit_id": "L2-09:03",
+          "primary_category": "N",
+          "goal_zh": "recipe case time lock",
+          "source_anchor": "runtime/native_milestones.json#L2-09/puzzle_3"
+        },
+        {
+          "unit_id": "L2-09:04",
+          "primary_category": "E",
+          "goal_zh": "找到称量机关释放的食材卡抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-09/open_s2_cover"
+        },
+        {
+          "unit_id": "L2-09:05",
+          "primary_category": "E",
+          "goal_zh": "找到配餐架释放的时钟抽屉取得时间参照",
+          "source_anchor": "runtime/native_milestones.json#L2-09/open_s3_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-10",
+      "group": "medium-b",
+      "title": "包裹打包间",
+      "source": "level/medium-b/L2-10/level_R10.py",
+      "source_sha256": "3735ad69c633c86aca4ad1663b7c253f08b3e4a17b7312e1cedfc108c806b9c0",
+      "units": [
+        {
+          "unit_id": "L2-10:01",
+          "primary_category": "S",
+          "goal_zh": "cargo picture slider",
+          "source_anchor": "runtime/native_milestones.json#L2-10/puzzle_1"
+        },
+        {
+          "unit_id": "L2-10:02",
+          "primary_category": "N",
+          "goal_zh": "推导包裹重量并打开工具抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-10/puzzle_2"
+        },
+        {
+          "unit_id": "L2-10:03",
+          "primary_category": "P",
+          "goal_zh": "用撬片释放搭扣",
+          "source_anchor": "runtime/native_milestones.json#L2-10/puzzle_3"
+        },
+        {
+          "unit_id": "L2-10:04",
+          "primary_category": "E",
+          "goal_zh": "找到货物图板释放的运单抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-10/open_s2_cover"
+        },
+        {
+          "unit_id": "L2-10:05",
+          "primary_category": "E",
+          "goal_zh": "找到包裹标签机关对应的工具抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-10/open_s3_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-11",
+      "group": "medium-b",
+      "title": "洗衣房",
+      "source": "level/medium-b/L2-11/level_R11.py",
+      "source_sha256": "76c93f6c490dd4be32496c0633a6e8ed8e7604d5bf729fc1cc8941ced9f1af73",
+      "units": [
+        {
+          "unit_id": "L2-11:01",
+          "primary_category": "S",
+          "goal_zh": "filter inspection windows",
+          "source_anchor": "runtime/native_milestones.json#L2-11/puzzle_1"
+        },
+        {
+          "unit_id": "L2-11:02",
+          "primary_category": "P",
+          "goal_zh": "drain observation tank",
+          "source_anchor": "runtime/native_milestones.json#L2-11/puzzle_2"
+        },
+        {
+          "unit_id": "L2-11:03",
+          "primary_category": "N",
+          "goal_zh": "button collection box",
+          "source_anchor": "runtime/native_milestones.json#L2-11/puzzle_3"
+        }
+      ]
+    },
+    {
+      "level": "L2-12",
+      "group": "medium-b",
+      "title": "音乐练习室",
+      "source": "level/medium-b/L2-12/level_R12.py",
+      "source_sha256": "cf5ee49adab4073489ff7a52b2a6a0600d0f594d64a19c48a8f63ea00894a854",
+      "units": [
+        {
+          "unit_id": "L2-12:01",
+          "primary_category": "L",
+          "goal_zh": "practice light box",
+          "source_anchor": "runtime/native_milestones.json#L2-12/puzzle_1"
+        },
+        {
+          "unit_id": "L2-12:02",
+          "primary_category": "L",
+          "goal_zh": "hand-cranked paper roll",
+          "source_anchor": "runtime/native_milestones.json#L2-12/puzzle_2"
+        },
+        {
+          "unit_id": "L2-12:03",
+          "primary_category": "S",
+          "goal_zh": "paired organ pipes",
+          "source_anchor": "runtime/native_milestones.json#L2-12/puzzle_3"
+        },
+        {
+          "unit_id": "L2-12:04",
+          "primary_category": "E",
+          "goal_zh": "找到释放的手柄抽屉并取得驱动件",
+          "source_anchor": "runtime/native_milestones.json#L2-12/open_s2_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-13",
+      "group": "medium-b",
+      "title": "玩具收藏室",
+      "source": "level/medium-b/L2-13/level_R13.py",
+      "source_sha256": "aa3f3dffe49d1118caee532fc060d7b8164772e8258d7ac46d1328f7a71c564b",
+      "units": [
+        {
+          "unit_id": "L2-13:01",
+          "primary_category": "S",
+          "goal_zh": "small railway table",
+          "source_anchor": "runtime/native_milestones.json#L2-13/puzzle_1"
+        },
+        {
+          "unit_id": "L2-13:02",
+          "primary_category": "S",
+          "goal_zh": "two-block display box",
+          "source_anchor": "runtime/native_milestones.json#L2-13/puzzle_2"
+        },
+        {
+          "unit_id": "L2-13:03",
+          "primary_category": "S",
+          "goal_zh": "butterfly pattern box",
+          "source_anchor": "runtime/native_milestones.json#L2-13/puzzle_3"
+        },
+        {
+          "unit_id": "L2-13:04",
+          "primary_category": "E",
+          "goal_zh": "辨认铁轨目标车站对应的货物抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-13/open_s2_cover"
+        },
+        {
+          "unit_id": "L2-13:05",
+          "primary_category": "E",
+          "goal_zh": "找到立方体展示盒下方藏蝴蝶钥匙的抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-13/open_block_reward"
+        }
+      ]
+    },
+    {
+      "level": "L2-14",
+      "group": "medium-b",
+      "title": "运动器材室",
+      "source": "level/medium-b/L2-14/level_R14.py",
+      "source_sha256": "d87ae2aaf89f179159901234cd66b331657f653982b0afa1d68b83e3af000392",
+      "units": [
+        {
+          "unit_id": "L2-14:01",
+          "primary_category": "N",
+          "goal_zh": "scoreboard locker",
+          "source_anchor": "runtime/native_milestones.json#L2-14/puzzle_1"
+        },
+        {
+          "unit_id": "L2-14:02",
+          "primary_category": "L",
+          "goal_zh": "sports bag display",
+          "source_anchor": "runtime/native_milestones.json#L2-14/puzzle_2"
+        },
+        {
+          "unit_id": "L2-14:03",
+          "primary_category": "N",
+          "goal_zh": "medal ribbon cabinet",
+          "source_anchor": "runtime/native_milestones.json#L2-14/puzzle_3"
+        },
+        {
+          "unit_id": "L2-14:04",
+          "primary_category": "E",
+          "goal_zh": "定位插销板下方装有把手的抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-14/open_handle_drawer"
+        }
+      ]
+    },
+    {
+      "level": "L2-15",
+      "group": "medium-b",
+      "title": "露营装备室",
+      "source": "level/medium-b/L2-15/level_R15.py",
+      "source_sha256": "b1a14790b07f8c13653b7469b00aaedc3f4421d1c117f727b7298fc338ae8fa3",
+      "units": [
+        {
+          "unit_id": "L2-15:01",
+          "primary_category": "S",
+          "goal_zh": "camp map and field case",
+          "source_anchor": "runtime/native_milestones.json#L2-15/puzzle_1"
+        },
+        {
+          "unit_id": "L2-15:02",
+          "primary_category": "S",
+          "goal_zh": "rope route board",
+          "source_anchor": "runtime/native_milestones.json#L2-15/puzzle_2"
+        },
+        {
+          "unit_id": "L2-15:03",
+          "primary_category": "T",
+          "goal_zh": "numbered camp photograph",
+          "source_anchor": "runtime/native_milestones.json#L2-15/puzzle_3"
+        },
+        {
+          "unit_id": "L2-15:04",
+          "primary_category": "E",
+          "goal_zh": "找到野外箱机关释放的钩杆抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-15/open_s2_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-16",
+      "group": "medium-b",
+      "title": "盥洗用品储藏间",
+      "source": "level/medium-b/L2-16/level_R16.py",
+      "source_sha256": "d1f3a830d97e05b5d46cd21a4dea74f4a03970fde78e6190a4201f981eceea33",
+      "units": [
+        {
+          "unit_id": "L2-16:01",
+          "primary_category": "S",
+          "goal_zh": "mirror-frame bottle cabinet",
+          "source_anchor": "runtime/native_milestones.json#L2-16/puzzle_1"
+        },
+        {
+          "unit_id": "L2-16:02",
+          "primary_category": "S",
+          "goal_zh": "fixed bottle height cabinet",
+          "source_anchor": "runtime/native_milestones.json#L2-16/puzzle_2"
+        },
+        {
+          "unit_id": "L2-16:03",
+          "primary_category": "S",
+          "goal_zh": "comb direction box",
+          "source_anchor": "runtime/native_milestones.json#L2-16/puzzle_3"
+        },
+        {
+          "unit_id": "L2-16:04",
+          "primary_category": "E",
+          "goal_zh": "在瓶具中识别并取出正确清洁剂",
+          "source_anchor": "runtime/native_milestones.json#L2-16/take_correct_cleaner"
+        }
+      ]
+    },
+    {
+      "level": "L2-17",
+      "group": "medium-b",
+      "title": "客房布草间",
+      "source": "level/medium-b/L2-17/level_R17.py",
+      "source_sha256": "438727593c4f6cdb18307785dd666aba40bf39cc455ab81070be4b6989c7c51d",
+      "units": [
+        {
+          "unit_id": "L2-17:01",
+          "primary_category": "L",
+          "goal_zh": "two linen issue racks",
+          "source_anchor": "runtime/native_milestones.json#L2-17/puzzle_1"
+        },
+        {
+          "unit_id": "L2-17:02",
+          "primary_category": "N",
+          "goal_zh": "cloth width measuring bench",
+          "source_anchor": "runtime/native_milestones.json#L2-17/puzzle_2"
+        },
+        {
+          "unit_id": "L2-17:03",
+          "primary_category": "L",
+          "goal_zh": "woven band linen case",
+          "source_anchor": "runtime/native_milestones.json#L2-17/puzzle_3"
+        },
+        {
+          "unit_id": "L2-17:04",
+          "primary_category": "E",
+          "goal_zh": "找到货架机关对应的中央量规抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-17/open_s2_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-18",
+      "group": "medium-b",
+      "title": "书籍修补间",
+      "source": "level/medium-b/L2-18/level_R18.py",
+      "source_sha256": "14c957369b2fc24d922f1fff0bb6183b636196569819bc2285c60292f439ec0a",
+      "units": [
+        {
+          "unit_id": "L2-18:01",
+          "primary_category": "L",
+          "goal_zh": "shelf number order",
+          "source_anchor": "runtime/native_milestones.json#L2-18/puzzle_1"
+        },
+        {
+          "unit_id": "L2-18:02",
+          "primary_category": "T",
+          "goal_zh": "torn accession slip",
+          "source_anchor": "runtime/native_milestones.json#L2-18/puzzle_2"
+        },
+        {
+          "unit_id": "L2-18:03",
+          "primary_category": "L",
+          "goal_zh": "missing leaf book",
+          "source_anchor": "runtime/native_milestones.json#L2-18/puzzle_3"
+        },
+        {
+          "unit_id": "L2-18:04",
+          "primary_category": "E",
+          "goal_zh": "找齐能装订成完整册子的折页组",
+          "source_anchor": "runtime/native_milestones.json#L2-18/take_valid_folio_0"
+        }
+      ]
+    },
+    {
+      "level": "L2-19",
+      "group": "medium-b",
+      "title": "陶艺工作间",
+      "source": "level/medium-b/L2-19/level_R19.py",
+      "source_sha256": "499e51e3b4dec685517dccf16c06b44f180afb0d2dcff8534d88acca7e6ce05b",
+      "units": [
+        {
+          "unit_id": "L2-19:01",
+          "primary_category": "S",
+          "goal_zh": "bird ceramic plaque",
+          "source_anchor": "runtime/native_milestones.json#L2-19/puzzle_1"
+        },
+        {
+          "unit_id": "L2-19:02",
+          "primary_category": "P",
+          "goal_zh": "porcelain backlight",
+          "source_anchor": "runtime/native_milestones.json#L2-19/puzzle_2"
+        },
+        {
+          "unit_id": "L2-19:03",
+          "primary_category": "T",
+          "goal_zh": "tracing frame",
+          "source_anchor": "runtime/native_milestones.json#L2-19/puzzle_3"
+        },
+        {
+          "unit_id": "L2-19:04",
+          "primary_category": "E",
+          "goal_zh": "找到陶瓷拼片机关对应的电池抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-19/open_s2_cover"
+        },
+        {
+          "unit_id": "L2-19:05",
+          "primary_category": "E",
+          "goal_zh": "找到背光机关释放的描图片抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-19/open_s3_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-20",
+      "group": "medium-b",
+      "title": "修鞋工作间",
+      "source": "level/medium-b/L2-20/level_R20.py",
+      "source_sha256": "dec365e28ab3585e522323a91a26abf084455588e265cf709241b7fd194b041c",
+      "units": [
+        {
+          "unit_id": "L2-20:01",
+          "primary_category": "L",
+          "goal_zh": "sole pair inspection rack",
+          "source_anchor": "runtime/native_milestones.json#L2-20/puzzle_1"
+        },
+        {
+          "unit_id": "L2-20:02",
+          "primary_category": "N",
+          "goal_zh": "leather measuring bench",
+          "source_anchor": "runtime/native_milestones.json#L2-20/puzzle_2"
+        },
+        {
+          "unit_id": "L2-20:03",
+          "primary_category": "S",
+          "goal_zh": "embossed card case",
+          "source_anchor": "runtime/native_milestones.json#L2-20/puzzle_3"
+        },
+        {
+          "unit_id": "L2-20:04",
+          "primary_category": "E",
+          "goal_zh": "辨认鞋底检查架释放的尺子抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-20/open_s2_cover"
+        },
+        {
+          "unit_id": "L2-20:05",
+          "primary_category": "E",
+          "goal_zh": "找到测量结果对应的钳子抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-20/open_s3_cover"
+        }
+      ]
+    },
+    {
+      "level": "L2-21",
+      "group": "medium-b",
+      "title": "咖啡器具备货间",
+      "source": "level/medium-b/L2-21/level_R21.py",
+      "source_sha256": "54106c2bda66f7943ffb7b6958f266385f8a033b68403db8c2fbbb1f5d7ea7d8",
+      "units": [
+        {
+          "unit_id": "L2-21:01",
+          "primary_category": "S",
+          "goal_zh": "cup drying tray",
+          "source_anchor": "runtime/native_milestones.json#L2-21/puzzle_1"
+        },
+        {
+          "unit_id": "L2-21:02",
+          "primary_category": "N",
+          "goal_zh": "graduated cylinder cabinet",
+          "source_anchor": "runtime/native_milestones.json#L2-21/puzzle_2"
+        },
+        {
+          "unit_id": "L2-21:03",
+          "primary_category": "L",
+          "goal_zh": "coffee pattern chest",
+          "source_anchor": "runtime/native_milestones.json#L2-21/puzzle_3"
+        },
+        {
+          "unit_id": "L2-21:04",
+          "primary_category": "E",
+          "goal_zh": "找到杯盘正下方藏柜门拉手的抽屉",
+          "source_anchor": "runtime/native_milestones.json#L2-21/open_pull_drawer"
+        }
+      ]
+    },
+    {
+      "level": "L2-22",
+      "group": "medium-b",
+      "title": "失物招领间",
+      "source": "level/medium-b/L2-22/level_R22.py",
+      "source_sha256": "538cb3186fe3070d9f0dce46d7523f0548a035b53adbfa02f37015d2dcf6d07e",
+      "units": [
+        {
+          "unit_id": "L2-22:01",
+          "primary_category": "S",
+          "goal_zh": "photo landmark cabinet",
+          "source_anchor": "runtime/native_milestones.json#L2-22/puzzle_1"
+        },
+        {
+          "unit_id": "L2-22:02",
+          "primary_category": "T",
+          "goal_zh": "red and blue password cards",
+          "source_anchor": "runtime/native_milestones.json#L2-22/puzzle_2"
+        },
+        {
+          "unit_id": "L2-22:03",
+          "primary_category": "L",
+          "goal_zh": "photo and shelf comparison",
+          "source_anchor": "runtime/native_milestones.json#L2-22/puzzle_3"
+        },
+        {
+          "unit_id": "L2-22:04",
+          "primary_category": "E",
+          "goal_zh": "定位地标机关对应的密码卡盒取得两色卡片",
+          "source_anchor": "runtime/native_milestones.json#L2-22/open_s2_cover"
+        }
+      ]
+    },
+    {
+      "level": "H2-01",
+      "group": "hard",
+      "title": "维修通道",
+      "source": "level/hard/H2-01/level_R23.py",
+      "source_sha256": "ce83f38aa254a7c3347d39bba490b245959c97bc2f657dd5a9f3d34056eb2067",
+      "units": [
+        {
+          "unit_id": "H2-01:01",
+          "primary_category": "S",
+          "goal_zh": "按柜子平面图完成四窗锁",
+          "source_anchor": "runtime/native_milestones.json#H2-01/puzzle_1"
+        },
+        {
+          "unit_id": "H2-01:02",
+          "primary_category": "S",
+          "goal_zh": "连通管板入口与出口",
+          "source_anchor": "runtime/native_milestones.json#H2-01/puzzle_2"
+        },
+        {
+          "unit_id": "H2-01:03",
+          "primary_category": "P",
+          "goal_zh": "恢复有效串联电路",
+          "source_anchor": "runtime/native_milestones.json#H2-01/puzzle_3"
+        },
+        {
+          "unit_id": "H2-01:04",
+          "primary_category": "T",
+          "goal_zh": "将已连通的管路弯点映射到通电显示格取得出口码",
+          "source_anchor": "code = ''.join(str(DIGITS[r][c]) for r, c in elbows(path)); runtime/native_milestones.json#H2-01/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-02",
+      "group": "hard",
+      "title": "量规工坊",
+      "source": "level/hard/H2-02/level_R24.py",
+      "source_sha256": "07b510fa802628dc34e6edbfcfc40cbf7028779abfe8a6e7590e9bf0cade8345",
+      "units": [
+        {
+          "unit_id": "H2-02:01",
+          "primary_category": "S",
+          "goal_zh": "依据工程图完成形体夹具",
+          "source_anchor": "runtime/native_milestones.json#H2-02/puzzle_1"
+        },
+        {
+          "unit_id": "H2-02:02",
+          "primary_category": "P",
+          "goal_zh": "依据压力表读数调整箱锁",
+          "source_anchor": "runtime/native_milestones.json#H2-02/puzzle_2"
+        },
+        {
+          "unit_id": "H2-02:03",
+          "primary_category": "S",
+          "goal_zh": "装回皮带传动并正确驱动",
+          "source_anchor": "runtime/native_milestones.json#H2-02/puzzle_3"
+        },
+        {
+          "unit_id": "H2-02:04",
+          "primary_category": "S",
+          "goal_zh": "旋转定位片并按孔位读取数字格",
+          "source_anchor": "code = ''.join(map(str, turned)); runtime/native_milestones.json#H2-02/unlock_exit"
+        },
+        {
+          "unit_id": "H2-02:05",
+          "primary_category": "E",
+          "goal_zh": "找到传动装置释放的读数柜以取得参照格",
+          "source_anchor": "runtime/native_milestones.json#H2-02/reading_cabinet_open"
+        }
+      ]
+    },
+    {
+      "level": "H2-03",
+      "group": "hard",
+      "title": "茶样品鉴室",
+      "source": "level/hard/H2-03/level_R25.py",
+      "source_sha256": "196863a8bcec3cbca54d96054d0091378aea3438fe93254e3310550f342ceb36",
+      "units": [
+        {
+          "unit_id": "H2-03:01",
+          "primary_category": "S",
+          "goal_zh": "对齐罐盖图环",
+          "source_anchor": "runtime/native_milestones.json#H2-03/puzzle_1"
+        },
+        {
+          "unit_id": "H2-03:02",
+          "primary_category": "L",
+          "goal_zh": "还原杯具托盘",
+          "source_anchor": "runtime/native_milestones.json#H2-03/puzzle_2"
+        },
+        {
+          "unit_id": "H2-03:03",
+          "primary_category": "S",
+          "goal_zh": "确定茶叶罐朝向",
+          "source_anchor": "runtime/native_milestones.json#H2-03/puzzle_3"
+        },
+        {
+          "unit_id": "H2-03:04",
+          "primary_category": "T",
+          "goal_zh": "依品评卡顺序提取另一处杯具对应的数字",
+          "source_anchor": "code = ''.join(str(CUP_DIGIT[c]) for c in CARD_ORDER); runtime/native_milestones.json#H2-03/unlock_exit"
+        },
+        {
+          "unit_id": "H2-03:05",
+          "primary_category": "E",
+          "goal_zh": "确定转动机关给出的钥匙对应哪个储物柜",
+          "source_anchor": "runtime/native_milestones.json#H2-03/store_released"
+        }
+      ]
+    },
+    {
+      "level": "H2-04",
+      "group": "hard",
+      "title": "档案索引",
+      "source": "level/hard/H2-04/level_R26.py",
+      "source_sha256": "6d32b04e804975d66c313430f7a5a78b873f8833d13b01cb4fcbaf8d61115c0c",
+      "units": [
+        {
+          "unit_id": "H2-04:01",
+          "primary_category": "E",
+          "goal_zh": "拼合撕裂书页",
+          "source_anchor": "runtime/native_milestones.json#H2-04/puzzle_1"
+        },
+        {
+          "unit_id": "H2-04:02",
+          "primary_category": "S",
+          "goal_zh": "找到照片对应的目录抽屉",
+          "source_anchor": "runtime/native_milestones.json#H2-04/puzzle_2"
+        },
+        {
+          "unit_id": "H2-04:03",
+          "primary_category": "L",
+          "goal_zh": "设置档案封印旋钮",
+          "source_anchor": "runtime/native_milestones.json#H2-04/puzzle_3"
+        },
+        {
+          "unit_id": "H2-04:04",
+          "primary_category": "L",
+          "goal_zh": "把修复后的索引与档案格交叉查码",
+          "source_anchor": "code = ''.join(str(GRID[GRID_ROWS.index(a)][GRID_COLS.index(m)]) for a, m in INDEX); runtime/native_milestones.json#H2-04/unlock_exit"
+        },
+        {
+          "unit_id": "H2-04:05",
+          "primary_category": "E",
+          "goal_zh": "在不同位置找齐可拼合的撕裂书页",
+          "source_anchor": "runtime/native_milestones.json#H2-04/observed_repair_strips"
+        }
+      ]
+    },
+    {
+      "level": "H2-05",
+      "group": "hard",
+      "title": "光学检修间",
+      "source": "level/hard/H2-05/level_R27.py",
+      "source_sha256": "49c5d4358d48304864f3a7b04971a64fad67909ec5183c74cc95185e53ca9d0d",
+      "units": [
+        {
+          "unit_id": "H2-05:01",
+          "primary_category": "S",
+          "goal_zh": "完成反射光路",
+          "source_anchor": "runtime/native_milestones.json#H2-05/puzzle_1"
+        },
+        {
+          "unit_id": "H2-05:02",
+          "primary_category": "P",
+          "goal_zh": "用气泵处理观察窗",
+          "source_anchor": "runtime/native_milestones.json#H2-05/puzzle_2"
+        },
+        {
+          "unit_id": "H2-05:03",
+          "primary_category": "P",
+          "goal_zh": "匹配观察角度",
+          "source_anchor": "runtime/native_milestones.json#H2-05/puzzle_3"
+        },
+        {
+          "unit_id": "H2-05:04",
+          "primary_category": "S",
+          "goal_zh": "将定位孔映射到正确方向的观察板",
+          "source_anchor": "code = ''.join(str(TRUE_BOARD[r][c]) for r, c in HOLES); runtime/native_milestones.json#H2-05/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-06",
+      "group": "hard",
+      "title": "装订工房",
+      "source": "level/hard/H2-06/level_R28.py",
+      "source_sha256": "be0e9699cce7b9195b7edb3e61dd879c8539b2ccc65826ad905e5603774c4c41",
+      "units": [
+        {
+          "unit_id": "H2-06:01",
+          "primary_category": "L",
+          "goal_zh": "按标记装订书帖",
+          "source_anchor": "runtime/native_milestones.json#H2-06/puzzle_1"
+        },
+        {
+          "unit_id": "H2-06:02",
+          "primary_category": "E",
+          "goal_zh": "找到缺失的书页板",
+          "source_anchor": "runtime/native_milestones.json#H2-06/puzzle_2"
+        },
+        {
+          "unit_id": "H2-06:03",
+          "primary_category": "S",
+          "goal_zh": "还原书页板的顺序与正反面",
+          "source_anchor": "runtime/native_milestones.json#H2-06/puzzle_3"
+        },
+        {
+          "unit_id": "H2-06:04",
+          "primary_category": "T",
+          "goal_zh": "综合装订参照与修复页板跳页取数",
+          "source_anchor": "code = ''.join(str(PAGE_DIGIT[p - 1]) for p in hop_pages()); runtime/native_milestones.json#H2-06/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-07",
+      "group": "hard",
+      "title": "仪表校准",
+      "source": "level/hard/H2-07/level_R29.py",
+      "source_sha256": "a02a0171a73fc8248b7f89ac69f64bc26b76b2e3050351c55c88b3e0f63778b3",
+      "units": [
+        {
+          "unit_id": "H2-07:01",
+          "primary_category": "P",
+          "goal_zh": "调平铅垂杯",
+          "source_anchor": "runtime/native_milestones.json#H2-07/puzzle_1"
+        },
+        {
+          "unit_id": "H2-07:02",
+          "primary_category": "P",
+          "goal_zh": "装入阀门钥匙",
+          "source_anchor": "runtime/native_milestones.json#H2-07/puzzle_2"
+        },
+        {
+          "unit_id": "H2-07:03",
+          "primary_category": "L",
+          "goal_zh": "恢复阀路",
+          "source_anchor": "runtime/native_milestones.json#H2-07/puzzle_3"
+        },
+        {
+          "unit_id": "H2-07:04",
+          "primary_category": "N",
+          "goal_zh": "从实际压力读数中扣除各表的零点偏差",
+          "source_anchor": "code = ''.join(str(r - o) for r, o in zip(RAW, OFFSET)); runtime/native_milestones.json#H2-07/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-08",
+      "group": "hard",
+      "title": "日期档案",
+      "source": "level/hard/H2-08/level_R30.py",
+      "source_sha256": "659f44322fcb60a8712b6f59d14d75e938d1a403f51bfdb9a8502b03878565e1",
+      "units": [
+        {
+          "unit_id": "H2-08:01",
+          "primary_category": "P",
+          "goal_zh": "平衡释放横梁",
+          "source_anchor": "runtime/native_milestones.json#H2-08/puzzle_1"
+        },
+        {
+          "unit_id": "H2-08:02",
+          "primary_category": "P",
+          "goal_zh": "用滤片显露日历信息",
+          "source_anchor": "runtime/native_milestones.json#H2-08/puzzle_2"
+        },
+        {
+          "unit_id": "H2-08:03",
+          "primary_category": "S",
+          "goal_zh": "对齐缺口条",
+          "source_anchor": "runtime/native_milestones.json#H2-08/puzzle_3"
+        },
+        {
+          "unit_id": "H2-08:04",
+          "primary_category": "L",
+          "goal_zh": "依日历中符号与日期查对应格",
+          "source_anchor": "code = ''.join(str(GRID[SYMS.index(s)][DAY_OF[s]]) for s in SYMS); runtime/native_milestones.json#H2-08/unlock_exit"
+        },
+        {
+          "unit_id": "H2-08:05",
+          "primary_category": "E",
+          "goal_zh": "定位对齐机关释放的记录柜以取得格图",
+          "source_anchor": "runtime/native_milestones.json#H2-08/records_open"
+        }
+      ]
+    },
+    {
+      "level": "H2-09",
+      "group": "hard",
+      "title": "分离的数字",
+      "source": "level/hard/H2-09/level_R31.py",
+      "source_sha256": "f2e383d98d3f2e5c82338f239f490792462d69c009d10d9aab71b3cfebdff327",
+      "units": [
+        {
+          "unit_id": "H2-09:01",
+          "primary_category": "P",
+          "goal_zh": "用齿轮传动释放薄片",
+          "source_anchor": "runtime/native_milestones.json#H2-09/puzzle_1"
+        },
+        {
+          "unit_id": "H2-09:02",
+          "primary_category": "S",
+          "goal_zh": "释放销锁模型",
+          "source_anchor": "runtime/native_milestones.json#H2-09/puzzle_2"
+        },
+        {
+          "unit_id": "H2-09:03",
+          "primary_category": "S",
+          "goal_zh": "叠合数字薄片",
+          "source_anchor": "runtime/native_milestones.json#H2-09/puzzle_3"
+        },
+        {
+          "unit_id": "H2-09:04",
+          "primary_category": "S",
+          "goal_zh": "综合两张薄片对应位置的线段并辨读完整的四位数字",
+          "source_anchor": "code = ''.join(str(seven[''.join(sorted(set(a + b)))]) for a, b in zip(FILM_A, FILM_B)); runtime/native_milestones.json#H2-09/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-10",
+      "group": "hard",
+      "title": "邮政转轮",
+      "source": "level/hard/H2-10/level_R32.py",
+      "source_sha256": "57518294a70b5677e22890b8a6d1830780dc3032f68b80e086dc6ac6af63d06a",
+      "units": [
+        {
+          "unit_id": "H2-10:01",
+          "primary_category": "L",
+          "goal_zh": "印出匹配的邮戳标记",
+          "source_anchor": "runtime/native_milestones.json#H2-10/puzzle_1"
+        },
+        {
+          "unit_id": "H2-10:02",
+          "primary_category": "L",
+          "goal_zh": "按标记分拣包裹",
+          "source_anchor": "runtime/native_milestones.json#H2-10/puzzle_2"
+        },
+        {
+          "unit_id": "H2-10:03",
+          "primary_category": "S",
+          "goal_zh": "将目的地筹码送达",
+          "source_anchor": "runtime/native_milestones.json#H2-10/puzzle_3"
+        },
+        {
+          "unit_id": "H2-10:04",
+          "primary_category": "S",
+          "goal_zh": "依打孔位置与轮盘基准换算读数",
+          "source_anchor": "code = ''.join(str(RING[(RING_TRIANGLE + p) % 12]) for p in PUNCH); runtime/native_milestones.json#H2-10/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-11",
+      "group": "hard",
+      "title": "灌装检修",
+      "source": "level/hard/H2-11/level_R33.py",
+      "source_sha256": "bff8f6b1b4f6bcd3987eb0476824090354fe6e1b56bcbf9fe4459bcf8c27697e",
+      "units": [
+        {
+          "unit_id": "H2-11:01",
+          "primary_category": "L",
+          "goal_zh": "把封口瓶匹配到支架",
+          "source_anchor": "runtime/native_milestones.json#H2-11/puzzle_1"
+        },
+        {
+          "unit_id": "H2-11:02",
+          "primary_category": "P",
+          "goal_zh": "修复管线并恢复流动",
+          "source_anchor": "runtime/native_milestones.json#H2-11/puzzle_2"
+        },
+        {
+          "unit_id": "H2-11:03",
+          "primary_category": "P",
+          "goal_zh": "替换旧样本",
+          "source_anchor": "runtime/native_milestones.json#H2-11/puzzle_3"
+        },
+        {
+          "unit_id": "H2-11:04",
+          "primary_category": "N",
+          "goal_zh": "按各瓶液位与最后参照计算差值",
+          "source_anchor": "code = ''.join(str(B[i] - BOTTLE_LEVEL[s]) for i, s in enumerate(SYMS)); runtime/native_milestones.json#H2-11/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-12",
+      "group": "hard",
+      "title": "低压联锁",
+      "source": "level/hard/H2-12/level_R34.py",
+      "source_sha256": "eb2cd32d51659dd06dffb42050e63f89829ae478a257e6f048dac99f21438676",
+      "units": [
+        {
+          "unit_id": "H2-12:01",
+          "primary_category": "L",
+          "goal_zh": "满足低压电路条件",
+          "source_anchor": "runtime/native_milestones.json#H2-12/puzzle_1"
+        },
+        {
+          "unit_id": "H2-12:02",
+          "primary_category": "P",
+          "goal_zh": "释放固定盒盖",
+          "source_anchor": "runtime/native_milestones.json#H2-12/puzzle_2"
+        },
+        {
+          "unit_id": "H2-12:03",
+          "primary_category": "P",
+          "goal_zh": "驱动互锁输出",
+          "source_anchor": "runtime/native_milestones.json#H2-12/puzzle_3"
+        },
+        {
+          "unit_id": "H2-12:04",
+          "primary_category": "L",
+          "goal_zh": "用先前记录的灯状态选择对应数字行",
+          "source_anchor": "code = ''.join(str((ROW_ON if LAMP_STATE[s] else ROW_OFF)[i]) for i, s in enumerate(SYMS)); runtime/native_milestones.json#H2-12/unlock_exit"
+        },
+        {
+          "unit_id": "H2-12:05",
+          "primary_category": "E",
+          "goal_zh": "找到被传动机关释放的读数柜",
+          "source_anchor": "runtime/native_milestones.json#H2-12/reading_cabinet_open"
+        }
+      ]
+    },
+    {
+      "level": "H2-13",
+      "group": "hard",
+      "title": "筛网检验",
+      "source": "level/hard/H2-13/level_R35.py",
+      "source_sha256": "084648ddca96cb31d15258541a9bc69394dc16fe0ab44474a2b18b43e46d014b",
+      "units": [
+        {
+          "unit_id": "H2-13:01",
+          "primary_category": "P",
+          "goal_zh": "解除固定的遮盖片",
+          "source_anchor": "runtime/native_milestones.json#H2-13/puzzle_1"
+        },
+        {
+          "unit_id": "H2-13:02",
+          "primary_category": "P",
+          "goal_zh": "撑开压钳",
+          "source_anchor": "runtime/native_milestones.json#H2-13/puzzle_2"
+        },
+        {
+          "unit_id": "H2-13:03",
+          "primary_category": "P",
+          "goal_zh": "照亮安装后的样本",
+          "source_anchor": "runtime/native_milestones.json#H2-13/puzzle_3"
+        },
+        {
+          "unit_id": "H2-13:04",
+          "primary_category": "L",
+          "goal_zh": "筛出两层共同出现的图形并查数",
+          "source_anchor": "code = ''.join(str(NUMBERS[k]) for k in common); runtime/native_milestones.json#H2-13/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-14",
+      "group": "hard",
+      "title": "交接与入库",
+      "source": "level/hard/H2-14/level_R36.py",
+      "source_sha256": "04d84a497ce1ca75b0838369f7e12dc8b391c39461e0de08d6170716821a8754",
+      "units": [
+        {
+          "unit_id": "H2-14:01",
+          "primary_category": "S",
+          "goal_zh": "匹配箱体移动标记",
+          "source_anchor": "runtime/native_milestones.json#H2-14/puzzle_1"
+        },
+        {
+          "unit_id": "H2-14:02",
+          "primary_category": "P",
+          "goal_zh": "释放箱子",
+          "source_anchor": "runtime/native_milestones.json#H2-14/puzzle_2"
+        },
+        {
+          "unit_id": "H2-14:03",
+          "primary_category": "P",
+          "goal_zh": "支撑并抬起架盖",
+          "source_anchor": "runtime/native_milestones.json#H2-14/puzzle_3"
+        },
+        {
+          "unit_id": "H2-14:04",
+          "primary_category": "E",
+          "goal_zh": "对比原货架照片和现状识别缺失物品并取数",
+          "source_anchor": "code = ''.join(str(n) for grp in GROUPS for name, n in grp if name in MISSING); runtime/native_milestones.json#H2-14/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-15",
+      "group": "hard",
+      "title": "展品次序",
+      "source": "level/hard/H2-15/level_R37.py",
+      "source_sha256": "0ebae709cc82741cacdc55ca372d45642b37d228be35da8c07fd4849865f7753",
+      "units": [
+        {
+          "unit_id": "H2-15:01",
+          "primary_category": "S",
+          "goal_zh": "把人偶匹配到支架",
+          "source_anchor": "runtime/native_milestones.json#H2-15/puzzle_1"
+        },
+        {
+          "unit_id": "H2-15:02",
+          "primary_category": "P",
+          "goal_zh": "将箱体平稳吊到支座上",
+          "source_anchor": "runtime/native_milestones.json#H2-15/puzzle_2"
+        },
+        {
+          "unit_id": "H2-15:03",
+          "primary_category": "S",
+          "goal_zh": "对齐铭牌观察槽",
+          "source_anchor": "runtime/native_milestones.json#H2-15/puzzle_3"
+        },
+        {
+          "unit_id": "H2-15:04",
+          "primary_category": "L",
+          "goal_zh": "结合先后关系约束还原唯一的编号顺序",
+          "source_anchor": "code = ''.join(str(NUMBER[s]) for s in orders[0]); runtime/native_milestones.json#H2-15/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-16",
+      "group": "hard",
+      "title": "玩具检修",
+      "source": "level/hard/H2-16/level_R38.py",
+      "source_sha256": "15698b48353e7bf5d3abfd2ab11d107f60c73fc6dae9a58b503c03e4a0a2ae44",
+      "units": [
+        {
+          "unit_id": "H2-16:01",
+          "primary_category": "P",
+          "goal_zh": "驱动齿轮箱释放桥板托盘",
+          "source_anchor": "runtime/native_milestones.json#H2-16/puzzle_1"
+        },
+        {
+          "unit_id": "H2-16:02",
+          "primary_category": "S",
+          "goal_zh": "安排小车起始位",
+          "source_anchor": "runtime/native_milestones.json#H2-16/puzzle_2"
+        },
+        {
+          "unit_id": "H2-16:03",
+          "primary_category": "S",
+          "goal_zh": "将小车引导到标记终点",
+          "source_anchor": "runtime/native_milestones.json#H2-16/puzzle_3"
+        },
+        {
+          "unit_id": "H2-16:04",
+          "primary_category": "S",
+          "goal_zh": "追踪不同车道到终点后的符号排列并读码",
+          "source_anchor": "code = ''.join(str(NUMBER[s]) for s in final); runtime/native_milestones.json#H2-16/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-17",
+      "group": "hard",
+      "title": "图样筛检",
+      "source": "level/hard/H2-17/level_R39.py",
+      "source_sha256": "d05e6d8b5a20ad736bf39e19c23a5ade5a157bf9db33ad2cd369dcf78d55fc90",
+      "units": [
+        {
+          "unit_id": "H2-17:01",
+          "primary_category": "L",
+          "goal_zh": "筛选样本卡",
+          "source_anchor": "runtime/native_milestones.json#H2-17/puzzle_1"
+        },
+        {
+          "unit_id": "H2-17:02",
+          "primary_category": "L",
+          "goal_zh": "连通灯箱电路",
+          "source_anchor": "runtime/native_milestones.json#H2-17/puzzle_2"
+        },
+        {
+          "unit_id": "H2-17:03",
+          "primary_category": "P",
+          "goal_zh": "给点亮的样本加滤片",
+          "source_anchor": "runtime/native_milestones.json#H2-17/puzzle_3"
+        },
+        {
+          "unit_id": "H2-17:04",
+          "primary_category": "N",
+          "goal_zh": "按已知顺序统计过滤后的图形",
+          "source_anchor": "code = ''.join(str(count(s)) for s in ORDER); runtime/native_milestones.json#H2-17/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-18",
+      "group": "hard",
+      "title": "装配与库存",
+      "source": "level/hard/H2-18/level_R40.py",
+      "source_sha256": "87941530e66d41e2eb801ac5c442312278288c57c16c444447a5c26de1c5af14",
+      "units": [
+        {
+          "unit_id": "H2-18:01",
+          "primary_category": "L",
+          "goal_zh": "让两只夹具测试灯点亮",
+          "source_anchor": "runtime/native_milestones.json#H2-18/puzzle_1"
+        },
+        {
+          "unit_id": "H2-18:02",
+          "primary_category": "P",
+          "goal_zh": "释放齿轮储物格",
+          "source_anchor": "runtime/native_milestones.json#H2-18/puzzle_2"
+        },
+        {
+          "unit_id": "H2-18:03",
+          "primary_category": "P",
+          "goal_zh": "拉出顶盖托盘",
+          "source_anchor": "runtime/native_milestones.json#H2-18/puzzle_3"
+        },
+        {
+          "unit_id": "H2-18:04",
+          "primary_category": "N",
+          "goal_zh": "将基准数与库存数逐项合计",
+          "source_anchor": "code = ''.join(str(a + b) for a, b in zip(BASE, STOCK)); runtime/native_milestones.json#H2-18/unlock_exit"
+        },
+        {
+          "unit_id": "H2-18:05",
+          "primary_category": "E",
+          "goal_zh": "定位零件柜内的库存基准板",
+          "source_anchor": "runtime/native_milestones.json#H2-18/observed_locker_base_reference"
+        }
+      ]
+    },
+    {
+      "level": "H2-19",
+      "group": "hard",
+      "title": "共有样品",
+      "source": "level/hard/H2-19/level_R41.py",
+      "source_sha256": "b042c9dc8d0b808c22d8e842b81b724d2f670dad9f4bc4a292e179092d71d902",
+      "units": [
+        {
+          "unit_id": "H2-19:01",
+          "primary_category": "L",
+          "goal_zh": "按物理特征归类样本",
+          "source_anchor": "runtime/native_milestones.json#H2-19/puzzle_1"
+        },
+        {
+          "unit_id": "H2-19:02",
+          "primary_category": "S",
+          "goal_zh": "引导释放的小球穿过迷宫",
+          "source_anchor": "runtime/native_milestones.json#H2-19/puzzle_2"
+        },
+        {
+          "unit_id": "H2-19:03",
+          "primary_category": "L",
+          "goal_zh": "补回隔间缺少的物体",
+          "source_anchor": "runtime/native_milestones.json#H2-19/puzzle_3"
+        },
+        {
+          "unit_id": "H2-19:04",
+          "primary_category": "L",
+          "goal_zh": "以完整照片为参照选择各隔间对应的编号",
+          "source_anchor": "code = ''.join(str(n) for grp, photo in zip(SHELF, PHOTO) for name, n in grp if name in photo); runtime/native_milestones.json#H2-19/unlock_exit"
+        },
+        {
+          "unit_id": "H2-19:05",
+          "primary_category": "E",
+          "goal_zh": "找齐完整照片中指出的隔间缺物",
+          "source_anchor": "runtime/native_milestones.json#H2-19/compartment_objects_obtained"
+        }
+      ]
+    },
+    {
+      "level": "H2-20",
+      "group": "hard",
+      "title": "借用手续",
+      "source": "level/hard/H2-20/level_R42.py",
+      "source_sha256": "b9477f4b6a31e94d3a91689e14119cf982c771af68056457aded73a63cfaeccb",
+      "units": [
+        {
+          "unit_id": "H2-20:01",
+          "primary_category": "L",
+          "goal_zh": "排列流程事件",
+          "source_anchor": "runtime/native_milestones.json#H2-20/puzzle_1"
+        },
+        {
+          "unit_id": "H2-20:02",
+          "primary_category": "S",
+          "goal_zh": "还原印刷碎片",
+          "source_anchor": "runtime/native_milestones.json#H2-20/puzzle_2"
+        },
+        {
+          "unit_id": "H2-20:03",
+          "primary_category": "P",
+          "goal_zh": "展平释放后的卷纸",
+          "source_anchor": "runtime/native_milestones.json#H2-20/puzzle_3"
+        },
+        {
+          "unit_id": "H2-20:04",
+          "primary_category": "N",
+          "goal_zh": "将时钟换算到时间区间后查表取数",
+          "source_anchor": "code = ''.join(str(TABLE[k][band(*CLOCKS[k])]) for k in 'XY'); runtime/native_milestones.json#H2-20/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-21",
+      "group": "hard",
+      "title": "路标与地图",
+      "source": "level/hard/H2-21/level_R43.py",
+      "source_sha256": "541a2560e6b66e5103eb4042a075d00e2dfa61cf396f0be78647b883c6ff7d5c",
+      "units": [
+        {
+          "unit_id": "H2-21:01",
+          "primary_category": "S",
+          "goal_zh": "连接地标路线",
+          "source_anchor": "runtime/native_milestones.json#H2-21/puzzle_1"
+        },
+        {
+          "unit_id": "H2-21:02",
+          "primary_category": "P",
+          "goal_zh": "使坡道小车进入接收位",
+          "source_anchor": "runtime/native_milestones.json#H2-21/puzzle_2"
+        },
+        {
+          "unit_id": "H2-21:03",
+          "primary_category": "P",
+          "goal_zh": "露出箱下地图",
+          "source_anchor": "runtime/native_milestones.json#H2-21/puzzle_3"
+        },
+        {
+          "unit_id": "H2-21:04",
+          "primary_category": "S",
+          "goal_zh": "按照地标起点及给定偏移在地图格中取数",
+          "source_anchor": "code = ''.join(str(GRID[SEAL_START[s][0] + STEP[s][0]][SEAL_START[s][1] + STEP[s][1]]) for s in SYMS); runtime/native_milestones.json#H2-21/unlock_exit"
+        }
+      ]
+    },
+    {
+      "level": "H2-22",
+      "group": "hard",
+      "title": "样品核验",
+      "source": "level/hard/H2-22/level_R44.py",
+      "source_sha256": "31b27b340a4755fa7f8802f8d58f0347b0c24d53dec560a070bfde399a99b6f5",
+      "units": [
+        {
+          "unit_id": "H2-22:01",
+          "primary_category": "L",
+          "goal_zh": "把测试样本匹配到座位",
+          "source_anchor": "runtime/native_milestones.json#H2-22/puzzle_1"
+        },
+        {
+          "unit_id": "H2-22:02",
+          "primary_category": "P",
+          "goal_zh": "释放同心螺母组件",
+          "source_anchor": "runtime/native_milestones.json#H2-22/puzzle_2"
+        },
+        {
+          "unit_id": "H2-22:03",
+          "primary_category": "N",
+          "goal_zh": "测定并设置符号标准值",
+          "source_anchor": "runtime/native_milestones.json#H2-22/puzzle_3"
+        },
+        {
+          "unit_id": "H2-22:04",
+          "primary_category": "L",
+          "goal_zh": "组合测量记录和标准值按轻重关系查码",
+          "source_anchor": "code = ''.join(str(ROWS[row(RECORD[i], STANDARD[s])][i]) for i, s in enumerate(SYMS)); runtime/native_milestones.json#H2-22/unlock_exit"
+        }
+      ]
+    }
+  ]
+}

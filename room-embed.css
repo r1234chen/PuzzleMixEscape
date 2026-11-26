@@ -1,0 +1,10 @@
+.overview-rollout{display:block;width:100%;height:auto;aspect-ratio:1280/424;margin:8px 0 20px;background:#14231e;border-radius:7px}
+.paper .media-lead{margin:16px 0 6px}
+.room-figure{margin:8px 0 24px}
+.room-gate{position:relative;overflow:hidden;border:1px solid #c4d2c7;border-radius:7px;background:#24362e}
+.room-gate picture,.room-gate img{display:block;width:100%;height:auto}
+.room-gate::after{content:"";position:absolute;inset:0;background:rgba(14,33,24,.22);pointer-events:none}
+.room-gate button{position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid #f0f4ee;border-radius:6px;padding:.7em 1.3em;background:#224f3f;color:white;font:600 1rem/1.35 system-ui;cursor:pointer}
+.room-gate button:focus-visible{outline:3px solid #ffcc77;outline-offset:3px}
+.room-figure iframe{display:block;width:100%;box-sizing:border-box;height:150px;border:1px solid #c4d2c7;border-radius:7px}
+

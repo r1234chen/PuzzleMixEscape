@@ -1,0 +1,60 @@
+.project-home{background:#fcfcf9;color:#203431}.project-home .wrap{max-width:1060px}.mast{padding:42px 0 26px;border-bottom:1px solid #ccd7cf}.mast h1{font:650 2.4rem/1.18 system-ui,"Microsoft YaHei",sans-serif;letter-spacing:-.04em}.mast .subtitle{margin:.4rem 0 .85rem;font-size:1.18rem;color:#36544a}.mast .byline,.mast .affil{font-size:.98rem;line-height:1.6;color:#475850}.layout{display:grid;grid-template-columns:clamp(184px,calc(156px + 5vw),220px) minmax(0,1fr);gap:24px;align-items:start;padding:32px 0 56px}.toc{position:sticky;top:1.5rem;border-left:2px solid #b6c8bb;padding-left:14px;font-size:.93rem}.toc strong{display:block;margin-bottom:8px}.toc a{display:block;text-decoration:none;color:#3c5c4d;margin:6px 0}.toc a:hover{text-decoration:underline}.toc a.sub{padding-left:10px}.paper{min-width:0;font-size:1.0625rem;line-height:1.72}.paper section+section{margin-top:30px;padding-top:22px;border-top:1px solid #d4ded6}.paper h2,.paper h3{font-family:inherit;letter-spacing:normal;font-weight:650;line-height:1.38}.paper h2{font-size:1.5rem}.paper h3{font-size:1.1875rem;margin:22px 0 6px}.paper p{margin:.55em 0 .85em}.paper .plate{margin:16px 0}.plate img{display:block;width:100%;height:auto;border:0;background:transparent}.paper figcaption,.paper caption{font-size:.95rem;line-height:1.55;color:#40564b;text-align:left}.paper figcaption{margin-top:7px}.paper caption{caption-side:bottom;padding-top:7px}.paper table{border-collapse:collapse;width:100%;font-size:1rem;line-height:1.45;margin:14px 0}.paper th,.paper td{padding:9px 8px;text-align:left;border-bottom:1px solid #d3ded6;font-variant-numeric:tabular-nums}.paper thead{background:#eaf0e9}.paper tbody th{font-weight:550}.paper .how{margin:.5rem 0 1rem;padding-left:1.35em}.paper .how li{padding-left:.2em;margin:.4em 0}.paper .bar{grid-template-columns:84px 1fr 62px;font:inherit}.paper .bar strong{font:600 1rem system-ui}.paper .bar i{height:9px}.paper .chart{padding:3px 0 12px}.paper a{color:#225d46}.project-home .foot{border-top:1px solid #ccd7cf}.paper :is(h2,h3)[id]{scroll-margin-top:1.2rem}@media(max-width:820px){.layout{display:block;padding-top:16px}.toc{position:static;border-left:0;border-bottom:1px solid #d4ded6;padding:0 0 12px;margin:0 0 20px;display:flex;flex-wrap:wrap;gap:4px 14px}.toc strong{width:100%;margin:0}.toc a,.toc a.sub{padding:0;margin:0}.mast{padding:24px 0 16px}.mast h1{font-size:2rem}.paper th,.paper td{padding:8px 4px}.paper{overflow-wrap:break-word}.tablewrap{overflow-x:auto}}
+.project-home .takeaways{font-size:1rem;line-height:1.6;margin:0 0 26px;padding:17px 22px 18px;border:1px solid #ccd9c9;border-left:3px solid #477650;border-radius:0 8px 8px 0;background:#f0f4eb}
+.project-home .takeaways h2{margin:0 0 7px;color:#315d3c;font-size:1rem;line-height:1.5;font-weight:650}
+.project-home .takeaways ul{padding-left:1.25em;margin:0}.project-home .takeaways li{margin:0;padding-left:.16em}.project-home .takeaways li+li{margin-top:.55em}.project-home .takeaways li::marker{color:#497347}.project-home .takeaways strong{font-weight:600;color:#18372d}
+@media(max-width:600px){.project-home .takeaways{padding:13px 14px;margin-bottom:23px}}
+
+@media(min-width:821px){.toc{border-left:0;padding-left:0;max-height:calc(100dvh - 3rem);overflow-y:auto}.toc a{margin:0;border-left:2px solid #d3ddd5;padding:6px 10px;line-height:1.45}.toc a.sub{padding-left:25px}}
+.toc a[aria-current="location"]{color:#256444;font-weight:600}
+@media(min-width:821px){.toc a[aria-current="location"]{border-left-color:#478354}}
+@media(max-width:820px){.toc a[aria-current="location"]{text-decoration:underline;text-underline-offset:.25em}}
+.paper #overview{scroll-margin-top:1.2rem}
+
+.paper .citations{font:600 .74em/0 system-ui;vertical-align:super;white-space:nowrap}
+.paper .citations a,.paper .ref-back{text-decoration:none}
+.paper .citations a:hover,.paper .ref-back:hover{text-decoration:underline}
+.paper .references ol{list-style:none;padding:0}
+.paper .references li{display:grid;grid-template-columns:2ch 1fr;gap:.75em;margin:.65em 0;font-size:.93rem;overflow-wrap:anywhere}
+.paper :is(.references li,.citations a):target{background:#e7efe5}
+
+@media(min-width:821px){
+ .project-home .mast h1{font-size:2.125rem}
+ .project-home .mast .subtitle{font-size:1.0625rem}
+ .project-home .mast :is(.byline,.affil){font-size:.875rem}
+ .project-home .toc{font-size:.8125rem}
+ .project-home .paper{font-size:.9375rem}
+ .project-home .paper h2{font-size:1.375rem}
+ .project-home .paper h3{font-size:1.0625rem}
+ .project-home .paper .takeaways,.project-home .paper .takeaways h2{font-size:.875rem}
+}
+
+@media(min-width:1124px){.project-home .wrap{width:min(1280px,calc(100% - 64px));max-width:1280px}}
+
+.paper .cap-scroll{position:relative;max-width:100%;overflow-x:auto}
+.paper .cap-table{width:100%;min-width:38rem;font-size:.94em;font-variant-numeric:tabular-nums}
+.paper .cap-table caption{caption-side:top;padding:0 0 .65em;font-size:1em}
+.cap-table tr>:not(:first-child){text-align:center}
+.cap-table tbody tr:last-child{background:#eaf0e9}
+.cap-yes{color:#29683a;font-weight:700}.cap-no{color:#9b423d}
+.cap-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.paper .cap-note{font-size:.92em}
+
+.toc a:has(>.toc-num){display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:.55em;align-items:baseline}
+.toc .toc-num{white-space:nowrap;font-variant-numeric:tabular-nums}
+.toc .toc-title{min-width:0}
+
+
+
+.paper :is(#fig-3,#fig-4)>figcaption{text-align:center}
+
+.paper figure.plate img{mix-blend-mode:multiply}
+
+/* Section 3: retain labels and decimal alignment on narrow screens. */
+.paper .result-scroll{max-width:100%;overflow-x:auto;margin:14px 0}
+.paper .result-table{width:100%;min-width:465px;margin:0;font:inherit;font-variant-numeric:tabular-nums}
+.paper .result-table caption{caption-side:top;padding:0 0 7px;color:#294b3b;font-weight:650}
+.paper .result-table :is(td,th){padding:6px 10px;white-space:nowrap}
+.paper .result-table td,.paper .result-table thead th:not(:first-child){text-align:right}
+.paper .result-table tbody tr:first-child{background:#f2f5ee}
+
+.project-home .mast h1 > span:nth-child(2){font-weight:400}
