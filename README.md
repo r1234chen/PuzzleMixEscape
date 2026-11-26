@@ -10,12 +10,12 @@
 
 The four groups vary along two axes: **exploration difficulty** and **puzzle complexity**. The medium groups are not successive difficulty tiers: `medium-a` spreads clues across a larger space, while `medium-b` makes the puzzles more demanding without increasing the exploration scope.
 
-| Difficulty | Level IDs | Exploration / puzzles | Levels | Action budget | Baseline Recall budget | Tip threshold |
-|---|---|---|---:|---:|---:|---:|
-| easy | [L1-01 to L1-39](level/easy/) | Basic / basic | 39 | 150 | 10 | 25 |
-| medium-a | [H1-01 to H1-11](level/medium-a/) | Enhanced / basic | 11 | 200 | 20 | 50 |
-| medium-b | [L2-01 to L2-22](level/medium-b/) | Basic / enhanced | 22 | 200 | 15 | 40 |
-| hard | [H2-01 to H2-22](level/hard/) | Enhanced / enhanced | 22 | 250 | 25 | 60 |
+| Difficulty | Level IDs | Levels | Action budget | Baseline Recall budget | Tip threshold |
+|---|---|---:|---:|---:|---:|
+| easy | [L1-01 to L1-39](level/easy/) | 39 | 150 | 10 | 25 |
+| medium-a | [H1-01 to H1-11](level/medium-a/) | 11 | 200 | 20 | 50 |
+| medium-b | [L2-01 to L2-22](level/medium-b/) | 22 | 200 | 15 | 40 |
+| hard | [H2-01 to H2-22](level/hard/) | 22 | 250 | 25 | 60 |
 
 At each decision, the baseline model receives a 640 × 360 first-person image, its inventory, its notes, and the last 10 interactions. **Recall** retrieves earlier observations without consuming an environment action. After the specified number of consecutive actions without progress, the environment appends a **Tip** to the action feedback. This happens at most once per episode and costs neither an action nor a Recall. Finding the key or unlocking the exit is not enough to succeed; the door must open, but the model need not walk through it.
 
