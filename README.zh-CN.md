@@ -4,7 +4,7 @@
 
 **PuzzleMixEscape 是一个包含 94 个三维密室逃脱关卡的多模态模型评测基准。** 它考察模型能否在第一人称视角下主动寻找线索、理解空间关系，并通过一系列操作解开谜题。例如，在「维修储物间」（L2-01），模型需要移动视角清点散落的彩球，把观察结果与房间中的便签、工具箱和通风格栅联系起来。只有实际打开已解锁的出口门才算通关。
 
-[关卡目录](level/index.json) · [环境安装](#环境安装) · [场景资产](assets/README.zh-CN.md) · [模型评测](#模型评测) · [基线指南](evaluation/README.zh-CN.md) · [CoordMem](#coordmem) · [评测结果](#评测结果)
+[关卡目录](level/index.json) · [环境安装](#环境安装) · [场景资产](assets/README.zh-CN.md) · [模型评测](#模型评测) · [基线指南](evaluation/README.zh-CN.md) · [CoordMem](#coordmem)
 
 ## 关卡与评测协议
 
@@ -64,12 +64,6 @@ python coordmem/run.py --level L2-01 --mode selective --provider openai_official
 ```
 
 将 `selective` 换成 `full` 即可切换模式。正常情况下，每个决策步会产生两次可能计费的模型请求。记忆记录的格式与输出文件见 [CoordMem 方法说明](coordmem/README.zh-CN.md)。
-
-## 评测结果
-
-上述 GPT-6-Astra 示例的结果保存在 `runs/l2-01-gpt-6-astra/episodes/L2-01/RESULT.json`。先看 `status` 判断评测是否正常结束，再看 `success` 判断是否通关、`actions` 查看实际动作数。正常耗尽预算但未通关，与接口或环境异常导致的中断，应分开统计。
-
-同一目录还保留第一人称观测、模型交互和里程碑记录，便于分析模型在哪一步取得进展或停止推进。参考解法的验证结果单独写入 `FULL_STANDARD_RESULT.json`。
 
 ## 许可证
 

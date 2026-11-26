@@ -4,7 +4,7 @@
 
 **PuzzleMixEscape is a benchmark of 94 interactive 3D escape rooms for multimodal models.** It tests whether a model can find clues from a first-person view, reason about spatial relationships, and act on what it discovers. In *Maintenance Store* (L2-01), for example, the model must move around to count scattered coloured balls and relate them to a note, a toolbox, and a ventilation grille. An episode succeeds only when the model opens the unlocked exit door.
 
-[Level catalogue](level/index.json) · [Setup](#setup) · [Scene assets](assets/README.md) · [Model evaluation](#model-evaluation) · [Baseline guide](evaluation/README.md) · [CoordMem](#coordmem) · [Results](#results)
+[Level catalogue](level/index.json) · [Setup](#setup) · [Scene assets](assets/README.md) · [Model evaluation](#model-evaluation) · [Baseline guide](evaluation/README.md) · [CoordMem](#coordmem)
 
 ## Levels and evaluation protocol
 
@@ -64,12 +64,6 @@ python coordmem/run.py --level L2-01 --mode selective --provider openai_official
 ```
 
 Replace `selective` with `full` to switch modes. A normal decision step makes two potentially billable requests. See the [CoordMem method notes](coordmem/README.md) for the memory record format and output files.
-
-## Results
-
-The baseline command above writes its result to `runs/l2-01-gpt-6-astra/episodes/L2-01/RESULT.json`. Check `status` first to see whether the evaluation completed, then `success` for the escape outcome and `actions` for the action count. A completed episode that exhausted its budget is distinct from a run interrupted by an environment or API error.
-
-The episode directory also contains first-person observations, model interactions, and milestone records for inspecting the trajectory. Reference-solution runs write a separate `FULL_STANDARD_RESULT.json`.
 
 ## License
 
