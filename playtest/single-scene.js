@@ -219,6 +219,23 @@ else if(/pizza/.test(k)){e(0,0,.023,.135,.135,.022,'#cf9654');for(let j=0;j<5;j+
 else if(/burger/.test(k)){ringBody(g,[[.003,.084,.081],[.012,.10,.091],[.031,.103,.096]],'#c78946');e(0,0,.043,.104,.098,.019,'#69493a');for(let i=0;i<8;i++)e(.077*Math.cos(i*.785),.072*Math.sin(i*.785),.061,.033,.031,.006,green);ringBody(g,[[.064,.095,.089],[.070,.098,.092]],red);e(0,0,.081,.101,.094,.046,'#d8a25a');for(let j=0;j<8;j++)e(Math.cos(j*2.4)*.052,Math.sin(j*2.4)*.053,.121,.006,.003,.002,white)}
 else throw new Error('No authored prop geometry: '+id+' / '+cat);}
 function artURL(g,p,w,h,src,dir='north'){const [ti,draw]=tile(c=>{if(images[src]?.complete&&images[src].naturalWidth){const im=images[src],ratio=im.naturalWidth/im.naturalHeight*h/w,dw=256*Math.min(1,ratio),dh=256*Math.min(1,1/ratio);c.drawImage(im,(256-dw)/2,(256-dh)/2,dw,dh)}});textface(g,p,w,h,ti,dir);inputs.push([src,draw])}
+// The scale sits on the floor. Its LCD is part of the front lip, angled towards a standing player.
+function scaleDisplay(g,k){
+ const front=-.305,rear=-.161,z0=.063,z1=.139,x=.212;
+ const shell=[[-x,front,.004],[x,front,.004],[-x,rear,.004],[x,rear,.004],
+              [-x,front,z0],[x,front,z0],[-x,rear,z1],[x,rear,z1]];
+ mesh('scale_lcd_housing',g,shell,[[0,2,3,1],[4,5,7,6],[0,1,5,4],[2,6,7,3],[0,4,6,2],[1,3,7,5]],steel);
+ let last;const reading=()=>RULES.draws[k]||'0 kg', [ti,paint]=tile(c=>{
+  last=reading();c.save();c.scale(W/512,W/192);
+  c.fillStyle='#10261e';c.fillRect(0,0,512,192);c.fillStyle='#fff3bf';c.textAlign='left';c.textBaseline='alphabetic';
+  const n=last.replace(/\s*kg$/i,'');c.font='bold 176px Arial, sans-serif';const nw=c.measureText(n).width;
+  c.font='bold 80px Arial, sans-serif';const uw=c.measureText('kg').width,left=(512-nw-uw-18)/2;
+  c.font='bold 176px Arial, sans-serif';c.fillText(n,left,158);c.font='bold 80px Arial, sans-serif';c.fillText('kg',left+nw+18,155);c.restore();
+ });
+ // Inset the glass on the slope; it is not a floating caption or an inventory display.
+ face(g,[0,(front+rear)/2,(z0+z1)/2+.0007],[.195,0,0],[0,(rear-front)*.452,(z1-z0)*.452],ti);
+ painter.push(()=>{if(reading()===last)return false;paint();return true});
+}
 function display(g,k,p,w,h,dir='north'){let prev=null;const make=c=>{c.fillStyle='#233a34';c.fillRect(0,0,W,W);txt(c,(N[k]?.label||'').toUpperCase().slice(0,22),49,20,'#d4e3ce');txt(c,RULES.draws[k]||(N[k]?.kind==='reveal'&&RULES.flags.paper_in?RULES.ink:'')||(N[k]?.kind==='scale'?'0 kg':'—'),145,59,'#f6e6ab')};let [ti,draw]=tile(make);textface(g,p,w,h,ti,dir);painter.push(()=>{let v=RULES.draws[k]+'|'+RULES.ink+'|'+!!RULES.flags.paper_in;if(v!==prev){prev=v;draw();return true}})}
 const mixColor={red,blue,yellow,orange:'#de8b3f',green:'#548953',purple:'#875796',brown:'#80573d',empty:'#eee6cc'};
 function diagram(g,o){const key=o.design;
@@ -272,7 +289,7 @@ else if(t==='paint_bowl'){
  let old=null;painter.push(()=>{let v=RULES.colour(k);if(old!==v){old=v;paint();return true}});
  B(g,0,-.130,.047,.080,.012,.055,'#dfcfaa');textface(g,[0,-.138,.047],.064,.047,label('',k.slice(-1),''));at=[0,-.052,.073]
 }
-else if(t==='scale'){B(g,0,0,.035,.43,.36,.07,steel);B(g,0,0,.08,.39,.32,.035,'#697d75');display(g,k,[0,-.12,.098],.195,.072,'table');at=[0,-.12,.105]}
+else if(t==='scale'){B(g,0,0,.035,.43,.36,.07,steel);B(g,0,0,.08,.39,.32,.035,'#697d75');scaleDisplay(g,k);at=[0,-.233,.102]}
 else if(t==='ottoman'){
  const H=o.p[2];B(g,0,0,-H+.035,.47,.46,.07,dark);B(g,0,0,-.14,.46,.45,.032,wood);for(const side of [-1,1]){B(g,side*.232,0,-H/2+.035,.026,.48,H-.07,'#896b56');B(g,0,side*.227,-H/2+.035,.45,.026,H-.07,'#896b56')}
  const cap=G('cover_'+k,[p[0],p[1]+.24,p[2]+.053],k);B(cap,0,-.24,0,.50,.50,.108,'#b58964');move(cap,s=>({r:[s.open[k]?-86:0,0,0]}));obstacles.push([p[0]-.25,p[1]-.25,p[0]+.25,p[1]+.25]);at=[0,-.23,.06]}
