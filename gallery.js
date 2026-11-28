@@ -2,8 +2,8 @@
 function url(){const u=new URL(location.href);for(const k of Object.keys(state)){if(state[k]==='all')u.searchParams.delete(k);else u.searchParams.set(k,state[k])}return u}
 function syncLang(){lang.href=lang.getAttribute('data-language')+location.search+location.hash}
 const coming=document.querySelector('.g-coming'),empty=document.querySelector('.g-empty'),emptyText=empty.querySelector('p'),noMatch=emptyText.textContent;
-function filters(){let count=0;for(const c of cards){c.hidden=!Object.entries(state).every(([k,v])=>v==='all'||v===c.dataset[k]);if(!c.hidden)count++}for(const b of buttons)b.setAttribute('aria-pressed',String(state[b.parentNode.dataset.axis]===b.value));const pending=['gemini-3.8-flash','qwen3.8-max'].includes(state.model);
- coming.hidden=!(count>0&&state.model==='qwen3.8-max');
+function filters(){let count=0;for(const c of cards){c.hidden=!Object.entries(state).every(([k,v])=>v==='all'||v===c.dataset[k]);if(!c.hidden)count++}for(const b of buttons)b.setAttribute('aria-pressed',String(state[b.parentNode.dataset.axis]===b.value));const pending=[].includes(state.model);
+ coming.hidden=true;
  emptyText.textContent=pending&&!count?coming.textContent:noMatch;empty.hidden=count!==0;syncLang()}
 function update(){const u=url();u.hash='';history.replaceState(null,'',u.href);filters()}
 for(const b of buttons)b.addEventListener('click',()=>{state[b.parentNode.dataset.axis]=b.value;update()});
